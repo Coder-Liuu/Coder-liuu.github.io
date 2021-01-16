@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
   <head>
     <title>
         About - Coder-Liuu&#39;Blog
@@ -37,7 +37,7 @@
 <meta itemprop="name" content="About">
 <meta itemprop="description" content="Hugo, the world’s fastest framework for building websites">
 
-<meta itemprop="wordCount" content="198">
+<meta itemprop="wordCount" content="266">
 
 
 
@@ -72,7 +72,7 @@
         </div><div class="search" id="search-form-wrap">
     <form class="search-form sidebar-form">
         <div class="input-group">
-            <input type="text" class="search-form-input form-control" placeholder="Search" />
+            <input type="text" class="search-form-input form-control" placeholder="搜索" />
             <span class="input-group-btn">
                 <button type="submit" class="search-form-submit btn btn-flat" onclick="return false;"><i
                         class="icon icon-search"></i></button>
@@ -82,7 +82,7 @@
             <div class="ins-search-mask"></div>
             <div class="ins-search-container">
                 <div class="ins-input-wrapper">
-                    <input type="text" class="ins-search-input" placeholder="Type something..."
+                    <input type="text" class="ins-search-input" placeholder="想要查找什么..."
                         x-webkit-speech />
                     <button type="button" class="close ins-close ins-selectable" data-dismiss="modal"
                         aria-label="Close"><span aria-hidden="true">×</span></button>
@@ -136,7 +136,7 @@
   <div class="slimContent">
     
       <div class="widget">
-    <h3 class="widget-title">Board</h3>
+    <h3 class="widget-title">公告</h3>
     <div class="widget-body">
         <div id="board">
             <div class="content"><p>Hello,World~</p>
@@ -146,7 +146,7 @@
 </div>
 
       <div class="widget">
-    <h3 class="widget-title"> Categories</h3>
+    <h3 class="widget-title"> 分类</h3>
     <div class="widget-body">
         <ul class="category-list">
             <li class="category-list-item"><a href="https://coder-liuu.github.io/categories/syntax/" class="category-list-link">syntax</a><span class="category-list-count">1</span></li>
@@ -155,7 +155,7 @@
 </div>
       
 <div class="widget">
-    <h3 class="widget-title">Recent Posts</h3>
+    <h3 class="widget-title">最新文章</h3>
     <div class="widget-body">
         <ul class="recent-post-list list-unstyled no-thumbnail">
             <li>
@@ -208,7 +208,7 @@
     
 <aside class="sidebar sidebar-toc collapse" id="collapseToc" itemscope itemtype="http://schema.org/WPSideBar">
   <div class="slimContent">
-    <h4 class="toc-title">Catalogue</h4>
+    <h4 class="toc-title">文章目录</h4>
     <nav id="toc" class="js-toc toc">
 
     </nav>
@@ -230,10 +230,14 @@
       <div class="article-meta">
         
 
+	<span class="article-read hidden-xs">
+	    <i class="icon icon-eye-fill" aria-hidden="true"></i>
+	    <span id="busuanzi_container_page_pv">
+			<span id="busuanzi_value_page_pv">0</span>
+		</span>
+	</span>
         <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/about/#comments"
-            class="article-comment-link">Comments</a></span>
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 198 words</span>
-		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Time: 1 minutes </span>
+            class="article-comment-link">评论</a></span>
       </div>
     </div>
     <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
@@ -250,6 +254,9 @@
 </ul>
 <h1 id="喜欢的话">喜欢的话</h1>
 <p>先做一件事，其次在考虑速度</p>
+<h1 id="q--a">Q &amp; A</h1>
+<p><code>Q</code>: 博客的内容主要是什么呢?
+<code>A</code>: 记录学习过程一些可以进行分享的内容，如果只有学习的笔记，我会直接放在印象笔记中，而不会选择放在博客中。</p>
 <h1 id="未完待续之后可能会继续补充">未完待续，之后可能会继续补充</h1>
 
     </div>
@@ -257,7 +264,7 @@
 <blockquote class="mt-2x">
   <ul class="post-copyright list-unstyled">
     <li class="post-copyright-link hidden-xs">
-      <strong>Permalink: </strong>
+      <strong>本文链接: </strong>
       <a href="https://coder-liuu.github.io/about/" title="About" target="_blank" rel="external">https://coder-liuu.github.io/about/</a>
     </li>
     <li class="post-copyright-license">
@@ -296,14 +303,14 @@
         <ul class="pager pull-left">
             <li class="next">
                 <a href="https://coder-liuu.github.io/2019/03/emoji-support/"
-                    title="Emoji Support"><span>Newer&nbsp;&nbsp;</span><i
+                    title="Emoji Support"><span>上一篇&nbsp;&nbsp;</span><i
                         class="icon icon-angle-right" aria-hidden="true"></i></a>
             </li>
             
             <li class="toggle-toc">
                 <a class="toggle-btn collapsed" data-toggle="collapse" href="#collapseToc" aria-expanded="false"
-                    title="Catalogue" role="button">
-                    <span>[&nbsp;</span><span>Catalogue</span>
+                    title="文章目录" role="button">
+                    <span>[&nbsp;</span><span>文章目录</span>
                     <i class="text-collapsed icon icon-anchor"></i>
                     <i class="text-in icon icon-close"></i>
                     <span>]</span>
@@ -366,11 +373,11 @@
     (function (window) {
         var INSIGHT_CONFIG = {
             TRANSLATION: {
-                POSTS: 'Posts',
-                PAGES: 'Pages',
-                CATEGORIES: 'Categories',
-                TAGS: 'Tags',
-                UNTITLED: '(Untitled)',
+                POSTS: '文章',
+                PAGES: '页面',
+                CATEGORIES: '分类',
+                TAGS: '标签',
+                UNTITLED: '(未命名)',
             },
             ROOT_URL: 'https:\/\/coder-liuu.github.io',
             CONTENT_URL: 'https:\/\/coder-liuu.github.io\/searchindex.json ',
@@ -393,5 +400,6 @@
     });
 </script>
 
+<script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
   </body>
 </html>
