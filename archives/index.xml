@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Coder-Liuu&#39;Blog</title>
-    <link>https://coder-liuu.github.io/tags/</link>
-    <description>Recent content in Tags on Coder-Liuu&#39;Blog</description>
+    <title>Archives on Coder-Liuu&#39;Blog</title>
+    <link>https://coder-liuu.github.io/archives/</link>
+    <description>Recent content in Archives on Coder-Liuu&#39;Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>CC BY 4.0 CN</copyright>
+    <lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate>
     
-        <atom:link href="https://coder-liuu.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://coder-liuu.github.io/archives/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
