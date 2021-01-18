@@ -40,7 +40,7 @@
 <meta itemprop="description" content="Sample article showcasing basic Markdown syntax and formatting for HTML elements.">
 <meta itemprop="datePublished" content="2019-03-11T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2019-03-11T00:00:00+00:00" />
-<meta itemprop="wordCount" content="439">
+<meta itemprop="wordCount" content="472">
 
 
 
@@ -140,6 +140,12 @@
                 <a href="/about/">
                     <i class="icon icon-cup-fill"></i>
                   <span class="menu-title">About</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-notes">
+                <a href="/notes/">
+                    <i class="icon icon-tags"></i>
+                  <span class="menu-title">Notes</span>
                 </a>
             </li>
         </ul>
@@ -356,16 +362,37 @@
 &lt;/html&gt;
 </code></pre>
 <h4 id="code-block-with-hugos-internal-highlight-shortcode">Code block with Hugo&rsquo;s internal highlight shortcode</h4>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
-&lt;<span style="color:#f92672">html</span> <span style="color:#a6e22e">lang</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;en&#34;</span>&gt;
-&lt;<span style="color:#f92672">head</span>&gt;
-  &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">charset</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;UTF-8&#34;</span>&gt;
-  &lt;<span style="color:#f92672">title</span>&gt;Example HTML5 Document&lt;/<span style="color:#f92672">title</span>&gt;
-&lt;/<span style="color:#f92672">head</span>&gt;
-&lt;<span style="color:#f92672">body</span>&gt;
-  &lt;<span style="color:#f92672">p</span>&gt;Test&lt;/<span style="color:#f92672">p</span>&gt;
-&lt;/<span style="color:#f92672">body</span>&gt;
-&lt;/<span style="color:#f92672">html</span>&gt;</code></pre></div>
+<style media="screen">
+ 
+.highlight {
+    background: #50b7c1;
+    border-radius: 6px 6px 6px 6px;
+    box-shadow: 80 183 193 1px #5F5A4B, 1px 1px 6px 1px rgba(80,183,193,0.5);
+    color: #ffffff;
+    font-family:"微软雅黑", "宋体", "黑体", Arial;
+    font-size: 18px;
+    font-weight: bold;
+    height: 25px;
+    line-height: 25px;
+    margin: 18px 0 !important;
+    text-shadow: 2px 2px 3px #222222;
+}
+
+</style>
+
+<p class="highlight">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Example HTML5 Document</title>
+</head>
+<body>
+  <p>Test</p>
+</body>
+</html>
+</p>
+
 <h2 id="list-types">List Types</h2>
 <h4 id="ordered-list">Ordered List</h4>
 <ol>
