@@ -29,6 +29,24 @@
     </item>
     
     <item>
+      <title>Python-创建虚拟环境</title>
+      <link>https://coder-liuu.github.io/2020/04/python%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/</link>
+      <pubDate>Thu, 30 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://coder-liuu.github.io/2020/04/python%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/</guid>
+      <description>一、 用Python第三方库virtualenv创建虚拟环境 这种方式是最原始最简单的一种方式.个人经常使用 1. 安装方式 pip install virtualenv # python2 pip3 install virtualenv # python3 2.创</description>
+    </item>
+    
+    <item>
+      <title>Git命令总结</title>
+      <link>https://coder-liuu.github.io/2020/04/git%E5%91%BD%E4%BB%A4%E6%80%BB%E7%BB%93/</link>
+      <pubDate>Sun, 26 Apr 2020 23:57:02 +0000</pubDate>
+      
+      <guid>https://coder-liuu.github.io/2020/04/git%E5%91%BD%E4%BB%A4%E6%80%BB%E7%BB%93/</guid>
+      <description>最常用篇 初始化git仓库 git init 添加修改 git add . 删除git仓库,只需要删除本地的文件就可以了 rm -rf .git 查看当前仓库的状态 git status 丢弃工作区的改动 git restore &amp;lt</description>
+    </item>
+    
+    <item>
       <title>Markdown Syntax Guide</title>
       <link>https://coder-liuu.github.io/2019/03/markdown-syntax/</link>
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
@@ -57,21 +75,12 @@ pectora summo.&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Emoji Support</title>
-      <link>https://coder-liuu.github.io/2019/03/emoji-support/</link>
-      <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://coder-liuu.github.io/2019/03/emoji-support/</guid>
-      <description>&lt;p&gt;Emoji can be enabled in a Hugo project in a number of ways.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>About</title>
       <link>https://coder-liuu.github.io/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://coder-liuu.github.io/about/</guid>
-      <description>.highlight { background: #50b7c1; border-radius: 6px 6px 6px 6px; box-shadow: 80 183 193 1px #5F5A4B, 1px 1px 6px 1px rgba(80,183,193,0.5); color: #ffffff; font-family:&#34;微软雅黑&#34;, &#34;宋体&#34;, &#34;黑体&#34;, Arial; font-size: 18px; font-weight: bold; height: 25px; line-height: 25px; margin: 18px 0 !important; text-shadow: 2px 2px 3px #222222; }</description>
+      <description>一、个人介绍 网名: Code-liu 出生: 2000年12月 职业: 小学二年级在读 网站历史: 2019年2月份 进入CSDN，开始写博客。 2020年5月份 使用Hex</description>
     </item>
     
   </channel>
