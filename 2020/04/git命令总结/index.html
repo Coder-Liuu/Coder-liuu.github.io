@@ -27,7 +27,8 @@
     
     <link rel="stylesheet" href="https://coder-liuu.github.io/css/style.min.07d243c8c0ba5d5630c8c5277db3c91ab545fc5a4ba1a3611c55b639bddbf324.css">
     
-    <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css" async>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" async>
     <meta property="og:title" content="Git命令总结" />
 <meta property="og:description" content="关于git命令的总结" />
@@ -414,7 +415,6 @@
     </div>
   </article>
 <section id="comments">
-    <div id="vcomments"></div>
 </section>
 
 </div><nav class="bar bar-footer clearfix" data-stick-bottom>
@@ -525,26 +525,20 @@
 </script>
 
 <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-<script src="https://cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/valine"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1.4.0/dist/gitalk.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/blueimp-md5@2.10.0/js/md5.min.js"></script>
 <script type="text/javascript">
-    var GUEST = ['nick', 'mail', 'link'];
-    var meta = 'nick,mail';
-    meta = meta.split(',').filter(function (item) {
-        return GUEST.indexOf(item) > -1;
+    var gitalk = new Gitalk({
+        clientID: '3a3a22d15ee20c260e7b',
+        clientSecret: '9df3abf46dc2f5d69de12e2cc1c969cfea974ea2',
+        repo: 'Coder-liuu.github.io',
+        owner: 'Coder-liuu',
+        admin: ['[Coder-liuu]'],
+        id: md5(location.pathname),
+        distractionFreeMode: true
     });
-    new Valine({
-        el: '#vcomments',
-        verify: false ,
-        notify: false ,
-        appId: 'AAvAiENCDp8BMvWBIrjMNxX1-gzGzoHsz',
-        appKey: 'hqOMWJRL1joYPyYmzI70HWkd',
-        placeholder: '你好呀，陌生人!',
-        avatar: 'mm',
-        meta: meta,
-        pageSize: '10' || 10,
-        visitor: false 
-});
+    gitalk.render('comments');
 </script>
 
   </body>
