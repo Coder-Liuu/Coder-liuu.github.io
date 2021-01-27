@@ -526,13 +526,39 @@
             <i class="icon icon-github"></i></a></li>
 </ul>
   <div class="copyright">
-    &copy;2019  -
-    2021
     <div class="publishby">
-        Theme by <a href="https://github.com/xiaoheiAh" target="_blank"> xiaoheiAh </a>base on<a href="https://github.com/xiaoheiAh/hugo-theme-pure" target="_blank"> pure</a>.
     </div>
   </div>
+
+  <div style="text-align:center;">
+    <i class="fa fa-heart animated infinite pulse"></i>
+    您是我的第<span id="busuanzi_value_site_uv"></span>小伙伴<br>
+    本站总访问量<span id="busuanzi_value_site_pv"></span>次<br>
+    <span id="span"></span><br>
+  </div>
 </footer>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+
+</script>
+<script type="text/javascript">
+    function runtime(){
+        
+        X = new Date("2/01/2020 0:00:00");
+        Y = new Date();
+        T = (Y.getTime()-X.getTime());
+        M = 24*60*60*1000;
+        a = T/M;
+        A = Math.floor(a);
+        b = (a-A)*24;
+        B = Math.floor(b);
+        c = (b-B)*60;
+        C = Math.floor((b-B)*60);
+        D = Math.floor((c-C)*60);
+        
+        span.innerHTML = "本站勉强运行: "+A+"天"+B+"小时"+C+"分"+D+"秒"
+    }
+    setInterval(runtime, 1000);
+</script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_SVG"></script>
 <script type="text/x-mathjax-config">
