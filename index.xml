@@ -6,10 +6,28 @@
     <description>Recent content on Coder-Liuu&#39;Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>CC BY 4.0 CN</copyright>
-    <lastBuildDate>Thu, 30 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 31 Jan 2021 21:07:24 +0800</lastBuildDate>
     
         <atom:link href="https://coder-liuu.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Manjaro常用软件</title>
+      <link>https://coder-liuu.github.io/2021/01/manjaro-sortwork/</link>
+      <pubDate>Sun, 31 Jan 2021 21:07:24 +0800</pubDate>
+      
+      <guid>https://coder-liuu.github.io/2021/01/manjaro-sortwork/</guid>
+      <description>最近使用Manjaro-Gnome系统已经快过去2年了，好多使用过的软件已经忘了，最近也打算重装系统，于是准备总结一下自己常用和好用的软件，</description>
+    </item>
+    
+    <item>
+      <title>ACM数论</title>
+      <link>https://coder-liuu.github.io/2021/01/acm-math/</link>
+      <pubDate>Sat, 30 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://coder-liuu.github.io/2021/01/acm-math/</guid>
+      <description>个人认为这部分的数论中的基础，刚刚有查了查蓝桥杯不考数论，所以这篇博客的数论知识都是一些基础知识。准备蓝桥杯还是好好学学动态规划和图论吧! 质</description>
+    </item>
     
     <item>
       <title>Album</title>
@@ -53,7 +71,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://coder-liuu.github.io/about/</guid>
-      <description>一、个人介绍 网名: Code-liu 出生: 2000年12月 职业: 小学二年级在读 网站历史: 2019年2月份 进入CSDN，开始写博客。 2020年5月份 使用Hex</description>
+      <description>一、个人介绍 网名: Code-liu 出生: 2000年12月 职业: 苦逼小学二年级在读 网站历史: 2019年2月份 进入CSDN，开始写博客。 2020年5月份 使用H</description>
     </item>
     
   </channel>
