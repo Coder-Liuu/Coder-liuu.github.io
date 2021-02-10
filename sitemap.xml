@@ -3,6 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://coder-liuu.github.io/somewords/</loc>
+    <lastmod>2021-02-11T00:41:00+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://coder-liuu.github.io/categories/</loc>
     <lastmod>2021-01-31T21:07:24+08:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -17,7 +24,7 @@
   </url>
   
   <url>
-    <loc>https://coder-liuu.github.io/2021/01/manjaro-sortwork/</loc>
+    <loc>https://coder-liuu.github.io/2021/01/manjaro-softwork/</loc>
     <lastmod>2021-01-31T21:07:24+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
