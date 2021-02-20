@@ -2,7 +2,7 @@
 <html lang="zh">
   <head>
     <title>
-        动态规划记录 - Coder-Liuu&#39;Blog
+        动态规划各种题型入门 - Coder-Liuu&#39;Blog
       </title>
         <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -22,9 +22,9 @@
     <meta http-equiv="window-target" content="_top" />
     
     
-    <meta name="description" content="区间DP 模板题目:石子合并 dp数组意义：dp[i][j] 为i-j这个区间内的某个属性(本题是属性) 状态转移方程：dp[i][j] = min(d" />
+    <meta name="description" content="区间DP 对其简短描述： 使用dp[ i ][j] 表示 i~j之间的某个属性，状态的转移跟区间的切割点有关 模板题目:石子合并 dp数组意义：dp[i][j] 为" />
     <meta name="generator" content="Hugo 0.79.0 with theme pure" />
-    <title>动态规划记录 - Coder-Liuu&#39;Blog</title>
+    <title>动态规划各种题型入门 - Coder-Liuu&#39;Blog</title>
     
     
     <link rel="stylesheet" href="https://coder-liuu.github.io/css/style.min.1fdd348e93547f31b103c9dbbd5433d265839559eb3ddd8b6fedb3de7d257b98.css">
@@ -32,24 +32,24 @@
     <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async> 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css" async>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" async>
-    <meta property="og:title" content="动态规划记录" />
-<meta property="og:description" content="区间DP 模板题目:石子合并 dp数组意义：dp[i][j] 为i-j这个区间内的某个属性(本题是属性) 状态转移方程：dp[i][j] = min(d" />
+    <meta property="og:title" content="动态规划各种题型入门" />
+<meta property="og:description" content="区间DP 对其简短描述： 使用dp[ i ][j] 表示 i~j之间的某个属性，状态的转移跟区间的切割点有关 模板题目:石子合并 dp数组意义：dp[i][j] 为" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://coder-liuu.github.io/2021/02/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E8%AE%B0%E5%BD%95/" />
 <meta property="article:published_time" content="2021-02-14T15:02:34+08:00" />
 <meta property="article:modified_time" content="2021-02-14T15:02:34+08:00" />
-<meta itemprop="name" content="动态规划记录">
-<meta itemprop="description" content="区间DP 模板题目:石子合并 dp数组意义：dp[i][j] 为i-j这个区间内的某个属性(本题是属性) 状态转移方程：dp[i][j] = min(d">
+<meta itemprop="name" content="动态规划各种题型入门">
+<meta itemprop="description" content="区间DP 对其简短描述： 使用dp[ i ][j] 表示 i~j之间的某个属性，状态的转移跟区间的切割点有关 模板题目:石子合并 dp数组意义：dp[i][j] 为">
 <meta itemprop="datePublished" content="2021-02-14T15:02:34+08:00" />
 <meta itemprop="dateModified" content="2021-02-14T15:02:34+08:00" />
-<meta itemprop="wordCount" content="183">
+<meta itemprop="wordCount" content="281">
 
 
 
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="动态规划记录"/>
-<meta name="twitter:description" content="区间DP 模板题目:石子合并 dp数组意义：dp[i][j] 为i-j这个区间内的某个属性(本题是属性) 状态转移方程：dp[i][j] = min(d"/>
+<meta name="twitter:title" content="动态规划各种题型入门"/>
+<meta name="twitter:description" content="区间DP 对其简短描述： 使用dp[ i ][j] 表示 i~j之间的某个属性，状态的转移跟区间的切割点有关 模板题目:石子合并 dp数组意义：dp[i][j] 为"/>
 
     <!--[if lte IE 9]>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -202,7 +202,7 @@
             <li>
                 <div class="item-inner">
                     <p class="item-title">
-                        <a href="https://coder-liuu.github.io/2021/02/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E8%AE%B0%E5%BD%95/" class="title">动态规划记录</a>
+                        <a href="https://coder-liuu.github.io/2021/02/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E8%AE%B0%E5%BD%95/" class="title">动态规划各种题型入门</a>
                     </p>
                     <p class="item-date">
                         <time datetime="2021-02-14 15:02:34 &#43;0800 CST" itemprop="datePublished">2021-02-14</time>
@@ -264,7 +264,7 @@
   <a
     class="article-title"
     href="/2021/02/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E8%AE%B0%E5%BD%95/"
-    >动态规划记录</a
+    >动态规划各种题型入门</a
   >
 </h1>
 
@@ -292,6 +292,9 @@
     </div>
     <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
       <h1 id="区间dp">区间DP</h1>
+<blockquote>
+<p><strong>对其简短描述</strong>： 使用dp[ i ][j] 表示 i~j之间的某个属性，状态的转移跟区间的切割点有关</p>
+</blockquote>
 <p>模板题目:<a href="https://www.acwing.com/problem/content/description/284/">石子合并</a></p>
 <p><strong>dp数组意义</strong>：dp[i][j] 为i-j这个区间内的某个属性(本题是属性)</p>
 <p><strong>状态转移方程</strong>：dp[i][j] = min(dp[i][j],dp[i][k]+dp[k+1][j]+合并代价)   // K为区间的切割点</p>
@@ -306,6 +309,12 @@
   }
 }
 </code></pre>
+<h1 id="数位dp">数位DP</h1>
+<p>技巧:</p>
+<ul>
+<li>求x-y区间中，满足数的个数，可以转化为1~y的个数1~x-1满足数的个数</li>
+<li>尽可能用树的角度来考虑问题</li>
+</ul>
 
     </div>
   </article>
