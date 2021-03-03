@@ -6,10 +6,82 @@
     <description>Recent content in ACM on Coder-Liuu&#39;Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>CC BY 4.0 CN</copyright>
-    <lastBuildDate>Sun, 14 Feb 2021 15:02:34 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 27 Feb 2021 00:10:20 +0800</lastBuildDate>
     
         <atom:link href="https://coder-liuu.github.io/categories/acm/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>留言板</title>
+      <link>https://coder-liuu.github.io/guestbook/</link>
+      <pubDate>Thu, 04 Mar 2021 01:16:00 +0800</pubDate>
+      
+      <guid>https://coder-liuu.github.io/guestbook/</guid>
+      <description>茫茫人海，有缘相聚在这里，不如留下你的足迹吧! 测试 var gitalk = new Gitalk({ clientID: &#39;aab88ce03a8d50c6128f&#39;, clientSecret: &#39;1ac9ba0e3f9cefa8aac6414eb40dfed80545c021&#39;, repo: &#39;Coder-liuu.github.io&#39;, owner: &#34;Coder-Liuu&#34;, admin: &#34;Coder-Liuu&#34;, id: &#39;about&#39;, }) gitalk.render(&#39;gitalk-container&#39;);</description>
+    </item>
+    
+    <item>
+      <title>动手实现决策树</title>
+      <link>https://coder-liuu.github.io/2021/02/%E5%8A%A8%E6%89%8B%E5%AE%9E%E7%8E%B0%E5%86%B3%E7%AD%96%E6%A0%91/</link>
+      <pubDate>Sat, 27 Feb 2021 18:51:42 +0800</pubDate>
+      
+      <guid>https://coder-liuu.github.io/2021/02/%E5%8A%A8%E6%89%8B%E5%AE%9E%E7%8E%B0%E5%86%B3%E7%AD%96%E6%A0%91/</guid>
+      <description>基础知识 信息熵 信息熵(entropy): 是度量样本集合纯度的一种最常用的指标 计算方法: $$ D = [P_1,P_2,&amp;hellip;,P_n] $$ $$ Ent(D) = -\sum_{i=1}^n P_i * log_2(P_i) $$ 计算示例: 有一个硬币,其中正</description>
+    </item>
+    
+    <item>
+      <title>ACM基础算法模板</title>
+      <link>https://coder-liuu.github.io/2021/02/acm-base/</link>
+      <pubDate>Sat, 27 Feb 2021 00:10:20 +0800</pubDate>
+      
+      <guid>https://coder-liuu.github.io/2021/02/acm-base/</guid>
+      <description>快速排序 时间复杂度: $O(nlog(n))$,模板题 void quick_sort(int q[],int l,int r){ if(l &amp;gt;= r) return; // 1. 寻找分界点 int x = q[(l + r)/2],i = l - 1, j = r + 1; // 2. 调整区间 while(i &amp;lt; j){ do i++; while(q[i] &amp;lt;</description>
+    </item>
+    
+    <item>
+      <title>图论知识总结</title>
+      <link>https://coder-liuu.github.io/2021/02/acm-argph-theory/</link>
+      <pubDate>Fri, 26 Feb 2021 16:45:29 +0800</pubDate>
+      
+      <guid>https://coder-liuu.github.io/2021/02/acm-argph-theory/</guid>
+      <description>朴素的Dijkstra算法 求点之间距离不相同的最短路算法 时间复杂度$O(n^2+m)$,n表示点数,m表示边数,模板题 int g[N][N]; // 存储图 int dist[N]; // 1号</description>
+    </item>
+    
+    <item>
+      <title>Manjaro杂问题</title>
+      <link>https://coder-liuu.github.io/2021/02/manjaro-some-problem/</link>
+      <pubDate>Wed, 24 Feb 2021 10:21:18 +0800</pubDate>
+      
+      <guid>https://coder-liuu.github.io/2021/02/manjaro-some-problem/</guid>
+      <description>Manjaro怎么更新DNS呢?默认终端怎么改?怎么在终端下播放音乐?等等一系列问题 更新DNS缓存 查看DNS网址,网址 修改Hosts文件: vim</description>
+    </item>
+    
+    <item>
+      <title>图上BFS和DFS</title>
+      <link>https://coder-liuu.github.io/2021/02/bfs_and_dfs/</link>
+      <pubDate>Tue, 23 Feb 2021 23:16:42 +0800</pubDate>
+      
+      <guid>https://coder-liuu.github.io/2021/02/bfs_and_dfs/</guid>
+      <description>多源BFS 有多个起点求最短路问题:经典例题 解决方法: 将以前bfs开始之将一个起点,队列中,改为初始将多个起点一起加入队列中去</description>
+    </item>
+    
+    <item>
+      <title>Ranger使用教程</title>
+      <link>https://coder-liuu.github.io/2021/02/ranger/</link>
+      <pubDate>Sun, 21 Feb 2021 14:28:45 +0800</pubDate>
+      
+      <guid>https://coder-liuu.github.io/2021/02/ranger/</guid>
+      <description>ranger是一款终端下的文件管理器,具有Vim式的操作方式. 我曾无数次安装ranger,也曾无数次配置ranger. 1.安装 Ranger官</description>
+    </item>
+    
+    <item>
+      <title>各种搜索引擎技巧</title>
+      <link>https://coder-liuu.github.io/2021/02/search-ticks/</link>
+      <pubDate>Sun, 21 Feb 2021 08:44:09 +0800</pubDate>
+      
+      <guid>https://coder-liuu.github.io/2021/02/search-ticks/</guid>
+      <description>更好的使用搜索引擎的功能，可以让我们查找起东西来更快速 有的时候使用起来总是会忘，故总结记录一下 假设XXX是我们的搜索内容 Google 搜索某段时间之后的</description>
+    </item>
     
     <item>
       <title>STL模板总结</title>
@@ -35,7 +107,7 @@
       <pubDate>Thu, 11 Feb 2021 00:41:00 +0800</pubDate>
       
       <guid>https://coder-liuu.github.io/somewords/</guid>
-      <description>2021 2021-2-15 行车不规范，亲人两行泪 安全带不寄扣50元，真是oh my God! 2021-2-13 生活组成是五颜六色的，不应缺少任何一种情绪。 如果生活只有高兴，而没有悲伤是索然无</description>
+      <description>2021 2021-2-26 如果说什么奖含金量最高，不是ACM，不是数学建模，而是图灵奖。(手动狗头) 2021-2-15 行车不规范，亲人两行泪 安全带不寄扣50元，真是oh my God! 2021-2-13 生活</description>
     </item>
     
     <item>
@@ -98,7 +170,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://coder-liuu.github.io/about/</guid>
-      <description>时常在想，我为什么这么菜 111 一、个人介绍 网名: Code-liu 出生: 2000年12月 职业: 苦逼小学二年级在读 网站历史: 2019年2月份 进入CSDN，开始写博</description>
+      <description>时常在想，我为什么这么菜 一、个人介绍 网名: Code-liu 出生: 2000年12月 职业: 苦逼小学二年级在读 网站历史: 2019年2月份 进入CSDN，开始写博客</description>
     </item>
     
   </channel>
