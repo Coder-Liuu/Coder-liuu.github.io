@@ -6,10 +6,19 @@
     <description>Recent content in 默认分类 on Coder-Liuu&#39;Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>CC BY 4.0 CN</copyright>
-    <lastBuildDate>Sat, 27 Feb 2021 18:51:42 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 04 Mar 2021 15:17:14 +0800</lastBuildDate>
     
         <atom:link href="https://coder-liuu.github.io/categories/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Linux下使用dd命令制作启动盘</title>
+      <link>https://coder-liuu.github.io/2021/03/linux-dd/</link>
+      <pubDate>Thu, 04 Mar 2021 15:17:14 +0800</pubDate>
+      
+      <guid>https://coder-liuu.github.io/2021/03/linux-dd/</guid>
+      <description>正文 Linux也可以制作U盘启动盘,而且不需要使用其他外部工具,非常简单 使用命令sudo fdisk -l,找到自己U盘 执行结果中一般最后一个Disk是</description>
+    </item>
     
     <item>
       <title>留言板</title>
@@ -18,24 +27,6 @@
       
       <guid>https://coder-liuu.github.io/guestbook/</guid>
       <description>茫茫人海，有缘相聚在这里，不如留下你的足迹吧! 测试 var gitalk = new Gitalk({ clientID: &#39;aab88ce03a8d50c6128f&#39;, clientSecret: &#39;1ac9ba0e3f9cefa8aac6414eb40dfed80545c021&#39;, repo: &#39;Coder-liuu.github.io&#39;, owner: &#34;Coder-Liuu&#34;, admin: &#34;Coder-Liuu&#34;, id: &#39;about&#39;, }) gitalk.render(&#39;gitalk-container&#39;);</description>
-    </item>
-    
-    <item>
-      <title>动手实现决策树</title>
-      <link>https://coder-liuu.github.io/2021/02/%E5%8A%A8%E6%89%8B%E5%AE%9E%E7%8E%B0%E5%86%B3%E7%AD%96%E6%A0%91/</link>
-      <pubDate>Sat, 27 Feb 2021 18:51:42 +0800</pubDate>
-      
-      <guid>https://coder-liuu.github.io/2021/02/%E5%8A%A8%E6%89%8B%E5%AE%9E%E7%8E%B0%E5%86%B3%E7%AD%96%E6%A0%91/</guid>
-      <description>基础知识 信息熵 信息熵(entropy): 是度量样本集合纯度的一种最常用的指标 计算方法: $$ D = [P_1,P_2,&amp;hellip;,P_n] $$ $$ Ent(D) = -\sum_{i=1}^n P_i * log_2(P_i) $$ 计算示例: 有一个硬币,其中正</description>
-    </item>
-    
-    <item>
-      <title>ACM基础算法模板</title>
-      <link>https://coder-liuu.github.io/2021/02/acm-base/</link>
-      <pubDate>Sat, 27 Feb 2021 00:10:20 +0800</pubDate>
-      
-      <guid>https://coder-liuu.github.io/2021/02/acm-base/</guid>
-      <description>快速排序 时间复杂度: $O(nlog(n))$,模板题 void quick_sort(int q[],int l,int r){ if(l &amp;gt;= r) return; // 1. 寻找分界点 int x = q[(l + r)/2],i = l - 1, j = r + 1; // 2. 调整区间 while(i &amp;lt; j){ do i++; while(q[i] &amp;lt;</description>
     </item>
     
     <item>
@@ -54,15 +45,6 @@
       
       <guid>https://coder-liuu.github.io/2021/02/manjaro-some-problem/</guid>
       <description>Manjaro怎么更新DNS呢?默认终端怎么改?怎么在终端下播放音乐?等等一系列问题 更新DNS缓存 查看DNS网址,网址 修改Hosts文件: vim</description>
-    </item>
-    
-    <item>
-      <title>图上BFS和DFS</title>
-      <link>https://coder-liuu.github.io/2021/02/bfs_and_dfs/</link>
-      <pubDate>Tue, 23 Feb 2021 23:16:42 +0800</pubDate>
-      
-      <guid>https://coder-liuu.github.io/2021/02/bfs_and_dfs/</guid>
-      <description>多源BFS 有多个起点求最短路问题:经典例题 解决方法: 将以前bfs开始之将一个起点,队列中,改为初始将多个起点一起加入队列中去</description>
     </item>
     
     <item>
@@ -93,21 +75,12 @@
     </item>
     
     <item>
-      <title>动态规划各种题型入门</title>
-      <link>https://coder-liuu.github.io/2021/02/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E8%AE%B0%E5%BD%95/</link>
-      <pubDate>Sun, 14 Feb 2021 15:02:34 +0800</pubDate>
-      
-      <guid>https://coder-liuu.github.io/2021/02/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E8%AE%B0%E5%BD%95/</guid>
-      <description>区间DP 对其简短描述： 使用dp[ i ][j] 表示 i~j之间的某个属性，状态的转移跟区间的切割点有关 模板题目:石子合并 dp数组意义：dp[i][j] 为</description>
-    </item>
-    
-    <item>
       <title>Somewords</title>
       <link>https://coder-liuu.github.io/somewords/</link>
       <pubDate>Thu, 11 Feb 2021 00:41:00 +0800</pubDate>
       
       <guid>https://coder-liuu.github.io/somewords/</guid>
-      <description>2021 2021-2-26 如果说什么奖含金量最高，不是ACM，不是数学建模，而是图灵奖。(手动狗头) 2021-2-15 行车不规范，亲人两行泪 安全带不寄扣50元，真是oh my God! 2021-2-13 生活</description>
+      <description>2021 2021-3-4 如果有人给我Github上一颗的星星,也许我会开一瓶香槟庆祝一下. 好句分享:如果总是逃避困难,世界将变得越来小. &amp;ndash;星游记 2021-2-26 如</description>
     </item>
     
     <item>
@@ -152,7 +125,7 @@
       <pubDate>Thu, 30 Apr 2020 00:00:00 +0000</pubDate>
       
       <guid>https://coder-liuu.github.io/2020/04/python-create-vir/</guid>
-      <description>一、 用Python第三方库virtualenv创建虚拟环境 这种方式是最原始最简单的一种方式.个人经常使用 1. 安装方式 pip install virtualenv # python2 pip3 install virtualenv # python3 2.创</description>
+      <description>一、用Python第三方库virtualenv创建虚拟环境 这种方式是最原始最简单的一种方式.个人经常使用 1. 安装方式 pip install virtualenv # python2 pip3 install virtualenv # python3 2.创</description>
     </item>
     
     <item>

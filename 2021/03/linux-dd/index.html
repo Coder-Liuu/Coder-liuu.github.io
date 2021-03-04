@@ -2,7 +2,8 @@
 <html lang="zh">
   <head>
     <title>
-        Coder-Liuu&#39;Blog</title>
+        Linux下使用dd命令制作启动盘 - Coder-Liuu&#39;Blog
+      </title>
         <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport"
@@ -21,27 +22,34 @@
     <meta http-equiv="window-target" content="_top" />
     
     
-    
+    <meta name="description" content="Linux也可以制作U盘启动盘,而且不需要使用其他外部工具,非常简单 " />
     <meta name="generator" content="Hugo 0.79.0 with theme pure" />
-    <title>Coder-Liuu&#39;Blog</title>
+    <title>Linux下使用dd命令制作启动盘 - Coder-Liuu&#39;Blog</title>
     
-    <link rel="alternate" type="application/rss+xml" href="https://coder-liuu.github.io/categories/index.xml" title="Coder-Liuu'Blog" />
     
     <link rel="stylesheet" href="https://coder-liuu.github.io/css/style.min.efb1b07b5bba75c8fd3b4c06f7949863d2893d8ddccae722f04573bc344ab21a.css">
     
     <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async> 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css" async>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" async>
-    <meta property="og:title" content="Categories" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://coder-liuu.github.io/categories/" />
-<meta property="og:updated_time" content="2021-03-04T15:17:14+08:00" />
-<meta itemprop="name" content="Categories">
-<meta itemprop="description" content="">
+    <meta property="og:title" content="Linux下使用dd命令制作启动盘" />
+<meta property="og:description" content="Linux也可以制作U盘启动盘,而且不需要使用其他外部工具,非常简单 " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://coder-liuu.github.io/2021/03/linux-dd/" />
+<meta property="article:published_time" content="2021-03-04T15:17:14+08:00" />
+<meta property="article:modified_time" content="2021-03-04T15:17:14+08:00" />
+<meta itemprop="name" content="Linux下使用dd命令制作启动盘">
+<meta itemprop="description" content="Linux也可以制作U盘启动盘,而且不需要使用其他外部工具,非常简单 ">
+<meta itemprop="datePublished" content="2021-03-04T15:17:14+08:00" />
+<meta itemprop="dateModified" content="2021-03-04T15:17:14+08:00" />
+<meta itemprop="wordCount" content="179">
+
+
+
+<meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Categories"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:title" content="Linux下使用dd命令制作启动盘"/>
+<meta name="twitter:description" content="Linux也可以制作U盘启动盘,而且不需要使用其他外部工具,非常简单 "/>
 
     <!--[if lte IE 9]>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -246,105 +254,101 @@
 
     
     
-<main class="main" role="main">
-    <article class="article article-categories article-type-list" itemscope="">
-        <header class="article-header">
-            <h1 itemprop="name" class="hidden-xs">Categories</h1>
-            <p class="text-muted hidden-xs">共 3 个分类</p>
-            <nav role="navigation" id="nav-main" class="okayNav">
-                <ul>
-                    <li><a href="https://coder-liuu.github.io/categories">All</a></li>
-                    <li><a href="https://coder-liuu.github.io/categories/acm/">ACM</a></li>
-                    <li><a href="https://coder-liuu.github.io/categories/linux/">Linux</a></li>
-                    <li><a href="https://coder-liuu.github.io/categories/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/">默认分类</a></li>
-                </ul>
-            </nav>
-        </header>
+<aside class="sidebar sidebar-toc collapse" id="collapseToc" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    <h4 class="toc-title">文章目录</h4>
+    <nav id="toc" class="js-toc toc">
+
+    </nav>
+  </div>
+</aside>
+<main class="main" role="main"><div class="content">
+  <article id="-linux-dd" class="article article-type-" itemscope
+    itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      <h1 itemprop="name">
+  <a
+    class="article-title"
+    href="/2021/03/linux-dd/"
+    >Linux下使用dd命令制作启动盘</a
+  >
+</h1>
+
+      <div class="article-meta">
         
-        <div class="article-body">
-            <div class="panel panel-default b-no">
-                <div class="panel-heading" role="tab">
-                    <h3 class="panel-title">
-                        <a data-toggle="collapse" href="#collapse02b55e4f52388520bfe11f959f836e68" aria-expanded="true">
-                            <i class="icon icon-folder text-active"></i><i class="icon icon-folder-open text"></i>acm
-                        </a>
-                        <small class="text-muted">(Total2 articles)</small>
-                    </h3>
-                </div>
-                <div id="collapse02b55e4f52388520bfe11f959f836e68" class="panel-collapse collapse in" role="tabpanel"
-                    aria-labelledby="headingacm ">
-                    <div class="panel-body">
-                        <div class="collection"><a href="https://coder-liuu.github.io/2021/02/acm-argph-theory/" class="collection-item" itemprop="url" target="_blank">
-    <time datetime="2021-02-26 16:45:29 &#43;0800 CST" itemprop="datePublished" style="margin-right: 5px;">2021-02-26
-    </time>图论知识总结
-</a><a href="https://coder-liuu.github.io/2021/01/acm-math/" class="collection-item" itemprop="url" target="_blank">
-    <time datetime="2021-01-30 00:00:00 &#43;0000 UTC" itemprop="datePublished" style="margin-right: 5px;">2021-01-30
-    </time>ACM数论
+<span class="article-date">
+  <i class="icon icon-calendar-check"></i>&nbsp;
+<a href="https://coder-liuu.github.io/2021/03/linux-dd/" class="article-date">
+  <time datetime="2021-03-04 15:17:14 &#43;0800 CST" itemprop="datePublished">2021-03-04</time>
 </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="panel panel-default b-no">
-                <div class="panel-heading" role="tab">
-                    <h3 class="panel-title">
-                        <a data-toggle="collapse" href="#collapsee206a54e97690cce50cc872dd70ee896" aria-expanded="true">
-                            <i class="icon icon-folder text-active"></i><i class="icon icon-folder-open text"></i>linux
-                        </a>
-                        <small class="text-muted">(Total3 articles)</small>
-                    </h3>
-                </div>
-                <div id="collapsee206a54e97690cce50cc872dd70ee896" class="panel-collapse collapse in" role="tabpanel"
-                    aria-labelledby="headinglinux ">
-                    <div class="panel-body">
-                        <div class="collection"><a href="https://coder-liuu.github.io/2021/02/manjaro-some-problem/" class="collection-item" itemprop="url" target="_blank">
-    <time datetime="2021-02-24 10:21:18 &#43;0800 CST" itemprop="datePublished" style="margin-right: 5px;">2021-02-24
-    </time>Manjaro杂问题
-</a><a href="https://coder-liuu.github.io/2021/02/ranger/" class="collection-item" itemprop="url" target="_blank">
-    <time datetime="2021-02-21 14:28:45 &#43;0800 CST" itemprop="datePublished" style="margin-right: 5px;">2021-02-21
-    </time>Ranger使用教程
-</a><a href="https://coder-liuu.github.io/2021/01/manjaro-softwork/" class="collection-item" itemprop="url" target="_blank">
-    <time datetime="2021-01-31 21:07:24 &#43;0800 CST" itemprop="datePublished" style="margin-right: 5px;">2021-01-31
-    </time>Manjaro常用软件
-</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="panel panel-default b-no">
-                <div class="panel-heading" role="tab">
-                    <h3 class="panel-title">
-                        <a data-toggle="collapse" href="#collapsed429630351e87c499c0371f4ce6dc62d" aria-expanded="true">
-                            <i class="icon icon-folder text-active"></i><i class="icon icon-folder-open text"></i>默认分类
-                        </a>
-                        <small class="text-muted">(Total5 articles)</small>
-                    </h3>
-                </div>
-                <div id="collapsed429630351e87c499c0371f4ce6dc62d" class="panel-collapse collapse in" role="tabpanel"
-                    aria-labelledby="heading默认分类 ">
-                    <div class="panel-body">
-                        <div class="collection"><a href="https://coder-liuu.github.io/2021/03/linux-dd/" class="collection-item" itemprop="url" target="_blank">
-    <time datetime="2021-03-04 15:17:14 &#43;0800 CST" itemprop="datePublished" style="margin-right: 5px;">2021-03-04
-    </time>Linux下使用dd命令制作启动盘
-</a><a href="https://coder-liuu.github.io/2021/02/search-ticks/" class="collection-item" itemprop="url" target="_blank">
-    <time datetime="2021-02-21 08:44:09 &#43;0800 CST" itemprop="datePublished" style="margin-right: 5px;">2021-02-21
-    </time>各种搜索引擎技巧
-</a><a href="https://coder-liuu.github.io/2021/02/stl/" class="collection-item" itemprop="url" target="_blank">
-    <time datetime="2021-02-14 19:06:01 &#43;0800 CST" itemprop="datePublished" style="margin-right: 5px;">2021-02-14
-    </time>STL模板总结
-</a><a href="https://coder-liuu.github.io/2020/04/python-create-vir/" class="collection-item" itemprop="url" target="_blank">
-    <time datetime="2020-04-30 00:00:00 &#43;0000 UTC" itemprop="datePublished" style="margin-right: 5px;">2020-04-30
-    </time>Python-创建虚拟环境
-</a><a href="https://coder-liuu.github.io/2020/04/git-summary/" class="collection-item" itemprop="url" target="_blank">
-    <time datetime="2020-04-26 23:57:02 &#43;0000 UTC" itemprop="datePublished" style="margin-right: 5px;">2020-04-26
-    </time>Git命令总结
-</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+</span>
+<span class="article-category">
+  <i class="icon icon-folder"></i>&nbsp;
+  <a class="article-category-link" href="/categories/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/"> 默认分类 </a>
+</span>
+
+	<span class="article-read hidden-xs">
+	    <i class="icon icon-eye-fill" aria-hidden="true"></i>
+			<span id="busuanzi_value_page_pv">0</span>
+	</span>
+
+        <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/2021/03/linux-dd/#comments"
+            class="article-comment-link">评论</a></span>
+      </div>
+    </div>
+    <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
+      <h1 id="正文">正文</h1>
+<blockquote>
+<p>Linux也可以制作U盘启动盘,而且<strong>不需要使用其他外部工具</strong>,非常简单</p>
+</blockquote>
+<ol>
+<li>使用命令<code>sudo fdisk -l</code>,找到自己U盘</li>
+</ol>
+<p>执行结果中一般最后一个Disk是自己的U盘,当然也需要自己<strong>额外注意一下磁盘大小和U盘大小是否相匹配</strong>,防止后面出现问题.</p>
+<p><img src="https://gitee.com/liu__yang/image/raw/master/img/%E6%B7%B1%E5%BA%A6%E6%88%AA%E5%9B%BE_%E9%80%89%E6%8B%A9%E5%8C%BA%E5%9F%9F_20210304152351.png" alt="结果图"></p>
+<ol start="2">
+<li>使用<code>sudo umont /dev/sdb</code>,卸载自己的U盘</li>
+<li>使用<code>sudo mkfs.vfat /dev/sdb -I</code>,格式化自己的U盘</li>
+<li>制作启动盘</li>
+</ol>
+<p>命令如下所示:</p>
+<pre><code class="language-shell">sudo dd if=~/Downloads/ubuntu-16.04-desktop-amd64.iso of=/dev/sdb status=progress
+</code></pre>
+<h1 id="参考文章">参考文章</h1>
+<p><a href="https://blog.csdn.net/zeli1511/article/details/79019823">李空空</a></p>
+
+    </div>
+  </article>
+<section id="comments">
+</section>
+
+</div><nav class="bar bar-footer clearfix" data-stick-bottom>
+    <div class="bar-inner">
+        <ul class="pager pull-left">
+            <li class="prev">
+                <a href="https://coder-liuu.github.io/guestbook/" title="留言板"><i
+                        class="icon icon-angle-left"
+                        aria-hidden="true"></i><span>&nbsp;&nbsp;下一篇</span></a>
+            </li>
+            
+            <li class="toggle-toc">
+                <a class="toggle-btn collapsed" data-toggle="collapse" href="#collapseToc" aria-expanded="false" id="toggleabc"                     title="文章目录" role="button">
+                    <span>[&nbsp;</span><span>文章目录</span>
+                    <i class="text-collapsed icon icon-anchor"></i>
+                    <i class="text-in icon icon-close"></i>
+                    <span>]</span>
+                </a>
+            </li>
+        </ul>
+        <div class="bar-right">
+            <div class="share-component" data-sites="weibo,qq,wechat,facebook,twitter"
+                data-mobile-sites="weibo,qq,qzone"></div>
         </div>
-    </article>
+    </div>
+</nav>
+
+
 </main><footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
 <ul class="social-links">
     <li><a href="https://github.com/Coder-Liuu" target="_blank" title="github" data-toggle=tooltip data-placement=top >
@@ -442,6 +446,24 @@
         
         hasInnerContainers: true,
     });
+</script>
+
+<script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1.4.0/dist/gitalk.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/blueimp-md5@2.10.0/js/md5.min.js"></script>
+<script type="text/javascript">
+    var gitalk = new Gitalk({
+        clientID: 'aab88ce03a8d50c6128f',
+        clientSecret: '1ac9ba0e3f9cefa8aac6414eb40dfed80545c021',
+        repo: 'Coder-liuu.github.io',
+        owner: 'Coder-Liuu',
+        admin: ['Coder-Liuu'],
+        proxy: 'https:\/\/shielded-brushlands-08810.herokuapp.com\/https:\/\/github.com\/login\/oauth\/access_token',
+        id: md5(location.pathname),
+        distractionFreeMode: false
+    });
+    gitalk.render('comments');
 </script>
 
   </body>
