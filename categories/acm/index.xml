@@ -30,6 +30,15 @@
     </item>
     
     <item>
+      <title>ACM基础算法模板</title>
+      <link>https://coder-liuu.github.io/2021/02/acm-base/</link>
+      <pubDate>Sat, 27 Feb 2021 00:10:20 +0800</pubDate>
+      
+      <guid>https://coder-liuu.github.io/2021/02/acm-base/</guid>
+      <description>快速排序 时间复杂度: $O(nlog(n))$,模板题 void quick_sort(int q[],int l,int r){ if(l &amp;gt;= r) return; // 1. 寻找分界点 int x = q[(l + r)/2],i = l - 1, j = r + 1; // 2. 调整区间 while(i &amp;lt; j){ do i++; while(q[i] &amp;lt;</description>
+    </item>
+    
+    <item>
       <title>图论知识总结</title>
       <link>https://coder-liuu.github.io/2021/02/acm-argph-theory/</link>
       <pubDate>Fri, 26 Feb 2021 16:45:29 +0800</pubDate>
@@ -71,7 +80,7 @@
       <pubDate>Sun, 14 Feb 2021 19:06:01 +0800</pubDate>
       
       <guid>https://coder-liuu.github.io/2021/02/stl/</guid>
-      <description>我的易忘点 pair头文件utility 无序map头文件unordered_map pair #include &amp;lt;utility&amp;gt; // 头文件 #include &amp;lt;iostream&amp;gt; using namespace std; int main(){ pair&amp;lt;int,int&amp;gt; mm; // 创建pair mm.first = 1; // 给第一</description>
+      <description>我的易忘点 pair头文件utility 无序map头文件unordered_map 优先队列拼写 priority_queue priority_queue #include &amp;lt;queue&amp;gt; // 优先队列 头文件 // 升序队列 priority_queue&amp;lt;int, vector&amp;lt;int&amp;gt;, greater&amp;lt;int&amp;gt; &amp;gt; q; // 降</description>
     </item>
     
     <item>

@@ -42,7 +42,7 @@
 <meta itemprop="description" content="STL有时候有些函数总是忘记，故记下来常看看">
 <meta itemprop="datePublished" content="2021-02-14T19:06:01+08:00" />
 <meta itemprop="dateModified" content="2021-02-14T19:06:01+08:00" />
-<meta itemprop="wordCount" content="369">
+<meta itemprop="wordCount" content="526">
 
 
 
@@ -187,6 +187,7 @@
         <ul class="category-list">
             <li class="category-list-item"><a href="https://coder-liuu.github.io/categories/acm/" class="category-list-link">acm</a><span class="category-list-count">2</span></li>
             <li class="category-list-item"><a href="https://coder-liuu.github.io/categories/linux/" class="category-list-link">linux</a><span class="category-list-count">3</span></li>
+            <li class="category-list-item"><a href="https://coder-liuu.github.io/categories/%E8%8D%89%E7%A8%BF/" class="category-list-link">草稿</a><span class="category-list-count">1</span></li>
             <li class="category-list-item"><a href="https://coder-liuu.github.io/categories/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/" class="category-list-link">默认分类</a><span class="category-list-count">5</span></li>
         </ul>
     </div>
@@ -203,6 +204,16 @@
                     </p>
                     <p class="item-date">
                         <time datetime="2021-03-04 15:17:14 &#43;0800 CST" itemprop="datePublished">2021-03-04</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://coder-liuu.github.io/2021/02/acm-base/" class="title">ACM基础算法模板</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2021-02-27 00:10:20 &#43;0800 CST" itemprop="datePublished">2021-02-27</time>
                     </p>
                 </div>
             </li>
@@ -233,16 +244,6 @@
                     </p>
                     <p class="item-date">
                         <time datetime="2021-02-21 14:28:45 &#43;0800 CST" itemprop="datePublished">2021-02-21</time>
-                    </p>
-                </div>
-            </li>
-            <li>
-                <div class="item-inner">
-                    <p class="item-title">
-                        <a href="https://coder-liuu.github.io/2021/02/search-ticks/" class="title">各种搜索引擎技巧</a>
-                    </p>
-                    <p class="item-date">
-                        <time datetime="2021-02-21 08:44:09 &#43;0800 CST" itemprop="datePublished">2021-02-21</time>
                     </p>
                 </div>
             </li>
@@ -306,7 +307,35 @@
 <li>
 <p>无序map头文件<code>unordered_map</code></p>
 </li>
+<li>
+<p>优先队列拼写 priority_queue</p>
+</li>
 </ul>
+<h1 id="priority_queue">priority_queue</h1>
+<pre><code class="language-cpp">#include &lt;queue&gt;   // 优先队列 头文件
+// 升序队列
+priority_queue&lt;int, vector&lt;int&gt;, greater&lt;int&gt; &gt; q;
+// 降序队列
+priority_queue&lt;int, vector&lt;int&gt;, less&lt;int&gt; &gt; q;
+
+// 优先队列中结构体的排序
+//重写仿函数
+struct cmp_queue 
+{
+    bool operator() (PII a, PII b) 
+    {
+        if(a.first &gt; b.first)
+            return true;
+        if(a.first &lt; b.first)
+            return false;
+        if(a.second &gt; b.second) return true;
+            return false;
+    }
+};
+
+priority_queue&lt;PII, vector&lt;PII&gt;,cmp_queue&gt; q;
+// 参考文献:https://blog.csdn.net/weixin_36888577/article/details/79937886
+</code></pre>
 <h1 id="pair">pair</h1>
 <pre><code class="language-cpp">#include &lt;utility&gt;    // 头文件
 #include &lt;iostream&gt;

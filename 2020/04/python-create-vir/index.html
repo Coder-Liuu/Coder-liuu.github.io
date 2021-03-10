@@ -42,7 +42,7 @@
 <meta itemprop="description" content="创建python虚拟环境的方式">
 <meta itemprop="datePublished" content="2020-04-30T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2020-04-30T00:00:00+00:00" />
-<meta itemprop="wordCount" content="590">
+<meta itemprop="wordCount" content="643">
 
 
 
@@ -187,6 +187,7 @@
         <ul class="category-list">
             <li class="category-list-item"><a href="https://coder-liuu.github.io/categories/acm/" class="category-list-link">acm</a><span class="category-list-count">2</span></li>
             <li class="category-list-item"><a href="https://coder-liuu.github.io/categories/linux/" class="category-list-link">linux</a><span class="category-list-count">3</span></li>
+            <li class="category-list-item"><a href="https://coder-liuu.github.io/categories/%E8%8D%89%E7%A8%BF/" class="category-list-link">草稿</a><span class="category-list-count">1</span></li>
             <li class="category-list-item"><a href="https://coder-liuu.github.io/categories/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/" class="category-list-link">默认分类</a><span class="category-list-count">5</span></li>
         </ul>
     </div>
@@ -203,6 +204,16 @@
                     </p>
                     <p class="item-date">
                         <time datetime="2021-03-04 15:17:14 &#43;0800 CST" itemprop="datePublished">2021-03-04</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://coder-liuu.github.io/2021/02/acm-base/" class="title">ACM基础算法模板</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2021-02-27 00:10:20 &#43;0800 CST" itemprop="datePublished">2021-02-27</time>
                     </p>
                 </div>
             </li>
@@ -233,16 +244,6 @@
                     </p>
                     <p class="item-date">
                         <time datetime="2021-02-21 14:28:45 &#43;0800 CST" itemprop="datePublished">2021-02-21</time>
-                    </p>
-                </div>
-            </li>
-            <li>
-                <div class="item-inner">
-                    <p class="item-title">
-                        <a href="https://coder-liuu.github.io/2021/02/search-ticks/" class="title">各种搜索引擎技巧</a>
-                    </p>
-                    <p class="item-date">
-                        <time datetime="2021-02-21 08:44:09 &#43;0800 CST" itemprop="datePublished">2021-02-21</time>
                     </p>
                 </div>
             </li>
@@ -333,7 +334,15 @@ pip3 install virtualenv    # python3
 <p><code>conda install -n ENV [package]</code></p>
 <h2 id="4-查看conda环境下所有的虚拟环境">4. 查看conda环境下所有的虚拟环境</h2>
 <p><code>conda info --envs</code></p>
-<h2 id="5-linux更换镜像源">5. Linux更换镜像源</h2>
+<h1 id="三更换镜像源">三、更换镜像源</h1>
+<h2 id="1-pip-临时换源">1. pip 临时换源</h2>
+<pre><code>pip install numpy -i https://pypi.tuna.tsinghua.edu.cn/simple
+</code></pre>
+<h2 id="2-conda更换镜像源windows">2. Conda更换镜像源(Windows)</h2>
+<pre><code>conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
+</code></pre>
+<h2 id="3-conda更换镜像源linux">3. Conda更换镜像源(Linux)</h2>
 <p>将以上配置文件写在~/.condarc中</p>
 <pre><code>channels:
   - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
@@ -342,8 +351,7 @@ pip3 install virtualenv    # python3
   - https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch/
 ssl_verify: true
 </code></pre>
-<p><a href="https://zhuanlan.zhihu.com/p/87123943">Windows换源请点击这里</a></p>
-<h1 id="三导出依赖包">三、导出依赖包</h1>
+<h1 id="四导出依赖包">四、导出依赖包</h1>
 <h2 id="1导出当前环境下所有的库">1.导出当前环境下,所有的库</h2>
 <p><code>pip freeze &gt; requirements.txt</code></p>
 <h2 id="2只导出所在项目的依赖包">2.只导出所在项目的依赖包</h2>
@@ -351,6 +359,9 @@ ssl_verify: true
 pip install pipreqs
 # 进行导出
 pipreqs ./
+</code></pre>
+<h2 id="3-通过依赖包安装">3. 通过依赖包安装</h2>
+<pre><code>pip install -r requirements.txt
 </code></pre>
 <h1 id="参考博客">参考博客</h1>
 <p><a href="https://www.cnblogs.com/shyern/p/11284127.html">https://www.cnblogs.com/shyern/p/11284127.html</a></p>
