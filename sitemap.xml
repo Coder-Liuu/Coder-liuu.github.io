@@ -45,22 +45,29 @@
   </url>
   
   <url>
-    <loc>https://coder-liuu.github.io/2021/02/acm-base/</loc>
-    <lastmod>2021-02-27T00:10:20+08:00</lastmod>
+    <loc>https://coder-liuu.github.io/2021/02/%E5%8A%A8%E6%89%8B%E5%AE%9E%E7%8E%B0%E5%86%B3%E7%AD%96%E6%A0%91/</loc>
+    <lastmod>2021-02-27T18:51:42+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://coder-liuu.github.io/categories/%E8%8D%89%E7%A8%BF/</loc>
-    <lastmod>2021-02-27T00:10:20+08:00</lastmod>
+    <loc>https://coder-liuu.github.io/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</loc>
+    <lastmod>2021-02-27T18:51:42+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://coder-liuu.github.io/categories/acm/</loc>
-    <lastmod>2021-02-26T16:45:29+08:00</lastmod>
+    <lastmod>2021-02-27T00:10:20+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://coder-liuu.github.io/2021/02/acm-base/</loc>
+    <lastmod>2021-02-27T00:10:20+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>

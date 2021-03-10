@@ -42,7 +42,7 @@
 <meta itemprop="description" content="动手实现决策树(ID3)">
 <meta itemprop="datePublished" content="2021-02-27T18:51:42+08:00" />
 <meta itemprop="dateModified" content="2021-02-27T18:51:42+08:00" />
-<meta itemprop="wordCount" content="142">
+<meta itemprop="wordCount" content="1477">
 
 
 
@@ -185,9 +185,10 @@
     <h3 class="widget-title"> 分类</h3>
     <div class="widget-body">
         <ul class="category-list">
-            <li class="category-list-item"><a href="https://coder-liuu.github.io/categories/acm/" class="category-list-link">acm</a><span class="category-list-count">4</span></li>
+            <li class="category-list-item"><a href="https://coder-liuu.github.io/categories/acm/" class="category-list-link">acm</a><span class="category-list-count">3</span></li>
             <li class="category-list-item"><a href="https://coder-liuu.github.io/categories/linux/" class="category-list-link">linux</a><span class="category-list-count">3</span></li>
-            <li class="category-list-item"><a href="https://coder-liuu.github.io/categories/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/" class="category-list-link">默认分类</a><span class="category-list-count">7</span></li>
+            <li class="category-list-item"><a href="https://coder-liuu.github.io/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" class="category-list-link">机器学习</a><span class="category-list-count">1</span></li>
+            <li class="category-list-item"><a href="https://coder-liuu.github.io/categories/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/" class="category-list-link">默认分类</a><span class="category-list-count">5</span></li>
         </ul>
     </div>
 </div>
@@ -285,7 +286,7 @@
 </span>
 <span class="article-category">
   <i class="icon icon-folder"></i>&nbsp;
-  <a class="article-category-link" href="/categories/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/"> 默认分类 </a>
+  <a class="article-category-link" href="/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"> 机器学习 </a>
 </span>
 
 	<span class="article-read hidden-xs">
@@ -298,14 +299,102 @@
       </div>
     </div>
     <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
-      <h1 id="基础知识">基础知识</h1>
-<h2 id="信息熵">信息熵</h2>
-<p>信息熵(entropy): 是度量样本集合<strong>纯度</strong>的一种最常用的指标</p>
+      <h1 id="一决策树简介">一、决策树简介</h1>
+<p>决策树是一个很简单的机器学习算法,可以看作if-then的集合,比如我们判断一个西瓜的好坏?我们很可能通过一系列的问题进行判断,比如首先我们问西瓜是绿色的吗?如果是接下来问西瓜甜不甜呢？这就是一颗决策树.</p>
+<p>决策树算法,主要由两部分组成:</p>
+<ol>
+<li>划分选择</li>
+<li>决策树的生成</li>
+</ol>
+<p>下面，将从这两方面进行介绍，并提供对应的python代码，以及手写一颗决策树.</p>
+<h1 id="二划分选择">二、划分选择</h1>
+<p>我们首先要想西瓜的哪个特征对结果影响最大呢?也就是说，先问最关键的问题.
+这时候需要引入一个概念<strong>信息增益</strong></p>
+<p>在介绍信息增益前，先要了解信息熵是什么?</p>
+<p>信息熵(entropy): 是度量样本集合<strong>纯度</strong>的一种最常用的指标，简单说就是这是事件的不确定性的大小，熵越大事件就越不确定。</p>
 <p>计算方法:
 $$ D = [P_1,P_2,&hellip;,P_n] $$
-$$ Ent(D) = -\sum_{i=1}^n P_i * log_2(P_i) $$</p>
-<p>计算示例: 有一个硬币,其中正面向上的概率为$\frac{1}{2}$,反面向上的概率也是$\frac{1}{2}$,则该事件的熵的计算公式如下:</p>
-<p>$$ Ent(D) = - ( \frac{1}{2} * log_2*\frac{1}{2} +  \frac{1}{2} * log_2*\frac{1}{2} ) $$</p>
+$$ Ent(D) = -\sum_{i=1}^n P_i log_2P_i $$</p>
+<p><strong>计算示例1</strong>: 有一个不均匀硬币,其中正面向上的概率为$\frac{1}{3}$,反面向上的概率也是$\frac{2}{3}$,则该事件的熵的计算公式如下:</p>
+<p>$$ Ent(D) = - ( \frac{1}{3}  log_2\frac{1}{3} +  \frac{2}{3}  log_2\frac{2}{3} ) = 0.918$$</p>
+<p><strong>计算示例2</strong>: 有一个均匀硬币,其中正面向上的概率为$\frac{1}{2}$,反面向上的概率也是$\frac{1}{2}$,则该事件的熵的计算公式如下:</p>
+<p>$$ Ent(D) = - ( \frac{1}{2}  log_2\frac{1}{2} +  \frac{1}{2}  log_2\frac{1}{2} ) = 1 $$</p>
+<p>可以看到均匀硬币,有更大的信息熵,所以均匀硬币不确定的结果也就越大。</p>
+<p>接下来就可以说一下信息增益了，信息增益就是<em>得知信息A而使事件D不确定性，减小的程度</em>，用公式表示为$ g(D,X) = Ent(D) - Ent(D|A) $.</p>
+<p>举个例子：假如刚开始有一枚硬币，我们认为硬币是均匀的，所以信息熵为1,但是经过测量我们发现硬币是不均匀的，不均匀程度如上面的计算示例1所示,所以现在的信息熵为0.918.最终我们知道了这个信息的信息增益为$1-0.918=0.082$</p>
+<p>计算信息熵的代码如下所示:</p>
+<pre><code class="language-python">import numpy as np
+
+def entropy(y):
+    # y是事件的结果，比如抛硬币1次正，2次反.y就为[1,2,2]
+    hist = np.bincount(y)
+    ps = hist / np.sum(hist)
+    return  -np.sum([p * np.log2(p) for p in ps if p &gt; 0])
+</code></pre>
+<h1 id="三决策树的生成">三、决策树的生成</h1>
+<p>决策树的种类有多种多样，先放一个通用的决策树的为代码,其中红色标注的我们已经学会了</p>
+<p><img src="https://gitee.com/liu__yang/image/raw/master/img/ml-1-2.png" alt="伪代码"></p>
+<p>我们可以将书中的伪代码，进一步抽象可以分为下面几个步骤</p>
+<ol>
+<li>如果数据集中样本为同一类别或者没有特征可以继续划分，停止划分为叶结点赋值</li>
+<li>选择最优划分属性</li>
+<li>以最优属性将原数据集分为两个数据集，递归构建决策树</li>
+</ol>
+<p>接下来我们说一下决策树中经典算法ID3算法，其实<strong>不同的决策树主要的区别就在于第2步</strong>,ID3算法使用信息增益来作为评价最优属性的标准。</p>
+<p><strong>举个例子</strong></p>
+<p>数据集如下所示，使用ID3算法构建决策树.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">编号</th>
+<th style="text-align:center">敲声</th>
+<th style="text-align:center">颜色</th>
+<th style="text-align:center">好瓜</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">响</td>
+<td style="text-align:center">绿色</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">不响</td>
+<td style="text-align:center">绿色</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">响</td>
+<td style="text-align:center">黄色</td>
+<td style="text-align:center">不是</td>
+</tr>
+</tbody>
+</table>
+<p><strong>步骤1:</strong> 查看数据集是否都是同一类别,答案不是</p>
+<p><strong>步骤2:</strong> 寻找最优划分属性
+初始信息熵为:
+$$ Ent = -(\frac{2}{3} log_2 \frac{2}{3} + \frac{1}{3} log_2 \frac{1}{3}) = 0.918 $$</p>
+<p>假设以敲声划分，敲声响中(1好瓜,1坏瓜),敲声不响中(1好瓜)，计算公式如下所示:</p>
+<p>$$ Ent(敲声) = - \frac{2}{3} (\frac{1}{2} log_2 \frac{1}{2} + \frac{1}{2} log_2 \frac{1}{2}) - \frac{1}{3} (\frac{1}{1} log_2 \frac{1}{1} + \frac{1}{1} log_2 \frac{1}{1}) = 0.945 $$</p>
+<p>假设以颜色划分，绿色中(2好瓜),黄色中(1坏瓜)，计算公式如下所示:</p>
+<p>$$ Ent(颜色) = - \frac{2}{3} (\frac{1}{1} log_2 \frac{1}{1} + \frac{1}{1} log_2 \frac{1}{1}) - \frac{1}{3} (\frac{1}{1} log_2 \frac{1}{1} + \frac{1}{1} log_2 \frac{1}{1}) = 1$$</p>
+<p>敲声的信息增益为: $ 0.945 - 0.918 = 0.026$</p>
+<p>颜色的信息增益为: $ 1 - 0.918 = 0.082$</p>
+<p>所以颜色为决策树的根节点，接下来我们考虑该节点的儿子节点.</p>
+<p><strong>步骤3:</strong> 划分数据集</p>
+<p>使用颜色划分数据集，划分规则是相同颜色的数据为一个数据集。</p>
+<p>即下标为1,2的是数据集S1,下标为3的是数据集S2</p>
+<p><strong>步骤4:</strong> 查看数据集S1,S2是否都是同一类别,答案是,所以停止划分,我们发现数据集S1全部为好瓜所以该节点为绿色,而另一个节点为坏瓜,最终决策树如下图所示:</p>
+<p><img src="https://gitee.com/liu__yang/image/raw/master/img/ml-1-3.png" alt="生成的决策树"></p>
+<h1 id="四探索性问题">四、探索性问题</h1>
+<p>留给几个问题，可供读者思考.</p>
+<ol>
+<li>决策树怎么处理连续值？</li>
+<li>决策树怎么进行剪枝?</li>
+</ol>
 
     </div>
   </article>
