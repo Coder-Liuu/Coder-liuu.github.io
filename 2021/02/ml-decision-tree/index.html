@@ -2,7 +2,7 @@
 <html lang="zh">
   <head>
     <title>
-        Album - Coder-Liuu&#39;Blog
+        动手实现决策树 - Coder-Liuu&#39;Blog
       </title>
         <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -22,9 +22,9 @@
     <meta http-equiv="window-target" content="_top" />
     
     
-    <meta name="description" content=".notice{padding:18px;line-height:24px;margin-bottom:24px;border-radius:4px;color:#444;background:#e7f2fa}.notice p:last-child{margin-bottom:0}.notice-title{margin:-18px -18px 12px;padding:4px 18px;border-radius:4px 4px 0 0;font-weight:700;color:#fff;background:#6ab0de}.notice.warning .notice-title{background:rgba(217,83,79,.9)}.notice.warning{background:#fae2e2}.notice.info .notice-title{background:#f0b37e}.notice.info{background:#fff2db}.notice.note .notice-title{background:#6ab0de}.notice.note{background:#e7f2fA}.notice.tip .notice-title{background:rgba(92,184,92,.8)}.notice.tip{background:#e6f9e6}.icon-notice{display:inline-flex;align-self:center;margin-right:8px}.icon-notice img,.icon-notice svg{height:1em;width:1em;fill:currentColor}.icon-notice img,.icon-notice.baseline svg{top:0.125em;position:relative} Info 少侠，此处还在施工中!!" />
+    <meta name="description" content="动手实现决策树(ID3)" />
     <meta name="generator" content="Hugo 0.79.0 with theme pure" />
-    <title>Album - Coder-Liuu&#39;Blog</title>
+    <title>动手实现决策树 - Coder-Liuu&#39;Blog</title>
     
     
     <link rel="stylesheet" href="https://coder-liuu.github.io/css/style.min.efb1b07b5bba75c8fd3b4c06f7949863d2893d8ddccae722f04573bc344ab21a.css">
@@ -32,24 +32,24 @@
     <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async> 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css" async>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" async>
-    <meta property="og:title" content="Album" />
-<meta property="og:description" content=".notice{padding:18px;line-height:24px;margin-bottom:24px;border-radius:4px;color:#444;background:#e7f2fa}.notice p:last-child{margin-bottom:0}.notice-title{margin:-18px -18px 12px;padding:4px 18px;border-radius:4px 4px 0 0;font-weight:700;color:#fff;background:#6ab0de}.notice.warning .notice-title{background:rgba(217,83,79,.9)}.notice.warning{background:#fae2e2}.notice.info .notice-title{background:#f0b37e}.notice.info{background:#fff2db}.notice.note .notice-title{background:#6ab0de}.notice.note{background:#e7f2fA}.notice.tip .notice-title{background:rgba(92,184,92,.8)}.notice.tip{background:#e6f9e6}.icon-notice{display:inline-flex;align-self:center;margin-right:8px}.icon-notice img,.icon-notice svg{height:1em;width:1em;fill:currentColor}.icon-notice img,.icon-notice.baseline svg{top:0.125em;position:relative} Info 少侠，此处还在施工中!!" />
+    <meta property="og:title" content="动手实现决策树" />
+<meta property="og:description" content="动手实现决策树(ID3)" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://coder-liuu.github.io/album/" />
-<meta property="article:published_time" content="2021-01-17T00:07:50+08:00" />
-<meta property="article:modified_time" content="2021-01-17T00:07:50+08:00" />
-<meta itemprop="name" content="Album">
-<meta itemprop="description" content=".notice{padding:18px;line-height:24px;margin-bottom:24px;border-radius:4px;color:#444;background:#e7f2fa}.notice p:last-child{margin-bottom:0}.notice-title{margin:-18px -18px 12px;padding:4px 18px;border-radius:4px 4px 0 0;font-weight:700;color:#fff;background:#6ab0de}.notice.warning .notice-title{background:rgba(217,83,79,.9)}.notice.warning{background:#fae2e2}.notice.info .notice-title{background:#f0b37e}.notice.info{background:#fff2db}.notice.note .notice-title{background:#6ab0de}.notice.note{background:#e7f2fA}.notice.tip .notice-title{background:rgba(92,184,92,.8)}.notice.tip{background:#e6f9e6}.icon-notice{display:inline-flex;align-self:center;margin-right:8px}.icon-notice img,.icon-notice svg{height:1em;width:1em;fill:currentColor}.icon-notice img,.icon-notice.baseline svg{top:0.125em;position:relative} Info 少侠，此处还在施工中!!">
-<meta itemprop="datePublished" content="2021-01-17T00:07:50+08:00" />
-<meta itemprop="dateModified" content="2021-01-17T00:07:50+08:00" />
-<meta itemprop="wordCount" content="29">
+<meta property="og:url" content="https://coder-liuu.github.io/2021/02/ml-decision-tree/" />
+<meta property="article:published_time" content="2021-02-27T18:51:42+08:00" />
+<meta property="article:modified_time" content="2021-02-27T18:51:42+08:00" />
+<meta itemprop="name" content="动手实现决策树">
+<meta itemprop="description" content="动手实现决策树(ID3)">
+<meta itemprop="datePublished" content="2021-02-27T18:51:42+08:00" />
+<meta itemprop="dateModified" content="2021-02-27T18:51:42+08:00" />
+<meta itemprop="wordCount" content="1559">
 
 
 
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Album"/>
-<meta name="twitter:description" content=".notice{padding:18px;line-height:24px;margin-bottom:24px;border-radius:4px;color:#444;background:#e7f2fa}.notice p:last-child{margin-bottom:0}.notice-title{margin:-18px -18px 12px;padding:4px 18px;border-radius:4px 4px 0 0;font-weight:700;color:#fff;background:#6ab0de}.notice.warning .notice-title{background:rgba(217,83,79,.9)}.notice.warning{background:#fae2e2}.notice.info .notice-title{background:#f0b37e}.notice.info{background:#fff2db}.notice.note .notice-title{background:#6ab0de}.notice.note{background:#e7f2fA}.notice.tip .notice-title{background:rgba(92,184,92,.8)}.notice.tip{background:#e6f9e6}.icon-notice{display:inline-flex;align-self:center;margin-right:8px}.icon-notice img,.icon-notice svg{height:1em;width:1em;fill:currentColor}.icon-notice img,.icon-notice.baseline svg{top:0.125em;position:relative} Info 少侠，此处还在施工中!!"/>
+<meta name="twitter:title" content="动手实现决策树"/>
+<meta name="twitter:description" content="动手实现决策树(ID3)"/>
 
     <!--[if lte IE 9]>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -264,15 +264,15 @@
   </div>
 </aside>
 <main class="main" role="main"><div class="content">
-  <article id="-" class="article article-type-" itemscope
+  <article id="-ml-decision-tree" class="article article-type-" itemscope
     itemtype="http://schema.org/BlogPosting">
     
     <div class="article-header">
       <h1 itemprop="name">
   <a
     class="article-title"
-    href="/album/"
-    >Album</a
+    href="/2021/02/ml-decision-tree/"
+    >动手实现决策树</a
   >
 </h1>
 
@@ -280,26 +280,125 @@
         
 <span class="article-date">
   <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://coder-liuu.github.io/album/" class="article-date">
-  <time datetime="2021-01-17 00:07:50 &#43;0800 CST" itemprop="datePublished">2021-01-17</time>
+<a href="https://coder-liuu.github.io/2021/02/ml-decision-tree/" class="article-date">
+  <time datetime="2021-02-27 18:51:42 &#43;0800 CST" itemprop="datePublished">2021-02-27</time>
 </a>
 </span>
-
+<span class="article-category">
+  <i class="icon icon-folder"></i>&nbsp;
+  <a class="article-category-link" href="/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"> 机器学习 </a>
+</span>
 
 	<span class="article-read hidden-xs">
 	    <i class="icon icon-eye-fill" aria-hidden="true"></i>
 			<span id="busuanzi_value_page_pv">0</span>
 	</span>
 
-        <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/album/#comments"
+        <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/2021/02/ml-decision-tree/#comments"
             class="article-comment-link">评论</a></span>
       </div>
     </div>
     <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
-      <style type="text/css">.notice{padding:18px;line-height:24px;margin-bottom:24px;border-radius:4px;color:#444;background:#e7f2fa}.notice p:last-child{margin-bottom:0}.notice-title{margin:-18px -18px 12px;padding:4px 18px;border-radius:4px 4px 0 0;font-weight:700;color:#fff;background:#6ab0de}.notice.warning .notice-title{background:rgba(217,83,79,.9)}.notice.warning{background:#fae2e2}.notice.info .notice-title{background:#f0b37e}.notice.info{background:#fff2db}.notice.note .notice-title{background:#6ab0de}.notice.note{background:#e7f2fA}.notice.tip .notice-title{background:rgba(92,184,92,.8)}.notice.tip{background:#e6f9e6}.icon-notice{display:inline-flex;align-self:center;margin-right:8px}.icon-notice img,.icon-notice svg{height:1em;width:1em;fill:currentColor}.icon-notice img,.icon-notice.baseline svg{top:0.125em;position:relative}</style>
-<svg width="0" height="0" display="none" xmlns="http://www.w3.org/2000/svg"><symbol id="tip-notice" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"/></symbol><symbol id="note-notice" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet"><path d="M504 256c0 136.997-111.043 248-248 248S8 392.997 8 256C8 119.083 119.043 8 256 8s248 111.083 248 248zm-248 50c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z"/></symbol><symbol id="warning-notice" viewBox="0 0 576 512" preserveAspectRatio="xMidYMid meet"><path d="M569.517 440.013C587.975 472.007 564.806 512 527.94 512H48.054c-36.937 0-59.999-40.055-41.577-71.987L246.423 23.985c18.467-32.009 64.72-31.951 83.154 0l239.94 416.028zM288 354c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z"/></symbol><symbol id="info-notice" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet"><path d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z"/></symbol></svg><div class="notice info" >
-<p class="first notice-title"><span class="icon-notice baseline"><svg><use href="#info-notice"></use></svg></span>Info</p><p>少侠，此处还在施工中!!</p></div>
+      <h1 id="一决策树简介">一、决策树简介</h1>
+<p>决策树是一个很简单的机器学习算法,可以看作if-then的集合,比如我们判断一个西瓜的好坏?我们很可能通过一系列的问题进行判断,比如首先我们问西瓜是绿色的吗?如果是接下来问西瓜甜不甜呢？这就是一颗决策树.</p>
+<p>决策树算法,主要由两部分组成:</p>
+<ol>
+<li>划分选择</li>
+<li>决策树的生成</li>
+</ol>
+<p>下面，将从这两方面进行介绍，并提供对应的python代码，以及手写一颗决策树.</p>
+<h1 id="二划分选择">二、划分选择</h1>
+<p>我们首先要想西瓜的哪个特征对结果影响最大呢?也就是说，先问最关键的问题.
+这时候需要引入一个概念<strong>信息增益</strong></p>
+<p>在介绍信息增益前，先要了解信息熵是什么?</p>
+<p>信息熵(entropy): 是度量样本集合<strong>纯度</strong>的一种最常用的指标，简单说就是这是事件的不确定性的大小，熵越大事件就越不确定，熵为0时，说明这是一个确定性事件。</p>
+<p>计算方法:
+$$ D = [P_1,P_2,&hellip;,P_n] $$
+$$ Ent(D) = -\sum_{i=1}^n P_i log_2P_i $$</p>
+<p><strong>计算示例1</strong>: 有一个不均匀硬币,其中正面向上的概率为$\frac{1}{3}$,反面向上的概率也是$\frac{2}{3}$,则该事件的熵的计算公式如下:</p>
+<p>$$ Ent(D) = - ( \frac{1}{3}  log_2\frac{1}{3} +  \frac{2}{3}  log_2\frac{2}{3} ) = 0.918$$</p>
+<p><strong>计算示例2</strong>: 有一个均匀硬币,其中正面向上的概率为$\frac{1}{2}$,反面向上的概率也是$\frac{1}{2}$,则该事件的熵的计算公式如下:</p>
+<p>$$ Ent(D) = - ( \frac{1}{2}  log_2\frac{1}{2} +  \frac{1}{2}  log_2\frac{1}{2} ) = 1 $$</p>
+<p>可以看到均匀硬币,有更大的信息熵,所以均匀硬币不确定的结果也就越大。</p>
+<p>接下来就可以说一下信息增益了，信息增益就是<em>得知信息A而使事件D不确定性，减小的程度</em>，用公式表示为$ g(D,X) = Ent(D) - Ent(D|A) $.</p>
+<p>举个例子：假如刚开始有一枚硬币，我们认为硬币是均匀的，所以信息熵为1,但是经过测量我们发现硬币是不均匀的，不均匀程度如上面的计算示例1所示,所以现在的信息熵为0.918.最终我们知道了这个信息的信息增益为$1-0.918=0.082$</p>
+<p>计算信息熵的代码如下所示:</p>
+<pre><code class="language-python">import numpy as np
 
+def entropy(y):
+    # y是事件的结果，比如抛硬币1次正，2次反.y就为[1,2,2]
+    hist = np.bincount(y)
+    ps = hist / np.sum(hist)
+    return  -np.sum([p * np.log2(p) for p in ps if p &gt; 0])
+</code></pre>
+<h1 id="三决策树的生成">三、决策树的生成</h1>
+<p>决策树的种类有多种多样，先放一个通用的决策树的为代码,其中红色标注的我们已经学会了</p>
+<p><img src="https://gitee.com/liu__yang/image/raw/master/img/ml-1-2.png" alt="伪代码"></p>
+<p>我们可以将书中的伪代码，进一步抽象可以分为下面几个步骤</p>
+<ol>
+<li>如果数据集中样本为同一类别或者没有特征可以继续划分，停止划分为叶结点赋值</li>
+<li>选择最优划分属性</li>
+<li>以最优属性将原数据集分为两个数据集，递归构建决策树</li>
+</ol>
+<p>接下来我们说一下决策树中经典算法ID3算法，其实<strong>不同的决策树主要的区别就在于第2步</strong>,ID3算法使用信息增益来作为评价最优属性的标准。</p>
+<p><strong>举个例子</strong></p>
+<p>数据集如下所示，使用ID3算法构建决策树.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">编号</th>
+<th style="text-align:center">敲声</th>
+<th style="text-align:center">颜色</th>
+<th style="text-align:center">好瓜</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">响</td>
+<td style="text-align:center">绿色</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">不响</td>
+<td style="text-align:center">绿色</td>
+<td style="text-align:center">是</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">响</td>
+<td style="text-align:center">黄色</td>
+<td style="text-align:center">不是</td>
+</tr>
+</tbody>
+</table>
+<p><strong>步骤1:</strong> 查看数据集是否都是同一类别,答案不是</p>
+<p><strong>步骤2:</strong> 寻找最优划分属性
+初始信息熵为:
+$$ Ent = -(\frac{2}{3} log_2 \frac{2}{3} + \frac{1}{3} log_2 \frac{1}{3}) = 0.918 $$</p>
+<p>假设以敲声划分，敲声响中(1好瓜,1坏瓜),敲声不响中(1好瓜,0坏瓜)，计算公式如下所示:</p>
+<p>$$ Ent(敲声) = - \frac{2}{3} (\frac{1}{2} log_2 \frac{1}{2} + \frac{1}{2} log_2 \frac{1}{2}) - \frac{1}{3} (\frac{1}{1} log_2 \frac{1}{1} + \frac{0}{1} log_2 \frac{0}{1}) =  0.666 + 0 = 0.666 $$</p>
+<style type="text/css">.notice{padding:18px;line-height:24px;margin-bottom:24px;border-radius:4px;color:#444;background:#e7f2fa}.notice p:last-child{margin-bottom:0}.notice-title{margin:-18px -18px 12px;padding:4px 18px;border-radius:4px 4px 0 0;font-weight:700;color:#fff;background:#6ab0de}.notice.warning .notice-title{background:rgba(217,83,79,.9)}.notice.warning{background:#fae2e2}.notice.info .notice-title{background:#f0b37e}.notice.info{background:#fff2db}.notice.note .notice-title{background:#6ab0de}.notice.note{background:#e7f2fA}.notice.tip .notice-title{background:rgba(92,184,92,.8)}.notice.tip{background:#e6f9e6}.icon-notice{display:inline-flex;align-self:center;margin-right:8px}.icon-notice img,.icon-notice svg{height:1em;width:1em;fill:currentColor}.icon-notice img,.icon-notice.baseline svg{top:0.125em;position:relative}</style>
+<svg width="0" height="0" display="none" xmlns="http://www.w3.org/2000/svg"><symbol id="tip-notice" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"/></symbol><symbol id="note-notice" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet"><path d="M504 256c0 136.997-111.043 248-248 248S8 392.997 8 256C8 119.083 119.043 8 256 8s248 111.083 248 248zm-248 50c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z"/></symbol><symbol id="warning-notice" viewBox="0 0 576 512" preserveAspectRatio="xMidYMid meet"><path d="M569.517 440.013C587.975 472.007 564.806 512 527.94 512H48.054c-36.937 0-59.999-40.055-41.577-71.987L246.423 23.985c18.467-32.009 64.72-31.951 83.154 0l239.94 416.028zM288 354c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z"/></symbol><symbol id="info-notice" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet"><path d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z"/></symbol></svg><div class="notice warning" >
+<p class="first notice-title"><span class="icon-notice baseline"><svg><use href="#warning-notice"></use></svg></span>Warning</p><p>在计算的过程中，规定$\frac{0}{1} log_2 \frac{0}{1} = 0$</p></div>
+
+<p>假设以颜色划分，绿色中(2好瓜,0坏瓜),黄色中(0好瓜,1坏瓜)，计算公式如下所示:</p>
+<p>$$ Ent(颜色) = - \frac{2}{3} (\frac{2}{2} log_2 \frac{2}{2} + \frac{0}{2} log_2 \frac{0}{2}) - \frac{1}{3} (\frac{0}{1} log_2 \frac{0}{1} + \frac{1}{1} log_2 \frac{1}{1}) = 0 + 0 = 0$$</p>
+<p>敲声的信息增益为: $ 0.918 - 0.666 = 0.252 $</p>
+<p>颜色的信息增益为: $ 0.918  - 0 = 0.918 $</p>
+<p>所以颜色为决策树的根节点，接下来我们考虑该节点的儿子节点.</p>
+<p><strong>步骤3:</strong> 划分数据集</p>
+<p>使用颜色划分数据集，划分规则是相同颜色的数据为一个数据集。</p>
+<p>即下标为1,2的是数据集S1,下标为3的是数据集S2</p>
+<p><strong>步骤4:</strong> 查看数据集S1,S2是否都是同一类别,答案是,所以停止划分,我们发现数据集S1全部为好瓜所以该节点为绿色,而另一个节点为坏瓜,最终决策树如下图所示:</p>
+<p><img src="https://gitee.com/liu__yang/image/raw/master/img/ml-1-3.png" alt="生成的决策树"></p>
+<h1 id="四探索性问题">四、探索性问题</h1>
+<p>留给几个问题，可供读者思考.</p>
+<ol>
+<li>决策树怎么处理连续值？</li>
+<li>决策树怎么进行剪枝?</li>
+</ol>
 
     </div>
   </article>
@@ -310,13 +409,13 @@
     <div class="bar-inner">
         <ul class="pager pull-left">
             <li class="prev">
-                <a href="https://coder-liuu.github.io/friendship/" title="FriendShip"><i
+                <a href="https://coder-liuu.github.io/2021/02/acm-base/" title="ACM基础算法模板"><i
                         class="icon icon-angle-left"
                         aria-hidden="true"></i><span>&nbsp;&nbsp;下一篇</span></a>
             </li>
             <li class="next">
-                <a href="https://coder-liuu.github.io/2021/01/acm-math/"
-                    title="ACM数论"><span>上一篇&nbsp;&nbsp;</span><i
+                <a href="https://coder-liuu.github.io/guestbook/"
+                    title="留言板"><span>上一篇&nbsp;&nbsp;</span><i
                         class="icon icon-angle-right" aria-hidden="true"></i></a>
             </li>
             
@@ -437,6 +536,23 @@
 </script>
 
 <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1.4.0/dist/gitalk.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/blueimp-md5@2.10.0/js/md5.min.js"></script>
+<script type="text/javascript">
+    var gitalk = new Gitalk({
+        clientID: 'aab88ce03a8d50c6128f',
+        clientSecret: '1ac9ba0e3f9cefa8aac6414eb40dfed80545c021',
+        repo: 'Coder-liuu.github.io',
+        owner: 'Coder-Liuu',
+        admin: ['Coder-Liuu'],
+        proxy: 'https:\/\/shielded-brushlands-08810.herokuapp.com\/https:\/\/github.com\/login\/oauth\/access_token',
+        id: md5(location.pathname),
+        distractionFreeMode: false
+    });
+    gitalk.render('comments');
+</script>
+
   </body>
 </html>
 
