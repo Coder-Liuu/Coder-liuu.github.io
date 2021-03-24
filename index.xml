@@ -6,10 +6,19 @@
     <description>Recent content on Coder-Liuu&#39;Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>CC BY 4.0 CN</copyright>
-    <lastBuildDate>Mon, 15 Mar 2021 12:35:36 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 19 Mar 2021 11:07:40 +0800</lastBuildDate>
     
         <atom:link href="https://coder-liuu.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>动手机器学习-&gt;实现线性回归</title>
+      <link>https://coder-liuu.github.io/2021/03/%E5%8A%A8%E6%89%8B%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%AE%9E%E7%8E%B0%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92/</link>
+      <pubDate>Fri, 19 Mar 2021 11:07:40 +0800</pubDate>
+      
+      <guid>https://coder-liuu.github.io/2021/03/%E5%8A%A8%E6%89%8B%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%AE%9E%E7%8E%B0%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92/</guid>
+      <description>线性回归完整代码想抄作业的同学直接点这里 岭回归完整代码想抄作业的同学直接点这里 一、线性回归算法简介 线性回归是经典的回归算法 线性回归是通过属性</description>
+    </item>
     
     <item>
       <title>动手机器学习-&gt;实现KMeans算法</title>
@@ -116,7 +125,7 @@
       <pubDate>Thu, 11 Feb 2021 00:41:00 +0800</pubDate>
       
       <guid>https://coder-liuu.github.io/somewords/</guid>
-      <description>2021 2021-3-4 如果有人给我Github上一颗的星星,也许我会开一瓶香槟庆祝一下. 好句分享:如果总是逃避困难,世界将变得越来小. &amp;ndash;星游记 2021-2-26 如</description>
+      <description>2021 2021-3-18 Don’t make promises when you’re joyful. 高兴时不要承诺。 Don’t reply when you’re sad. 悲伤时不要答复。 Don’t make decisions when you’re angry. 生气时不要决定。</description>
     </item>
     
     <item>
