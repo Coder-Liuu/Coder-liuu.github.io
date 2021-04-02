@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <title>
+        动手机器学习-&gt;实现线性回归 - Coder-Liuu&#39;Blog
+      </title>
+        <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no,email=no,adress=no">
+    <meta name="baidu-site-verification" content="code-44Gz0c7UjT" />
+    <meta name="google-site-verification" content="13_-E8k2s1yC82MUlijkgvjbdpIXEs9wVo38KiewL7w" />
+    
+    <meta name="theme-color" content="#000000" />
+    
+    <meta http-equiv="window-target" content="_top" />
+    
+    
+    <meta name="description" content="动手实现线性回归" />
+    <meta name="generator" content="Hugo 0.79.0 with theme pure" />
+    <title>动手机器学习-&gt;实现线性回归 - Coder-Liuu&#39;Blog</title>
+    
+    
+    <link rel="stylesheet" href="https://coder-liuu.github.io/css/style.min.efb1b07b5bba75c8fd3b4c06f7949863d2893d8ddccae722f04573bc344ab21a.css">
+    
+    <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css" async>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" async>
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0-rc.1/katex.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0-rc.1/katex.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0-rc.1/contrib/auto-render.min.js"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+      renderMathInElement(document.body, {
+              delimiters: [
+                  {left: "$$", right: "$$", display: true},
+                  {left: "$", right: "$", display: false}
+              ]
+          });
+    });
+</script>
+
+    <meta property="og:title" content="动手机器学习-&gt;实现线性回归" />
+<meta property="og:description" content="动手实现线性回归" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://coder-liuu.github.io/2021/03/ml-linearregression/" />
+<meta property="article:published_time" content="2021-03-19T11:07:40+08:00" />
+<meta property="article:modified_time" content="2021-03-19T11:07:40+08:00" />
+<meta itemprop="name" content="动手机器学习-&gt;实现线性回归">
+<meta itemprop="description" content="动手实现线性回归">
+<meta itemprop="datePublished" content="2021-03-19T11:07:40+08:00" />
+<meta itemprop="dateModified" content="2021-03-19T11:07:40+08:00" />
+<meta itemprop="wordCount" content="1262">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="动手机器学习-&gt;实现线性回归"/>
+<meta name="twitter:description" content="动手实现线性回归"/>
+
+    <!--[if lte IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+      <![endif]-->
+
+    <!--[if lt IE 9]>
+        <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+      <![endif]-->
+
+  </head>
+
+  
+  
+
+  <body class="main-center theme-black" itemscope itemtype="http://schema.org/WebPage"><header class="header" itemscope itemtype="http://schema.org/WPHeader">
+    <div class="slimContent">
+      <div class="navbar-header">
+        <div class="profile-block text-center">
+          <a id="avatar" href="https://github.com/Coder-Liuu" target="_blank">
+            <img class="img-circle img-rotate" src="https://coder-liuu.github.io/avatar.jpg" width="200" height="200">
+          </a>
+          <h2 id="name" class="hidden-xs hidden-sm">Coder-Liuu</h2>
+          <h3 id="title" class="hidden-xs hidden-sm hidden-md">周末不打工</h3>
+          <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i>火星</small>
+        </div><div class="search" id="search-form-wrap">
+    <form class="search-form sidebar-form">
+        <div class="input-group">
+            <input type="text" class="search-form-input form-control" placeholder="搜索" />
+            <span class="input-group-btn">
+                <button type="submit" class="search-form-submit btn btn-flat" onclick="return false;"><i
+                        class="icon icon-search"></i></button>
+            </span>
+        </div>
+        <div class="ins-search">
+            <div class="ins-search-mask"></div>
+            <div class="ins-search-container">
+                <div class="ins-input-wrapper">
+                    <input type="text" class="ins-search-input" placeholder="想要查找什么..."
+                        x-webkit-speech />
+                    <button type="button" class="close ins-close ins-selectable" data-dismiss="modal"
+                        aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="ins-section-wrapper">
+                    <div class="ins-section-container"></div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+        <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <nav id="main-navbar" class="collapse navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+        <ul class="nav navbar-nav main-nav">
+            <li class="menu-item menu-item-home">
+                <a href="/">
+                    <i class="icon icon-home-fill"></i>
+                  <span class="menu-title">主页</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-categories">
+                <a href="/categories/">
+                    <i class="icon icon-folder"></i>
+                  <span class="menu-title">分类</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-archives">
+                <a href="/posts/">
+                    <i class="icon icon-archives-fill"></i>
+                  <span class="menu-title">归档</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-album">
+                <a href="/album/">
+                    <i class="icon icon-project"></i>
+                  <span class="menu-title">相册</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-friendship">
+                <a href="/friendship/">
+                    <i class="icon icon-friendship"></i>
+                  <span class="menu-title">朋友</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-notes">
+                <a href="/notes/">
+                    <i class="icon icon-book-fill"></i>
+                  <span class="menu-title">碎笔记</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-about">
+                <a href="/about/">
+                    <i class="icon icon-cup-fill"></i>
+                  <span class="menu-title">个人介绍</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-somewords">
+                <a href="/somewords/">
+                    <i class="icon icon-dialog"></i>
+                  <span class="menu-title">个人吐槽</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-guestbook">
+                <a href="/guestbook/">
+                    <i class="icon icon-comment"></i>
+                  <span class="menu-title">留言版</span>
+                </a>
+            </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+<aside class="sidebar" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    
+      <div class="widget">
+    <h3 class="widget-title">公告</h3>
+    <div class="widget-body">
+        <div id="board">
+            <div class="content">有事请联系我的邮箱：coder-liuu#qq.com<br>同时欢迎通过留言区为本站提供宝贵的建议
+            </div>
+        </div>
+    </div>
+</div>
+
+      <div class="widget">
+    <h3 class="widget-title"> 分类</h3>
+    <div class="widget-body">
+        <ul class="category-list">
+            <li class="category-list-item"><a href="https://coder-liuu.github.io/categories/acm/" class="category-list-link">acm</a><span class="category-list-count">3</span></li>
+            <li class="category-list-item"><a href="https://coder-liuu.github.io/categories/linux/" class="category-list-link">linux</a><span class="category-list-count">3</span></li>
+            <li class="category-list-item"><a href="https://coder-liuu.github.io/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" class="category-list-link">机器学习</a><span class="category-list-count">5</span></li>
+            <li class="category-list-item"><a href="https://coder-liuu.github.io/categories/%E7%94%B5%E5%BD%B1%E4%B8%8E%E4%B9%A6%E7%B1%8D/" class="category-list-link">电影与书籍</a><span class="category-list-count">1</span></li>
+            <li class="category-list-item"><a href="https://coder-liuu.github.io/categories/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/" class="category-list-link">默认分类</a><span class="category-list-count">6</span></li>
+        </ul>
+    </div>
+</div>
+      
+<div class="widget">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget-body">
+        <ul class="recent-post-list list-unstyled no-thumbnail">
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://coder-liuu.github.io/2021/04/math-linear-algebra/" class="title">线性代数大纲</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2021-04-02 17:50:12 &#43;0800 CST" itemprop="datePublished">2021-04-02</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://coder-liuu.github.io/2021/03/imbalanced-datasets/" class="title">不平衡数据集</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2021-03-30 22:16:40 &#43;0800 CST" itemprop="datePublished">2021-03-30</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://coder-liuu.github.io/2021/03/ml-logisticregression/" class="title">动手机器学习-实现逻辑回归</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2021-03-24 19:03:39 &#43;0800 CST" itemprop="datePublished">2021-03-24</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://coder-liuu.github.io/2021/03/ml-linearregression/" class="title">动手机器学习-&gt;实现线性回归</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2021-03-19 11:07:40 &#43;0800 CST" itemprop="datePublished">2021-03-19</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://coder-liuu.github.io/2021/03/ml-kmeans/" class="title">动手机器学习-&gt;实现KMeans算法</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2021-03-15 12:35:36 &#43;0800 CST" itemprop="datePublished">2021-03-15</time>
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+  </div>
+</aside>
+
+    
+    
+<aside class="sidebar sidebar-toc collapse" id="collapseToc" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    <h4 class="toc-title">文章目录</h4>
+    <nav id="toc" class="js-toc toc">
+
+    </nav>
+  </div>
+</aside>
+<main class="main" role="main"><div class="content">
+  <article id="-ml-linearRegression" class="article article-type-" itemscope
+    itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      <h1 itemprop="name">
+  <a
+    class="article-title"
+    href="/2021/03/ml-linearregression/"
+    >动手机器学习-&gt;实现线性回归</a
+  >
+</h1>
+
+      <div class="article-meta">
+        
+<span class="article-date">
+  <i class="icon icon-calendar-check"></i>&nbsp;
+<a href="https://coder-liuu.github.io/2021/03/ml-linearregression/" class="article-date">
+  <time datetime="2021-03-19 11:07:40 &#43;0800 CST" itemprop="datePublished">2021-03-19</time>
+</a>
+</span>
+<span class="article-category">
+  <i class="icon icon-folder"></i>&nbsp;
+  <a class="article-category-link" href="/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"> 机器学习 </a>
+</span>
+
+	<span class="article-read hidden-xs">
+	    <i class="icon icon-eye-fill" aria-hidden="true"></i>
+			<span id="busuanzi_value_page_pv">0</span>
+	</span>
+
+        <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/2021/03/ml-linearregression/#comments"
+            class="article-comment-link">评论</a></span>
+      </div>
+    </div>
+    <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
+      <blockquote>
+<p>线性回归完整代码想抄作业的同学<a href="https://github.com/Coder-Liuu/machine-learning-examples/blob/main/LinearRegression.py">直接点这里</a></p>
+</blockquote>
+<blockquote>
+<p>岭回归完整代码想抄作业的同学<a href="https://github.com/Coder-Liuu/machine-learning-examples/blob/main/RidgeRegression.py">直接点这里</a></p>
+</blockquote>
+<h1 id="一线性回归算法简介">一、线性回归算法简介</h1>
+<p>线性回归是经典的回归算法</p>
+<p>线性回归是通过属性的线性回归来进行预测的函数，一个具有n个特征的数据集的线性回归方程如下所示:</p>
+<p>$$
+f(x) = w_1  x_1 + w_2  x_2 + &hellip; + w_n  x_n;
+$$</p>
+<p>用向量表示为</p>
+<p>$$
+f(x) = w^T x + b
+$$</p>
+<p>由于线性回归的w可以很直观的表示出来，假如“在西瓜数据中”学到的方程为$f_好瓜(x) = 0.2 x_{色泽} + 0.5 x_{根蒂} + 0.3 x_{敲声} + 1$，我们可以通过这个方程发现根蒂在判断西瓜好坏起着很重要的作用。</p>
+<p>线性回归算法，主要有两部分：</p>
+<ol>
+<li>参数的求解(核心)</li>
+<li>参数的惩罚</li>
+</ol>
+<h1 id="二参数的求解最小二乘法">二、参数的求解(最小二乘法)</h1>
+<p>考虑最简单只有一个属性时，这个属性如果是离散属性，那么应该要转换为连续属性。有序属性，例如身高的高矮，可以转换为{1.0, 0.0}。而三个无序数据例如西瓜，南瓜，黄瓜可以转化为(1,0,0),(0,1,0),(0,0,1)</p>
+<p><strong>确定w和b是最关键的</strong>,我们采用均方误差来衡量算法的性能，所以我们的目的就是让线性回归模型的均方误差最小化，数学公式表达为:</p>
+<p>$$
+(w^* , b^*) = argmin \sum_{i=1}^{m} ( f(x_i) - y_i )^2
+$$</p>
+<p>怎么求解参数使得均方误差最小呢？使用最小二乘法，可以直接求解出来。理论公式推倒略，最终公式如下所示：</p>
+<p>$$
+w^* = (X^T X)^{-1} X^T y
+$$</p>
+<p>其中$X = (1,x)$,简单来说为在x矩阵前加上一列1,为X。满足能计算出w的前提是$X^T X$存在逆矩阵。</p>
+<h1 id="三参数的惩罚">三、参数的惩罚</h1>
+<h2 id="l2惩罚">L2惩罚:</h2>
+<p>改变原始的目标函数为:</p>
+<p>$$
+(w^* , b^*) = argmin \sum_{i=1}^{m} ( (f(x_i) - y_i )^2 + a \sum w^2 )
+$$</p>
+<p>公式中的$a\sum w^2$ 成为L2惩罚项</p>
+<p>使用L2惩罚的原因为：为了更好的拟合训练数据中，x的很小变化而y却变大许多，所以必须使用更大的w。最终会导致过度拟合的现象，所以在目标函数中加入$w^2$，来避免出现很大的w，<strong>最终减小模型的过拟合</strong>。</p>
+<p>其中$a$是一个可变参数，其中$a$越大惩罚越严重，模型越平缓。</p>
+<p>引入L2的线性回归又称作：岭回归</p>
+<h2 id="l1惩罚">L1惩罚:</h2>
+<p>改变原始的目标函数为:</p>
+<p>$$
+(w^* , b^*) = argmin \sum_{i=1}^{m} ( (f(x_i) - y_i )^2 + a \sum |w| )
+$$</p>
+<p>公式中的$a\sum |w|$ 成为L2惩罚项</p>
+<p>使用L1惩罚的原因为：虽然L2惩罚可以解决回归参数过大的问题，但是很难达到零值，这样的后果为：虽然有很多特征对最终结果影响很小，但是还是要加入模型的计算中去，而L1惩罚比L2惩罚严厉很多，可以使模型许多回归参数变为零，<strong>最终达到压缩相关特征的目的</strong></p>
+<p>其中$a$是一个可变参数，其中$a$越大惩罚越严重，模型越平缓。</p>
+<p>引入L1的线性回归又称作：Lasso回归</p>
+<h1 id="四探索性问题">四、探索性问题</h1>
+<p>这即是探索性的问题，也是我自己的代办问题解答，如果有时间，我一定会完善下面的问题。</p>
+<ol>
+<li>线性回归和对数线性回归的关系</li>
+</ol>
+<p>对数线性回归的公式如下：
+$$
+lny = w^T x + b
+$$
+它实际上是在试图让$e^{w^T x + b}$去逼近$y$。形式上仍是线性回归，但实质上<strong>在求取输入空间到输出空间的非线性函数映射</strong>，更一般地，考虑单调可微函数$g(x)$，令</p>
+<p>$$
+y = g^{-1} (w ^ T x + b)
+$$
+这样的模型称作<strong>广义线性模型</strong>，其中函数$g(x)$被成为联系函数。显然当联系函数$g(x) = ln(x)$时，便是对数线性回归。</p>
+<ol start="2">
+<li>线性回归对数据集有什么要求呢?</li>
+</ol>
+
+    </div>
+  </article>
+<section id="comments">
+</section>
+
+</div><nav class="bar bar-footer clearfix" data-stick-bottom>
+    <div class="bar-inner">
+        <ul class="pager pull-left">
+            <li class="prev">
+                <a href="https://coder-liuu.github.io/2021/03/ml-kmeans/" title="动手机器学习-&gt;实现KMeans算法"><i
+                        class="icon icon-angle-left"
+                        aria-hidden="true"></i><span>&nbsp;&nbsp;下一篇</span></a>
+            </li>
+            <li class="next">
+                <a href="https://coder-liuu.github.io/2021/03/ml-logisticregression/"
+                    title="动手机器学习-实现逻辑回归"><span>上一篇&nbsp;&nbsp;</span><i
+                        class="icon icon-angle-right" aria-hidden="true"></i></a>
+            </li>
+            
+            <li class="toggle-toc">
+                <a class="toggle-btn collapsed" data-toggle="collapse" href="#collapseToc" aria-expanded="false" id="toggleabc"                     title="文章目录" role="button">
+                    <span>[&nbsp;</span><span>文章目录</span>
+                    <i class="text-collapsed icon icon-anchor"></i>
+                    <i class="text-in icon icon-close"></i>
+                    <span>]</span>
+                </a>
+            </li>
+        </ul>
+        <div class="bar-right">
+            <div class="share-component" data-sites="weibo,qq,wechat,facebook,twitter"
+                data-mobile-sites="weibo,qq,qzone"></div>
+        </div>
+    </div>
+</nav>
+
+
+</main><footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
+<ul class="social-links">
+    <li><a href="https://blog.csdn.net/qq_43497702?spm=1010.2135.3001.5343&amp;type=download" target="_blank" title="csdn" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-csdn"></i></a>
+    </li>
+    <li><a href="https://github.com/Coder-Liuu" target="_blank" title="github" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-github"></i></a>
+    </li>
+    <li><a href="https://blog.csdn.net/qq_43497702?spm=1010.2135.3001.5343&type=download" target="_blank" title="CSDN" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-csdn">CSDN</i></a>
+    </li>
+</ul>
+
+  <div class="copyright">
+    <div class="publishby">
+    </div>
+  </div>
+
+  <div style="text-align:center;">
+    <i class="fa fa-heart animated infinite pulse"></i>
+    您是我的第<span id="busuanzi_value_site_uv"></span>小伙伴<br>
+    本站总访问量<span id="busuanzi_value_site_pv"></span>次<br>
+    <span id="span"></span><br>
+  </div>
+</footer>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+
+</script>
+<script type="text/javascript">
+    function runtime(){
+        
+        X = new Date("2/01/2020 0:00:00");
+        Y = new Date();
+        T = (Y.getTime()-X.getTime());
+        M = 24*60*60*1000;
+        a = T/M;
+        A = Math.floor(a);
+        b = (a-A)*24;
+        B = Math.floor(b);
+        c = (b-B)*60;
+        C = Math.floor((b-B)*60);
+        D = Math.floor((c-C)*60);
+        
+        span.innerHTML = "本站勉强运行: "+A+"天"+B+"小时"+C+"分"+D+"秒"
+    }
+    setInterval(runtime, 1000);
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<script>
+    window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+</script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/highlight.min.js"></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/python.min.js" defer></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/javascript.min.js" defer></script><script>
+    hljs.configure({
+        tabReplace: '    ', 
+        classPrefix: ''     
+        
+    })
+    hljs.initHighlightingOnLoad();
+</script>
+<script src="https://coder-liuu.github.io/js/application.min.bdeb64b910570b6c41badc6a05b7afb0c8ad9efd8525de3c7257d59e786326a3.js"></script>
+<script src="https://coder-liuu.github.io/js/plugin.min.51ff8c7317566f82259170fa36e09c4493adc9b9378b427a01ad3f017ebac7dd.js"></script>
+
+<script>
+    (function (window) {
+        var INSIGHT_CONFIG = {
+            TRANSLATION: {
+                POSTS: '文章',
+                PAGES: '页面',
+                CATEGORIES: '分类',
+                TAGS: '标签',
+                UNTITLED: '(未命名)',
+            },
+            ROOT_URL: 'https:\/\/coder-liuu.github.io',
+            CONTENT_URL: 'https:\/\/coder-liuu.github.io\/searchindex.json ',
+        };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+    })(window);
+</script>
+<script type="text/javascript" src="https://coder-liuu.github.io/js/insight.min.a343cd9a5a7698336b28ef3a7c16a3a1b1d2d5fb17dc8ed04022bbe08cc5459073a15bdafa3a8a58cdd56080784bdd69fa70b1ae8597565c799c57ed00f0e120.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+<script>
+    tocbot.init({
+        
+        tocSelector: '.js-toc',
+        
+        contentSelector: '.js-toc-content',
+        
+        headingSelector: 'h1, h2, h3',
+        
+        hasInnerContainers: true,
+    });
+</script>
+
+<script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1.4.0/dist/gitalk.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/blueimp-md5@2.10.0/js/md5.min.js"></script>
+<script type="text/javascript">
+    var gitalk = new Gitalk({
+        clientID: 'aab88ce03a8d50c6128f',
+        clientSecret: '1ac9ba0e3f9cefa8aac6414eb40dfed80545c021',
+        repo: 'Coder-liuu.github.io',
+        owner: 'Coder-Liuu',
+        admin: ['Coder-Liuu'],
+        proxy: 'https:\/\/shielded-brushlands-08810.herokuapp.com\/https:\/\/github.com\/login\/oauth\/access_token',
+        id: md5(location.pathname),
+        distractionFreeMode: false
+    });
+    gitalk.render('comments');
+</script>
+
+  </body>
+</html>
+
+
+  
+
