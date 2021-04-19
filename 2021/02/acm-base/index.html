@@ -58,7 +58,7 @@
 <meta itemprop="description" content="算法不会写怎么办?不妨试试在好用的模板上进行改进">
 <meta itemprop="datePublished" content="2021-02-27T00:10:20+08:00" />
 <meta itemprop="dateModified" content="2021-02-27T00:10:20+08:00" />
-<meta itemprop="wordCount" content="631">
+<meta itemprop="wordCount" content="659">
 
 
 
@@ -423,6 +423,8 @@ s1.c_str();
 // 在字符串s1上从start位置开始截取，截取length长度
 s1.substr(start,length);
 
+// 查找字符串某个字符的位置
+s1.find('x')
 </code></pre>
 <h2 id="c-切割字符串">C++ 切割字符串</h2>
 <pre><code class="language-C++">#include &lt;iostream&gt;
@@ -437,10 +439,15 @@ int main(){
   stringstream ss(tmp_s);
 
   while (getline(ss, tmp_s, '&amp;')) {
-      puts(tmp_s.c_str());
       v1.push_back(tmp_s);
   }
   return 0;
+}
+</code></pre>
+<h2 id="清空queue">清空queue</h2>
+<pre><code>void clear(queue&lt;string&gt; &amp; q){
+    queue&lt;string&gt; empty;
+    swap(empty,q);
 }
 </code></pre>
 
@@ -530,6 +537,17 @@ int main(){
     }
     setInterval(runtime, 1000);
 </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_SVG"></script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+            showMathMenu: false, //disables context menu
+            tex2jax: {
+            inlineMath: [ ['$','$'], ['\\(','\\)'] ]
+           }
+    });
+</script>
+
 
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
 <script>

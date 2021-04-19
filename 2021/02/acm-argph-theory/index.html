@@ -58,7 +58,7 @@
 <meta itemprop="description" content="图论相比数论果然更有趣一些">
 <meta itemprop="datePublished" content="2021-02-26T16:45:29+08:00" />
 <meta itemprop="dateModified" content="2021-02-26T16:45:29+08:00" />
-<meta itemprop="wordCount" content="773">
+<meta itemprop="wordCount" content="1179">
 
 
 
@@ -351,6 +351,59 @@ int dijkstra(){
     return dist[n] == 0x3f3f3f3f ? -1 : dist[n];
 }
 </code></pre>
+<h1 id="堆优化的dijkstra算法">堆优化的Dijkstra算法</h1>
+<pre><code class="language-C++">typedef pair&lt;int,int&gt; PII;
+priority_queue&lt; PII,vector&lt;PII&gt;,greater&lt;PII&gt; &gt; heap;
+
+const int N = 1e5 + 10;
+vector&lt;PII&gt; g[N];
+int dist[N];  // 1号点到每个点的距离
+int st[N];    // 是否已经确定为最小距离
+int n,m;      // 点数 边数
+
+int dijkstra(){
+    // 初始化距离
+    memset(dist,0x3f,sizeof(dist));
+    dist[1] = 0;
+
+    heap.push({0, 1});
+    
+    for(int i = 1; i &lt; n; i++){
+        // 找到没有在集合st中，距离起点最近的点
+        auto t = heap.top();
+        heap.pop();
+        
+        int ver = t.second, distance = t.first;
+        // 将该点加入st中
+        if(st[ver]) continue;
+        st[ver] = true;
+        
+        // 更新距离       
+        for(auto to : g[ver]){
+            int dis = to.first, tar = to.second;
+            if(dist[tar] &gt; dist[ver] + dis){
+                dist[tar] = dist[ver] + dis;
+                heap.push({dist[tar],tar});
+            }
+        }
+    }
+    return dist[n] == 0x3f3f3f3f ? -1 : dist[n];
+}
+
+int main(){
+    cin &gt;&gt; n &gt;&gt; m;
+    while(m--){
+        int a,b,c;
+        cin &gt;&gt; a &gt;&gt; b &gt;&gt; c;
+        // g[a][b] = min(g[a][b],c);
+        // 先是距离，后是点
+        g[a].push_back({c,b});
+    }
+    
+    cout &lt;&lt; dijkstra();
+    return 0;
+}
+</code></pre>
 <h1 id="拓扑排序">拓扑排序</h1>
 <p>DAG: 有向无环图</p>
 <p>拓扑序形象理解: 一些敌人可以互相看到，你要暗杀所有人而不被发现</p>
@@ -374,7 +427,7 @@ vector&lt;int&gt; v[N];
 queue&lt;int&gt; q;
 int n,m;
 
-vector&lt;int&gt; f(){
+vector&lt;int&gt; topsort(){
     vector&lt;int&gt; ans;
     for(int i = 1; i &lt;= n; i++)
         if(deg[i] == 0) q.push(i);
@@ -402,13 +455,76 @@ int main(){
         v[x].push_back(y);
         deg[y]++;
     }
-    
-    auto res = f();
+    auto res = topsort();
     
     if(res.size() == n)  
         for(auto x: res) cout &lt;&lt; x &lt;&lt; &quot; &quot;; 
     else  
         cout &lt;&lt; -1 &lt;&lt; endl;
+    return 0;
+}
+</code></pre>
+<h1 id="spfa算法">SPFA算法</h1>
+<p>求图中的<strong>带有负边</strong>的最短路算法</p>
+<p>n表示点数,m表示边数
+最好时间复杂度$O(m)$,最好时间复杂度$O(nm)$,<a href="https://www.acwing.com/problem/content/853/">模板题</a></p>
+<pre><code>#include &lt;iostream&gt;
+#include &lt;vector&gt;
+#include &lt;queue&gt;
+#include &lt;cstring&gt;
+using namespace std;
+
+const int N = 1e5 + 10;
+int n,m;
+
+typedef pair&lt;int,int&gt; PII;
+vector&lt;PII&gt; g[N];
+
+int st[N];
+int dist[N];
+
+int spfa(){
+    memset(dist,0x3f,sizeof dist);
+    queue&lt;int&gt; q;
+    q.push(1);
+    st[1] = true;
+    dist[1] = 0;
+    
+    while(q.size()){
+        int front = q.front();
+        q.pop();
+        st[front] = false;
+        
+        for(auto to : g[front]){
+            int t = to.first;
+            int w = to.second;
+            if(dist[t] &gt; dist[front] + w){
+                dist[t] = dist[front] + w;
+                if( !st[t] ) {
+                    st[t] = true;
+                    q.push(t);
+                }
+            }
+        }
+    }
+    
+    if(dist[n] == 0x3f3f3f3f) return -1;
+    return dist[n];
+}
+
+int main(){
+    ios::sync_with_stdio(0);
+    cin &gt;&gt; n &gt;&gt; m;    
+    
+    while(m--){
+        int u,v,w;
+        cin &gt;&gt; u &gt;&gt; v &gt;&gt; w;
+        g[u].push_back({v,w});
+    }
+    
+    int res = spfa();
+    if(res == -1) cout &lt;&lt; &quot;impossible&quot; &lt;&lt; endl;
+    else cout &lt;&lt; res &lt;&lt; endl;
     return 0;
 }
 </code></pre>
@@ -563,6 +679,17 @@ void tarjan(int now){
     }
     setInterval(runtime, 1000);
 </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_SVG"></script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+            showMathMenu: false, //disables context menu
+            tex2jax: {
+            inlineMath: [ ['$','$'], ['\\(','\\)'] ]
+           }
+    });
+</script>
+
 
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
 <script>

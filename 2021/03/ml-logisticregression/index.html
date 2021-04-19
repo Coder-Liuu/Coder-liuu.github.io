@@ -325,21 +325,32 @@
       <blockquote>
 <p>逻辑回归完整代码想抄作业的同学<a href="https://github.com/Coder-Liuu/machine-learning-examples/blob/main/LogisticRegression.py">直接点这里</a></p>
 </blockquote>
+
 <h1 id="一逻辑回归算法简介">一、逻辑回归算法简介</h1>
+
 <p>逻辑回归又称对数几率回归</p>
+
 <p>在线性回归模型中，我们学会了使用线性模型完成回归的问题，但是如果任务是分类任务怎么办呢?答案是<strong>使用一个单调可微函数将实际标签y和线性回归的预测值联系起来</strong></p>
+
 <p>首先考虑二分类任务，实际标签为0或1，而线性回归模型的预测值为$z = w^T + b$为实值，于是我们使用单位阶跃函数，将z转换为0/1值。</p>
+
 <p>阶跃函数如下所示:</p>
+
 <p><code>TODO:公式代完成</code></p>
-<p>$$
-a_1x+b_1y=c_1
-$$</p>
-<p>$$
-a_2x+b_2y=c_2
-$$</p>
+
+<p><span  class="math">\[\begin{cases}
+a_1x+b_1y+c_1z=d_1\\
+a_2x+b_2y+c_2z=d_2\\
+a_3x+b_3y+c_3z=d_3\\
+\end{cases}
+\]</span></p>
+
 <p>在此引入一个对数几率函数(也称Sigmoid函数)，函数的样子如下所示:</p>
-<p><img src="https://gitee.com/liu__yang/image/raw/master/img/%E6%B7%B1%E5%BA%A6%E6%88%AA%E5%9B%BE_%E9%80%89%E6%8B%A9%E5%8C%BA%E5%9F%9F_20210324230855.png" alt="sigmoid函数"></p>
+
+<p><figure><img src="https://gitee.com/liu__yang/image/raw/master/img/深度截图_选择区域_20210324230855.png" alt="sigmoid函数"></figure></p>
+
 <h1 id="参考博客">参考博客</h1>
+
 <p><a href="https://www.bilibili.com/video/BV1As411j7zw?from=search&amp;seid=13110094973136261265">https://www.bilibili.com/video/BV1As411j7zw?from=search&amp;seid=13110094973136261265</a></p>
 
     </div>
@@ -428,6 +439,17 @@ $$</p>
     }
     setInterval(runtime, 1000);
 </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_SVG"></script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+            showMathMenu: false, //disables context menu
+            tex2jax: {
+            inlineMath: [ ['$','$'], ['\\(','\\)'] ]
+           }
+    });
+</script>
+
 
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
 <script>
