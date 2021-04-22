@@ -4,21 +4,35 @@
   
   <url>
     <loc>https://coder-liuu.github.io/categories/</loc>
-    <lastmod>2021-04-02T17:50:12+08:00</lastmod>
+    <lastmod>2021-04-22T17:59:47+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://coder-liuu.github.io/</loc>
-    <lastmod>2021-04-02T17:50:12+08:00</lastmod>
+    <lastmod>2021-04-22T17:59:47+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://coder-liuu.github.io/categories/linux/</loc>
+    <lastmod>2021-04-22T17:59:47+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://coder-liuu.github.io/2021/04/linux%E4%BD%BF%E7%94%A8matplotlib%E7%94%BB%E5%9B%BE%E4%B8%AD%E6%96%87%E5%AD%97%E4%BD%93%E9%97%AE%E9%A2%98/</loc>
+    <lastmod>2021-04-22T17:59:47+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://coder-liuu.github.io/posts/</loc>
-    <lastmod>2021-04-02T17:50:12+08:00</lastmod>
+    <lastmod>2021-04-22T17:59:47+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -124,13 +138,6 @@
   <url>
     <loc>https://coder-liuu.github.io/2021/02/acm-argph-theory/</loc>
     <lastmod>2021-02-26T16:45:29+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://coder-liuu.github.io/categories/linux/</loc>
-    <lastmod>2021-02-24T10:21:18+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
