@@ -12,15 +12,6 @@
     
     
     <item>
-      <title>ACM数论</title>
-      <link>https://coder-liuu.github.io/2021/01/acm-math/</link>
-      <pubDate>Sat, 30 Jan 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://coder-liuu.github.io/2021/01/acm-math/</guid>
-      <description>个人认为这部分的数论中的基础，刚刚有查了查蓝桥杯不考数论，所以这篇博客的数论知识都是一些基础知识。准备蓝桥杯还是好好学学动态规划和图论吧! 质</description>
-    </item>
-    
-    <item>
       <title>Album</title>
       <link>https://coder-liuu.github.io/album/</link>
       <pubDate>Sun, 17 Jan 2021 00:07:50 +0800</pubDate>
@@ -62,7 +53,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://coder-liuu.github.io/about/</guid>
-      <description>时常在想，我为什么这么菜 一、个人介绍 网名: Code-liu 出生: 2000年12月 职业: 苦逼小学二年级在读 网站历史: 2019年2月份 进入CSDN，开始写博客</description>
+      <description>时常在想，我为什么这么菜 一、个人介绍 网名: Code-liu 出生: 2000年12月 职业: 小学二年级在读 网站历史: 2019年2月份 进入CSDN，开始写博客。 2</description>
     </item>
     
   </channel>

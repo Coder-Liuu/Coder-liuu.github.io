@@ -21,15 +21,6 @@
     </item>
     
     <item>
-      <title>动手机器学习 BallTree树</title>
-      <link>https://coder-liuu.github.io/2021/04/%E5%8A%A8%E6%89%8B%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0-balltree%E6%A0%91/</link>
-      <pubDate>Mon, 26 Apr 2021 17:49:39 +0800</pubDate>
-      
-      <guid>https://coder-liuu.github.io/2021/04/%E5%8A%A8%E6%89%8B%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0-balltree%E6%A0%91/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Linux使用Matplotlib画图中文字体问题</title>
       <link>https://coder-liuu.github.io/2021/04/linux%E4%BD%BF%E7%94%A8matplotlib%E7%94%BB%E5%9B%BE%E4%B8%AD%E6%96%87%E5%AD%97%E4%BD%93%E9%97%AE%E9%A2%98/</link>
       <pubDate>Thu, 22 Apr 2021 17:59:47 +0800</pubDate>
@@ -189,6 +180,15 @@
       
       <guid>https://coder-liuu.github.io/2021/01/manjaro-softwork/</guid>
       <description>最近使用Manjaro-Gnome系统已经快过去2年了，好多使用过的软件已经忘了，最近也打算重装系统，于是准备总结一下自己常用和好用的软件，</description>
+    </item>
+    
+    <item>
+      <title>ACM数论</title>
+      <link>https://coder-liuu.github.io/2021/01/acm-math/</link>
+      <pubDate>Sat, 30 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://coder-liuu.github.io/2021/01/acm-math/</guid>
+      <description>个人认为这部分的数论中的基础，刚刚有查了查蓝桥杯不考数论，所以这篇博客的数论知识都是一些基础知识。准备蓝桥杯还是好好学学动态规划和图论吧! 质</description>
     </item>
     
   </channel>
