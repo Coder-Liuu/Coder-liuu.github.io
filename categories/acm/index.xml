@@ -57,7 +57,7 @@
     </item>
     
     <item>
-      <title>动手机器学习-&gt;实现线性回归</title>
+      <title>动手机器学习-实现线性回归</title>
       <link>https://coder-liuu.github.io/2021/03/ml-linearregression/</link>
       <pubDate>Fri, 19 Mar 2021 11:07:40 +0800</pubDate>
       
@@ -75,15 +75,6 @@
     </item>
     
     <item>
-      <title>阿甘正传</title>
-      <link>https://coder-liuu.github.io/2021/03/%E9%98%BF%E7%94%98%E6%AD%A3%E4%BC%A0/</link>
-      <pubDate>Sun, 14 Mar 2021 23:09:47 +0800</pubDate>
-      
-      <guid>https://coder-liuu.github.io/2021/03/%E9%98%BF%E7%94%98%E6%AD%A3%E4%BC%A0/</guid>
-      <description>程序员的人生不止代码，还应有诗和远方 人生就像巧克力，永不知道下一块是什么味道。 人物 阿甘虽然笨，但是专心，可以说是专心和运气成就了自己，每一次</description>
-    </item>
-    
-    <item>
       <title>Linux下使用dd命令制作启动盘</title>
       <link>https://coder-liuu.github.io/2021/03/linux-dd/</link>
       <pubDate>Thu, 04 Mar 2021 15:17:14 +0800</pubDate>
@@ -98,7 +89,7 @@
       <pubDate>Thu, 04 Mar 2021 01:16:00 +0800</pubDate>
       
       <guid>https://coder-liuu.github.io/guestbook/</guid>
-      <description>茫茫人海，有缘相聚在这里，不如留下你的足迹吧! 测试 var gitalk = new Gitalk({ clientID: &#39;aab88ce03a8d50c6128f&#39;, clientSecret: &#39;1ac9ba0e3f9cefa8aac6414eb40dfed80545c021&#39;, repo: &#39;Coder-liuu.github.io&#39;, owner: &#34;Coder-Liuu&#34;, admin: &#34;Coder-Liuu&#34;, id: &#39;about&#39;, }) gitalk.render(&#39;gitalk-container&#39;);</description>
+      <description>茫茫人海，有缘相聚在这里，不如留下你的足迹吧! 多希望能环游世界，只做自己所热爱的事情～ 测试 var gitalk = new Gitalk({ clientID: &#39;aab88ce03a8d50c6128f&#39;, clientSecret: &#39;1ac9ba0e3f9cefa8aac6414eb40dfed80545c021&#39;, repo: &#39;Coder-liuu.github.io&#39;, owner: &#34;Coder-Liuu&#34;, admin: &#34;Coder-Liuu&#34;, id: &#39;about&#39;, }) gitalk.render(&#39;gitalk-container&#39;);</description>
     </item>
     
     <item>
@@ -189,6 +180,15 @@
       
       <guid>https://coder-liuu.github.io/2021/01/acm-math/</guid>
       <description>个人认为这部分的数论中的基础，刚刚有查了查蓝桥杯不考数论，所以这篇博客的数论知识都是一些基础知识。准备蓝桥杯还是好好学学动态规划和图论吧! 质</description>
+    </item>
+    
+    <item>
+      <title>FriendShip</title>
+      <link>https://coder-liuu.github.io/friendship/</link>
+      <pubDate>Sun, 17 Jan 2021 00:07:50 +0800</pubDate>
+      
+      <guid>https://coder-liuu.github.io/friendship/</guid>
+      <description>.myfriends { background-color: #fff; opacity: 0.9; } .myfriends a { color: black; } .myfriends p { display: none; } .friendurl { text-decoration: none !important; color: black; } .myfriend { width: 56px !important; height: 56px !important; border-radius: 50%; border: 1px solid #ddd; padding: 2px; box-shadow: 1px 1px 1px rgba(0,0,0, .15); margin-top: 14px !important; margin-left: 14px !important; background-color: #fff; } .frienddiv { height: 92px; margin-top: 10px; width: 100%; display: inline-block !important; }</description>
     </item>
     
   </channel>
