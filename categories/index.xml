@@ -6,10 +6,19 @@
     <description>Recent content in Categories on Coder-Liuu&#39;Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>CC BY 4.0 CN</copyright>
-    <lastBuildDate>Thu, 29 Apr 2021 13:35:44 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 16 May 2021 17:38:57 +0800</lastBuildDate>
     
         <atom:link href="https://coder-liuu.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Docker打包一个配置好Vim的Arch系统全过程(持续更新)</title>
+      <link>https://coder-liuu.github.io/2021/05/docker-arch-nvim-process/</link>
+      <pubDate>Sun, 16 May 2021 17:38:57 +0800</pubDate>
+      
+      <guid>https://coder-liuu.github.io/2021/05/docker-arch-nvim-process/</guid>
+      <description>本文选择体积最小的Arch Linux作为Docker镜像开启全部过程,其他Linux发行版可能会有所区别 一、前期准备 使用该命令初始化pacm</description>
+    </item>
     
     <item>
       <title>Docker使用总结</title>
@@ -180,15 +189,6 @@
       
       <guid>https://coder-liuu.github.io/2021/01/acm-math/</guid>
       <description>个人认为这部分的数论中的基础，刚刚有查了查蓝桥杯不考数论，所以这篇博客的数论知识都是一些基础知识。准备蓝桥杯还是好好学学动态规划和图论吧! 质</description>
-    </item>
-    
-    <item>
-      <title>FriendShip</title>
-      <link>https://coder-liuu.github.io/friendship/</link>
-      <pubDate>Sun, 17 Jan 2021 00:07:50 +0800</pubDate>
-      
-      <guid>https://coder-liuu.github.io/friendship/</guid>
-      <description>.myfriends { background-color: #fff; opacity: 0.9; } .myfriends a { color: black; } .myfriends p { display: none; } .friendurl { text-decoration: none !important; color: black; } .myfriend { width: 56px !important; height: 56px !important; border-radius: 50%; border: 1px solid #ddd; padding: 2px; box-shadow: 1px 1px 1px rgba(0,0,0, .15); margin-top: 14px !important; margin-left: 14px !important; background-color: #fff; } .frienddiv { height: 92px; margin-top: 10px; width: 100%; display: inline-block !important; }</description>
     </item>
     
   </channel>
