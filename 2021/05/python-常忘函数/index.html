@@ -58,7 +58,7 @@
 <meta itemprop="description" content="有些Python中的库的函数名字总是太长，记起来很是费劲(头大)，于是写篇博客记下自己常用的函数">
 <meta itemprop="datePublished" content="2021-05-27T21:11:06+08:00" />
 <meta itemprop="dateModified" content="2021-05-27T21:11:06+08:00" />
-<meta itemprop="wordCount" content="219">
+<meta itemprop="wordCount" content="253">
 
 
 
@@ -333,6 +333,12 @@ warnings.filterwarnings(&quot;ignore&quot;)
 <li>
 <p><code>填充NAN</code> a[np.isnan(a)]=1</p>
 </li>
+<li>
+<p><code>判断一列是否有缺失值</code> np.isnan(data).any(axis=0)</p>
+</li>
+<li>
+<p><code>判断一行是否有缺失值</code> np.isnan(data).any(axis=1)</p>
+</li>
 </ul>
 <h1 id="pandas">Pandas</h1>
 <ul>
@@ -387,6 +393,13 @@ warnings.filterwarnings(&quot;ignore&quot;)
 </ul>
 </li>
 </ul>
+<h1 id="其他">其他</h1>
+<ul>
+<li><code>ssh</code> 验证失败</li>
+</ul>
+<pre><code>import ssl
+ssl._create_default_https_context = ssl._create_unverified_context
+</code></pre>
 <h1 id="excel">Excel</h1>
 <ul>
 <li><code>时间戳转日期</code> =TEXT((B2/1000+8<em>3600)/86400+70</em>365+19,&ldquo;yyyy-mm-dd hh:mm:ss&rdquo;)</li>
