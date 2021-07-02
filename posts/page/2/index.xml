@@ -6,10 +6,28 @@
     <description>Recent content in Posts on Coder-Liuu&#39;Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>CC BY 4.0 CN</copyright>
-    <lastBuildDate>Mon, 07 Jun 2021 15:47:39 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 02 Jul 2021 21:42:54 +0800</lastBuildDate>
     
         <atom:link href="https://coder-liuu.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>STL模板总结</title>
+      <link>https://coder-liuu.github.io/2021/02/stl/</link>
+      <pubDate>Sun, 14 Feb 2021 19:06:01 +0800</pubDate>
+      
+      <guid>https://coder-liuu.github.io/2021/02/stl/</guid>
+      <description>我的易忘点 pair头文件utility 无序map头文件unordered_map 优先队列拼写 priority_queue priority_queue #include &amp;lt;queue&amp;gt; // 优先队列 头文件 // 升序队列 priority_queue&amp;lt;int, vector&amp;lt;int&amp;gt;, greater&amp;lt;int&amp;gt; &amp;gt; q; // 降</description>
+    </item>
+    
+    <item>
+      <title>Somewords</title>
+      <link>https://coder-liuu.github.io/somewords/</link>
+      <pubDate>Thu, 11 Feb 2021 00:41:00 +0800</pubDate>
+      
+      <guid>https://coder-liuu.github.io/somewords/</guid>
+      <description>2021 2021-6-27 记录两个很重要的坑 自己英语不好，不要在重要场合说英文 不打无准备的仗，不做无准备的面试 2021-4-21 最近失败事情有点多，都说失败是成功之母，可没有谁愿</description>
+    </item>
     
     <item>
       <title>Manjaro常用软件</title>

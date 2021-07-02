@@ -11,6 +11,15 @@
     
     
     <item>
+      <title>北京CCF-CSP考试</title>
+      <link>https://coder-liuu.github.io/2021/07/album-ccf/</link>
+      <pubDate>Fri, 02 Jul 2021 21:42:54 +0800</pubDate>
+      
+      <guid>https://coder-liuu.github.io/2021/07/album-ccf/</guid>
+      <description>大三下开学去考试，大三下结束才想起来写博客&amp;hellip;(捂脸) 本文不会谈任何的算法，只谈风景，因为自己考的实在是太垃圾了(呜呜呜)。 前向</description>
+    </item>
+    
+    <item>
       <title>图神经网络GNN</title>
       <link>https://coder-liuu.github.io/2021/06/%E5%9B%BE%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9Cgnn/</link>
       <pubDate>Mon, 07 Jun 2021 15:47:39 +0800</pubDate>
@@ -119,6 +128,15 @@
     </item>
     
     <item>
+      <title>相册</title>
+      <link>https://coder-liuu.github.io/album/</link>
+      <pubDate>Thu, 04 Mar 2021 01:16:00 +0800</pubDate>
+      
+      <guid>https://coder-liuu.github.io/album/</guid>
+      <description>北京 北京CCF-CSP考试</description>
+    </item>
+    
+    <item>
       <title>动手机器学习-&gt;实现决策树</title>
       <link>https://coder-liuu.github.io/2021/02/ml-decision-tree/</link>
       <pubDate>Sat, 27 Feb 2021 18:51:42 +0800</pubDate>
@@ -170,24 +188,6 @@
       
       <guid>https://coder-liuu.github.io/2021/02/search-ticks/</guid>
       <description>更好的使用搜索引擎的功能，可以让我们查找起东西来更快速 有的时候使用起来总是会忘，故总结记录一下 假设XXX是我们的搜索内容 Google 搜索某段时间之后的</description>
-    </item>
-    
-    <item>
-      <title>STL模板总结</title>
-      <link>https://coder-liuu.github.io/2021/02/stl/</link>
-      <pubDate>Sun, 14 Feb 2021 19:06:01 +0800</pubDate>
-      
-      <guid>https://coder-liuu.github.io/2021/02/stl/</guid>
-      <description>我的易忘点 pair头文件utility 无序map头文件unordered_map 优先队列拼写 priority_queue priority_queue #include &amp;lt;queue&amp;gt; // 优先队列 头文件 // 升序队列 priority_queue&amp;lt;int, vector&amp;lt;int&amp;gt;, greater&amp;lt;int&amp;gt; &amp;gt; q; // 降</description>
-    </item>
-    
-    <item>
-      <title>Somewords</title>
-      <link>https://coder-liuu.github.io/somewords/</link>
-      <pubDate>Thu, 11 Feb 2021 00:41:00 +0800</pubDate>
-      
-      <guid>https://coder-liuu.github.io/somewords/</guid>
-      <description>2021 2021-6-27 记录两个很重要的坑 自己英语不好，不要在重要场合说英文 不打无准备的仗，不做无准备的面试 2021-4-21 最近失败事情有点多，都说失败是成功之母，可没有谁愿</description>
     </item>
     
   </channel>

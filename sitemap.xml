@@ -4,21 +4,35 @@
   
   <url>
     <loc>https://coder-liuu.github.io/categories/</loc>
-    <lastmod>2021-06-07T15:47:39+08:00</lastmod>
+    <lastmod>2021-07-02T21:42:54+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://coder-liuu.github.io/</loc>
-    <lastmod>2021-06-07T15:47:39+08:00</lastmod>
+    <lastmod>2021-07-02T21:42:54+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://coder-liuu.github.io/posts/</loc>
-    <lastmod>2021-06-07T15:47:39+08:00</lastmod>
+    <lastmod>2021-07-02T21:42:54+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://coder-liuu.github.io/2021/07/album-ccf/</loc>
+    <lastmod>2021-07-02T21:42:54+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://coder-liuu.github.io/categories/%E7%9B%B8%E5%86%8C/</loc>
+    <lastmod>2021-07-02T21:42:54+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -123,6 +137,13 @@
   
   <url>
     <loc>https://coder-liuu.github.io/guestbook/</loc>
+    <lastmod>2021-03-04T01:16:00+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://coder-liuu.github.io/album/</loc>
     <lastmod>2021-03-04T01:16:00+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>

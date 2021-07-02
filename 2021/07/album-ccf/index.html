@@ -2,7 +2,7 @@
 <html lang="zh">
   <head>
     <title>
-        ACM基础算法模板 - Coder-Liuu&#39;Blog
+        北京CCF-CSP考试 - Coder-Liuu&#39;Blog
       </title>
         <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -22,9 +22,9 @@
     <meta http-equiv="window-target" content="_top" />
     
     
-    <meta name="description" content="算法不会写怎么办?不妨试试在好用的模板上进行改进" />
+    <meta name="description" content="菜鸡去北京参加CCF的故事" />
     <meta name="generator" content="Hugo 0.79.0 with theme pure" />
-    <title>ACM基础算法模板 - Coder-Liuu&#39;Blog</title>
+    <title>北京CCF-CSP考试 - Coder-Liuu&#39;Blog</title>
     
     
     <link rel="stylesheet" href="https://coder-liuu.github.io/css/style.min.c176bff0927994114cc5b07b7b2d29559f37ea70148203e691f0a8ea60d296df.css">
@@ -48,24 +48,24 @@
     });
 </script>
 
-    <meta property="og:title" content="ACM基础算法模板" />
-<meta property="og:description" content="算法不会写怎么办?不妨试试在好用的模板上进行改进" />
+    <meta property="og:title" content="北京CCF-CSP考试" />
+<meta property="og:description" content="菜鸡去北京参加CCF的故事" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://coder-liuu.github.io/2021/02/acm-base/" />
-<meta property="article:published_time" content="2021-02-27T00:10:20+08:00" />
-<meta property="article:modified_time" content="2021-02-27T00:10:20+08:00" />
-<meta itemprop="name" content="ACM基础算法模板">
-<meta itemprop="description" content="算法不会写怎么办?不妨试试在好用的模板上进行改进">
-<meta itemprop="datePublished" content="2021-02-27T00:10:20+08:00" />
-<meta itemprop="dateModified" content="2021-02-27T00:10:20+08:00" />
-<meta itemprop="wordCount" content="659">
+<meta property="og:url" content="https://coder-liuu.github.io/2021/07/album-ccf/" />
+<meta property="article:published_time" content="2021-07-02T21:42:54+08:00" />
+<meta property="article:modified_time" content="2021-07-02T21:42:54+08:00" />
+<meta itemprop="name" content="北京CCF-CSP考试">
+<meta itemprop="description" content="菜鸡去北京参加CCF的故事">
+<meta itemprop="datePublished" content="2021-07-02T21:42:54+08:00" />
+<meta itemprop="dateModified" content="2021-07-02T21:42:54+08:00" />
+<meta itemprop="wordCount" content="85">
 
 
 
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="ACM基础算法模板"/>
-<meta name="twitter:description" content="算法不会写怎么办?不妨试试在好用的模板上进行改进"/>
+<meta name="twitter:title" content="北京CCF-CSP考试"/>
+<meta name="twitter:description" content="菜鸡去北京参加CCF的故事"/>
 
     <!--[if lte IE 9]>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -281,15 +281,15 @@
   </div>
 </aside>
 <main class="main" role="main"><div class="content">
-  <article id="-ACM-base" class="article article-type-" itemscope
+  <article id="-album-ccf" class="article article-type-" itemscope
     itemtype="http://schema.org/BlogPosting">
     
     <div class="article-header">
       <h1 itemprop="name">
   <a
     class="article-title"
-    href="/2021/02/acm-base/"
-    >ACM基础算法模板</a
+    href="/2021/07/album-ccf/"
+    >北京CCF-CSP考试</a
   >
 </h1>
 
@@ -297,13 +297,13 @@
         
 <span class="article-date">
   <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://coder-liuu.github.io/2021/02/acm-base/" class="article-date">
-  <time datetime="2021-02-27 00:10:20 &#43;0800 CST" itemprop="datePublished">2021-02-27</time>
+<a href="https://coder-liuu.github.io/2021/07/album-ccf/" class="article-date">
+  <time datetime="2021-07-02 21:42:54 &#43;0800 CST" itemprop="datePublished">2021-07-02</time>
 </a>
 </span>
 <span class="article-category">
   <i class="icon icon-folder"></i>&nbsp;
-  <a class="article-category-link" href="/categories/acm/"> ACM </a>
+  <a class="article-category-link" href="/categories/%E7%9B%B8%E5%86%8C/"> 相册 </a>
 </span>
 
 	<span class="article-read hidden-xs">
@@ -311,139 +311,56 @@
 			<span id="busuanzi_value_page_pv">0</span>
 	</span>
 
-        <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/2021/02/acm-base/#comments"
+        <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/2021/07/album-ccf/#comments"
             class="article-comment-link">评论</a></span>
       </div>
     </div>
     <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
-      <h1 id="快速排序">快速排序</h1>
-<p>时间复杂度: $O(nlog(n))$,<a href="https://www.acwing.com/problem/content/787/">模板题</a></p>
-<pre><code class="language-C++">void quick_sort(int q[],int l,int r){
-    if(l &gt;= r) return;
-    
-    // 1. 寻找分界点
-    int x = q[(l + r)/2],i = l - 1, j = r + 1;
-    // 2. 调整区间
-    while(i &lt; j){
-        do i++; while(q[i] &lt; x);
-        do j--; while(q[j] &gt; x);
-        if(i &lt; j) swap(q[i],q[j]);
-    }
-    
-    // 3. 分布递归
-    quick_sort(q,l,j);
-    quick_sort(q,j+1,r);
-}
-</code></pre>
-<h1 id="归并排序">归并排序</h1>
-<p>时间复杂度: $O(nlog(n))$,<a href="https://www.acwing.com/problem/content/789/">模板题</a></p>
-<pre><code class="language-C++">void merge_sort(int q[],int l,int r){
-    if(l &gt;= r) return;
-    
-    // 1. 确定分界点
-    int mid = (l + r) &gt;&gt; 1;
-    // 2. 进行递归
-    merge_sort(q,l,mid);
-    merge_sort(q,mid+1,r);
-    // 3. 合并区间
-    int k = 0, i = l, j = mid + 1;
-    while(i &lt;= mid &amp;&amp; j &lt;= r)
-        if(q[i] &lt;= q[j]) tmp[k++] = q[i++];
-        else tmp[k++] = q[j++];
-        
-    while(i &lt;= mid) tmp[k++] = q[i++];
-    while(j &lt;= r) tmp[k++] = q[j++];
-    
-    for(i = l, j = 0; i &lt;= r; i++, j++) q[i] = tmp[j];
-}
-</code></pre>
-<h1 id="二分查找">二分查找</h1>
-<pre><code class="language-C++">bool check(int x); // 检查x是否满足某种性质
+      <blockquote>
+<p>大三下开学去考试，大三下结束才想起来写博客&hellip;(捂脸)</p>
+</blockquote>
+<p>本文不会谈任何的算法，只谈<code>风景</code>，因为自己考的实在是太垃圾了(呜呜呜)。</p>
+<p>前向图片高能预警~</p>
+<p><div style="text-align: center;">
+  <img src="https://gitee.com/liu__yang/image/raw/master/img/IMG_20210411_113352.jpg" width="60%">
+</div>
 
-// 最小满足点:  若mid满足搜索[l,mid],否则搜索[mid+1,r]
-// 一段区间，开始不满足后来满足
-int bsearch_low(int l,int r){
-  while(l &lt; r){
-    int mid = l + r &gt;&gt; 1;
-    if( check(mid) ) r = mid;
-    else l = mid + 1;
-  }
-}
+<center>
+  <h3>
+  网易
+  </h3>
+</center>
+</p>
+<p><div style="text-align: center;">
+  <img src="https://gitee.com/liu__yang/image/raw/master/img/IMG_20210411_113438.jpg" width="60%">
+</div>
 
-// 最大满足点:  若mid满足搜索[mid,r],否则搜索[l,mid-1]
-// 一段区间，开始满足后来不满足
-int bsearch_high(int l,int r){
-  while(l &lt; r){
-    int mid = l + r + 1 &gt;&gt; 1;
-    if( check(mid) ) l = mid;
-    else r = mid - 1;
-  }
-}
-</code></pre>
-<h1 id="高精度加法模板">高精度加法模板</h1>
-<p>需要注意的是： A是一个从低位到高位的数组，比如A是[1,2,3],代表的值是321</p>
-<pre><code class="language-C++">vector&lt;int&gt; add(vector&lt;int&gt; &amp;A,vector&lt;int&gt; &amp;B){
-    vector&lt;int&gt; C;
-    int t = 0;
-    for(int i = 0; i &lt; A.size() || i &lt; B.size(); i++){
-        if(i &lt; A.size()) t += A[i] - '0';
-        if(i &lt; B.size()) t += B[i] - '0';
-        C.push_back(t % 10);
-        t /= 10;
-    }
-    if(t) C.push_back(1);
-    return C;
-}
-</code></pre>
-<h1 id="高精度减法模板">高精度减法模板</h1>
-<pre><code class="language-C++">vector&lt;int&gt; sub(v &amp; A, v &amp; B){
-    for(int i = 0; i &lt; A.size() ; i++){
-        A[i] -= B[i];
-        if(A[i] &lt; 0){
-            A[i] += 10;
-            A[i+1] -= 1;
-        }
-    }
-    // 去掉前导0
-    while(A.size() &gt; 1 &amp;&amp; A.back() == 0) A.pop_back();
-    return A;
-}
-</code></pre>
-<h1 id="字符串杂知识">字符串杂知识</h1>
-<pre><code class="language-C++">// C++ string 转 C string
-s1.c_str();
+<center>
+  <h3>
+  考点
+  </h3>
+</center>
+</p>
+<p><div style="text-align: center;">
+  <img src="https://gitee.com/liu__yang/image/raw/master/img/IMG_20210410_172022_1.jpg" width="60%">
+</div>
 
-// 字符串取字串
-// 在字符串s1上从start位置开始截取，截取length长度
-s1.substr(start,length);
+<center>
+  <h3>
+  清华
+  </h3>
+</center>
+</p>
+<p><div style="text-align: center;">
+  <img src="https://gitee.com/liu__yang/image/raw/master/img/IMG_20210410_122008_1.jpg" width="60%">
+</div>
 
-// 查找字符串某个字符的位置
-s1.find('x')
-</code></pre>
-<h2 id="c-切割字符串">C++ 切割字符串</h2>
-<pre><code class="language-C++">#include &lt;iostream&gt;
-#include &lt;vector&gt;
-#include &lt;sstream&gt;
-using namespace std;
-
-vector&lt;string&gt; v1;
-
-int main(){
-  string tmp_s = &quot;123&amp;1234&amp;90&quot;;
-  stringstream ss(tmp_s);
-
-  while (getline(ss, tmp_s, '&amp;')) {
-      v1.push_back(tmp_s);
-  }
-  return 0;
-}
-</code></pre>
-<h2 id="清空queue">清空queue</h2>
-<pre><code>void clear(queue&lt;string&gt; &amp; q){
-    queue&lt;string&gt; empty;
-    swap(empty,q);
-}
-</code></pre>
+<center>
+  <h3>
+  小路
+  </h3>
+</center>
+</p>
 
     </div>
   </article>
@@ -454,14 +371,9 @@ int main(){
     <div class="bar-inner">
         <ul class="pager pull-left">
             <li class="prev">
-                <a href="https://coder-liuu.github.io/2021/02/acm-argph-theory/" title="图论知识总结"><i
+                <a href="https://coder-liuu.github.io/2021/06/%E5%9B%BE%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9Cgnn/" title="图神经网络GNN"><i
                         class="icon icon-angle-left"
                         aria-hidden="true"></i><span>&nbsp;&nbsp;下一篇</span></a>
-            </li>
-            <li class="next">
-                <a href="https://coder-liuu.github.io/2021/02/ml-decision-tree/"
-                    title="动手机器学习-&gt;实现决策树"><span>上一篇&nbsp;&nbsp;</span><i
-                        class="icon icon-angle-right" aria-hidden="true"></i></a>
             </li>
             
             <li class="toggle-toc">
