@@ -6,10 +6,19 @@
     <description>Recent content in Categories on Coder-Liuu&#39;Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>CC BY 4.0 CN</copyright>
-    <lastBuildDate>Fri, 02 Jul 2021 21:42:54 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 10 Jul 2021 12:00:53 +0800</lastBuildDate>
     
         <atom:link href="https://coder-liuu.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>各种搜索引擎技巧</title>
+      <link>https://coder-liuu.github.io/2021/02/search-ticks/</link>
+      <pubDate>Sun, 21 Feb 2021 08:44:09 +0800</pubDate>
+      
+      <guid>https://coder-liuu.github.io/2021/02/search-ticks/</guid>
+      <description>更好的使用搜索引擎的功能，可以让我们查找起东西来更快速 有的时候使用起来总是会忘，故总结记录一下 假设XXX是我们的搜索内容 Google 搜索某段时间之后的</description>
+    </item>
     
     <item>
       <title>STL模板总结</title>
