@@ -2,7 +2,7 @@
 <html lang="zh">
   <head>
     <title>
-        动手机器学习-实现线性回归 - Coder-Liuu&#39;Blog
+        带噪音的手写数字识别 - Coder-Liuu&#39;Blog
       </title>
         <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -22,9 +22,9 @@
     <meta http-equiv="window-target" content="_top" />
     
     
-    <meta name="description" content="动手实现线性回归" />
+    <meta name="description" content="带噪音的手写数字识别" />
     <meta name="generator" content="Hugo 0.79.0 with theme pure" />
-    <title>动手机器学习-实现线性回归 - Coder-Liuu&#39;Blog</title>
+    <title>带噪音的手写数字识别 - Coder-Liuu&#39;Blog</title>
     
     
     <link rel="stylesheet" href="https://coder-liuu.github.io/css/style.min.c176bff0927994114cc5b07b7b2d29559f37ea70148203e691f0a8ea60d296df.css">
@@ -48,24 +48,24 @@
     });
 </script>
 
-    <meta property="og:title" content="动手机器学习-实现线性回归" />
-<meta property="og:description" content="动手实现线性回归" />
+    <meta property="og:title" content="带噪音的手写数字识别" />
+<meta property="og:description" content="带噪音的手写数字识别" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://coder-liuu.github.io/2021/03/ml-linearregression/" />
-<meta property="article:published_time" content="2021-03-19T11:07:40+08:00" />
-<meta property="article:modified_time" content="2021-03-19T11:07:40+08:00" />
-<meta itemprop="name" content="动手机器学习-实现线性回归">
-<meta itemprop="description" content="动手实现线性回归">
-<meta itemprop="datePublished" content="2021-03-19T11:07:40+08:00" />
-<meta itemprop="dateModified" content="2021-03-19T11:07:40+08:00" />
-<meta itemprop="wordCount" content="1262">
+<meta property="og:url" content="https://coder-liuu.github.io/2021/07/noise-mnist/" />
+<meta property="article:published_time" content="2021-07-10T12:00:53+08:00" />
+<meta property="article:modified_time" content="2021-07-10T12:00:53+08:00" />
+<meta itemprop="name" content="带噪音的手写数字识别">
+<meta itemprop="description" content="带噪音的手写数字识别">
+<meta itemprop="datePublished" content="2021-07-10T12:00:53+08:00" />
+<meta itemprop="dateModified" content="2021-07-10T12:00:53+08:00" />
+<meta itemprop="wordCount" content="954">
 
 
 
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="动手机器学习-实现线性回归"/>
-<meta name="twitter:description" content="动手实现线性回归"/>
+<meta name="twitter:title" content="带噪音的手写数字识别"/>
+<meta name="twitter:description" content="带噪音的手写数字识别"/>
 
     <!--[if lte IE 9]>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -281,15 +281,15 @@
   </div>
 </aside>
 <main class="main" role="main"><div class="content">
-  <article id="-ml-linearRegression" class="article article-type-" itemscope
+  <article id="-noise-mnist" class="article article-type-" itemscope
     itemtype="http://schema.org/BlogPosting">
     
     <div class="article-header">
       <h1 itemprop="name">
   <a
     class="article-title"
-    href="/2021/03/ml-linearregression/"
-    >动手机器学习-实现线性回归</a
+    href="/2021/07/noise-mnist/"
+    >带噪音的手写数字识别</a
   >
 </h1>
 
@@ -297,8 +297,8 @@
         
 <span class="article-date">
   <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://coder-liuu.github.io/2021/03/ml-linearregression/" class="article-date">
-  <time datetime="2021-03-19 11:07:40 &#43;0800 CST" itemprop="datePublished">2021-03-19</time>
+<a href="https://coder-liuu.github.io/2021/07/noise-mnist/" class="article-date">
+  <time datetime="2021-07-10 12:00:53 &#43;0800 CST" itemprop="datePublished">2021-07-10</time>
 </a>
 </span>
 <span class="article-category">
@@ -311,80 +311,137 @@
 			<span id="busuanzi_value_page_pv">0</span>
 	</span>
 
-        <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/2021/03/ml-linearregression/#comments"
+        <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/2021/07/noise-mnist/#comments"
             class="article-comment-link">评论</a></span>
       </div>
     </div>
     <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
-      <blockquote>
-<p>线性回归完整代码想抄作业的同学<a href="https://github.com/Coder-Liuu/machine-learning-examples/blob/main/LinearRegression.py">直接点这里</a></p>
-</blockquote>
+      <p>Oh，好久不更新，接下来说一说我最近的在做的其中的一个事情吧～</p>
 <blockquote>
-<p>岭回归完整代码想抄作业的同学<a href="https://github.com/Coder-Liuu/machine-learning-examples/blob/main/RidgeRegression.py">直接点这里</a></p>
+<p>问题描述: 给我2000张<strong>带噪音</strong>的手写数字图片，如下图所示。要求我训练一个模型，使其能在测试集10000张带噪音的手写数字图片，取得较好的效果。</p>
 </blockquote>
-<h1 id="一线性回归算法简介">一、线性回归算法简介</h1>
-<p>线性回归是经典的回归算法</p>
-<p>线性回归是通过属性的线性回归来进行预测的函数，一个具有n个特征的数据集的线性回归方程如下所示:</p>
-<p>$$
-f(x) = w_1  x_1 + w_2  x_2 + &hellip; + w_n  x_n;
-$$</p>
-<p>用向量表示为</p>
-<p>$$
-f(x) = w^T x + b
-$$</p>
-<p>由于线性回归的w可以很直观的表示出来，假如“在西瓜数据中”学到的方程为$f_好瓜(x) = 0.2 x_{色泽} + 0.5 x_{根蒂} + 0.3 x_{敲声} + 1$，我们可以通过这个方程发现根蒂在判断西瓜好坏起着很重要的作用。</p>
-<p>线性回归算法，主要有两部分：</p>
+<p><div style="text-align: center;">
+  <img src="https://gitee.com/liu__yang/image/raw/master/img/%e6%b7%b1%e5%ba%a6%e6%88%aa%e5%9b%be_%e9%80%89%e6%8b%a9%e5%8c%ba%e5%9f%9f_20210710005345.png" width="30%">
+</div>
+
+<center>
+  <h3>
+  噪声图片
+  </h3>
+</center>
+</p>
+<h1 id="一图片预处理">一、图片预处理</h1>
+<p>通过分析可以知道这是<strong>高斯噪音</strong>，高斯噪音的形成为：<strong>一个正太分布的随机数与原图相加</strong>，即可使图片拥有高斯噪音。</p>
+<p>添加高斯噪音的Python代码为：</p>
+<pre><code class="language-python">def add_gaussian_noise(image_in, noise_sigma):
+    temp_image = np.float64(np.copy(image_in))
+ 
+    h, w = temp_image.shape
+    noise = np.random.randn(h, w) * noise_sigma
+    noisy_image = np.zeros(temp_image.shape, np.float64)
+    noisy_image = temp_image + noise
+    return noisy_image
+</code></pre>
+<p>添加效果如下所示:</p>
+<p><div style="text-align: center;">
+  <img src="https://gitee.com/liu__yang/image/raw/master/img/%e6%b7%b1%e5%ba%a6%e6%88%aa%e5%9b%be_%e9%80%89%e6%8b%a9%e5%8c%ba%e5%9f%9f_20210710121803.png" width="30%">
+</div>
+
+<center>
+  <h3>
+  左边原图，右边加噪音图
+  </h3>
+</center>
+</p>
+<p>消除高斯噪音，我有两种思路。</p>
 <ol>
-<li>参数的求解(核心)</li>
-<li>参数的惩罚</li>
+<li>直接对图片二值化(大于0.4的像素点为1,小于0.4的像素点为0)，下面是效果图。</li>
 </ol>
-<h1 id="二参数的求解最小二乘法">二、参数的求解(最小二乘法)</h1>
-<p>考虑最简单只有一个属性时，这个属性如果是离散属性，那么应该要转换为连续属性。有序属性，例如身高的高矮，可以转换为{1.0, 0.0}。而三个无序数据例如西瓜，南瓜，黄瓜可以转化为(1,0,0),(0,1,0),(0,0,1)</p>
-<p><strong>确定w和b是最关键的</strong>,我们采用均方误差来衡量算法的性能，所以我们的目的就是让线性回归模型的均方误差最小化，数学公式表达为:</p>
-<p>$$
-(w^* , b^*) = argmin \sum_{i=1}^{m} ( f(x_i) - y_i )^2
-$$</p>
-<p>怎么求解参数使得均方误差最小呢？使用最小二乘法，可以直接求解出来。理论公式推倒略，最终公式如下所示：</p>
-<p>$$
-w^* = (X^T X)^{-1} X^T y
-$$</p>
-<p>其中$X = (1,x)$,简单来说为在x矩阵前加上一列1,为X。满足能计算出w的前提是$X^T X$存在逆矩阵。</p>
-<h1 id="三参数的惩罚">三、参数的惩罚</h1>
-<h2 id="l2惩罚">L2惩罚:</h2>
-<p>改变原始的目标函数为:</p>
-<p>$$
-(w^* , b^*) = argmin \sum_{i=1}^{m} ( (f(x_i) - y_i )^2 + a \sum w^2 )
-$$</p>
-<p>公式中的$a\sum w^2$ 成为L2惩罚项</p>
-<p>使用L2惩罚的原因为：为了更好的拟合训练数据中，x的很小变化而y却变大许多，所以必须使用更大的w。最终会导致过度拟合的现象，所以在目标函数中加入$w^2$，来避免出现很大的w，<strong>最终减小模型的过拟合</strong>。</p>
-<p>其中$a$是一个可变参数，其中$a$越大惩罚越严重，模型越平缓。</p>
-<p>引入L2的线性回归又称作：岭回归</p>
-<h2 id="l1惩罚">L1惩罚:</h2>
-<p>改变原始的目标函数为:</p>
-<p>$$
-(w^* , b^*) = argmin \sum_{i=1}^{m} ( (f(x_i) - y_i )^2 + a \sum |w| )
-$$</p>
-<p>公式中的$a\sum |w|$ 成为L2惩罚项</p>
-<p>使用L1惩罚的原因为：虽然L2惩罚可以解决回归参数过大的问题，但是很难达到零值，这样的后果为：虽然有很多特征对最终结果影响很小，但是还是要加入模型的计算中去，而L1惩罚比L2惩罚严厉很多，可以使模型许多回归参数变为零，<strong>最终达到压缩相关特征的目的</strong></p>
-<p>其中$a$是一个可变参数，其中$a$越大惩罚越严重，模型越平缓。</p>
-<p>引入L1的线性回归又称作：Lasso回归</p>
-<h1 id="四探索性问题">四、探索性问题</h1>
-<p>这即是探索性的问题，也是我自己的代办问题解答，如果有时间，我一定会完善下面的问题。</p>
-<ol>
-<li>线性回归和对数线性回归的关系</li>
-</ol>
-<p>对数线性回归的公式如下：
-$$
-lny = w^T x + b
-$$
-它实际上是在试图让$e^{w^T x + b}$去逼近$y$。形式上仍是线性回归，但实质上<strong>在求取输入空间到输出空间的非线性函数映射</strong>，更一般地，考虑单调可微函数$g(x)$，令</p>
-<p>$$
-y = g^{-1} (w ^ T x + b)
-$$
-这样的模型称作<strong>广义线性模型</strong>，其中函数$g(x)$被成为联系函数。显然当联系函数$g(x) = ln(x)$时，便是对数线性回归。</p>
+<p><div style="text-align: center;">
+  <img src="https://gitee.com/liu__yang/image/raw/master/img/%e6%b7%b1%e5%ba%a6%e6%88%aa%e5%9b%be_%e9%80%89%e6%8b%a9%e5%8c%ba%e5%9f%9f_20210710122035.png" width="30%">
+</div>
+
+<center>
+  <h3>
+  左边噪音图，右边二值化
+  </h3>
+</center>
+</p>
 <ol start="2">
-<li>线性回归对数据集有什么要求呢?</li>
+<li>使用高斯滤波之后，做一个简单的去背景噪声，使用高斯滤波器核心代码<code>cv2.GaussianBlur(noise,(3,3),0)</code>，下面是效果。</li>
 </ol>
+<p><div style="text-align: center;">
+  <img src="https://gitee.com/liu__yang/image/raw/master/img/%e6%b7%b1%e5%ba%a6%e6%88%aa%e5%9b%be_%e9%80%89%e6%8b%a9%e5%8c%ba%e5%9f%9f_20210710150102.png" width="30%">
+</div>
+
+<center>
+  <h3>
+  左边噪音图，右边效果图
+  </h3>
+</center>
+</p>
+<h1 id="二数据增强">二、数据增强</h1>
+<p>数据增强有一个非常好使的库，名字为<code>imgaug</code>，接下来我说一下基本用法吧。</p>
+<pre><code class="language-python">from imgaug import augmenters as iaa # 导入库
+iaa.Affine(rotate=(-15, 15)),        # 定义增强方式
+img_aug = aug.augment_images(img)    # 进行数据增强
+</code></pre>
+<p>只需三行，方可入手。超级简单有么有～。如果需要查看更多增强方式，请看这个<a href="https://blog.csdn.net/lly1122334/article/details/88944589">博客</a>，讲的非常详细。</p>
+<h1 id="三搭建模型">三、搭建模型</h1>
+<p>对于自己瞎玩可以随便搭建模型，但是这是一个比赛，可需要认真一点了。Kaggle上曾有人证明最优28×28的网络的形状，详细过程可以参考这篇<a href="https://www.kaggle.com/cdeotte/how-to-choose-cnn-architecture-mnist">博客</a>，这里我直接说结论了，下图是Tensorflow代码，易读性很器的。</p>
+<pre><code class="language-python">model = Sequential([
+    Conv2D(32, kernel_size = 3, activation='relu', input_shape = (28, 28, 1)),
+    BatchNormalization(),
+    Conv2D(32, kernel_size = 3, activation='relu'),
+    BatchNormalization(),
+    Conv2D(32, kernel_size = 5, strides=2, padding='same', activation='relu'),
+    BatchNormalization(),
+    Dropout(0.4),
+    Conv2D(64, kernel_size = 3, activation='relu'),
+    BatchNormalization(),
+    Conv2D(64, kernel_size = 3, activation='relu'),
+    BatchNormalization(),
+    Conv2D(64, kernel_size = 5, strides=2, padding='same', activation='relu'),
+    BatchNormalization(),
+    Dropout(0.4),
+    Conv2D(128, kernel_size = 4, activation='relu'),
+    BatchNormalization(),
+    Flatten(),
+    Dropout(0.4),
+    Dense(10, activation='softmax'),
+])
+</code></pre>
+<p>该模型三个特点:</p>
+<ol>
+<li>连续使用2个3×3卷积层，增加了网络的判别能力。</li>
+<li>使用卷积核为5,步长为2的卷积层代替池化层，增加的网络的性能。</li>
+<li>使用批归一化层和Dropout层，防止模型过拟合的同时，增加了网络性能。</li>
+</ol>
+<h1 id="四模型集成">四、模型集成</h1>
+<p>老师说：团结就是力量，模型当然也是，一个CNN的力量有限的，<a href="https://www.kaggle.com/cdeotte/25-million-images-0-99757-mnist">这篇文章</a>使用Bagging的训练的15个CNN进行集成，达到了前所未有的信高度，思路如下图所示：</p>
+<p><div style="text-align: center;">
+  <img src="https://gitee.com/liu__yang/image/raw/master/img/Bagging.png" width="30%">
+</div>
+
+<center>
+  <h3>
+  CNN集成
+  </h3>
+</center>
+</p>
+<p>对于该问题来说，同样如此，所以我训练了10个CNN进行集成。部分代码如下所示：</p>
+<pre><code class="language-python">nets = 10
+model = [0] * nets
+for i in range(nets):
+    model[i] = Sequential([...])
+    model[i].compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
+</code></pre>
+<style type="text/css">.notice{padding:18px;line-height:24px;margin-bottom:24px;border-radius:4px;color:#444;background:#e7f2fa}.notice p:last-child{margin-bottom:0}.notice-title{margin:-18px -18px 12px;padding:4px 18px;border-radius:4px 4px 0 0;font-weight:700;color:#fff;background:#6ab0de}.notice.warning .notice-title{background:rgba(217,83,79,.9)}.notice.warning{background:#fae2e2}.notice.info .notice-title{background:#f0b37e}.notice.info{background:#fff2db}.notice.note .notice-title{background:#6ab0de}.notice.note{background:#e7f2fA}.notice.tip .notice-title{background:rgba(92,184,92,.8)}.notice.tip{background:#e6f9e6}.icon-notice{display:inline-flex;align-self:center;margin-right:8px}.icon-notice img,.icon-notice svg{height:1em;width:1em;fill:currentColor}.icon-notice img,.icon-notice.baseline svg{top:0.125em;position:relative}</style>
+<svg width="0" height="0" display="none" xmlns="http://www.w3.org/2000/svg"><symbol id="tip-notice" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"/></symbol><symbol id="note-notice" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet"><path d="M504 256c0 136.997-111.043 248-248 248S8 392.997 8 256C8 119.083 119.043 8 256 8s248 111.083 248 248zm-248 50c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z"/></symbol><symbol id="warning-notice" viewBox="0 0 576 512" preserveAspectRatio="xMidYMid meet"><path d="M569.517 440.013C587.975 472.007 564.806 512 527.94 512H48.054c-36.937 0-59.999-40.055-41.577-71.987L246.423 23.985c18.467-32.009 64.72-31.951 83.154 0l239.94 416.028zM288 354c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z"/></symbol><symbol id="info-notice" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet"><path d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z"/></symbol></svg><div class="notice tip" >
+<p class="first notice-title"><span class="icon-notice baseline"><svg><use href="#tip-notice"></use></svg></span>Tip</p><p>全部代码公布在Kaggle上了，<a href="https://www.kaggle.com/qq2471001205/fork-of-best-mnist">点击出发</a>。</p></div>
+
+<h1 id="参考资料">参考资料</h1>
+<p><a href="https://www.kaggle.com/c/digit-recognizer/discussion/61480">https://www.kaggle.com/c/digit-recognizer/discussion/61480</a></p>
 
     </div>
   </article>
@@ -395,13 +452,13 @@ $$
     <div class="bar-inner">
         <ul class="pager pull-left">
             <li class="prev">
-                <a href="https://coder-liuu.github.io/2021/03/ml-kmeans/" title="动手机器学习-&gt;实现KMeans算法"><i
+                <a href="https://coder-liuu.github.io/2021/07/album-ccf/" title="北京CCF-CSP考试"><i
                         class="icon icon-angle-left"
                         aria-hidden="true"></i><span>&nbsp;&nbsp;下一篇</span></a>
             </li>
             <li class="next">
-                <a href="https://coder-liuu.github.io/2021/03/ml-logisticregression/"
-                    title="动手机器学习-实现逻辑回归"><span>上一篇&nbsp;&nbsp;</span><i
+                <a href="https://coder-liuu.github.io/2021/07/health-insure-predict/"
+                    title="健康保险的客户投保预测"><span>上一篇&nbsp;&nbsp;</span><i
                         class="icon icon-angle-right" aria-hidden="true"></i></a>
             </li>
             

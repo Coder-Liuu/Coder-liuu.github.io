@@ -6,10 +6,19 @@
     <description>Recent content in Categories on Coder-Liuu&#39;Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>CC BY 4.0 CN</copyright>
-    <lastBuildDate>Sat, 10 Jul 2021 12:00:53 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 15 Jul 2021 16:01:25 +0800</lastBuildDate>
     
         <atom:link href="https://coder-liuu.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Ranger使用教程</title>
+      <link>https://coder-liuu.github.io/2021/02/ranger/</link>
+      <pubDate>Sun, 21 Feb 2021 14:28:45 +0800</pubDate>
+      
+      <guid>https://coder-liuu.github.io/2021/02/ranger/</guid>
+      <description>ranger是一款终端下的文件管理器,具有Vim式的操作方式. 我曾无数次安装ranger,也曾无数次配置ranger. 1.安装 Ranger官</description>
+    </item>
     
     <item>
       <title>各种搜索引擎技巧</title>

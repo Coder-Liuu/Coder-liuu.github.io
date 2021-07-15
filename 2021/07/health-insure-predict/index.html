@@ -2,7 +2,7 @@
 <html lang="zh">
   <head>
     <title>
-        动手机器学习-实现线性回归 - Coder-Liuu&#39;Blog
+        健康保险的客户投保预测 - Coder-Liuu&#39;Blog
       </title>
         <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -22,9 +22,9 @@
     <meta http-equiv="window-target" content="_top" />
     
     
-    <meta name="description" content="动手实现线性回归" />
+    <meta name="description" content="健康保险的客户投保预测" />
     <meta name="generator" content="Hugo 0.79.0 with theme pure" />
-    <title>动手机器学习-实现线性回归 - Coder-Liuu&#39;Blog</title>
+    <title>健康保险的客户投保预测 - Coder-Liuu&#39;Blog</title>
     
     
     <link rel="stylesheet" href="https://coder-liuu.github.io/css/style.min.c176bff0927994114cc5b07b7b2d29559f37ea70148203e691f0a8ea60d296df.css">
@@ -48,24 +48,24 @@
     });
 </script>
 
-    <meta property="og:title" content="动手机器学习-实现线性回归" />
-<meta property="og:description" content="动手实现线性回归" />
+    <meta property="og:title" content="健康保险的客户投保预测" />
+<meta property="og:description" content="健康保险的客户投保预测" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://coder-liuu.github.io/2021/03/ml-linearregression/" />
-<meta property="article:published_time" content="2021-03-19T11:07:40+08:00" />
-<meta property="article:modified_time" content="2021-03-19T11:07:40+08:00" />
-<meta itemprop="name" content="动手机器学习-实现线性回归">
-<meta itemprop="description" content="动手实现线性回归">
-<meta itemprop="datePublished" content="2021-03-19T11:07:40+08:00" />
-<meta itemprop="dateModified" content="2021-03-19T11:07:40+08:00" />
-<meta itemprop="wordCount" content="1262">
+<meta property="og:url" content="https://coder-liuu.github.io/2021/07/health-insure-predict/" />
+<meta property="article:published_time" content="2021-07-15T16:01:25+08:00" />
+<meta property="article:modified_time" content="2021-07-15T16:01:25+08:00" />
+<meta itemprop="name" content="健康保险的客户投保预测">
+<meta itemprop="description" content="健康保险的客户投保预测">
+<meta itemprop="datePublished" content="2021-07-15T16:01:25+08:00" />
+<meta itemprop="dateModified" content="2021-07-15T16:01:25+08:00" />
+<meta itemprop="wordCount" content="955">
 
 
 
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="动手机器学习-实现线性回归"/>
-<meta name="twitter:description" content="动手实现线性回归"/>
+<meta name="twitter:title" content="健康保险的客户投保预测"/>
+<meta name="twitter:description" content="健康保险的客户投保预测"/>
 
     <!--[if lte IE 9]>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -281,15 +281,15 @@
   </div>
 </aside>
 <main class="main" role="main"><div class="content">
-  <article id="-ml-linearRegression" class="article article-type-" itemscope
+  <article id="-health-insure-predict" class="article article-type-" itemscope
     itemtype="http://schema.org/BlogPosting">
     
     <div class="article-header">
       <h1 itemprop="name">
   <a
     class="article-title"
-    href="/2021/03/ml-linearregression/"
-    >动手机器学习-实现线性回归</a
+    href="/2021/07/health-insure-predict/"
+    >健康保险的客户投保预测</a
   >
 </h1>
 
@@ -297,8 +297,8 @@
         
 <span class="article-date">
   <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://coder-liuu.github.io/2021/03/ml-linearregression/" class="article-date">
-  <time datetime="2021-03-19 11:07:40 &#43;0800 CST" itemprop="datePublished">2021-03-19</time>
+<a href="https://coder-liuu.github.io/2021/07/health-insure-predict/" class="article-date">
+  <time datetime="2021-07-15 16:01:25 &#43;0800 CST" itemprop="datePublished">2021-07-15</time>
 </a>
 </span>
 <span class="article-category">
@@ -311,80 +311,219 @@
 			<span id="busuanzi_value_page_pv">0</span>
 	</span>
 
-        <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/2021/03/ml-linearregression/#comments"
+        <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/2021/07/health-insure-predict/#comments"
             class="article-comment-link">评论</a></span>
       </div>
     </div>
     <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
       <blockquote>
-<p>线性回归完整代码想抄作业的同学<a href="https://github.com/Coder-Liuu/machine-learning-examples/blob/main/LinearRegression.py">直接点这里</a></p>
+<p>机器学习竞赛赛题，常见的结构性数据比赛</p>
 </blockquote>
+<h1 id="一题目简介">一、题目简介</h1>
+<ul>
+<li>
+<p>赛题背景:在一家保险公司里，通过保险公司的数据，预测一个人是否会对保险感兴趣。</p>
+</li>
+<li>
+<p>数据示例:
+<div style="text-align: center;">
+  <img src="https://gitee.com/liu__yang/image/raw/master/img/%e6%b7%b1%e5%ba%a6%e6%88%aa%e5%9b%be_%e9%80%89%e6%8b%a9%e5%8c%ba%e5%9f%9f_20210715160533.png" width="100%">
+</div>
+</p>
+</li>
+<li>
+<p>评价指标：AUC</p>
+</li>
+</ul>
+<h1 id="二赛题步骤">二、赛题步骤</h1>
+<h2 id="20-完整型判断">2.0 完整型判断</h2>
+<ul>
+<li>
+<p><code>检测重复值</code> df_data.duplicated().sum()</p>
+</li>
+<li>
+<p><code>检测列缺失值</code>  df_data.isnull().sum(axis=0)</p>
+</li>
+</ul>
+<h2 id="21-数据探索">2.1 数据探索</h2>
+<ul>
+<li>探索离散值分布的常用代码。</li>
+</ul>
+<pre><code class="language-python">columns_list = [&quot;Gender&quot;,&quot;Driving_License&quot;,&quot;Previously_Insured&quot;,&quot;Vehicle_Damage&quot;,&quot;Vehicle_Age&quot;,&quot;Response&quot;]
+plt.figure(figsize=(10,5))
+for id_,x in enumerate(columns_list):
+    plt.subplot(2,3,id_+1)  # 这里注意我有6个属性，所以是2×3的子图
+    sns.countplot(data=df_data,x=x)
+    plt.tight_layout()
+</code></pre>
+<p><center>
+  <h3>
+  效果图
+  </h3>
+</center>
+
+<div style="text-align: center;">
+  <img src="https://gitee.com/liu__yang/image/raw/master/img/2021-7-15-1.png" width="80%">
+</div>
+</p>
+<ul>
+<li>探索连续值分布的常用代码</li>
+</ul>
+<pre><code class="language-python">plt.figure(figsize=(12,8))
+x_list = [&quot;Age&quot;,&quot;Region_Code&quot;,&quot;Annual_Premium&quot;,&quot;Policy_Sales_Channel&quot;,&quot;Vintage&quot;]
+for id_,x in enumerate(x_list):
+    plt.subplot(5,1,id_+1) # 子图的大小和特征个数有关系
+    sns.distplot(df_data[x],kde=True)
+    plt.tight_layout()
+</code></pre>
+<p><center>
+  <h3>
+  效果图
+  </h3>
+</center>
+
+<div style="text-align: center;">
+  <img src="https://gitee.com/liu__yang/image/raw/master/img/2021-7-15-2.png" width="80%">
+</div>
+</p>
+<h2 id="22-离散值编码">2.2 离散值编码</h2>
+<p>数据中，具有一些字符串的离散值，如果离散值比较少，比如&quot;男&quot;和&quot;女&quot;，我们应该使用标号编码进行映射到数值区间。</p>
+<p><code>对于地区代码属性，其具有非常多的离散属性，我们可以使用目标编码进行编码，映射到一定的数值区间</code></p>
+<p>目标编码简单可以理解为，将每个地区代码映射为其所在地区的人对保险感兴趣的平均值。</p>
+<p>具体代码如下所示:</p>
+<pre><code class="language-python"># 标号编码
+data[&quot;Gender&quot;] = data[&quot;Gender&quot;].map({&quot;Male&quot;:1, &quot;Female&quot;:0})
+data[&quot;Vehicle_Age&quot;] = data[&quot;Vehicle_Age&quot;].map({&quot;&lt; 1 Year&quot;:0,&quot;1-2 Year&quot;:1,&quot;&gt; 2 Years&quot;:2})
+data[&quot;Vehicle_Damage&quot;] = data[&quot;Vehicle_Damage&quot;].map({&quot;Yes&quot;:1,&quot;No&quot;:0})
+
+# 目标编码，通过一个类可以更方便的实现
+from sklearn.base import BaseEstimator, TransformerMixin
+
+class TargetEncoderTrain(BaseEstimator, TransformerMixin):
+    def __init__(self, col, tar):
+        self.col= col
+        self.tar= tar
+        self.discardOriginal_col = discardOriginal_col
+
+    def fit(self, X):
+        self.tar_mean = X[self.tar].mean()
+        self.map = X.groupby(self.col)[self.tar].mean()
+        return self
+
+    def transform(self,X):
+        col = self.col
+        X[col] = X[col].map(self.map)
+        X[col].fillna(self.tar_mean)
+        return X
+
+et = TargetEncoderTrain(&quot;Region_Code&quot;,&quot;Response&quot;)
+
+train_data = pd.concat([x_train,y_train],axis=1)
+x_train[col] = et.fit_transform(train_data)[col]
+x_val[col] = et.transform(x_val)[col]
+</code></pre>
+<h2 id="23-特征之间相关性分析">2.3 特征之间相关性分析</h2>
+<pre><code class="language-python">corr = df_data.corr()
+plt.figure(figsize=(16,10))
+sns.heatmap(corr,annot=True,cmap=&quot;Purples&quot;)
+</code></pre>
+<p><center>
+  <h3>
+  效果图
+  </h3>
+</center>
+
+<div style="text-align: center;">
+  <img src="https://gitee.com/liu__yang/image/raw/master/img/2021-7-15-3.png" width="80%">
+</div>
+</p>
+<p>这里我们可以去掉相关性非常小的特征，以便提高模型的性能。</p>
+<h2 id="24-寻找基础模型">2.4 寻找基础模型</h2>
+<p>下面列出了多种常用模型，以便分析性能</p>
+<pre><code class="language-python">from sklearn.neighbors import KNeighborsClassifier
+from sklearn.linear_model import LogisticRegression
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.ensemble import GradientBoostingClassifier
+from sklearn.ensemble import AdaBoostClassifier
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
+from sklearn.naive_bayes import GaussianNB
+from sklearn.discriminant_analysis import QuadraticDiscriminantAnalysis
+from xgboost import XGBClassifier
+from lightgbm import LGBMClassifier
+
+from sklearn.metrics import roc_auc_score
+
+clf_list = {
+  &quot;KNN&quot;:KNeighborsClassifier(),
+  &quot;CART&quot;:DecisionTreeClassifier(),
+  &quot;LDA&quot;:LinearDiscriminantAnalysis(),
+  &quot;QDA&quot;:QuadraticDiscriminantAnalysis(),
+  &quot;LR&quot;:LogisticRegression(),
+  &quot;Ga&quot;:GaussianNB(),
+  &quot;GBDT&quot;:GradientBoostingClassifier(),
+  &quot;Adaboost&quot;:AdaBoostClassifier(),
+  &quot;RF&quot;: RandomForestClassifier(),
+  &quot;XGboost&quot;: XGBClassifier(),
+  &quot;LGBM&quot;: LGBMClassifier(),
+}
+
+score_list = list()
+for name,clf in clf_list.items():
+    clf.fit(x_train,y_train)
+    y1 = clf.predict_proba(x_val)[:,1].flatten()
+    score = roc_auc_score(y_val,y1)
+    print(name,score,end=&quot;\n\n&quot;)
+</code></pre>
+<style type="text/css">.notice{padding:18px;line-height:24px;margin-bottom:24px;border-radius:4px;color:#444;background:#e7f2fa}.notice p:last-child{margin-bottom:0}.notice-title{margin:-18px -18px 12px;padding:4px 18px;border-radius:4px 4px 0 0;font-weight:700;color:#fff;background:#6ab0de}.notice.warning .notice-title{background:rgba(217,83,79,.9)}.notice.warning{background:#fae2e2}.notice.info .notice-title{background:#f0b37e}.notice.info{background:#fff2db}.notice.note .notice-title{background:#6ab0de}.notice.note{background:#e7f2fA}.notice.tip .notice-title{background:rgba(92,184,92,.8)}.notice.tip{background:#e6f9e6}.icon-notice{display:inline-flex;align-self:center;margin-right:8px}.icon-notice img,.icon-notice svg{height:1em;width:1em;fill:currentColor}.icon-notice img,.icon-notice.baseline svg{top:0.125em;position:relative}</style>
+<svg width="0" height="0" display="none" xmlns="http://www.w3.org/2000/svg"><symbol id="tip-notice" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"/></symbol><symbol id="note-notice" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet"><path d="M504 256c0 136.997-111.043 248-248 248S8 392.997 8 256C8 119.083 119.043 8 256 8s248 111.083 248 248zm-248 50c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z"/></symbol><symbol id="warning-notice" viewBox="0 0 576 512" preserveAspectRatio="xMidYMid meet"><path d="M569.517 440.013C587.975 472.007 564.806 512 527.94 512H48.054c-36.937 0-59.999-40.055-41.577-71.987L246.423 23.985c18.467-32.009 64.72-31.951 83.154 0l239.94 416.028zM288 354c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z"/></symbol><symbol id="info-notice" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet"><path d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z"/></symbol></svg><div class="notice tip" >
+<p class="first notice-title"><span class="icon-notice baseline"><svg><use href="#tip-notice"></use></svg></span>Tip</p><p>不过，通常来说，都是XGBoost或者是LGBM分类器效果好一些。</p></div>
+
+<h2 id="24-模型调参">2.4 模型调参</h2>
+<p>模型调参是一个体力劳动，但是拥有好工具，可以让你事半公倍。好工具就是<code>hyperopt</code>库了</p>
+<p>调参实例代码</p>
+<pre><code class="language-python">from hyperopt import fmin, tpe, hp, Trials, space_eval
+
+# 定义参数空间
+param_space = {'max_depth': hp.choice('max_depth', range(4, 9, 1)),
+               'reg_lambda': hp.uniform('reg_lambda', 0.0, 1.0),
+               'learning_rate' : hp.quniform('learning_rate', 0.1, 0.5, 0.1),
+               'n_estimators' : hp.choice('n_estimators', range(50, 250, 30)),
+               'num_leaves': hp.choice('num_leaves',[15, 31, 63, 127]),
+               'subsample': hp.choice('subsample',[0.6, 0.7, 0.8, 1.0]),
+               'colsample_bytree': hp.choice('colsample_bytree',[0.6, 0.7, 0.8, 1.0]),}
+
+# 定义评判函数，调参机器认为返回值越小越好，所以返回1-AUC
+def objective_lgbm(params):
+    x_train,x_val,y_train,y_val = train_test_split(train,labels,test_size=0.1,random_state=0,stratify=labels)
+    x_train,x_val,y_train, = target_labels(x_train,x_val,y_train)
+    
+    clf = LGBMClassifier(**params)
+    clf.fit(x_train,y_train)
+    y1 = clf.predict_proba(x_val)[:,1].flatten()
+    score = roc_auc_score(y_val,y1)
+    return 1 - score
+
+# 八股文代码
+trials = Trials()
+best = fmin(fn=objective_lgbm, space=param_space, 
+            max_evals=10,   # 迭代的次数
+            rstate=np.random.RandomState(0), 
+            algo=tpe.suggest,
+            trials=trials
+           )
+
+# 查看最佳代码
+best_params = space_eval(param_space, best)
+print(&quot;最佳参数:&quot;,best_params)
+
+# 之后直接创建最佳模型
+clf = LGBMClassifier(**best_params)
+</code></pre>
+<p>这段代码的通用性很强，复用只需要修改<code>参数空间</code>和<code>评判函数</code>就可以了</p>
 <blockquote>
-<p>岭回归完整代码想抄作业的同学<a href="https://github.com/Coder-Liuu/machine-learning-examples/blob/main/RidgeRegression.py">直接点这里</a></p>
+<p>如需完整代码，请见<a href="https://www.aliyundrive.com/s/SL9QZSQQiF8">点我出发</a></p>
 </blockquote>
-<h1 id="一线性回归算法简介">一、线性回归算法简介</h1>
-<p>线性回归是经典的回归算法</p>
-<p>线性回归是通过属性的线性回归来进行预测的函数，一个具有n个特征的数据集的线性回归方程如下所示:</p>
-<p>$$
-f(x) = w_1  x_1 + w_2  x_2 + &hellip; + w_n  x_n;
-$$</p>
-<p>用向量表示为</p>
-<p>$$
-f(x) = w^T x + b
-$$</p>
-<p>由于线性回归的w可以很直观的表示出来，假如“在西瓜数据中”学到的方程为$f_好瓜(x) = 0.2 x_{色泽} + 0.5 x_{根蒂} + 0.3 x_{敲声} + 1$，我们可以通过这个方程发现根蒂在判断西瓜好坏起着很重要的作用。</p>
-<p>线性回归算法，主要有两部分：</p>
-<ol>
-<li>参数的求解(核心)</li>
-<li>参数的惩罚</li>
-</ol>
-<h1 id="二参数的求解最小二乘法">二、参数的求解(最小二乘法)</h1>
-<p>考虑最简单只有一个属性时，这个属性如果是离散属性，那么应该要转换为连续属性。有序属性，例如身高的高矮，可以转换为{1.0, 0.0}。而三个无序数据例如西瓜，南瓜，黄瓜可以转化为(1,0,0),(0,1,0),(0,0,1)</p>
-<p><strong>确定w和b是最关键的</strong>,我们采用均方误差来衡量算法的性能，所以我们的目的就是让线性回归模型的均方误差最小化，数学公式表达为:</p>
-<p>$$
-(w^* , b^*) = argmin \sum_{i=1}^{m} ( f(x_i) - y_i )^2
-$$</p>
-<p>怎么求解参数使得均方误差最小呢？使用最小二乘法，可以直接求解出来。理论公式推倒略，最终公式如下所示：</p>
-<p>$$
-w^* = (X^T X)^{-1} X^T y
-$$</p>
-<p>其中$X = (1,x)$,简单来说为在x矩阵前加上一列1,为X。满足能计算出w的前提是$X^T X$存在逆矩阵。</p>
-<h1 id="三参数的惩罚">三、参数的惩罚</h1>
-<h2 id="l2惩罚">L2惩罚:</h2>
-<p>改变原始的目标函数为:</p>
-<p>$$
-(w^* , b^*) = argmin \sum_{i=1}^{m} ( (f(x_i) - y_i )^2 + a \sum w^2 )
-$$</p>
-<p>公式中的$a\sum w^2$ 成为L2惩罚项</p>
-<p>使用L2惩罚的原因为：为了更好的拟合训练数据中，x的很小变化而y却变大许多，所以必须使用更大的w。最终会导致过度拟合的现象，所以在目标函数中加入$w^2$，来避免出现很大的w，<strong>最终减小模型的过拟合</strong>。</p>
-<p>其中$a$是一个可变参数，其中$a$越大惩罚越严重，模型越平缓。</p>
-<p>引入L2的线性回归又称作：岭回归</p>
-<h2 id="l1惩罚">L1惩罚:</h2>
-<p>改变原始的目标函数为:</p>
-<p>$$
-(w^* , b^*) = argmin \sum_{i=1}^{m} ( (f(x_i) - y_i )^2 + a \sum |w| )
-$$</p>
-<p>公式中的$a\sum |w|$ 成为L2惩罚项</p>
-<p>使用L1惩罚的原因为：虽然L2惩罚可以解决回归参数过大的问题，但是很难达到零值，这样的后果为：虽然有很多特征对最终结果影响很小，但是还是要加入模型的计算中去，而L1惩罚比L2惩罚严厉很多，可以使模型许多回归参数变为零，<strong>最终达到压缩相关特征的目的</strong></p>
-<p>其中$a$是一个可变参数，其中$a$越大惩罚越严重，模型越平缓。</p>
-<p>引入L1的线性回归又称作：Lasso回归</p>
-<h1 id="四探索性问题">四、探索性问题</h1>
-<p>这即是探索性的问题，也是我自己的代办问题解答，如果有时间，我一定会完善下面的问题。</p>
-<ol>
-<li>线性回归和对数线性回归的关系</li>
-</ol>
-<p>对数线性回归的公式如下：
-$$
-lny = w^T x + b
-$$
-它实际上是在试图让$e^{w^T x + b}$去逼近$y$。形式上仍是线性回归，但实质上<strong>在求取输入空间到输出空间的非线性函数映射</strong>，更一般地，考虑单调可微函数$g(x)$，令</p>
-<p>$$
-y = g^{-1} (w ^ T x + b)
-$$
-这样的模型称作<strong>广义线性模型</strong>，其中函数$g(x)$被成为联系函数。显然当联系函数$g(x) = ln(x)$时，便是对数线性回归。</p>
-<ol start="2">
-<li>线性回归对数据集有什么要求呢?</li>
-</ol>
 
     </div>
   </article>
@@ -395,14 +534,9 @@ $$
     <div class="bar-inner">
         <ul class="pager pull-left">
             <li class="prev">
-                <a href="https://coder-liuu.github.io/2021/03/ml-kmeans/" title="动手机器学习-&gt;实现KMeans算法"><i
+                <a href="https://coder-liuu.github.io/2021/07/noise-mnist/" title="带噪音的手写数字识别"><i
                         class="icon icon-angle-left"
                         aria-hidden="true"></i><span>&nbsp;&nbsp;下一篇</span></a>
-            </li>
-            <li class="next">
-                <a href="https://coder-liuu.github.io/2021/03/ml-logisticregression/"
-                    title="动手机器学习-实现逻辑回归"><span>上一篇&nbsp;&nbsp;</span><i
-                        class="icon icon-angle-right" aria-hidden="true"></i></a>
             </li>
             
             <li class="toggle-toc">

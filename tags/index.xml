@@ -11,11 +11,20 @@
     
     
     <item>
+      <title>健康保险的客户投保预测</title>
+      <link>https://coder-liuu.github.io/2021/07/health-insure-predict/</link>
+      <pubDate>Thu, 15 Jul 2021 16:01:25 +0800</pubDate>
+      
+      <guid>https://coder-liuu.github.io/2021/07/health-insure-predict/</guid>
+      <description>机器学习竞赛赛题，常见的结构性数据比赛 一、题目简介 赛题背景:在一家保险公司里，通过保险公司的数据，预测一个人是否会对保险感兴趣。 数据示例: 评</description>
+    </item>
+    
+    <item>
       <title>带噪音的手写数字识别</title>
-      <link>https://coder-liuu.github.io/2021/07/%E5%B8%A6%E5%99%AA%E9%9F%B3%E7%9A%84%E6%89%8B%E5%86%99%E6%95%B0%E5%AD%97%E8%AF%86%E5%88%AB/</link>
+      <link>https://coder-liuu.github.io/2021/07/noise-mnist/</link>
       <pubDate>Sat, 10 Jul 2021 12:00:53 +0800</pubDate>
       
-      <guid>https://coder-liuu.github.io/2021/07/%E5%B8%A6%E5%99%AA%E9%9F%B3%E7%9A%84%E6%89%8B%E5%86%99%E6%95%B0%E5%AD%97%E8%AF%86%E5%88%AB/</guid>
+      <guid>https://coder-liuu.github.io/2021/07/noise-mnist/</guid>
       <description>Oh，好久不更新，接下来说一说我最近的在做的其中的一个事情吧～ 问题描述: 给我2000张带噪音的手写数字图片，如下图所示。要求我训练一个模型，</description>
     </item>
     
@@ -39,10 +48,10 @@
     
     <item>
       <title>Python 常忘函数</title>
-      <link>https://coder-liuu.github.io/2021/05/python-%E5%B8%B8%E5%BF%98%E5%87%BD%E6%95%B0/</link>
+      <link>https://coder-liuu.github.io/2021/05/python-forget-function/</link>
       <pubDate>Thu, 27 May 2021 21:11:06 +0800</pubDate>
       
-      <guid>https://coder-liuu.github.io/2021/05/python-%E5%B8%B8%E5%BF%98%E5%87%BD%E6%95%B0/</guid>
+      <guid>https://coder-liuu.github.io/2021/05/python-forget-function/</guid>
       <description>忽略警告 import warnings warnings.filterwarnings(&amp;quot;ignore&amp;quot;) Numpy 取消科学技术法() np.set_printoptions(suppress=True) 保留3位有效数字 np.set_printoptions(precision=3) 数组扁平 data.flatten() 填充NAN a[np.isnan(a)]=1 判断一列是否有缺失值 np.isnan(data).any(axis=0) 判断一行是否有缺失值 np.isnan(data).any(axis=1) Pandas 显示所有列 pd.set_option(&amp;lsquo;display.max_columns&amp;rsquo;, None) 显示</description>
     </item>
     
@@ -179,15 +188,6 @@
       
       <guid>https://coder-liuu.github.io/2021/02/manjaro-some-problem/</guid>
       <description>Manjaro怎么更新DNS呢?默认终端怎么改?怎么在终端下播放音乐?等等一系列问题 更新DNS缓存 查看DNS网址,网址 修改Hosts文件: vim</description>
-    </item>
-    
-    <item>
-      <title>Ranger使用教程</title>
-      <link>https://coder-liuu.github.io/2021/02/ranger/</link>
-      <pubDate>Sun, 21 Feb 2021 14:28:45 +0800</pubDate>
-      
-      <guid>https://coder-liuu.github.io/2021/02/ranger/</guid>
-      <description>ranger是一款终端下的文件管理器,具有Vim式的操作方式. 我曾无数次安装ranger,也曾无数次配置ranger. 1.安装 Ranger官</description>
     </item>
     
   </channel>

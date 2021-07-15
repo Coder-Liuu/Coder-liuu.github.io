@@ -11,6 +11,15 @@
     
     
     <item>
+      <title>Ranger使用教程</title>
+      <link>https://coder-liuu.github.io/2021/02/ranger/</link>
+      <pubDate>Sun, 21 Feb 2021 14:28:45 +0800</pubDate>
+      
+      <guid>https://coder-liuu.github.io/2021/02/ranger/</guid>
+      <description>ranger是一款终端下的文件管理器,具有Vim式的操作方式. 我曾无数次安装ranger,也曾无数次配置ranger. 1.安装 Ranger官</description>
+    </item>
+    
+    <item>
       <title>各种搜索引擎技巧</title>
       <link>https://coder-liuu.github.io/2021/02/search-ticks/</link>
       <pubDate>Sun, 21 Feb 2021 08:44:09 +0800</pubDate>
