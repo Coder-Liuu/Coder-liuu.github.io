@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>Manjaro-DNS等问题.md</title>
+      <link>https://coder-liuu.github.io/2021/02/manjaro-some-problem/</link>
+      <pubDate>Wed, 24 Feb 2021 10:21:18 +0800</pubDate>
+      
+      <guid>https://coder-liuu.github.io/2021/02/manjaro-some-problem/</guid>
+      <description>Manjaro怎么更新DNS呢?默认终端怎么改?怎么在终端下播放音乐?等等一系列问题 更新DNS缓存 查看DNS网址,网址 修改Hosts文件: vim</description>
+    </item>
+    
+    <item>
       <title>Ranger使用教程</title>
       <link>https://coder-liuu.github.io/2021/02/ranger/</link>
       <pubDate>Sun, 21 Feb 2021 14:28:45 +0800</pubDate>
