@@ -4,21 +4,35 @@
   
   <url>
     <loc>https://coder-liuu.github.io/categories/</loc>
-    <lastmod>2021-07-31T16:38:44+08:00</lastmod>
+    <lastmod>2021-08-01T11:45:54+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://coder-liuu.github.io/</loc>
-    <lastmod>2021-07-31T16:38:44+08:00</lastmod>
+    <lastmod>2021-08-01T11:45:54+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://coder-liuu.github.io/posts/</loc>
-    <lastmod>2021-07-31T16:38:44+08:00</lastmod>
+    <lastmod>2021-08-01T11:45:54+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://coder-liuu.github.io/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</loc>
+    <lastmod>2021-08-01T11:45:54+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://coder-liuu.github.io/2021/08/ml-interview/</loc>
+    <lastmod>2021-08-01T11:45:54+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -39,13 +53,6 @@
   
   <url>
     <loc>https://coder-liuu.github.io/2021/07/health-insure-predict/</loc>
-    <lastmod>2021-07-15T16:01:25+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://coder-liuu.github.io/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</loc>
     <lastmod>2021-07-15T16:01:25+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>

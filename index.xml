@@ -6,10 +6,19 @@
     <description>Recent content on Coder-Liuu&#39;Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>CC BY 4.0 CN</copyright>
-    <lastBuildDate>Sat, 31 Jul 2021 16:38:44 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 01 Aug 2021 11:45:54 +0800</lastBuildDate>
     
         <atom:link href="https://coder-liuu.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>机器学习中的数学笔记</title>
+      <link>https://coder-liuu.github.io/2021/08/ml-interview/</link>
+      <pubDate>Sun, 01 Aug 2021 11:45:54 +0800</pubDate>
+      
+      <guid>https://coder-liuu.github.io/2021/08/ml-interview/</guid>
+      <description>机器学习不可不知的理论问题 1. 什么是梯度? 分析:辅导视频 答：首先梯度是一个矢量，表示函数在该点处沿着梯度的方向变化最快，变化率为梯度的大小。比</description>
+    </item>
     
     <item>
       <title>启动盘神器Ventoy</title>
@@ -180,15 +189,6 @@
       
       <guid>https://coder-liuu.github.io/2021/02/acm-base/</guid>
       <description>快速排序 时间复杂度: $O(nlog(n))$,模板题 void quick_sort(int q[],int l,int r){ if(l &amp;gt;= r) return; // 1. 寻找分界点 int x = q[(l + r)/2],i = l - 1, j = r + 1; // 2. 调整区间 while(i &amp;lt; j){ do i++; while(q[i] &amp;lt;</description>
-    </item>
-    
-    <item>
-      <title>图论知识总结</title>
-      <link>https://coder-liuu.github.io/2021/02/acm-argph-theory/</link>
-      <pubDate>Fri, 26 Feb 2021 16:45:29 +0800</pubDate>
-      
-      <guid>https://coder-liuu.github.io/2021/02/acm-argph-theory/</guid>
-      <description>朴素的Dijkstra算法 求点之间距离不相同的最短路算法 时间复杂度$O(n^2+m)$,n表示点数,m表示边数,模板题 int g[N][N]; // 存储图 int dist[N]; // 1号</description>
     </item>
     
   </channel>
