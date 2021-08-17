@@ -11,6 +11,15 @@
     
     
     <item>
+      <title>动手机器学习-&gt;实现决策树</title>
+      <link>https://coder-liuu.github.io/2021/02/ml-decision-tree/</link>
+      <pubDate>Sat, 27 Feb 2021 18:51:42 +0800</pubDate>
+      
+      <guid>https://coder-liuu.github.io/2021/02/ml-decision-tree/</guid>
+      <description>决策树完整代码想抄作业的同学直接点这里 一、决策树简介 决策树是一个很简单的机器学习算法,可以看作if-then的集合,比如我们判断一个西瓜的好</description>
+    </item>
+    
+    <item>
       <title>ACM基础算法模板</title>
       <link>https://coder-liuu.github.io/2021/02/acm-base/</link>
       <pubDate>Sat, 27 Feb 2021 00:10:20 +0800</pubDate>

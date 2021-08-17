@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>Go语言学习笔记</title>
+      <link>https://coder-liuu.github.io/2021/08/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
+      <pubDate>Tue, 17 Aug 2021 23:42:18 +0800</pubDate>
+      
+      <guid>https://coder-liuu.github.io/2021/08/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
+      <description>2021-8-17更新: 本文仅作尝试，记录一些用法，不做深入探究。 自己以前经常用Python，这次通过Go还是学习到了很多知识，比如反射，s</description>
+    </item>
+    
+    <item>
       <title>回顾Aprioir算法</title>
       <link>https://coder-liuu.github.io/2021/08/review-aprioir/</link>
       <pubDate>Tue, 03 Aug 2021 14:24:13 +0800</pubDate>
@@ -180,15 +189,6 @@
       
       <guid>https://coder-liuu.github.io/album/</guid>
       <description>北京 北京CCF-CSP考试</description>
-    </item>
-    
-    <item>
-      <title>动手机器学习-&gt;实现决策树</title>
-      <link>https://coder-liuu.github.io/2021/02/ml-decision-tree/</link>
-      <pubDate>Sat, 27 Feb 2021 18:51:42 +0800</pubDate>
-      
-      <guid>https://coder-liuu.github.io/2021/02/ml-decision-tree/</guid>
-      <description>决策树完整代码想抄作业的同学直接点这里 一、决策树简介 决策树是一个很简单的机器学习算法,可以看作if-then的集合,比如我们判断一个西瓜的好</description>
     </item>
     
   </channel>
