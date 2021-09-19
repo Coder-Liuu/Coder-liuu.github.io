@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>Linux下使用dd命令制作启动盘</title>
+      <link>https://coder-liuu.github.io/2021/03/linux-dd/</link>
+      <pubDate>Thu, 04 Mar 2021 15:17:14 +0800</pubDate>
+      
+      <guid>https://coder-liuu.github.io/2021/03/linux-dd/</guid>
+      <description>正文 Linux也可以制作U盘启动盘,而且不需要使用其他外部工具,非常简单 使用命令sudo fdisk -l,找到自己U盘 执行结果中一般最后一个Disk是</description>
+    </item>
+    
+    <item>
       <title>留言板</title>
       <link>https://coder-liuu.github.io/guestbook/</link>
       <pubDate>Thu, 04 Mar 2021 01:16:00 +0800</pubDate>
