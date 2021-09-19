@@ -6,10 +6,28 @@
     <description>Recent content on Coder-Liuu&#39;Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>CC BY 4.0 CN</copyright>
-    <lastBuildDate>Tue, 17 Aug 2021 23:42:18 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 18 Sep 2021 21:26:42 +0800</lastBuildDate>
     
         <atom:link href="https://coder-liuu.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>计算机网络面试题</title>
+      <link>https://coder-liuu.github.io/2021/09/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E9%9D%A2%E8%AF%95%E9%A2%98/</link>
+      <pubDate>Sat, 18 Sep 2021 21:26:42 +0800</pubDate>
+      
+      <guid>https://coder-liuu.github.io/2021/09/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E9%9D%A2%E8%AF%95%E9%A2%98/</guid>
+      <description>全部问题皆由本人回答，如有问题，还望指正。 计算机网络 OSI和TCP/IP模型各个层的名称 (参考资料：https://www.cnblogs.</description>
+    </item>
+    
+    <item>
+      <title>数据结构面试题</title>
+      <link>https://coder-liuu.github.io/2021/09/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%B8%93%E4%B8%9A%E8%AF%BE%E9%9D%A2%E8%AF%95%E9%A2%98/</link>
+      <pubDate>Fri, 17 Sep 2021 18:55:58 +0800</pubDate>
+      
+      <guid>https://coder-liuu.github.io/2021/09/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%B8%93%E4%B8%9A%E8%AF%BE%E9%9D%A2%E8%AF%95%E9%A2%98/</guid>
+      <description>全部问题皆由本人回答，如有问题，还望指正。 数据结构 O(n)的大O是什么意思？什么是时间复杂度? 答：大O是最坏情况下的时间复杂度。时间复杂度是</description>
+    </item>
     
     <item>
       <title>Go语言学习笔记</title>
@@ -171,24 +189,6 @@
       
       <guid>https://coder-liuu.github.io/2021/03/linux-dd/</guid>
       <description>正文 Linux也可以制作U盘启动盘,而且不需要使用其他外部工具,非常简单 使用命令sudo fdisk -l,找到自己U盘 执行结果中一般最后一个Disk是</description>
-    </item>
-    
-    <item>
-      <title>留言板</title>
-      <link>https://coder-liuu.github.io/guestbook/</link>
-      <pubDate>Thu, 04 Mar 2021 01:16:00 +0800</pubDate>
-      
-      <guid>https://coder-liuu.github.io/guestbook/</guid>
-      <description>茫茫人海，有缘相聚在这里，不如留下你的足迹吧! 躺平中，随缘更新～ 测试 var gitalk = new Gitalk({ clientID: &#39;aab88ce03a8d50c6128f&#39;, clientSecret: &#39;1ac9ba0e3f9cefa8aac6414eb40dfed80545c021&#39;, repo: &#39;Coder-liuu.github.io&#39;, owner: &#34;Coder-Liuu&#34;, admin: &#34;Coder-Liuu&#34;, id: &#39;about&#39;, }) gitalk.render(&#39;gitalk-container&#39;);</description>
-    </item>
-    
-    <item>
-      <title>相册</title>
-      <link>https://coder-liuu.github.io/album/</link>
-      <pubDate>Thu, 04 Mar 2021 01:16:00 +0800</pubDate>
-      
-      <guid>https://coder-liuu.github.io/album/</guid>
-      <description>北京 北京CCF-CSP考试</description>
     </item>
     
   </channel>

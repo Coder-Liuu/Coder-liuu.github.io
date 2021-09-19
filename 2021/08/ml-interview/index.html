@@ -58,7 +58,7 @@
 <meta itemprop="description" content="机器学习中的数学笔记">
 <meta itemprop="datePublished" content="2021-08-01T11:45:54+08:00" />
 <meta itemprop="dateModified" content="2021-08-01T11:45:54+08:00" />
-<meta itemprop="wordCount" content="4466">
+<meta itemprop="wordCount" content="4472">
 
 
 
@@ -205,7 +205,7 @@
             <li class="category-list-item"><a href="https://coder-liuu.github.io/categories/linux/" class="category-list-link">linux</a><span class="category-list-count">7</span></li>
             <li class="category-list-item"><a href="https://coder-liuu.github.io/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" class="category-list-link">机器学习</a><span class="category-list-count">9</span></li>
             <li class="category-list-item"><a href="https://coder-liuu.github.io/categories/%E7%9B%B8%E5%86%8C/" class="category-list-link">相册</a><span class="category-list-count">1</span></li>
-            <li class="category-list-item"><a href="https://coder-liuu.github.io/categories/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/" class="category-list-link">默认分类</a><span class="category-list-count">8</span></li>
+            <li class="category-list-item"><a href="https://coder-liuu.github.io/categories/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/" class="category-list-link">默认分类</a><span class="category-list-count">10</span></li>
         </ul>
     </div>
 </div>
@@ -214,6 +214,26 @@
     <h3 class="widget-title">最新文章</h3>
     <div class="widget-body">
         <ul class="recent-post-list list-unstyled no-thumbnail">
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://coder-liuu.github.io/2021/09/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E9%9D%A2%E8%AF%95%E9%A2%98/" class="title">计算机网络面试题</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2021-09-18 21:26:42 &#43;0800 CST" itemprop="datePublished">2021-09-18</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://coder-liuu.github.io/2021/09/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%B8%93%E4%B8%9A%E8%AF%BE%E9%9D%A2%E8%AF%95%E9%A2%98/" class="title">数据结构面试题</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2021-09-17 18:55:58 &#43;0800 CST" itemprop="datePublished">2021-09-17</time>
+                    </p>
+                </div>
+            </li>
             <li>
                 <div class="item-inner">
                     <p class="item-title">
@@ -241,26 +261,6 @@
                     </p>
                     <p class="item-date">
                         <time datetime="2021-08-01 11:45:54 &#43;0800 CST" itemprop="datePublished">2021-08-01</time>
-                    </p>
-                </div>
-            </li>
-            <li>
-                <div class="item-inner">
-                    <p class="item-title">
-                        <a href="https://coder-liuu.github.io/2021/07/ventoy-tuition/" class="title">启动盘神器Ventoy</a>
-                    </p>
-                    <p class="item-date">
-                        <time datetime="2021-07-31 16:38:44 &#43;0800 CST" itemprop="datePublished">2021-07-31</time>
-                    </p>
-                </div>
-            </li>
-            <li>
-                <div class="item-inner">
-                    <p class="item-title">
-                        <a href="https://coder-liuu.github.io/2021/07/health-insure-predict/" class="title">健康保险的客户投保预测</a>
-                    </p>
-                    <p class="item-date">
-                        <time datetime="2021-07-15 16:01:25 &#43;0800 CST" itemprop="datePublished">2021-07-15</time>
                     </p>
                 </div>
             </li>
@@ -351,11 +351,11 @@
 
 <p>极大似然估计的目的在于找到一个最符合当前观测数据的概率分布</p>
 
-<p>最后，进入正题，我们假设有一组观察到的数据，一共有N个，$X_observation = {x_1, x_2, ... , x_N}$我们将$X_observation$里的数据点带入到$f(x; \mu, \sigma)$里，得到每个数据点在我们假设概率分布中的出现的可能性。</p>
+<p>最后，进入正题，我们假设有一组观察到的数据，一共有N个，$X_{observation} = {x_1, x_2, ... , x_N}$我们将$X_observation$里的数据点带入到$f(x; \mu, \sigma)$里，得到每个数据点在我们假设概率分布中的出现的可能性。</p>
 
 <p><span  class="math">\[P(x_1 | \mu, \sigma),P(x_2 | \mu, \sigma), ...,P(x_3 | \mu, \sigma)\]</span></p>
 
-<p>那么这一组数据$X_observation$在概率分布中出现的可能性就是他们的乘积：</p>
+<p>那么这一组数据$X_{observation}$在概率分布中出现的可能性就是他们的乘积：</p>
 
 <p><span  class="math">\[L(\mu, \sigma | X_{observation}) = P(X | \mu, \sigma) = \prod_{i=1}^{N} P(x_i | \mu, \sigma)\]</span></p>
 
@@ -431,7 +431,7 @@ y \left[ \begin{matrix} b \\ d  \end{matrix} \right] =
 
 <p><code>分析</code>：<a href="https://www.bilibili.com/video/BV1Qs41167bP/?spm_id_from=333.788.recommend_more_video.-1">参考视频</a></p>
 
-<p><code>答</code>：通过线性变换之后空间中物体变换的大小（二维是面积，三维是体积）。例如行列式<span  class="math">\( \left[ \begin{matrix} 2 0 \\ 0 3  \end{matrix} \right] = 6\)</span>表示通过这个线性变换，空间中的所有物体的面积将会增加6倍。行列式为0说明整个空间被压缩到了一条线上。</p>
+<p><code>答</code>：通过线性变换之后空间中物体变换的大小（二维是面积，三维是体积）。例如行列式<span  class="math">\( \left[ \begin{matrix} 2 & 0 \\ 0 & 3  \end{matrix} \right] = 6\)</span>表示通过这个线性变换，空间中的所有物体的面积将会增加6倍。行列式为0说明整个空间被压缩到了一条线上。</p>
 
 <p><code>扩展</code>：证明公式|A||B|=|AB|？</p>
 
