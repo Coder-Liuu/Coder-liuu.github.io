@@ -22,12 +22,12 @@
     <meta http-equiv="window-target" content="_top" />
     
     
-    <meta name="description" content="数据结构21道面试题目" />
+    <meta name="description" content="数据结构23道面试题目" />
     <meta name="generator" content="Hugo 0.79.0 with theme pure" />
     <title>数据结构面试题 - Coder-Liuu&#39;Blog</title>
     
     
-    <link rel="stylesheet" href="https://coder-liuu.github.io/css/style.min.c176bff0927994114cc5b07b7b2d29559f37ea70148203e691f0a8ea60d296df.css">
+    <link rel="stylesheet" href="https://coder-liuu.github.io/css/style.min.0bed60e04d2a561442a442282452e48a1e19989329d5e5f925141051a842976c.css">
     
     <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async> 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css" async>
@@ -49,23 +49,23 @@
 </script>
 
     <meta property="og:title" content="数据结构面试题" />
-<meta property="og:description" content="数据结构21道面试题目" />
+<meta property="og:description" content="数据结构23道面试题目" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://coder-liuu.github.io/2021/09/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%B8%93%E4%B8%9A%E8%AF%BE%E9%9D%A2%E8%AF%95%E9%A2%98/" />
 <meta property="article:published_time" content="2021-09-17T18:55:58+08:00" />
 <meta property="article:modified_time" content="2021-09-17T18:55:58+08:00" />
 <meta itemprop="name" content="数据结构面试题">
-<meta itemprop="description" content="数据结构21道面试题目">
+<meta itemprop="description" content="数据结构23道面试题目">
 <meta itemprop="datePublished" content="2021-09-17T18:55:58+08:00" />
 <meta itemprop="dateModified" content="2021-09-17T18:55:58+08:00" />
-<meta itemprop="wordCount" content="1722">
+<meta itemprop="wordCount" content="1917">
 
 
 
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="数据结构面试题"/>
-<meta name="twitter:description" content="数据结构21道面试题目"/>
+<meta name="twitter:description" content="数据结构23道面试题目"/>
 
     <!--[if lte IE 9]>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -334,7 +334,7 @@
 <li>
 <p>解释一下顺序存储与链式存储<br>
 顺序存储：所有元素存放在一块连续的存储区域中，这块区域通常可以用一个数组来表示。<br>
-链式存储：链式存储不要求相邻元素的实际物理位置相邻，只需要存储相邻元素的位置即可。</p>
+链式存储：链式存储<strong>不要求相邻元素的实际物理位置相邻</strong>，只需要存储相邻元素的位置即可。</p>
 </li>
 <li>
 <p>头结点和头指针的区别？<br>
@@ -372,9 +372,9 @@
 </li>
 <li>
 <p>平衡二叉树、二叉排序树、完全二叉树的定义<br>
-平衡二叉树：它的左右两个子树高度差的绝对值不超过1，并且左右两个子树都是二叉平衡树。<br>
-二叉排序树：又称二叉查找树，根结点的值大于全部左子树的值，根结点的值小于全部右子树的值。左右子树仍是二叉查找树。<br>
-二叉搜索树：叶结点只在最后一层或者次后层，最后一层的叶结点只能在最左边。</p>
+平衡二叉树(AVL)：它的左右两个子树高度差的绝对值不超过1，并且左右两个子树都是二叉平衡树。<br>
+二叉排序树(BST)：又称二叉查找树，根结点的值大于全部左子树的值，根结点的值小于全部右子树的值。左右子树仍是二叉查找树。<br>
+完全二叉树：叶结点只在最后一层或者次后层，最后一层的叶结点只能在最左边。</p>
 </li>
 <li>
 <p>如何由遍历序列构造一颗二叉树？已知先序序列和后序序列能否重现二叉树？
@@ -407,7 +407,7 @@ B树是一个优化的二叉搜索树，一个结点可以有多个值，减小�
 </li>
 <li>
 <p>最短路算法思路<br>
-每次选择最近的一个点，然后使用这个点优化距离表。</p>
+迪杰斯特拉算法（单源最短路径）：每次选择最近的一个点，然后使用这个点优化距离表。</p>
 </li>
 <li>
 <p>最小生成树算法思路<br>
@@ -436,6 +436,18 @@ BFS： 使用队列存储待遍历结点</p>
 <p>介绍一下字符串匹配算法：朴素的匹配算法和KMP算法。
 朴素的匹配算法： 一个一个匹配，暴力法。<br>
 KMP算法：在匹配失败的情况下，利用之前比较的情况，来使主串的起始点更靠后。(我是半瓶水)</p>
+</li>
+<li>
+<p>什么是动态规划？<br>
+动态规划：利用历史记录来避免重复计算而已。<br>
+动态规划通常有三步：(1) 定义dp数组含义 (2) 初始化dp数组 (3) 找出数组之间的关系，进行计算<br>
+经典例题：爬楼梯、小偷入室</p>
+</li>
+<li>
+<p>什么是回溯算法？
+什么是回溯算法：进行下一步选择之后，然后重新回到当前状态<br>
+回溯算法通常有三步：(1) for所有选择 (2) 进入某一选择 (3) 恢复状态，回来<br>
+经典例题：全排列、八皇后</p>
 </li>
 </ol>
 
