@@ -2,7 +2,8 @@
 <html lang="zh">
   <head>
     <title>
-        Coder-Liuu&#39;Blog</title>
+        简单视频分类模型 - Coder-Liuu&#39;Blog
+      </title>
         <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport"
@@ -21,11 +22,10 @@
     <meta http-equiv="window-target" content="_top" />
     
     
-    
+    <meta name="description" content="使用Tensorflow2.0进行快速搭建一个简单的视频分类的模型(2DCNN&#43;LSTM)" />
     <meta name="generator" content="Hugo 0.79.0 with theme pure" />
-    <title>Coder-Liuu&#39;Blog</title>
+    <title>简单视频分类模型 - Coder-Liuu&#39;Blog</title>
     
-    <link rel="alternate" type="application/rss+xml" href="https://coder-liuu.github.io/index.xml" title="Coder-Liuu'Blog" />
     
     <link rel="stylesheet" href="https://coder-liuu.github.io/css/style.min.0bed60e04d2a561442a442282452e48a1e19989329d5e5f925141051a842976c.css">
     
@@ -48,16 +48,24 @@
     });
 </script>
 
-    <meta property="og:title" content="Coder-Liuu&#39;Blog" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://coder-liuu.github.io/" />
-<meta property="og:updated_time" content="2021-10-19T23:42:38+08:00" />
-<meta itemprop="name" content="Coder-Liuu&#39;Blog">
-<meta itemprop="description" content="">
+    <meta property="og:title" content="简单视频分类模型" />
+<meta property="og:description" content="使用Tensorflow2.0进行快速搭建一个简单的视频分类的模型(2DCNN&#43;LSTM)" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://coder-liuu.github.io/2021/10/video-classify/" />
+<meta property="article:published_time" content="2021-10-19T23:42:38+08:00" />
+<meta property="article:modified_time" content="2021-10-19T23:42:38+08:00" />
+<meta itemprop="name" content="简单视频分类模型">
+<meta itemprop="description" content="使用Tensorflow2.0进行快速搭建一个简单的视频分类的模型(2DCNN&#43;LSTM)">
+<meta itemprop="datePublished" content="2021-10-19T23:42:38+08:00" />
+<meta itemprop="dateModified" content="2021-10-19T23:42:38+08:00" />
+<meta itemprop="wordCount" content="876">
+
+
+
+<meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Coder-Liuu&#39;Blog"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:title" content="简单视频分类模型"/>
+<meta name="twitter:description" content="使用Tensorflow2.0进行快速搭建一个简单的视频分类的模型(2DCNN&#43;LSTM)"/>
 
     <!--[if lte IE 9]>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -73,7 +81,7 @@
   
   
 
-  <body class="main-center theme-black main-center theme-black" itemscope itemtype="http://schema.org/WebPage"><header class="header" itemscope itemtype="http://schema.org/WPHeader">
+  <body class="main-center theme-black" itemscope itemtype="http://schema.org/WebPage"><header class="header" itemscope itemtype="http://schema.org/WPHeader">
     <div class="slimContent">
       <div class="navbar-header">
         <div class="profile-block text-center">
@@ -265,354 +273,144 @@
 
     
     
+<aside class="sidebar sidebar-toc collapse" id="collapseToc" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    <h4 class="toc-title">文章目录</h4>
+    <nav id="toc" class="js-toc toc">
 
-
-<main class="main" role="main">
-  
-  <div class="content article-list">
-    
-    
-    
-    <article
-      class="article article-type-page"
-      itemscope
-      itemtype="http://schema.org/BlogPosting"
-    >
-      <div class="article-header">
-        <h1 itemprop="name">
-  <a
-    class="article-title"
-    href="/2021/07/noise-mnist/"
-    >带噪音的手写数字识别</a
-  >
-</h1>
-
-      </div>
-      <div class="article-entry text-muted" itemprop="description">带噪音的手写数字识别</div>
-      
-      <p class="article-meta">
-<span class="article-date">
-  <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://coder-liuu.github.io/2021/07/noise-mnist/" class="">
-  <time datetime="2021-07-10 12:00:53 &#43;0800 CST" itemprop="datePublished">2021-07-10</time>
-</a>
-</span>
-<span class="article-category">
-  <i class="icon icon-folder"></i>&nbsp;
-  <a class="article-category-link" href="/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"> 机器学习 </a>
-</span>
-
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/2021/07/noise-mnist/#comments" class="article-comment-link">评论</a></span>
-      </p>
-    </article>
-    <article
-      class="article article-type-page"
-      itemscope
-      itemtype="http://schema.org/BlogPosting"
-    >
-      <div class="article-header">
-        <h1 itemprop="name">
-  <a
-    class="article-title"
-    href="/2021/07/album-ccf/"
-    >北京CCF-CSP考试</a
-  >
-</h1>
-
-      </div>
-      <div class="article-entry text-muted" itemprop="description">菜鸡去北京参加CCF的故事</div>
-      
-      <p class="article-meta">
-<span class="article-date">
-  <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://coder-liuu.github.io/2021/07/album-ccf/" class="">
-  <time datetime="2021-07-02 21:42:54 &#43;0800 CST" itemprop="datePublished">2021-07-02</time>
-</a>
-</span>
-<span class="article-category">
-  <i class="icon icon-folder"></i>&nbsp;
-  <a class="article-category-link" href="/categories/%E7%9B%B8%E5%86%8C/"> 相册 </a>
-</span>
-
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/2021/07/album-ccf/#comments" class="article-comment-link">评论</a></span>
-      </p>
-    </article>
-    <article
-      class="article article-type-page"
-      itemscope
-      itemtype="http://schema.org/BlogPosting"
-    >
-      <div class="article-header">
-        <h1 itemprop="name">
-  <a
-    class="article-title"
-    href="/2021/06/%E5%9B%BE%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9Cgnn/"
-    >图神经网络GNN</a
-  >
-</h1>
-
-      </div>
-      <div class="article-entry text-muted" itemprop="description">GNN图神经网络笔记</div>
-      
-      <p class="article-meta">
-<span class="article-date">
-  <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://coder-liuu.github.io/2021/06/%E5%9B%BE%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9Cgnn/" class="">
-  <time datetime="2021-06-07 15:47:39 &#43;0800 CST" itemprop="datePublished">2021-06-07</time>
-</a>
-</span>
-<span class="article-category">
-  <i class="icon icon-folder"></i>&nbsp;
-  <a class="article-category-link" href="/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"> 机器学习 </a>
-</span>
-
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/2021/06/%E5%9B%BE%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9Cgnn/#comments" class="article-comment-link">评论</a></span>
-      </p>
-    </article>
-    <article
-      class="article article-type-page"
-      itemscope
-      itemtype="http://schema.org/BlogPosting"
-    >
-      <div class="article-header">
-        <h1 itemprop="name">
-  <a
-    class="article-title"
-    href="/2021/05/python-forget-function/"
-    >Python 常忘函数</a
-  >
-</h1>
-
-      </div>
-      <div class="article-entry text-muted" itemprop="description">有些Python中的库的函数名字总是太长，记起来很是费劲(头大)，于是写篇博客记下自己常用的函数</div>
-      
-      <p class="article-meta">
-<span class="article-date">
-  <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://coder-liuu.github.io/2021/05/python-forget-function/" class="">
-  <time datetime="2021-05-27 21:11:06 &#43;0800 CST" itemprop="datePublished">2021-05-27</time>
-</a>
-</span>
-<span class="article-category">
-  <i class="icon icon-folder"></i>&nbsp;
-  <a class="article-category-link" href="/categories/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/"> 默认分类 </a>
-</span>
-
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/2021/05/python-forget-function/#comments" class="article-comment-link">评论</a></span>
-      </p>
-    </article>
-    <article
-      class="article article-type-page"
-      itemscope
-      itemtype="http://schema.org/BlogPosting"
-    >
-      <div class="article-header">
-        <h1 itemprop="name">
-  <a
-    class="article-title"
-    href="/2021/05/docker-arch-nvim-process/"
-    >Docker打包一个配置好Vim的Arch系统全过程(持续更新)</a
-  >
-</h1>
-
-      </div>
-      <div class="article-entry text-muted" itemprop="description">Vim是一个Linux上最好用的编辑器，但是其复杂的配置让人头疼，本文将自己配置好Vim的Arch容器进行打包，最终会放到Github中去</div>
-      
-      <p class="article-meta">
-<span class="article-date">
-  <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://coder-liuu.github.io/2021/05/docker-arch-nvim-process/" class="">
-  <time datetime="2021-05-16 17:38:57 &#43;0800 CST" itemprop="datePublished">2021-05-16</time>
-</a>
-</span>
-<span class="article-category">
-  <i class="icon icon-folder"></i>&nbsp;
-  <a class="article-category-link" href="/categories/linux/"> Linux </a>
-</span>
-
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/2021/05/docker-arch-nvim-process/#comments" class="article-comment-link">评论</a></span>
-      </p>
-    </article>
-    <article
-      class="article article-type-page"
-      itemscope
-      itemtype="http://schema.org/BlogPosting"
-    >
-      <div class="article-header">
-        <h1 itemprop="name">
-  <a
-    class="article-title"
-    href="/2021/04/docker-used/"
-    >Docker使用总结</a
-  >
-</h1>
-
-      </div>
-      <div class="article-entry text-muted" itemprop="description">Docker是一个更纯粹的虚拟机，具有广泛的应用常见，本文介绍了Docker一些简单操作</div>
-      
-      <p class="article-meta">
-<span class="article-date">
-  <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://coder-liuu.github.io/2021/04/docker-used/" class="">
-  <time datetime="2021-04-29 13:35:44 &#43;0800 CST" itemprop="datePublished">2021-04-29</time>
-</a>
-</span>
-<span class="article-category">
-  <i class="icon icon-folder"></i>&nbsp;
-  <a class="article-category-link" href="/categories/linux/"> Linux </a>
-</span>
-
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/2021/04/docker-used/#comments" class="article-comment-link">评论</a></span>
-      </p>
-    </article>
-    <article
-      class="article article-type-page"
-      itemscope
-      itemtype="http://schema.org/BlogPosting"
-    >
-      <div class="article-header">
-        <h1 itemprop="name">
-  <a
-    class="article-title"
-    href="/2021/04/linux%E4%BD%BF%E7%94%A8matplotlib%E7%94%BB%E5%9B%BE%E4%B8%AD%E6%96%87%E5%AD%97%E4%BD%93%E9%97%AE%E9%A2%98/"
-    >Linux使用Matplotlib画图中文字体问题</a
-  >
-</h1>
-
-      </div>
-      <div class="article-entry text-muted" itemprop="description">Linux使用Matplotlib画图中文字体总是显示不出来，这是一个很关键的问题，有时候总是需要麻烦别人画图，这次解决了这个问题，就不用总是麻烦别人了</div>
-      
-      <p class="article-meta">
-<span class="article-date">
-  <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://coder-liuu.github.io/2021/04/linux%E4%BD%BF%E7%94%A8matplotlib%E7%94%BB%E5%9B%BE%E4%B8%AD%E6%96%87%E5%AD%97%E4%BD%93%E9%97%AE%E9%A2%98/" class="">
-  <time datetime="2021-04-22 17:59:47 &#43;0800 CST" itemprop="datePublished">2021-04-22</time>
-</a>
-</span>
-<span class="article-category">
-  <i class="icon icon-folder"></i>&nbsp;
-  <a class="article-category-link" href="/categories/linux/"> Linux </a>
-</span>
-
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/2021/04/linux%E4%BD%BF%E7%94%A8matplotlib%E7%94%BB%E5%9B%BE%E4%B8%AD%E6%96%87%E5%AD%97%E4%BD%93%E9%97%AE%E9%A2%98/#comments" class="article-comment-link">评论</a></span>
-      </p>
-    </article>
-    <article
-      class="article article-type-page"
-      itemscope
-      itemtype="http://schema.org/BlogPosting"
-    >
-      <div class="article-header">
-        <h1 itemprop="name">
-  <a
-    class="article-title"
-    href="/2021/04/math-linear-algebra/"
-    >线性代数大纲</a
-  >
-</h1>
-
-      </div>
-      <div class="article-entry text-muted" itemprop="description">线性代数大纲，以便自己复习</div>
-      
-      <p class="article-meta">
-<span class="article-date">
-  <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://coder-liuu.github.io/2021/04/math-linear-algebra/" class="">
-  <time datetime="2021-04-02 17:50:12 &#43;0800 CST" itemprop="datePublished">2021-04-02</time>
-</a>
-</span>
-<span class="article-category">
-  <i class="icon icon-folder"></i>&nbsp;
-  <a class="article-category-link" href="/categories/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/"> 默认分类 </a>
-</span>
-
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/2021/04/math-linear-algebra/#comments" class="article-comment-link">评论</a></span>
-      </p>
-    </article>
-    <article
-      class="article article-type-page"
-      itemscope
-      itemtype="http://schema.org/BlogPosting"
-    >
-      <div class="article-header">
-        <h1 itemprop="name">
-  <a
-    class="article-title"
-    href="/2021/03/imbalanced-datasets/"
-    >不平衡数据集</a
-  >
-</h1>
-
-      </div>
-      <div class="article-entry text-muted" itemprop="description">不平衡数据集的下载和怎么使用，包含怎么将KEEL数据集转化为CSV数据集</div>
-      
-      <p class="article-meta">
-<span class="article-date">
-  <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://coder-liuu.github.io/2021/03/imbalanced-datasets/" class="">
-  <time datetime="2021-03-30 22:16:40 &#43;0800 CST" itemprop="datePublished">2021-03-30</time>
-</a>
-</span>
-<span class="article-category">
-  <i class="icon icon-folder"></i>&nbsp;
-  <a class="article-category-link" href="/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"> 机器学习 </a>
-</span>
-
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/2021/03/imbalanced-datasets/#comments" class="article-comment-link">评论</a></span>
-      </p>
-    </article>
-    <article
-      class="article article-type-page"
-      itemscope
-      itemtype="http://schema.org/BlogPosting"
-    >
-      <div class="article-header">
-        <h1 itemprop="name">
-  <a
-    class="article-title"
-    href="/2021/03/ml-logisticregression/"
-    >动手机器学习-实现逻辑回归</a
-  >
-</h1>
-
-      </div>
-      <div class="article-entry text-muted" itemprop="description">动手实现逻辑回归</div>
-      
-      <p class="article-meta">
-<span class="article-date">
-  <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://coder-liuu.github.io/2021/03/ml-logisticregression/" class="">
-  <time datetime="2021-03-24 19:03:39 &#43;0800 CST" itemprop="datePublished">2021-03-24</time>
-</a>
-</span>
-<span class="article-category">
-  <i class="icon icon-folder"></i>&nbsp;
-  <a class="article-category-link" href="/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"> 机器学习 </a>
-</span>
-
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/2021/03/ml-logisticregression/#comments" class="article-comment-link">评论</a></span>
-      </p>
-    </article></div>
-  
-<nav class="bar bar-footer clearfix" data-stick-bottom>
-  <div class="bar-inner">
-    <ul class="pager pull-left"><li class="prev">
-        <a href="/">
-          <i class="icon icon-angle-left"></i>
-          
-        </a>
-      </li><li class="next">
-        <a href="/page/3/">
-          <i class="icon icon-angle-right"></i>
-          
-        </a>
-      </li>
-    </ul>
-    <div class="total-article bar-right">
-      Page:2/4
-    </div>
+    </nav>
   </div>
+</aside>
+<main class="main" role="main"><div class="content">
+  <article id="-Video-Classify" class="article article-type-" itemscope
+    itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      <h1 itemprop="name">
+  <a
+    class="article-title"
+    href="/2021/10/video-classify/"
+    >简单视频分类模型</a
+  >
+</h1>
+
+      <div class="article-meta">
+        
+<span class="article-date">
+  <i class="icon icon-calendar-check"></i>&nbsp;
+<a href="https://coder-liuu.github.io/2021/10/video-classify/" class="article-date">
+  <time datetime="2021-10-19 23:42:38 &#43;0800 CST" itemprop="datePublished">2021-10-19</time>
+</a>
+</span>
+<span class="article-category">
+  <i class="icon icon-folder"></i>&nbsp;
+  <a class="article-category-link" href="/categories/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/"> 默认分类 </a>
+</span>
+
+	<span class="article-read hidden-xs">
+	    <i class="icon icon-eye-fill" aria-hidden="true"></i>
+			<span id="busuanzi_value_page_pv">0</span>
+	</span>
+
+        <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/2021/10/video-classify/#comments"
+            class="article-comment-link">评论</a></span>
+      </div>
+    </div>
+    <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
+      <blockquote>
+<p>视频可以简单看作一系列图片的集合</p>
+</blockquote>
+<h1 id="1-视频分类简介">1. 视频分类简介</h1>
+<p>视频分类通过有以下几种方法：</p>
+<ol>
+<li>2DCNN + LSTM</li>
+<li>3DCNN</li>
+</ol>
+<p>本文仅仅介绍最简单的<code>2DCNN + LSTM</code>的方法，使用tensorflow 2.0+ 进行实现，<strong>保证代码尽可能简短</strong>，但性能将会一般。</p>
+<h1 id="2-数据集准备">2. 数据集准备</h1>
+<p>虽然视频是由很多帧构成的，但是如果我们选取所有帧会消耗大量的计算资源，<code>并且不同视频帧数不同会导致LSTM的输入不确定</code>。为了保证所有视频提取出的所有帧数量相同，本文使用最简单的方法进行预处理（等间隔采样法）。</p>
+<p>等间隔采样方法示例：无论视频多长我们都想采样出4帧来。那么一个32帧的视频，我们就需要每8帧取一帧。最后我们的采样结果是第{1,9,17,25}帧。</p>
+<p>具体代码实现为：</p>
+<pre><code class="language-python">def read_video(video_path):
+    # 等间隔采样法
+    need_number = 8
+    images = []
+    cap = cv2.VideoCapture(video_path)
+    frames_num = cap.get(7) - 1
+    step = frames_num // need_number
+    print(&quot;总帧数: &quot;, frames_num, &quot;步长:&quot;, step)
+    i = 0
+    frames = 0
+    while cap.isOpened():
+        ret, frame = cap.read()
+        i = i+1
+        if frames == need_number:
+            cap.release()
+            break
+        if (i % step == 0):
+            frames = frames + 1
+            frame = transform.resize(frame, (150, 80))
+            images.append(frame)
+    return np.asarray(images, np.float32)
+</code></pre>
+<p>该方法具有帧浪费的现象，但是本文尽可能保证代码简单，如有优化兴趣，请见参考文献1。</p>
+<h1 id="3-模型搭建">3. 模型搭建</h1>
+<p>模型搭建，本文使用tensorflow中的keras进行快速搭建，几行代码就可以搞定。</p>
+<pre><code class="language-python">model = Sequential([
+    TimeDistributed(Conv2D(2, (2,2), activation= 'relu'), input_shape=(None,150,80,3)),
+    TimeDistributed(MaxPooling2D(pool_size=(2, 2))),
+    TimeDistributed(Flatten()),
+    LSTM(256),
+    Dense(1, activation='sigmoid'),
+])
+</code></pre>
+<p>这里解释一下<code>TimeDistributed</code>层的意思，我们的输入是一个时间序列数据，就像这样[图片1,图片2,图片3,图片4]，我们需要对每个图片都进行CNN特征提取，所以TimeDistributed层就是对每个时刻的数据进行函数内的操作。</p>
+<p>最后我们将所有采样出的图片的特征，输入到LSTM中进行分类。</p>
+<h1 id="4-全部代码">4. 全部代码</h1>
+<p>为了方便大家的使用，我将全部代码（包含小型数据集）都打包放在云盘当中去。<strong>如果觉得不错希望在评论区留下你的足迹。</strong></p>
+<p>使用方法：</p>
+<ol>
+<li>运行create_image.py文件，生成视频采样特征。</li>
+<li>运行main.py文件，训练模型</li>
+<li>运行predict.py文件，进行预测</li>
+</ol>
+<p>阿里云盘链接：https://www.aliyundrive.com/s/qUMVc5MgnpP</p>
+<p>如果不能下载，给我留言我会发给你的。</p>
+<h1 id="5-参考资料">5. 参考资料</h1>
+<ol>
+<li><a href="https://blog.csdn.net/qq_43493208/article/details/104387182">CSDN-2D卷积神经网络+LSTM实现视频动作分类</a></li>
+</ol>
+
+    </div>
+  </article>
+<section id="comments">
+</section>
+
+</div><nav class="bar bar-footer clearfix" data-stick-bottom>
+    <div class="bar-inner">
+        <ul class="pager pull-left">
+            <li class="prev">
+                <a href="https://coder-liuu.github.io/2021/09/album-game/" title="游戏-理想的世界"><i
+                        class="icon icon-angle-left"
+                        aria-hidden="true"></i><span>&nbsp;&nbsp;下一篇</span></a>
+            </li>
+            
+            <li class="toggle-toc">
+                <a class="toggle-btn collapsed" data-toggle="collapse" href="#collapseToc" aria-expanded="false" id="toggleabc"                     title="文章目录" role="button">
+                    <span>[&nbsp;</span><span>文章目录</span>
+                    <i class="text-collapsed icon icon-anchor"></i>
+                    <i class="text-in icon icon-close"></i>
+                    <span>]</span>
+                </a>
+            </li>
+        </ul>
+        <div class="bar-right">
+            <div class="share-component" data-sites="weibo,qq,wechat,facebook,twitter"
+                data-mobile-sites="weibo,qq,qzone"></div>
+        </div>
+    </div>
 </nav>
+
 
 </main><footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
 <ul class="social-links">
@@ -722,6 +520,24 @@
         
         hasInnerContainers: true,
     });
+</script>
+
+<script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1.4.0/dist/gitalk.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/blueimp-md5@2.10.0/js/md5.min.js"></script>
+<script type="text/javascript">
+    var gitalk = new Gitalk({
+        clientID: 'aab88ce03a8d50c6128f',
+        clientSecret: '1ac9ba0e3f9cefa8aac6414eb40dfed80545c021',
+        repo: 'Coder-liuu.github.io',
+        owner: 'Coder-Liuu',
+        admin: ['Coder-Liuu'],
+        proxy: 'https:\/\/shielded-brushlands-08810.herokuapp.com\/https:\/\/github.com\/login\/oauth\/access_token',
+        id: md5(location.pathname),
+        distractionFreeMode: false
+    });
+    gitalk.render('comments');
 </script>
 
   </body>
