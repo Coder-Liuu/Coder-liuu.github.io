@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>动手机器学习-实现逻辑回归</title>
+      <link>https://coder-liuu.github.io/2021/03/ml-logisticregression/</link>
+      <pubDate>Wed, 24 Mar 2021 19:03:39 +0800</pubDate>
+      
+      <guid>https://coder-liuu.github.io/2021/03/ml-logisticregression/</guid>
+      <description>逻辑回归完整代码想抄作业的同学直接点这里 一、逻辑回归算法简介 逻辑回归又称对数几率回归 在线性回归模型中，我们学会了使用线性模型完成回归的问题，</description>
+    </item>
+    
+    <item>
       <title>动手机器学习-实现线性回归</title>
       <link>https://coder-liuu.github.io/2021/03/ml-linearregression/</link>
       <pubDate>Fri, 19 Mar 2021 11:07:40 +0800</pubDate>

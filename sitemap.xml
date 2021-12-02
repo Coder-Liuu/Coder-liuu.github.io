@@ -4,21 +4,35 @@
   
   <url>
     <loc>https://coder-liuu.github.io/categories/</loc>
-    <lastmod>2021-10-19T23:42:38+08:00</lastmod>
+    <lastmod>2021-10-20T23:35:15+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://coder-liuu.github.io/</loc>
-    <lastmod>2021-10-19T23:42:38+08:00</lastmod>
+    <lastmod>2021-10-20T23:35:15+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://coder-liuu.github.io/categories/java/</loc>
+    <lastmod>2021-10-20T23:35:15+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://coder-liuu.github.io/2021/10/java%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</loc>
+    <lastmod>2021-10-20T23:35:15+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://coder-liuu.github.io/posts/</loc>
-    <lastmod>2021-10-19T23:42:38+08:00</lastmod>
+    <lastmod>2021-10-20T23:35:15+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
