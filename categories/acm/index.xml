@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>DQN调参笔记_从学习到崩溃</title>
+      <link>https://coder-liuu.github.io/2021/12/rl-one-star/</link>
+      <pubDate>Thu, 30 Dec 2021 23:33:19 +0800</pubDate>
+      
+      <guid>https://coder-liuu.github.io/2021/12/rl-one-star/</guid>
+      <description>强化学习也不是神,不一定完全能够解决实际问题. 1. 前言 这段时间可是被强化学习折磨透了,在Iron Shout游戏中训练的AI效果十分差劲,故打算</description>
+    </item>
+    
+    <item>
       <title>Java基础学习笔记</title>
       <link>https://coder-liuu.github.io/2021/10/java%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
       <pubDate>Wed, 20 Oct 2021 23:35:15 +0800</pubDate>
@@ -180,15 +189,6 @@
       
       <guid>https://coder-liuu.github.io/2021/04/math-linear-algebra/</guid>
       <description>强烈吹捧此线代视频:点我出发 挑一些重要的写，方便后面复习 行列式 行列式性质 行列互换，行列式的值不变 对换行列式中两行的位置，行列式变号(推论：行</description>
-    </item>
-    
-    <item>
-      <title>不平衡数据集</title>
-      <link>https://coder-liuu.github.io/2021/03/imbalanced-datasets/</link>
-      <pubDate>Tue, 30 Mar 2021 22:16:40 +0800</pubDate>
-      
-      <guid>https://coder-liuu.github.io/2021/03/imbalanced-datasets/</guid>
-      <description>直接下载(强烈推荐) 我已经传到CSDN上去了，不需要积分，点击出发 数据集说明如下所示: https://imbalanced-learn.org/stable/datasets/index.html#imbalanced-datasets-for-benchmark 最简单的使用 安装imblearn库 pip install imblearn 下载你需要的</description>
     </item>
     
   </channel>

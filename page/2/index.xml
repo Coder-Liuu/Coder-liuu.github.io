@@ -6,10 +6,19 @@
     <description>Recent content on Coder-Liuu&#39;Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>CC BY 4.0 CN</copyright>
-    <lastBuildDate>Wed, 20 Oct 2021 23:35:15 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 30 Dec 2021 23:33:19 +0800</lastBuildDate>
     
         <atom:link href="https://coder-liuu.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>不平衡数据集</title>
+      <link>https://coder-liuu.github.io/2021/03/imbalanced-datasets/</link>
+      <pubDate>Tue, 30 Mar 2021 22:16:40 +0800</pubDate>
+      
+      <guid>https://coder-liuu.github.io/2021/03/imbalanced-datasets/</guid>
+      <description>直接下载(强烈推荐) 我已经传到CSDN上去了，不需要积分，点击出发 数据集说明如下所示: https://imbalanced-learn.org/stable/datasets/index.html#imbalanced-datasets-for-benchmark 最简单的使用 安装imblearn库 pip install imblearn 下载你需要的</description>
+    </item>
     
     <item>
       <title>动手机器学习-实现逻辑回归</title>
@@ -180,15 +189,6 @@
       
       <guid>https://coder-liuu.github.io/2020/04/git-summary/</guid>
       <description>最常用篇 初始化git仓库 git init 添加修改 git add . 删除git仓库,只需要删除本地的文件就可以了 rm -rf .git 查看当前仓库的状态 git status 丢弃工作区的改动 git restore &amp;lt</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>https://coder-liuu.github.io/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://coder-liuu.github.io/about/</guid>
-      <description>时常在想，我为什么这么菜 一、个人介绍 网名: Code-liu 出生: 2000年12月 职业: 小学二年级在读 网站历史: 2019年2月份 进入CSDN，开始写博客。 2</description>
     </item>
     
   </channel>
