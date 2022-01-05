@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Coder-Liuu&#39;Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>CC BY 4.0 CN</copyright>
-    <lastBuildDate>Thu, 30 Dec 2021 23:33:19 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 05 Jan 2022 23:11:50 +0800</lastBuildDate>
     
         <atom:link href="https://coder-liuu.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>线性代数大纲</title>
+      <link>https://coder-liuu.github.io/2021/04/math-linear-algebra/</link>
+      <pubDate>Fri, 02 Apr 2021 17:50:12 +0800</pubDate>
+      
+      <guid>https://coder-liuu.github.io/2021/04/math-linear-algebra/</guid>
+      <description>强烈吹捧此线代视频:点我出发 挑一些重要的写，方便后面复习 行列式 行列式性质 行列互换，行列式的值不变 对换行列式中两行的位置，行列式变号(推论：行</description>
+    </item>
     
     <item>
       <title>不平衡数据集</title>
@@ -180,15 +189,6 @@
       
       <guid>https://coder-liuu.github.io/2020/04/python-create-vir/</guid>
       <description>一、用Python第三方库virtualenv创建虚拟环境 这种方式是最原始最简单的一种方式.个人经常使用 1. 安装方式 pip install virtualenv # python2 pip3 install virtualenv # python3 2.创</description>
-    </item>
-    
-    <item>
-      <title>Git命令总结</title>
-      <link>https://coder-liuu.github.io/2020/04/git-summary/</link>
-      <pubDate>Sun, 26 Apr 2020 23:57:02 +0000</pubDate>
-      
-      <guid>https://coder-liuu.github.io/2020/04/git-summary/</guid>
-      <description>最常用篇 初始化git仓库 git init 添加修改 git add . 删除git仓库,只需要删除本地的文件就可以了 rm -rf .git 查看当前仓库的状态 git status 丢弃工作区的改动 git restore &amp;lt</description>
     </item>
     
   </channel>

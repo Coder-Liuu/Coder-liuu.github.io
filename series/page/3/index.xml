@@ -11,6 +11,15 @@
     
     
     <item>
+      <title>Git命令总结</title>
+      <link>https://coder-liuu.github.io/2020/04/git-summary/</link>
+      <pubDate>Sun, 26 Apr 2020 23:57:02 +0000</pubDate>
+      
+      <guid>https://coder-liuu.github.io/2020/04/git-summary/</guid>
+      <description>最常用篇 初始化git仓库 git init 添加修改 git add . 删除git仓库,只需要删除本地的文件就可以了 rm -rf .git 查看当前仓库的状态 git status 丢弃工作区的改动 git restore &amp;lt</description>
+    </item>
+    
+    <item>
       <title>About</title>
       <link>https://coder-liuu.github.io/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
