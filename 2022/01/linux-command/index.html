@@ -2,7 +2,7 @@
 <html lang="zh">
   <head>
     <title>
-        带噪音的手写数字识别 - Coder-Liuu&#39;Blog
+        Linux命令总结 - Coder-Liuu&#39;Blog
       </title>
         <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -22,9 +22,9 @@
     <meta http-equiv="window-target" content="_top" />
     
     
-    <meta name="description" content="带噪音的手写数字识别" />
+    <meta name="description" content="Linux命令总结" />
     <meta name="generator" content="Hugo 0.79.0 with theme pure" />
-    <title>带噪音的手写数字识别 - Coder-Liuu&#39;Blog</title>
+    <title>Linux命令总结 - Coder-Liuu&#39;Blog</title>
     
     
     <link rel="stylesheet" href="https://coder-liuu.github.io/css/style.min.0bed60e04d2a561442a442282452e48a1e19989329d5e5f925141051a842976c.css">
@@ -48,24 +48,24 @@
     });
 </script>
 
-    <meta property="og:title" content="带噪音的手写数字识别" />
-<meta property="og:description" content="带噪音的手写数字识别" />
+    <meta property="og:title" content="Linux命令总结" />
+<meta property="og:description" content="Linux命令总结" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://coder-liuu.github.io/2021/07/noise-mnist/" />
-<meta property="article:published_time" content="2021-07-10T12:00:53+08:00" />
-<meta property="article:modified_time" content="2021-07-10T12:00:53+08:00" />
-<meta itemprop="name" content="带噪音的手写数字识别">
-<meta itemprop="description" content="带噪音的手写数字识别">
-<meta itemprop="datePublished" content="2021-07-10T12:00:53+08:00" />
-<meta itemprop="dateModified" content="2021-07-10T12:00:53+08:00" />
-<meta itemprop="wordCount" content="954">
+<meta property="og:url" content="https://coder-liuu.github.io/2022/01/linux-command/" />
+<meta property="article:published_time" content="2022-01-17T22:55:08+08:00" />
+<meta property="article:modified_time" content="2022-01-17T22:55:08+08:00" />
+<meta itemprop="name" content="Linux命令总结">
+<meta itemprop="description" content="Linux命令总结">
+<meta itemprop="datePublished" content="2022-01-17T22:55:08+08:00" />
+<meta itemprop="dateModified" content="2022-01-17T22:55:08+08:00" />
+<meta itemprop="wordCount" content="377">
 
 
 
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="带噪音的手写数字识别"/>
-<meta name="twitter:description" content="带噪音的手写数字识别"/>
+<meta name="twitter:title" content="Linux命令总结"/>
+<meta name="twitter:description" content="Linux命令总结"/>
 
     <!--[if lte IE 9]>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -283,15 +283,15 @@
   </div>
 </aside>
 <main class="main" role="main"><div class="content">
-  <article id="-noise-mnist" class="article article-type-" itemscope
+  <article id="-Linux-Command" class="article article-type-" itemscope
     itemtype="http://schema.org/BlogPosting">
     
     <div class="article-header">
       <h1 itemprop="name">
   <a
     class="article-title"
-    href="/2021/07/noise-mnist/"
-    >带噪音的手写数字识别</a
+    href="/2022/01/linux-command/"
+    >Linux命令总结</a
   >
 </h1>
 
@@ -299,13 +299,13 @@
         
 <span class="article-date">
   <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://coder-liuu.github.io/2021/07/noise-mnist/" class="article-date">
-  <time datetime="2021-07-10 12:00:53 &#43;0800 CST" itemprop="datePublished">2021-07-10</time>
+<a href="https://coder-liuu.github.io/2022/01/linux-command/" class="article-date">
+  <time datetime="2022-01-17 22:55:08 &#43;0800 CST" itemprop="datePublished">2022-01-17</time>
 </a>
 </span>
 <span class="article-category">
   <i class="icon icon-folder"></i>&nbsp;
-  <a class="article-category-link" href="/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"> 机器学习 </a>
+  <a class="article-category-link" href="/categories/linux/"> Linux </a>
 </span>
 
 	<span class="article-read hidden-xs">
@@ -313,137 +313,50 @@
 			<span id="busuanzi_value_page_pv">0</span>
 	</span>
 
-        <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/2021/07/noise-mnist/#comments"
+        <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/2022/01/linux-command/#comments"
             class="article-comment-link">评论</a></span>
       </div>
     </div>
     <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
-      <p>Oh，好久不更新，接下来说一说我最近的在做的其中的一个事情吧～</p>
-<blockquote>
-<p>问题描述: 给我2000张<strong>带噪音</strong>的手写数字图片，如下图所示。要求我训练一个模型，使其能在测试集10000张带噪音的手写数字图片，取得较好的效果。</p>
+      <blockquote>
+<p>下面是我常用的Linux命令,但又常忘.</p>
 </blockquote>
-<p><div style="text-align: center;">
-  <img src="https://gitee.com/liu__yang/image/raw/master/img/%e6%b7%b1%e5%ba%a6%e6%88%aa%e5%9b%be_%e9%80%89%e6%8b%a9%e5%8c%ba%e5%9f%9f_20210710005345.png" width="30%">
-</div>
-
-<center>
-  <h3>
-  噪声图片
-  </h3>
-</center>
-</p>
-<h1 id="一图片预处理">一、图片预处理</h1>
-<p>通过分析可以知道这是<strong>高斯噪音</strong>，高斯噪音的形成为：<strong>一个正太分布的随机数与原图相加</strong>，即可使图片拥有高斯噪音。</p>
-<p>添加高斯噪音的Python代码为：</p>
-<pre><code class="language-python">def add_gaussian_noise(image_in, noise_sigma):
-    temp_image = np.float64(np.copy(image_in))
- 
-    h, w = temp_image.shape
-    noise = np.random.randn(h, w) * noise_sigma
-    noisy_image = np.zeros(temp_image.shape, np.float64)
-    noisy_image = temp_image + noise
-    return noisy_image
+<h1 id="1-ssh远程链接">1. ssh远程链接</h1>
+<p>连接示例</p>
+<pre><code>ssh -p 端口号 用户名@ip地址
 </code></pre>
-<p>添加效果如下所示:</p>
-<p><div style="text-align: center;">
-  <img src="https://gitee.com/liu__yang/image/raw/master/img/%e6%b7%b1%e5%ba%a6%e6%88%aa%e5%9b%be_%e9%80%89%e6%8b%a9%e5%8c%ba%e5%9f%9f_20210710121803.png" width="30%">
-</div>
-
-<center>
-  <h3>
-  左边原图，右边加噪音图
-  </h3>
-</center>
-</p>
-<p>消除高斯噪音，我有两种思路。</p>
-<ol>
-<li>直接对图片二值化(大于0.4的像素点为1,小于0.4的像素点为0)，下面是效果图。</li>
-</ol>
-<p><div style="text-align: center;">
-  <img src="https://gitee.com/liu__yang/image/raw/master/img/%e6%b7%b1%e5%ba%a6%e6%88%aa%e5%9b%be_%e9%80%89%e6%8b%a9%e5%8c%ba%e5%9f%9f_20210710122035.png" width="30%">
-</div>
-
-<center>
-  <h3>
-  左边噪音图，右边二值化
-  </h3>
-</center>
-</p>
-<ol start="2">
-<li>使用高斯滤波之后，做一个简单的去背景噪声，使用高斯滤波器核心代码<code>cv2.GaussianBlur(noise,(3,3),0)</code>，下面是效果。</li>
-</ol>
-<p><div style="text-align: center;">
-  <img src="https://gitee.com/liu__yang/image/raw/master/img/%e6%b7%b1%e5%ba%a6%e6%88%aa%e5%9b%be_%e9%80%89%e6%8b%a9%e5%8c%ba%e5%9f%9f_20210710150102.png" width="30%">
-</div>
-
-<center>
-  <h3>
-  左边噪音图，右边效果图
-  </h3>
-</center>
-</p>
-<h1 id="二数据增强">二、数据增强</h1>
-<p>数据增强有一个非常好使的库，名字为<code>imgaug</code>，接下来我说一下基本用法吧。</p>
-<pre><code class="language-python">from imgaug import augmenters as iaa # 导入库
-iaa.Affine(rotate=(-15, 15)),        # 定义增强方式
-img_aug = aug.augment_images(img)    # 进行数据增强
+<h1 id="2-patch代码打补丁">2. patch代码打补丁</h1>
+<p>单个文件打补丁</p>
+<pre><code>diff 旧代码 新代码 &gt; foo.patch
+patch 旧代码 &lt; foo.patch
 </code></pre>
-<p>只需三行，方可入手。超级简单有么有～。如果需要查看更多增强方式，请看这个<a href="https://blog.csdn.net/lly1122334/article/details/88944589">博客</a>，讲的非常详细。</p>
-<h1 id="三搭建模型">三、搭建模型</h1>
-<p>对于自己瞎玩可以随便搭建模型，但是这是一个比赛，可需要认真一点了。Kaggle上曾有人证明最优28×28的网络的形状，详细过程可以参考这篇<a href="https://www.kaggle.com/cdeotte/how-to-choose-cnn-architecture-mnist">博客</a>，这里我直接说结论了，下图是Tensorflow代码，易读性很器的。</p>
-<pre><code class="language-python">model = Sequential([
-    Conv2D(32, kernel_size = 3, activation='relu', input_shape = (28, 28, 1)),
-    BatchNormalization(),
-    Conv2D(32, kernel_size = 3, activation='relu'),
-    BatchNormalization(),
-    Conv2D(32, kernel_size = 5, strides=2, padding='same', activation='relu'),
-    BatchNormalization(),
-    Dropout(0.4),
-    Conv2D(64, kernel_size = 3, activation='relu'),
-    BatchNormalization(),
-    Conv2D(64, kernel_size = 3, activation='relu'),
-    BatchNormalization(),
-    Conv2D(64, kernel_size = 5, strides=2, padding='same', activation='relu'),
-    BatchNormalization(),
-    Dropout(0.4),
-    Conv2D(128, kernel_size = 4, activation='relu'),
-    BatchNormalization(),
-    Flatten(),
-    Dropout(0.4),
-    Dense(10, activation='softmax'),
-])
+<p>我们在开发过程中修改了其中的bug什么的,可以通过打补丁的形式保存,而不需要维护一份修改之后的大型源码&hellip;</p>
+<h1 id="3-解压命令">3. 解压命令</h1>
+<p>这个最常用也最常忘</p>
+<p>1.1 zip压缩</p>
+<pre><code>zip 压缩包名字.zip 需要压缩的目录/ -r
+-r 表示压缩文件夹
 </code></pre>
-<p>该模型三个特点:</p>
-<ol>
-<li>连续使用2个3×3卷积层，增加了网络的判别能力。</li>
-<li>使用卷积核为5,步长为2的卷积层代替池化层，增加的网络的性能。</li>
-<li>使用批归一化层和Dropout层，防止模型过拟合的同时，增加了网络性能。</li>
-</ol>
-<h1 id="四模型集成">四、模型集成</h1>
-<p>老师说：团结就是力量，模型当然也是，一个CNN的力量有限的，<a href="https://www.kaggle.com/cdeotte/25-million-images-0-99757-mnist">这篇文章</a>使用Bagging的训练的15个CNN进行集成，达到了前所未有的信高度，思路如下图所示：</p>
-<p><div style="text-align: center;">
-  <img src="https://gitee.com/liu__yang/image/raw/master/img/Bagging.png" width="30%">
-</div>
-
-<center>
-  <h3>
-  CNN集成
-  </h3>
-</center>
-</p>
-<p>对于该问题来说，同样如此，所以我训练了10个CNN进行集成。部分代码如下所示：</p>
-<pre><code class="language-python">nets = 10
-model = [0] * nets
-for i in range(nets):
-    model[i] = Sequential([...])
-    model[i].compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
+<p>1.2 zip 解压</p>
+<pre><code>unzip 压缩包名字
+其中有三个常用参数
+-o 默认覆盖
+-q 不显示信息
+-d 指定解压目录
 </code></pre>
-<style type="text/css">.notice{padding:18px;line-height:24px;margin-bottom:24px;border-radius:4px;color:#444;background:#e7f2fa}.notice p:last-child{margin-bottom:0}.notice-title{margin:-18px -18px 12px;padding:4px 18px;border-radius:4px 4px 0 0;font-weight:700;color:#fff;background:#6ab0de}.notice.warning .notice-title{background:rgba(217,83,79,.9)}.notice.warning{background:#fae2e2}.notice.info .notice-title{background:#f0b37e}.notice.info{background:#fff2db}.notice.note .notice-title{background:#6ab0de}.notice.note{background:#e7f2fA}.notice.tip .notice-title{background:rgba(92,184,92,.8)}.notice.tip{background:#e6f9e6}.icon-notice{display:inline-flex;align-self:center;margin-right:8px}.icon-notice img,.icon-notice svg{height:1em;width:1em;fill:currentColor}.icon-notice img,.icon-notice.baseline svg{top:0.125em;position:relative}</style>
-<svg width="0" height="0" display="none" xmlns="http://www.w3.org/2000/svg"><symbol id="tip-notice" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"/></symbol><symbol id="note-notice" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet"><path d="M504 256c0 136.997-111.043 248-248 248S8 392.997 8 256C8 119.083 119.043 8 256 8s248 111.083 248 248zm-248 50c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z"/></symbol><symbol id="warning-notice" viewBox="0 0 576 512" preserveAspectRatio="xMidYMid meet"><path d="M569.517 440.013C587.975 472.007 564.806 512 527.94 512H48.054c-36.937 0-59.999-40.055-41.577-71.987L246.423 23.985c18.467-32.009 64.72-31.951 83.154 0l239.94 416.028zM288 354c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z"/></symbol><symbol id="info-notice" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet"><path d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z"/></symbol></svg><div class="notice tip" >
-<p class="first notice-title"><span class="icon-notice baseline"><svg><use href="#tip-notice"></use></svg></span>Tip</p><p>全部代码公布在Kaggle上了，<a href="https://www.kaggle.com/qq2471001205/fork-of-best-mnist">点击出发</a>。</p></div>
+<p>2.1 tar压缩</p>
+<pre><code>tar -cvf jpg.tar *.jpg //将目录里所有jpg文件打包成jpg.tar 
+tar -cvf jpg.tar.gz *.jpg //将目录里所有jpg文件打包成jpg.tar.gz
 
-<h1 id="参考资料">参考资料</h1>
-<p><a href="https://www.kaggle.com/c/digit-recognizer/discussion/61480">https://www.kaggle.com/c/digit-recognizer/discussion/61480</a></p>
+</code></pre>
+<p>2.2 tar解压</p>
+<pre><code>tar -xvf file.tar //解压 tar包
+tar -xzvf file.tar.gz //解压tar.gz
+</code></pre>
+<h1 id="4-查看文件夹大小">4. 查看文件夹大小</h1>
+<p>一般我们可以使用ls -l查看文件大小,但是文件夹大小永远是4kb,所以我们可以使用下面命令查看文件夹大小</p>
+<pre><code>du -h --max-depth=1
+</code></pre>
 
     </div>
   </article>
@@ -454,14 +367,9 @@ for i in range(nets):
     <div class="bar-inner">
         <ul class="pager pull-left">
             <li class="prev">
-                <a href="https://coder-liuu.github.io/2021/07/album-ccf/" title="北京CCF-CSP考试"><i
+                <a href="https://coder-liuu.github.io/2022/01/learn-database/" title="数据库方面的笔记"><i
                         class="icon icon-angle-left"
                         aria-hidden="true"></i><span>&nbsp;&nbsp;下一篇</span></a>
-            </li>
-            <li class="next">
-                <a href="https://coder-liuu.github.io/2021/07/health-insure-predict/"
-                    title="健康保险的客户投保预测"><span>上一篇&nbsp;&nbsp;</span><i
-                        class="icon icon-angle-right" aria-hidden="true"></i></a>
             </li>
             
             <li class="toggle-toc">
