@@ -16,7 +16,7 @@
       <pubDate>Mon, 17 Jan 2022 22:55:08 +0800</pubDate>
       
       <guid>https://coder-liuu.github.io/2022/01/linux-command/</guid>
-      <description>下面是我常用的Linux命令,但又常忘. 1. ssh远程链接 连接示例 ssh -p 端口号 用户名@ip地址 2. patch代码打补丁 单个文件打补丁 diff 旧代码 新代码</description>
+      <description>下面是我常用的Linux命令,但又常忘. 1. ssh远程连接 连接示例 ssh -p 端口号 用户名@ip地址 scp远程复制 scp -P 22 file user@host:/file 2. patch代码打补丁 单个</description>
     </item>
     
     <item>

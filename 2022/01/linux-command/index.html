@@ -58,7 +58,7 @@
 <meta itemprop="description" content="Linux命令总结">
 <meta itemprop="datePublished" content="2022-01-17T22:55:08+08:00" />
 <meta itemprop="dateModified" content="2022-01-17T22:55:08+08:00" />
-<meta itemprop="wordCount" content="377">
+<meta itemprop="wordCount" content="649">
 
 
 
@@ -321,9 +321,12 @@
       <blockquote>
 <p>下面是我常用的Linux命令,但又常忘.</p>
 </blockquote>
-<h1 id="1-ssh远程链接">1. ssh远程链接</h1>
+<h1 id="1-ssh远程连接">1. ssh远程连接</h1>
 <p>连接示例</p>
 <pre><code>ssh -p 端口号 用户名@ip地址
+</code></pre>
+<p>scp远程复制</p>
+<pre><code>scp -P 22 file user@host:/file
 </code></pre>
 <h1 id="2-patch代码打补丁">2. patch代码打补丁</h1>
 <p>单个文件打补丁</p>
@@ -357,6 +360,61 @@ tar -xzvf file.tar.gz //解压tar.gz
 <p>一般我们可以使用ls -l查看文件大小,但是文件夹大小永远是4kb,所以我们可以使用下面命令查看文件夹大小</p>
 <pre><code>du -h --max-depth=1
 </code></pre>
+<h1 id="5-gpu相关">5. GPU相关</h1>
+<p>5.1 查看cuda版本</p>
+<pre><code>cat /usr/local/cuda/version.txt
+</code></pre>
+<p>5.2 查看cudnn版本</p>
+<pre><code>cat /usr/local/cuda/include/cudnn.h | grep CUDNN_MAJOR -A 2
+</code></pre>
+<p>5.3 查看GPU显存使用情况</p>
+<pre><code>nvidia-smi
+</code></pre>
+<h1 id="6-screen后台任务">6. screen后台任务</h1>
+<p>6.1 创建一个窗口，并且为这个窗口命名</p>
+<pre><code>screen -S name
+</code></pre>
+<p>改名字</p>
+<pre><code>ctrl+a, A
+</code></pre>
+<p>6.2 断开窗口</p>
+<pre><code>Ctrl+a+D
+</code></pre>
+<p>6.3 可以查看已创建的所有窗口</p>
+<pre><code>screen -ls
+</code></pre>
+<p>6.4 重新连接到A窗口</p>
+<pre><code>screen -r A
+</code></pre>
+<p>6.5 新创建终端</p>
+<pre><code>ctrl+a, c
+</code></pre>
+<p>6.5 分屏(分屏后需要创建新终端)</p>
+<p>上下分屏</p>
+<pre><code>ctrl+a, S
+</code></pre>
+<p>左右分屏幕</p>
+<pre><code>ctrl+a,|
+</code></pre>
+<p>切换屏幕</p>
+<pre><code>ctrl+a, tab
+</code></pre>
+<p>自定义切换</p>
+<pre><code>ctrl + 
+w　　//显示所有窗口的序号    　        
+&quot;　　//显示所有窗口，以供选择切换     
+num　//num 为 0-9 之间的数字，切换至 num 对应的窗口
+</code></pre>
+<p>6.6  kill当前实例</p>
+<pre><code>ctrl+a, k
+</code></pre>
+<h1 id="7-端口">7. 端口</h1>
+<p>查看所有端口号</p>
+<pre><code>netstat -nultp
+</code></pre>
+<h1 id="其他">其他</h1>
+<p>使用rde协议远程访问Windows: <a href="https://www.howtoing.com/rdesktop-connect-windows-desktop-from-linux">https://www.howtoing.com/rdesktop-connect-windows-desktop-from-linux</a>
+Screen 参考 <a href="https://blog.csdn.net/c13232906050/article/details/86505387">https://blog.csdn.net/c13232906050/article/details/86505387</a></p>
 
     </div>
   </article>

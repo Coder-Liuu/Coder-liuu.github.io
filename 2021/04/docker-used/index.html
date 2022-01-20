@@ -58,7 +58,7 @@
 <meta itemprop="description" content="Docker是一个更纯粹的虚拟机，具有广泛的应用常见，本文介绍了Docker一些简单操作">
 <meta itemprop="datePublished" content="2021-04-29T13:35:44+08:00" />
 <meta itemprop="dateModified" content="2021-04-29T13:35:44+08:00" />
-<meta itemprop="wordCount" content="1223">
+<meta itemprop="wordCount" content="1211">
 
 
 
@@ -356,15 +356,17 @@
 <p><code>下载一个镜像</code>  docker pull 镜像名字</p>
 </li>
 <li>
-<p><code>使用镜像生成一个容器</code>  docker run -it &lt;镜像名&gt; #-i: 交互式操作, -t: 终端 &ndash;name=容器名字[选加]</p>
+<p><code>使用镜像生成一个容器</code>  docker run &ndash;name=my -it &lt;镜像名&gt; /bin/bash  #-i: 交互式操作, -t: 终端 &ndash;name=容器名字[选加]</p>
+</li>
+<li>
+<p><code>查看所有镜像</code> docker images</p>
 </li>
 <li>
 <p><code>删除一个镜像</code></p>
 <ul>
 <li>方法1
 <ul>
-<li>步骤1. 查看镜像,找到镜像ID: docker images</li>
-<li>步骤2. 通过镜像ID删除镜像 docker rmi -f &lt;镜像ID&gt; #加上-f强制删除</li>
+<li>通过镜像ID删除镜像 docker rmi -f &lt;镜像ID&gt; #加上-f强制删除</li>
 </ul>
 </li>
 <li>方法2
