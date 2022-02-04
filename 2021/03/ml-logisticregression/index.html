@@ -23,11 +23,11 @@
     
     
     <meta name="description" content="动手实现逻辑回归" />
-    <meta name="generator" content="Hugo 0.79.0 with theme pure" />
+    <meta name="generator" content="Hugo 0.92.1 with theme pure" />
     <title>动手机器学习-实现逻辑回归 - Coder-Liuu&#39;Blog</title>
     
     
-    <link rel="stylesheet" href="https://coder-liuu.github.io/css/style.min.0bed60e04d2a561442a442282452e48a1e19989329d5e5f925141051a842976c.css">
+    <link rel="stylesheet" href="https://coder-liuu.github.io/css/style.min.a6b23b02d29cabcde02a751ac277ee698537fd1f7431199d966625bcb20d9a67.css">
     
     <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async> 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css" async>
@@ -51,19 +51,15 @@
     <meta property="og:title" content="动手机器学习-实现逻辑回归" />
 <meta property="og:description" content="动手实现逻辑回归" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://coder-liuu.github.io/2021/03/ml-logisticregression/" />
+<meta property="og:url" content="https://coder-liuu.github.io/2021/03/ml-logisticregression/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2021-03-24T19:03:39+08:00" />
 <meta property="article:modified_time" content="2021-03-24T19:03:39+08:00" />
+
 <meta itemprop="name" content="动手机器学习-实现逻辑回归">
-<meta itemprop="description" content="动手实现逻辑回归">
-<meta itemprop="datePublished" content="2021-03-24T19:03:39+08:00" />
+<meta itemprop="description" content="动手实现逻辑回归"><meta itemprop="datePublished" content="2021-03-24T19:03:39+08:00" />
 <meta itemprop="dateModified" content="2021-03-24T19:03:39+08:00" />
-<meta itemprop="wordCount" content="1235">
-
-
-
-<meta itemprop="keywords" content="" />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="wordCount" content="1244">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="动手机器学习-实现逻辑回归"/>
 <meta name="twitter:description" content="动手实现逻辑回归"/>
 
@@ -321,152 +317,108 @@
       <blockquote>
 <p>逻辑回归完整代码想抄作业的同学<a href="https://github.com/Coder-Liuu/machine-learning-examples/blob/main/LogisticRegression.py">直接点这里</a></p>
 </blockquote>
-
 <h1 id="一逻辑回归算法简介">一、逻辑回归算法简介</h1>
-
 <p>逻辑回归又称对数几率回归</p>
-
 <p>在线性回归模型中，我们学会了使用线性模型完成回归的问题，但是如果任务是分类任务怎么办呢?答案是<strong>使用一个单调可微函数将实际标签y和线性回归的预测值联系起来</strong></p>
-
 <p>首先考虑二分类任务，实际标签为0或1，而线性回归模型的预测值为$z = XW + b$为实值，于是我们使用单位阶跃函数，将z转换为0/1值。</p>
-
 <p>阶跃函数如下所示:</p>
-
-<p><span  class="math">\[
-y = 
+<p>$$
+y =
 \begin{cases}
-0, z < 0 \\
-0.5, z = 0 \\
-1, z > 0 \\
+0, z &lt; 0 \
+0.5, z = 0 \
+1, z &gt; 0 \
 \end{cases}
-\]</span></p>
-
+$$</p>
 <p>但是，我们可以发现阶跃函数有一些<strong>硬直，不可求导</strong>，因此使用更加平滑的Sigmoid function代替。</p>
-
 <p>Sigmoid函数如下所示:</p>
-
-<p><span  class="math">\[
+<p>$$
 prob = \frac{1}{1 + e^{-z}}
-\]</span></p>
-
+$$</p>
 <p>如果Sigmoid函数输出的prob值，我们可以进一步确定样本的类别，比如prob&gt;0.5，样本类别为1,prob&lt;=0.5样本类别为0</p>
-
 <p>阶跃函数如下图中的红线所示，而Sigmoid如下图中的黑线所示：</p>
-
-<p><figure><img src="https://gitee.com/liu__yang/image/raw/master/img/深度截图_选择区域_20210324230855.png" alt="sigmoid函数"></figure></p>
-
+<p><img src="https://gitee.com/liu__yang/image/raw/master/img/%E6%B7%B1%E5%BA%A6%E6%88%AA%E5%9B%BE_%E9%80%89%E6%8B%A9%E5%8C%BA%E5%9F%9F_20210324230855.png" alt="sigmoid函数"></p>
 <h1 id="二怎么求解">二、怎么求解</h1>
-
 <p>逻辑回归计算过程很简单就是：将数据带入<code>z = XW + b</code>中，然后将z带入Sigmoid函数中去，最终求得计算结果。</p>
-
 <blockquote>
 <p>但是我们怎么求解W的值呢?</p>
 </blockquote>
-
 <h2 id="损失函数">损失函数</h2>
-
 <p>损失函数的定义： 通过Sigmoid我们可以计算出所属类别的概率，因此我们可以更好的定义损失函数。</p>
-
 <p>逻辑回归中的损失函数如下所示，下面我们进行讨论合理性</p>
-
-<p><span  class="math">\[
+<p>$$
 loss = - y^* log(prob) - (1 - y^*)log(1 - prob)
-\]</span></p>
-
-<p>其中<span  class="math">\(y^*\)</span>为标签的实际值，prob是Sigmoid函数的输出值。</p>
-
+$$</p>
+<p>其中$$y^*$$为标签的实际值，prob是Sigmoid函数的输出值。</p>
 <p>这个函数很有意思</p>
-
-<p>当<span  class="math">\(y^*=1\)</span>时，<span  class="math">\(loss=-log(prob)\)</span>，意思就是prob值越接近1越好。</p>
-
-<p>当<span  class="math">\(y^*=0\)</span>时，<span  class="math">\(loss=- log(1 - prob)\)</span>，意思就是prob值越接近0越好。</p>
-
+<p>当$$y^*=1$$时，$$loss=-log(prob)$$，意思就是prob值越接近1越好。</p>
+<p>当$$y^*=0$$时，$$loss=- log(1 - prob)$$，意思就是prob值越接近0越好。</p>
 <p>总之，该损失函数能使prob值和数据的标签尽可能接近。</p>
-
-<h2 id="求解最优权重求梯度">求解最优权重-求梯度</h2>
-
+<h2 id="求解最优权重-求梯度">求解最优权重-求梯度</h2>
 <p>为了更好理解梯度的求法，我们重新写一下数据进行计算的过程</p>
-
-<p><span  class="math">\[z = w_0 + w_1 x_1 + w_2 x_2 = \
+<p>$$z = w_0 + w_1 x_1 + w_2 x_2 = <br>
 \left[
 \begin{matrix}
-1 & x_1 & x_2
+1 &amp; x_1 &amp; x_2
 \end{matrix}
-\right] \
+\right] <br>
 \left[
 \begin{matrix}
-w_0 \\
-w_1 \\
+w_0 \
+w_1 \
 w_2
 \end{matrix}
 \right] \tag{1}
-\]</span></p>
-
-<p><span  class="math">\(Z = XW \tag{2}\)</span>,其中假设有10组数据每条数据有3个属性1个标签<strong>X维度(10,3),Z维度(10,1)</strong></p>
-
+$$</p>
+<p>$$Z = XW \tag{2}$$,其中假设有10组数据每条数据有3个属性1个标签<strong>X维度(10,3),Z维度(10,1)</strong></p>
 <blockquote>
 <p>计算Z对W的导数，为下文做铺垫</p>
-
-<p><span  class="math">\[\frac{d Z}{d W} = X^T \]</span></p>
 </blockquote>
-
-<p><span  class="math">\( prob = \frac{1}{1 + e^{-z}} \tag{3}\)</span>
+<blockquote>
+<p>$$\frac{d Z}{d W} = X^T $$</p>
+</blockquote>
+<p>$$ prob = \frac{1}{1 + e^{-z}} \tag{3}$$
 <strong>prob维度为(10,1)</strong></p>
-
 <blockquote>
 <p>计算prob对z的导数，为下文做铺垫</p>
-
-<p><span  class="math">\[\frac{d prob}{d z} = \frac{e^{-z}} { (1+e^{-z})^2 } = \frac{1}{1 + e^{-z}} \frac{e^{-z}}{1 + e^{-z}} = prob (1 - prob)
-\]</span></p>
 </blockquote>
-
+<blockquote>
+<p>$$\frac{d prob}{d z} = \frac{e^{-z}} { (1+e^{-z})^2 } = \frac{1}{1 + e^{-z}} \frac{e^{-z}}{1 + e^{-z}} = prob (1 - prob)
+$$</p>
+</blockquote>
 <p><strong>综合公式1-3</strong>,可得
-<span  class="math">\(
+$$
 prob = \frac{1}{1 + e^{-XW}}
-\)</span></p>
-
-<p><span  class="math">\[ loss = -y^*log(prob) -(1-y)*log(1-prob)  \tag{4}\]</span></p>
-
+$$</p>
+<p>$$ loss = -y^*log(prob) -(1-y)*log(1-prob)  \tag{4}$$</p>
 <blockquote>
 <p>计算loss对prob的导数，为下文做铺垫</p>
-
-<p><span  class="math">\[\frac{d loss}{d prob} = - \frac{y^*}{prob} - \frac{1 - y^*}{1-prob} * -1 \]</span></p>
 </blockquote>
-
+<blockquote>
+<p>$$\frac{d loss}{d prob} = - \frac{y^<em>}{prob} - \frac{1 - y^</em>}{1-prob} * -1 $$</p>
+</blockquote>
 <p>接下来进行链式求导，其中loss ~ prob ~ z ~ WX</p>
-
 <p>注意下面的计算都是元素级元素，不涉及到矩阵运算</p>
-
-<p><span  class="math">\[
-grad = \frac{d loss}{d W} = \frac{d loss}{d prob} * \frac{d prob}{d z} * \frac{d z}{W} \\
-= X^T (- \frac{y^*}{prob} + \frac{1 - y^*}{1-prob}) * prob(1 - prob) \\
-= X^T ( - y^*(1 - prob) + (1 - y^*)prob )  \\
-= X^T (prob - y^*) 
-\]</span></p>
-
+<p>$$
+grad = \frac{d loss}{d W} = \frac{d loss}{d prob} * \frac{d prob}{d z} * \frac{d z}{W} \
+= X^T (- \frac{y^<em>}{prob} + \frac{1 - y^</em>}{1-prob}) * prob(1 - prob) \
+= X^T ( - y^<em>(1 - prob) + (1 - y^</em>)prob )  \
+= X^T (prob - y^*)
+$$</p>
 <p>最终结果维度为(3,10)乘以(10,1)等于(3,1)</p>
-
-<h2 id="求解最优权重梯度下降">求解最优权重-梯度下降</h2>
-
+<h2 id="求解最优权重-梯度下降">求解最优权重-梯度下降</h2>
 <p>步骤1. 初始化W</p>
-
 <p>步骤2. W -= lr * grad (其中lr为学习率，值到0-1之间)</p>
-
 <p>步骤3. 迭代都一定次数，或阈值停止</p>
-
 <style type="text/css">.notice{padding:18px;line-height:24px;margin-bottom:24px;border-radius:4px;color:#444;background:#e7f2fa}.notice p:last-child{margin-bottom:0}.notice-title{margin:-18px -18px 12px;padding:4px 18px;border-radius:4px 4px 0 0;font-weight:700;color:#fff;background:#6ab0de}.notice.warning .notice-title{background:rgba(217,83,79,.9)}.notice.warning{background:#fae2e2}.notice.info .notice-title{background:#f0b37e}.notice.info{background:#fff2db}.notice.note .notice-title{background:#6ab0de}.notice.note{background:#e7f2fA}.notice.tip .notice-title{background:rgba(92,184,92,.8)}.notice.tip{background:#e6f9e6}.icon-notice{display:inline-flex;align-self:center;margin-right:8px}.icon-notice img,.icon-notice svg{height:1em;width:1em;fill:currentColor}.icon-notice img,.icon-notice.baseline svg{top:0.125em;position:relative}</style>
 <svg width="0" height="0" display="none" xmlns="http://www.w3.org/2000/svg"><symbol id="tip-notice" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"/></symbol><symbol id="note-notice" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet"><path d="M504 256c0 136.997-111.043 248-248 248S8 392.997 8 256C8 119.083 119.043 8 256 8s248 111.083 248 248zm-248 50c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z"/></symbol><symbol id="warning-notice" viewBox="0 0 576 512" preserveAspectRatio="xMidYMid meet"><path d="M569.517 440.013C587.975 472.007 564.806 512 527.94 512H48.054c-36.937 0-59.999-40.055-41.577-71.987L246.423 23.985c18.467-32.009 64.72-31.951 83.154 0l239.94 416.028zM288 354c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z"/></symbol><symbol id="info-notice" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet"><path d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z"/></symbol></svg><div class="notice warning" >
 <p class="first notice-title"><span class="icon-notice baseline"><svg><use href="#warning-notice"></use></svg></span>Warning</p><p>纸上得来终决浅，写一边代码便能收获颇多，这里建议你<a href="https://github.com/Coder-Liuu/machine-learning-examples/blob/main/LogisticRegression.py">点击我</a>，查看源代码，进行仿写</p></div>
 
-
 <h1 id="四代办事项">四、代办事项</h1>
-
 <ol>
 <li>可视化梯度下降的整个过程</li>
 </ol>
-
 <h1 id="参考博客">参考博客</h1>
-
 <p><a href="https://www.bilibili.com/video/BV1As411j7zw?from=search&amp;seid=13110094973136261265">https://www.bilibili.com/video/BV1As411j7zw?from=search&amp;seid=13110094973136261265</a></p>
 
     </div>
@@ -581,8 +533,8 @@ grad = \frac{d loss}{d W} = \frac{d loss}{d prob} * \frac{d prob}{d z} * \frac{d
     })
     hljs.initHighlightingOnLoad();
 </script>
-<script src="https://coder-liuu.github.io/js/application.min.bdeb64b910570b6c41badc6a05b7afb0c8ad9efd8525de3c7257d59e786326a3.js"></script>
-<script src="https://coder-liuu.github.io/js/plugin.min.51ff8c7317566f82259170fa36e09c4493adc9b9378b427a01ad3f017ebac7dd.js"></script>
+<script src="https://coder-liuu.github.io/js/application.min.a94ab19cb63a95c8d7fbd7b85cab3ddeea8c369bdf75b9cab6708787ead123af.js"></script>
+<script src="https://coder-liuu.github.io/js/plugin.min.19c5bcb2fb0789ab4f2b7834e5ceb5e92635645605bab902c1024b25f1502364.js"></script>
 
 <script>
     (function (window) {
@@ -600,7 +552,7 @@ grad = \frac{d loss}{d W} = \frac{d loss}{d prob} * \frac{d prob}{d z} * \frac{d
         window.INSIGHT_CONFIG = INSIGHT_CONFIG;
     })(window);
 </script>
-<script type="text/javascript" src="https://coder-liuu.github.io/js/insight.min.a343cd9a5a7698336b28ef3a7c16a3a1b1d2d5fb17dc8ed04022bbe08cc5459073a15bdafa3a8a58cdd56080784bdd69fa70b1ae8597565c799c57ed00f0e120.js" defer></script>
+<script type="text/javascript" src="https://coder-liuu.github.io/js/insight.min.4a2d52de4bfff73e0c688404fe3d17c9a3ae12d9888e1e1ac9c690e4890de2ded50fe55f2b819c2ba55435a76f396f3ea6805765f0b0af5635cdf74ea459eab0.js" defer></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
 <script>
     tocbot.init({

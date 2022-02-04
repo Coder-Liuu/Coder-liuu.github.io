@@ -23,11 +23,11 @@
     
     
     <meta name="description" content="Linux命令总结" />
-    <meta name="generator" content="Hugo 0.79.0 with theme pure" />
+    <meta name="generator" content="Hugo 0.92.1 with theme pure" />
     <title>Linux命令总结 - Coder-Liuu&#39;Blog</title>
     
     
-    <link rel="stylesheet" href="https://coder-liuu.github.io/css/style.min.0bed60e04d2a561442a442282452e48a1e19989329d5e5f925141051a842976c.css">
+    <link rel="stylesheet" href="https://coder-liuu.github.io/css/style.min.a6b23b02d29cabcde02a751ac277ee698537fd1f7431199d966625bcb20d9a67.css">
     
     <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async> 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css" async>
@@ -51,19 +51,15 @@
     <meta property="og:title" content="Linux命令总结" />
 <meta property="og:description" content="Linux命令总结" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://coder-liuu.github.io/2022/01/linux-command/" />
+<meta property="og:url" content="https://coder-liuu.github.io/2022/01/linux-command/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-01-17T22:55:08+08:00" />
 <meta property="article:modified_time" content="2022-01-17T22:55:08+08:00" />
+
 <meta itemprop="name" content="Linux命令总结">
-<meta itemprop="description" content="Linux命令总结">
-<meta itemprop="datePublished" content="2022-01-17T22:55:08+08:00" />
+<meta itemprop="description" content="Linux命令总结"><meta itemprop="datePublished" content="2022-01-17T22:55:08+08:00" />
 <meta itemprop="dateModified" content="2022-01-17T22:55:08+08:00" />
-<meta itemprop="wordCount" content="649">
-
-
-
-<meta itemprop="keywords" content="" />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="wordCount" content="853">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Linux命令总结"/>
 <meta name="twitter:description" content="Linux命令总结"/>
 
@@ -412,9 +408,32 @@ num　//num 为 0-9 之间的数字，切换至 num 对应的窗口
 <p>查看所有端口号</p>
 <pre><code>netstat -nultp
 </code></pre>
+<h1 id="8-查看图片信息">8. 查看图片信息</h1>
+<pre><code>identify logo.jpg
+# 如果没有则需要使用apt进行安装imagemagick
+</code></pre>
+<h1 id="9-find查找文件">9. find查找文件</h1>
+<pre><code>find &lt;路径&gt; -name &lt;文件名字&gt;
+
+例如: find . -name about
+</code></pre>
+<h1 id="10-grep查找文件内容">10. grep查找文件内容</h1>
+<p>该命令一般配合cat等命令使用,例如查看about.md文件中,有无name字段</p>
+<pre><code>cat about.md | grep name
+</code></pre>
+<h1 id="11-mkfifo没用的管道命令">11. mkfifo没用的管道命令</h1>
+<pre><code># 创建管道
+mkfifo &lt;管道名字&gt;
+
+# 管道中写入
+ls &gt; &lt;管道名字&gt;
+
+# 读管道内容
+cat &lt;管道名字&gt;
+</code></pre>
 <h1 id="其他">其他</h1>
-<p>使用rde协议远程访问Windows: <a href="https://www.howtoing.com/rdesktop-connect-windows-desktop-from-linux">https://www.howtoing.com/rdesktop-connect-windows-desktop-from-linux</a>
-Screen 参考 <a href="https://blog.csdn.net/c13232906050/article/details/86505387">https://blog.csdn.net/c13232906050/article/details/86505387</a></p>
+<p>使用rde协议远程访问Windows: <a href="https://www.howtoing.com/rdesktop-connect-windows-desktop-from-linux">https://www.howtoing.com/rdesktop-connect-windows-desktop-from-linux</a></p>
+<p>Screen 参考 <a href="https://blog.csdn.net/c13232906050/article/details/86505387">https://blog.csdn.net/c13232906050/article/details/86505387</a></p>
 
     </div>
   </article>
@@ -523,8 +542,8 @@ Screen 参考 <a href="https://blog.csdn.net/c13232906050/article/details/865053
     })
     hljs.initHighlightingOnLoad();
 </script>
-<script src="https://coder-liuu.github.io/js/application.min.bdeb64b910570b6c41badc6a05b7afb0c8ad9efd8525de3c7257d59e786326a3.js"></script>
-<script src="https://coder-liuu.github.io/js/plugin.min.51ff8c7317566f82259170fa36e09c4493adc9b9378b427a01ad3f017ebac7dd.js"></script>
+<script src="https://coder-liuu.github.io/js/application.min.a94ab19cb63a95c8d7fbd7b85cab3ddeea8c369bdf75b9cab6708787ead123af.js"></script>
+<script src="https://coder-liuu.github.io/js/plugin.min.19c5bcb2fb0789ab4f2b7834e5ceb5e92635645605bab902c1024b25f1502364.js"></script>
 
 <script>
     (function (window) {
@@ -542,7 +561,7 @@ Screen 参考 <a href="https://blog.csdn.net/c13232906050/article/details/865053
         window.INSIGHT_CONFIG = INSIGHT_CONFIG;
     })(window);
 </script>
-<script type="text/javascript" src="https://coder-liuu.github.io/js/insight.min.a343cd9a5a7698336b28ef3a7c16a3a1b1d2d5fb17dc8ed04022bbe08cc5459073a15bdafa3a8a58cdd56080784bdd69fa70b1ae8597565c799c57ed00f0e120.js" defer></script>
+<script type="text/javascript" src="https://coder-liuu.github.io/js/insight.min.4a2d52de4bfff73e0c688404fe3d17c9a3ae12d9888e1e1ac9c690e4890de2ded50fe55f2b819c2ba55435a76f396f3ea6805765f0b0af5635cdf74ea459eab0.js" defer></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
 <script>
     tocbot.init({
