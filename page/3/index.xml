@@ -6,10 +6,19 @@
     <description>Recent content on Coder-Liuu&#39;Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>CC BY 4.0 CN</copyright>
-    <lastBuildDate>Mon, 17 Jan 2022 22:55:08 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 04 Feb 2022 22:34:27 +0800</lastBuildDate>
     
         <atom:link href="https://coder-liuu.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>FriendShip</title>
+      <link>https://coder-liuu.github.io/friendship/</link>
+      <pubDate>Sun, 17 Jan 2021 00:07:50 +0800</pubDate>
+      
+      <guid>https://coder-liuu.github.io/friendship/</guid>
+      <description>朋友 .myfriends { background-color: #fff; opacity: 0.9; } .myfriends a { color: black; } .myfriends p { display: none; } .friendurl { text-decoration: none !important; color: black; } .myfriend { width: 56px !important; height: 56px !important; border-radius: 50%; border: 1px solid #ddd; padding: 2px; box-shadow: 1px 1px 1px rgba(0,0,0, .15); margin-top: 14px !important; margin-left: 14px !important; background-color: #fff; } .frienddiv { height: 92px; margin-top: 10px; width: 100%; display: inline-block</description>
+    </item>
     
     <item>
       <title>Python-创建虚拟环境</title>

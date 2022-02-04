@@ -11,6 +11,15 @@
     
     
     <item>
+      <title>Docker使用总结</title>
+      <link>https://coder-liuu.github.io/2021/04/docker-used/</link>
+      <pubDate>Thu, 29 Apr 2021 13:35:44 +0800</pubDate>
+      
+      <guid>https://coder-liuu.github.io/2021/04/docker-used/</guid>
+      <description>.notice{padding:18px;line-height:24px;margin-bottom:24px;border-radius:4px;color:#444;background:#e7f2fa}.notice p:last-child{margin-bottom:0}.notice-title{margin:-18px -18px 12px;padding:4px 18px;border-radius:4px 4px 0 0;font-weight:700;color:#fff;background:#6ab0de}.notice.warning .notice-title{background:rgba(217,83,79,.9)}.notice.warning{background:#fae2e2}.notice.info .notice-title{background:#f0b37e}.notice.info{background:#fff2db}.notice.note .notice-title{background:#6ab0de}.notice.note{background:#e7f2fA}.notice.tip .notice-title{background:rgba(92,184,92,.8)}.notice.tip{background:#e6f9e6}.icon-notice{display:inline-flex;align-self:center;margin-right:8px}.icon-notice img,.icon-notice svg{height:1em;width:1em;fill:currentColor}.icon-notice img,.icon-notice.baseline svg{top:0.125em;position:relative} Warning 文章更适合Arch系系统，比如Arch/Manjaro等系统，其他系统可能会有所不同 Docker基本安装 Pacman</description>
+    </item>
+    
+    <item>
       <title>Linux使用Matplotlib画图中文字体问题</title>
       <link>https://coder-liuu.github.io/2021/04/linux%E4%BD%BF%E7%94%A8matplotlib%E7%94%BB%E5%9B%BE%E4%B8%AD%E6%96%87%E5%AD%97%E4%BD%93%E9%97%AE%E9%A2%98/</link>
       <pubDate>Thu, 22 Apr 2021 17:59:47 +0800</pubDate>
@@ -179,15 +188,6 @@
       
       <guid>https://coder-liuu.github.io/2021/01/acm-math/</guid>
       <description>个人认为这部分的数论中的基础，刚刚有查了查蓝桥杯不考数论，所以这篇博客的数论知识都是一些基础知识。准备蓝桥杯还是好好学学动态规划和图论吧! 质</description>
-    </item>
-    
-    <item>
-      <title>FriendShip</title>
-      <link>https://coder-liuu.github.io/friendship/</link>
-      <pubDate>Sun, 17 Jan 2021 00:07:50 +0800</pubDate>
-      
-      <guid>https://coder-liuu.github.io/friendship/</guid>
-      <description>朋友 .myfriends { background-color: #fff; opacity: 0.9; } .myfriends a { color: black; } .myfriends p { display: none; } .friendurl { text-decoration: none !important; color: black; } .myfriend { width: 56px !important; height: 56px !important; border-radius: 50%; border: 1px solid #ddd; padding: 2px; box-shadow: 1px 1px 1px rgba(0,0,0, .15); margin-top: 14px !important; margin-left: 14px !important; background-color: #fff; } .frienddiv { height: 92px; margin-top: 10px; width: 100%; display: inline-block</description>
     </item>
     
   </channel>

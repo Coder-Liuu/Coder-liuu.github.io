@@ -11,6 +11,15 @@
     
     
     <item>
+      <title>新年回家过年技巧总结</title>
+      <link>https://coder-liuu.github.io/2022/02/happy_new_year_2022/</link>
+      <pubDate>Fri, 04 Feb 2022 22:34:27 +0800</pubDate>
+      
+      <guid>https://coder-liuu.github.io/2022/02/happy_new_year_2022/</guid>
+      <description>人生不只有代码，更多的诗和远方（人情世故） 凡是都有攻略，过年也不例外，下面说一下我2022年过年的攻略，仅供我2023年进行参考。 看了看超神</description>
+    </item>
+    
+    <item>
       <title>Linux命令总结</title>
       <link>https://coder-liuu.github.io/2022/01/linux-command/</link>
       <pubDate>Mon, 17 Jan 2022 22:55:08 +0800</pubDate>
@@ -179,15 +188,6 @@
       
       <guid>https://coder-liuu.github.io/2021/05/docker-arch-nvim-process/</guid>
       <description>本文选择体积最小的Arch Linux作为Docker镜像开启全部过程,其他Linux发行版可能会有所区别 一、前期准备 使用该命令初始化pacm</description>
-    </item>
-    
-    <item>
-      <title>Docker使用总结</title>
-      <link>https://coder-liuu.github.io/2021/04/docker-used/</link>
-      <pubDate>Thu, 29 Apr 2021 13:35:44 +0800</pubDate>
-      
-      <guid>https://coder-liuu.github.io/2021/04/docker-used/</guid>
-      <description>.notice{padding:18px;line-height:24px;margin-bottom:24px;border-radius:4px;color:#444;background:#e7f2fa}.notice p:last-child{margin-bottom:0}.notice-title{margin:-18px -18px 12px;padding:4px 18px;border-radius:4px 4px 0 0;font-weight:700;color:#fff;background:#6ab0de}.notice.warning .notice-title{background:rgba(217,83,79,.9)}.notice.warning{background:#fae2e2}.notice.info .notice-title{background:#f0b37e}.notice.info{background:#fff2db}.notice.note .notice-title{background:#6ab0de}.notice.note{background:#e7f2fA}.notice.tip .notice-title{background:rgba(92,184,92,.8)}.notice.tip{background:#e6f9e6}.icon-notice{display:inline-flex;align-self:center;margin-right:8px}.icon-notice img,.icon-notice svg{height:1em;width:1em;fill:currentColor}.icon-notice img,.icon-notice.baseline svg{top:0.125em;position:relative} Warning 文章更适合Arch系系统，比如Arch/Manjaro等系统，其他系统可能会有所不同 Docker基本安装 Pacman</description>
     </item>
     
   </channel>
