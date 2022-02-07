@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>2021流水账总结</title>
+      <link>https://coder-liuu.github.io/2022/02/2021%E6%B5%81%E6%B0%B4%E8%B4%A6%E6%80%BB%E7%BB%93/</link>
+      <pubDate>Mon, 07 Feb 2022 23:33:32 +0800</pubDate>
+      
+      <guid>https://coder-liuu.github.io/2022/02/2021%E6%B5%81%E6%B0%B4%E8%B4%A6%E6%80%BB%E7%BB%93/</guid>
+      <description>总结的时间有些完了，这段时间又重新装了一个Win10，原因就是有许多软件在Manjaro上不方便，“孤魂野鬼又一年啊”！ 引用“兰铃”的一句话</description>
+    </item>
+    
+    <item>
       <title>新年回家过年技巧总结</title>
       <link>https://coder-liuu.github.io/2022/02/happy_new_year_2022/</link>
       <pubDate>Fri, 04 Feb 2022 22:34:27 +0800</pubDate>
@@ -180,15 +189,6 @@
       
       <guid>https://coder-liuu.github.io/2021/05/python-forget-function/</guid>
       <description>忽略警告 import warnings warnings.filterwarnings(&amp;quot;ignore&amp;quot;) Numpy 取消科学技术法() np.set_printoptions(suppress=True) 保留3位有效数字 np.set_printoptions(precision=3) 数组扁平 data.flatten() 填充NAN a[np.isnan(a)]=1 判断一列是否有缺失值 np.isnan(data).any(axis=0) 判断一行是否有缺失值 np.isnan(data).any(axis=1) Pandas 显示所有列 pd.set_option(&amp;lsquo;display.max_columns&amp;rsquo;, None) 显示</description>
-    </item>
-    
-    <item>
-      <title>Docker打包一个配置好Vim的Arch系统全过程(持续更新)</title>
-      <link>https://coder-liuu.github.io/2021/05/docker-arch-nvim-process/</link>
-      <pubDate>Sun, 16 May 2021 17:38:57 +0800</pubDate>
-      
-      <guid>https://coder-liuu.github.io/2021/05/docker-arch-nvim-process/</guid>
-      <description>本文选择体积最小的Arch Linux作为Docker镜像开启全部过程,其他Linux发行版可能会有所区别 一、前期准备 使用该命令初始化pacm</description>
     </item>
     
   </channel>

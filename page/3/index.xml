@@ -6,10 +6,19 @@
     <description>Recent content on Coder-Liuu&#39;Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>CC BY 4.0 CN</copyright>
-    <lastBuildDate>Fri, 04 Feb 2022 22:34:27 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 07 Feb 2022 23:33:32 +0800</lastBuildDate>
     
         <atom:link href="https://coder-liuu.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>ACM数论</title>
+      <link>https://coder-liuu.github.io/2021/01/acm-math/</link>
+      <pubDate>Sat, 30 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://coder-liuu.github.io/2021/01/acm-math/</guid>
+      <description>个人认为这部分的数论中的基础，刚刚有查了查蓝桥杯不考数论，所以这篇博客的数论知识都是一些基础知识。准备蓝桥杯还是好好学学动态规划和图论吧! 质</description>
+    </item>
     
     <item>
       <title>FriendShip</title>
