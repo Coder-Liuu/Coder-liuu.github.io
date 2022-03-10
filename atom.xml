@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
     <title type="text">寻路人</title>
     <subtitle type="html">MemE 是一个强大且可高度定制的 GoHugo 博客主题，专为个人博客设计。</subtitle>
-    <updated>2022-03-10T22:15:38&#43;08:00</updated>
+    <updated>2022-03-11T00:13:10&#43;08:00</updated>
     <id>https://coder-liuu.github.io/</id>
     <link rel="alternate" type="text/html" href="https://coder-liuu.github.io/" />
     <link rel="self" type="application/atom&#43;xml" href="https://coder-liuu.github.io/atom.xml" />
@@ -20,7 +20,7 @@
             <title type="text">2021流水账总结</title>
             <link rel="alternate" type="text/html" href="https://coder-liuu.github.io/posts/2021%E6%B5%81%E6%B0%B4%E8%B4%A6%E6%80%BB%E7%BB%93/" />
             <id>https://coder-liuu.github.io/posts/2021%E6%B5%81%E6%B0%B4%E8%B4%A6%E6%80%BB%E7%BB%93/</id>
-            <updated>2022-02-08T00:07:52&#43;08:00</updated>
+            <updated>2022-03-11T00:12:59&#43;08:00</updated>
             <published>2022-02-07T23:33:32&#43;08:00</published>
             <author>
                     <name>寻路人</name>
@@ -29,7 +29,7 @@
                     </author>
             <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights><summary type="html">2021流水账总结</summary>
             
-                <content type="html">&lt;p&gt;总结的时间有些完了，这段时间又重新装了一个Win10，原因就是有许多软件在Manjaro上不方便，“孤魂野鬼又一年啊”！&lt;/p&gt;
+                <content type="html">&lt;p&gt;总结的时间有些晚了，这段时间又重新装了一个Win10，原因就是有许多软件在Manjaro上不方便，“孤魂野鬼又一年啊”！&lt;/p&gt;
 &lt;p&gt;引用“兰铃”的一句话，悲观是我的状态，努力是我的态度：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
