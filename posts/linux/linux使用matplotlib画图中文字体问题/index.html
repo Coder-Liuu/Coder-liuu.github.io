@@ -17,11 +17,11 @@
 
     <title>Linux使用Matplotlib画图中文字体问题 | 寻路人</title>
 
-    <link rel="stylesheet" href="/css/meme.min.7d0abfae912845f83ead7e5fb11d043a97f486f42dc286aff194ab3d56cf6cc9.css"/>
+    <link rel="stylesheet" href="/css/meme.min.db730faadd7f9f83969373535c2e4b8a34692e3be715ae4335e140f1f8bf5f51.css"/>
 
     
     
-        <script src="/js/meme.min.45a777da25d0b1805991f984be4e9ae5e17f3ea94097882dff058256fa34eb17.js"></script>
+        <script src="/js/meme.min.b58d8820f14f4243c8277b9a2b1cc4bb03191825cc2f6673df0106f2d4a3100c.js"></script>
 
     
 
@@ -248,6 +248,11 @@
         
         <span class="post-meta-item reading-time"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon post-meta-icon"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z"/></svg>&nbsp;1&nbsp;分钟</span>
     
+    
+        
+            
+            <span class="post-meta-item busuanzi-page-pv" id="busuanzi_container_page_pv"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="icon post-meta-icon"><path d="M288 144a110.94 110.94 0 0 0-31.24 5 55.4 55.4 0 0 1 7.24 27 56 56 0 0 1-56 56 55.4 55.4 0 0 1-27-7.24A111.71 111.71 0 1 0 288 144zm284.52 97.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400c-98.65 0-189.09-55-237.93-144C98.91 167 189.34 112 288 112s189.09 55 237.93 144C477.1 345 386.66 400 288 400z"/></svg>&nbsp;<span id="busuanzi_value_page_pv"></span></span>
+        
     
     
 </div>
@@ -504,6 +509,21 @@
 
 
         
+    
+
+        
+
+        
+
+        
+
+        
+
+        
+            <div id="gitalk-container"></div>
+        
+    
+
 
 
     </div>
@@ -553,6 +573,63 @@
 
 
 
+    
+
+        
+
+        
+
+        
+
+        
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+<script>
+    function loadComments() {
+        if (typeof Gitalk === 'undefined') {
+            var getScript = (options) => {
+                var script = document.createElement('script');
+                script.defer = true;
+                script.crossOrigin = 'anonymous';
+                Object.keys(options).forEach((key) => {
+                    script[key] = options[key];
+                });
+                document.body.appendChild(script);
+            };
+            getScript({
+                src: 'https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js',
+                onload: () => {
+                    newGitalk();
+                }
+            });
+        } else {
+            newGitalk();
+        }
+    }
+    function newGitalk() {
+        const gitalk = new Gitalk({
+            clientID: "aab88ce03a8d50c6128f",
+            clientSecret: "1ac9ba0e3f9cefa8aac6414eb40dfed80545c021",
+            repo: "https://github.com/Coder-Liuu/Coder-liuu.github.io",
+            owner: "Coder-Liu",
+            admin: ["Coder-Liuu"],
+            labels: ["Gitalk"],
+            distractionFreeMode:  false , 
+            perPage:  10 ,
+            language: "zh",
+            pagerDirection: "last",
+            createIssueManually:  false ,
+            proxy: "https://shielded-brushlands-08810.herokuapp.com/https://github.com/login/oauth/access_token",
+            enableHotKey:  true ,
+            id:  location.pathname
+        })
+
+        gitalk.render('gitalk-container')
+    }
+</script>
+        
+
+    
+
 
 
     <script src="https://cdn.jsdelivr.net/npm/medium-zoom@latest/dist/medium-zoom.min.js"></script>
@@ -573,6 +650,10 @@
 
 
 
+
+    
+        <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
 
 
 

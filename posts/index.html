@@ -17,11 +17,11 @@
 
     <title>Posts | 寻路人</title>
 
-    <link rel="stylesheet" href="/css/meme.min.7d0abfae912845f83ead7e5fb11d043a97f486f42dc286aff194ab3d56cf6cc9.css"/>
+    <link rel="stylesheet" href="/css/meme.min.db730faadd7f9f83969373535c2e4b8a34692e3be715ae4335e140f1f8bf5f51.css"/>
 
     
     
-        <script src="/js/meme.min.45a777da25d0b1805991f984be4e9ae5e17f3ea94097882dff058256fa34eb17.js"></script>
+        <script src="/js/meme.min.b58d8820f14f4243c8277b9a2b1cc4bb03191825cc2f6673df0106f2d4a3100c.js"></script>
 
     
 
@@ -941,6 +941,63 @@
 
 
 
+    
+
+        
+
+        
+
+        
+
+        
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+<script>
+    function loadComments() {
+        if (typeof Gitalk === 'undefined') {
+            var getScript = (options) => {
+                var script = document.createElement('script');
+                script.defer = true;
+                script.crossOrigin = 'anonymous';
+                Object.keys(options).forEach((key) => {
+                    script[key] = options[key];
+                });
+                document.body.appendChild(script);
+            };
+            getScript({
+                src: 'https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js',
+                onload: () => {
+                    newGitalk();
+                }
+            });
+        } else {
+            newGitalk();
+        }
+    }
+    function newGitalk() {
+        const gitalk = new Gitalk({
+            clientID: "aab88ce03a8d50c6128f",
+            clientSecret: "1ac9ba0e3f9cefa8aac6414eb40dfed80545c021",
+            repo: "https://github.com/Coder-Liuu/Coder-liuu.github.io",
+            owner: "Coder-Liu",
+            admin: ["Coder-Liuu"],
+            labels: ["Gitalk"],
+            distractionFreeMode:  false , 
+            perPage:  10 ,
+            language: "zh",
+            pagerDirection: "last",
+            createIssueManually:  false ,
+            proxy: "https://shielded-brushlands-08810.herokuapp.com/https://github.com/login/oauth/access_token",
+            enableHotKey:  true ,
+            id:  location.pathname
+        })
+
+        gitalk.render('gitalk-container')
+    }
+</script>
+        
+
+    
+
 
 
     <script src="https://cdn.jsdelivr.net/npm/medium-zoom@latest/dist/medium-zoom.min.js"></script>
@@ -961,6 +1018,10 @@
 
 
 
+
+    
+        <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
 
 
 
