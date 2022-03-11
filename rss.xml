@@ -23,7 +23,7 @@
         
             <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
         
-        <lastBuildDate>Fri, 11 Mar 2022 10:33:08 &#43;0800</lastBuildDate>
+        <lastBuildDate>Fri, 11 Mar 2022 11:06:57 &#43;0800</lastBuildDate>
         
             <atom:link rel="self" type="application/rss&#43;xml" href="https://coder-liuu.github.io/rss.xml" />
         
@@ -6425,7 +6425,7 @@ AND: 包含AND两边的关键词,比如 apple AND watch&lt;/p&gt;
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
-                    <description>&lt;p&gt;个人认为这部分的数论中的基础，刚刚有查了查&lt;strong&gt;蓝桥杯不考数论&lt;/strong&gt;，所以这篇博客的数论知识都是一些基础知识。准备蓝桥杯还是好好学学动态规划和图论吧!&lt;/p&gt;
+                    <description>&lt;p&gt;个人认为这部分的数论中的基础，刚刚又查了查&lt;strong&gt;蓝桥杯不考数论&lt;/strong&gt;，所以这篇博客的数论知识都是一些基础知识。准备蓝桥杯还是好好学学动态规划和图论吧!&lt;/p&gt;
 &lt;h2 id=&#34;质数&#34;&gt;质数&lt;/h2&gt;
 &lt;p&gt;质数概念: &lt;strong&gt;从2开始&lt;/strong&gt;，只包含1和本身的约数，又称素数。&lt;/p&gt;
 &lt;p&gt;性质: 若有n整除d，则n整除d/n
