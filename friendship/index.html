@@ -137,12 +137,12 @@
             
         
             
-                <li class="menu-item"><a href="/about/"><span class="menu-item-name">关于</span></a>
+                <li class="menu-item active"><a href="/friendship/"><span class="menu-item-name">朋友</span></a>
                 </li>
             
         
             
-                <li class="menu-item active"><a href="/friendship/"><span class="menu-item-name">朋友</span></a>
+                <li class="menu-item"><a href="/about/"><span class="menu-item-name">关于</span></a>
                 </li>
             
         
@@ -190,7 +190,7 @@
 
         
 
-        <article class="content post h-entry" data-align="justify" data-type="friendship" data-toc-num="true">
+        <article class="content post h-entry" data-align="justify" data-type="friendship">
 
             <h1 class="post-title p-name">FriendShip</h1>
 
@@ -636,6 +636,32 @@
         
 
         
+
+
+    <script>
+    if (typeof MathJax === 'undefined') {
+        window.MathJax = {
+            loader: {
+                load: ['[tex]/mhchem']
+            },
+            
+            tex: {
+                inlineMath: {'[+]': [['$', '$']]},
+                tags: 'ams',
+                packages: {'[+]': ['mhchem']}
+            }
+        };
+        (function() {
+            var script = document.createElement('script');
+            script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3.1.2/es5/tex-mml-chtml.js';
+            script.defer = true;
+            document.head.appendChild(script);
+        })();
+    } else {
+        MathJax.texReset();
+        MathJax.typeset();
+    }
+</script>
 
 
 
