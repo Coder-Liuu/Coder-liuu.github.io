@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
     <title type="text">寻路人</title>
     <subtitle type="html">寻找一条属于自己的路</subtitle>
-    <updated>2022-03-11T11:06:57&#43;08:00</updated>
+    <updated>2022-03-11T11:27:50&#43;08:00</updated>
     <id>https://coder-liuu.github.io/</id>
     <link rel="alternate" type="text/html" href="https://coder-liuu.github.io/" />
     <link rel="self" type="application/atom&#43;xml" href="https://coder-liuu.github.io/atom.xml" />
@@ -3607,7 +3607,7 @@ $$ N = a * (宠物的钱) + b * (女主的钱) $$&lt;/p&gt;
             <title type="text">Python 常忘函数</title>
             <link rel="alternate" type="text/html" href="https://coder-liuu.github.io/posts/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/python-forget-function/" />
             <id>https://coder-liuu.github.io/posts/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/python-forget-function/</id>
-            <updated>2022-03-11T10:23:40&#43;08:00</updated>
+            <updated>2022-03-11T11:13:36&#43;08:00</updated>
             <published>2021-05-27T21:11:06&#43;08:00</published>
             <author>
                     <name>寻路人</name>
@@ -3616,7 +3616,7 @@ $$ N = a * (宠物的钱) + b * (女主的钱) $$&lt;/p&gt;
                     </author>
             <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights><summary type="html">有些Python中的库的函数名字总是太长，记起来很是费劲(头大)，于是写篇博客记下自己常用的函数</summary>
             
-                <content type="html">&lt;h2 id=&#34;忽略警告&#34;&gt;忽略警告&lt;/h2&gt;
+                <content type="html">&lt;h1 id=&#34;忽略警告&#34;&gt;忽略警告&lt;/h1&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -3627,7 +3627,7 @@ $$ N = a * (宠物的钱) + b * (女主的钱) $$&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;warnings&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;filterwarnings&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;ignore&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;numpy&#34;&gt;Numpy&lt;/h2&gt;
+&lt;/div&gt;&lt;h1 id=&#34;numpy&#34;&gt;Numpy&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;code&gt;取消科学技术法()&lt;/code&gt; np.set_printoptions(suppress=True)&lt;/p&gt;
@@ -3648,7 +3648,7 @@ $$ N = a * (宠物的钱) + b * (女主的钱) $$&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;判断一行是否有缺失值&lt;/code&gt; np.isnan(data).any(axis=1)&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;pandas&#34;&gt;Pandas&lt;/h2&gt;
+&lt;h1 id=&#34;pandas&#34;&gt;Pandas&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;code&gt;显示所有列&lt;/code&gt; pd.set_option(&#39;display.max_columns&#39;, None)&lt;/p&gt;
@@ -3660,7 +3660,7 @@ $$ N = a * (宠物的钱) + b * (女主的钱) $$&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;取消科学技术法&lt;/code&gt; pd.set_option(&#39;display.float_format&#39;, lambda x: &#39;%.3f&#39; % x)&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;code&gt;时间戳转正常时间&lt;/code&gt; pd.to_datetime(时间戳 ,unit=&#39;ms&#39;) ## ms是毫秒&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;时间戳转正常时间&lt;/code&gt; pd.to_datetime(时间戳 ,unit=&#39;ms&#39;) # ms是毫秒&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;code&gt;分组求最大值所在行&lt;/code&gt; .idxmax()&lt;/p&gt;
@@ -3690,7 +3690,7 @@ $$ N = a * (宠物的钱) + b * (女主的钱) $$&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;描述数据&lt;/code&gt; data.describe&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;matplotlib&#34;&gt;Matplotlib&lt;/h2&gt;
+&lt;h1 id=&#34;matplotlib&#34;&gt;Matplotlib&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;code&gt;中文字体显示不出来&lt;/code&gt; plt.rcParams[&#39;font.sans-serif&#39;]=[&#39;Microsoft YaHei&#39;]&lt;/p&gt;
@@ -3702,7 +3702,7 @@ $$ N = a * (宠物的钱) + b * (女主的钱) $$&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;加一条线&lt;/code&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;code&gt;水平线&lt;/code&gt; ax.axhline(y, linestyle=&#39;--&#39;, color=&#39;k&#39;) ##&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;水平线&lt;/code&gt; ax.axhline(y, linestyle=&#39;--&#39;, color=&#39;k&#39;) #&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;code&gt;垂直线&lt;/code&gt; ax.axvline(x, linestyle=&#39;--&#39;, color=&#39;k&#39;)&lt;/p&gt;
@@ -3719,7 +3719,7 @@ $$ N = a * (宠物的钱) + b * (女主的钱) $$&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;坐标轴标签旋转&lt;/code&gt; plt.xticks(rotation=50)&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;sklearn&#34;&gt;Sklearn&lt;/h2&gt;
+&lt;h1 id=&#34;sklearn&#34;&gt;Sklearn&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;最大最小归一化&lt;/code&gt; from sklearn.preprocessing import MinMaxScaler
 &lt;ul&gt;
@@ -3729,13 +3729,13 @@ $$ N = a * (宠物的钱) + b * (女主的钱) $$&lt;/p&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;其他&#34;&gt;其他&lt;/h2&gt;
+&lt;h1 id=&#34;其他&#34;&gt;其他&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;ssh&lt;/code&gt; 验证失败&lt;/li&gt;
 &lt;/ul&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;import ssl
 ssl._create_default_https_context = ssl._create_unverified_context
-&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;excel&#34;&gt;Excel&lt;/h2&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;excel&#34;&gt;Excel&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;时间戳转日期&lt;/code&gt; =TEXT((B2/1000+8&lt;em&gt;3600)/86400+70&lt;/em&gt;365+19,&amp;quot;yyyy-mm-dd hh:mm:ss&amp;quot;)&lt;/li&gt;
 &lt;/ul&gt;
@@ -5397,9 +5397,9 @@ $$ Ent = -(\frac{2}{3} log_2 \frac{2}{3} + \frac{1}{3} log_2 \frac{1}{3}) = 0.91
     
         <entry>
             <title type="text">图论知识总结</title>
-            <link rel="alternate" type="text/html" href="https://coder-liuu.github.io/posts/acm/acm-argph-theory/" />
-            <id>https://coder-liuu.github.io/posts/acm/acm-argph-theory/</id>
-            <updated>2022-03-11T10:27:29&#43;08:00</updated>
+            <link rel="alternate" type="text/html" href="https://coder-liuu.github.io/posts/acm/acm-graph-theory/" />
+            <id>https://coder-liuu.github.io/posts/acm/acm-graph-theory/</id>
+            <updated>2022-03-11T11:10:18&#43;08:00</updated>
             <published>2021-02-26T16:45:29&#43;08:00</published>
             <author>
                     <name>寻路人</name>

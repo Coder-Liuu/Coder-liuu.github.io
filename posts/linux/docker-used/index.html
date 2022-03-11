@@ -731,6 +731,8 @@
 
         
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/blueimp-md5@2.10.0/js/md5.min.js"></script>
+
 <script>
     function loadComments() {
         if (typeof Gitalk === 'undefined') {
@@ -768,7 +770,7 @@
             createIssueManually:  false ,
             proxy: "https://shielded-brushlands-08810.herokuapp.com/https://github.com/login/oauth/access_token",
             enableHotKey:  true ,
-            id:  location.pathname
+            id:  md5(location.pathname),
         })
 
         gitalk.render('gitalk-container')
