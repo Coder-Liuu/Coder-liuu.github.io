@@ -15,15 +15,15 @@
             <language>zh-CN</language>
         
         
-            <managingEditor>reuixiy@gmail.com (寻路人)</managingEditor>
+            <managingEditor>coder-liuu@126.com (寻路人)</managingEditor>
         
         
-            <webMaster>reuixiy@gmail.com (寻路人)</webMaster>
+            <webMaster>coder-liuu@126.com (寻路人)</webMaster>
         
         
             <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
         
-        <lastBuildDate>Fri, 18 Mar 2022 17:43:36 &#43;0800</lastBuildDate>
+        <lastBuildDate>Wed, 06 Apr 2022 21:37:53 &#43;0800</lastBuildDate>
         
             <atom:link rel="self" type="application/rss&#43;xml" href="https://coder-liuu.github.io/rss.xml" />
         
@@ -34,7 +34,7 @@
                 <guid isPermaLink="true">https://coder-liuu.github.io/posts/adamml/</guid>
                 <pubDate>Fri, 18 Mar 2022 17:32:57 &#43;0800</pubDate>
                 
-                    <author>reuixiy@gmail.com (寻路人)</author>
+                    <author>coder-liuu@126.com (寻路人)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
@@ -550,7 +550,7 @@ correct_k = correct[:k].contiguous().view(-1).float().sum(0, keepdim=True)
                 <guid isPermaLink="true">https://coder-liuu.github.io/posts/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/hello-meme/</guid>
                 <pubDate>Thu, 10 Mar 2022 00:11:30 &#43;0800</pubDate>
                 
-                    <author>reuixiy@gmail.com (寻路人)</author>
+                    <author>coder-liuu@126.com (寻路人)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
@@ -619,7 +619,7 @@ id:  md5(location.pathname),
                 <guid isPermaLink="true">https://coder-liuu.github.io/posts/%E7%94%9F%E6%B4%BB%E7%AF%87/2021%E6%B5%81%E6%B0%B4%E8%B4%A6%E6%80%BB%E7%BB%93/</guid>
                 <pubDate>Mon, 07 Feb 2022 23:33:32 &#43;0800</pubDate>
                 
-                    <author>reuixiy@gmail.com (寻路人)</author>
+                    <author>coder-liuu@126.com (寻路人)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
@@ -686,7 +686,7 @@ id:  md5(location.pathname),
                 <guid isPermaLink="true">https://coder-liuu.github.io/posts/%E7%94%9F%E6%B4%BB%E7%AF%87/happy_new_year_2022/</guid>
                 <pubDate>Fri, 04 Feb 2022 22:34:27 &#43;0800</pubDate>
                 
-                    <author>reuixiy@gmail.com (寻路人)</author>
+                    <author>coder-liuu@126.com (寻路人)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
@@ -704,6 +704,8 @@ id:  md5(location.pathname),
   2023加油！
   &lt;/h3&gt;
 &lt;/center&gt;
+
+
 
 &lt;h2 id=&#34;1-祝福语篇&#34;&gt;1. 祝福语篇&lt;/h2&gt;
 &lt;p&gt;跟同学或者&lt;strong&gt;领导&lt;/strong&gt;发送祝福语最好是大年三十的时间。跟同学可以上午发送。下午用来专门给领导发送。（因为领导上午一般比较忙，下午应该就没什么事情了，尤其是下午4.00）&lt;/p&gt;
@@ -799,15 +801,18 @@ id:  md5(location.pathname),
                 <guid isPermaLink="true">https://coder-liuu.github.io/posts/linux/linux-command/</guid>
                 <pubDate>Mon, 17 Jan 2022 22:55:08 &#43;0800</pubDate>
                 
-                    <author>reuixiy@gmail.com (寻路人)</author>
+                    <author>coder-liuu@126.com (寻路人)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
-                    <description>&lt;h2 id=&#34;1-ssh远程连接&#34;&gt;1. ssh远程连接&lt;/h2&gt;
+                    <description>&lt;p&gt;Linux 不显示自己的输出，直接盲输入&lt;code&gt;stty echo&lt;/code&gt;即可解决&lt;/p&gt;
+&lt;h2 id=&#34;1-ssh远程连接&#34;&gt;1. ssh远程连接&lt;/h2&gt;
 &lt;p&gt;连接示例&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;ssh -p 端口号 用户名@ip地址
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;scp远程复制&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;scp -P 22 file user@host:/file
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;远程执行命令，&lt;strong&gt;这里执行命令稍微跟登录后执行命令不一样&lt;/strong&gt;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;scp 22 file user@host:/file &amp;#34;ls&amp;#34;
 &lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;2-patch代码打补丁&#34;&gt;2. patch代码打补丁&lt;/h2&gt;
 &lt;p&gt;单个文件打补丁&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;diff 旧代码 新代码 &amp;gt; foo.patch
@@ -925,7 +930,7 @@ cat &amp;lt;管道名字&amp;gt;
                 <guid isPermaLink="true">https://coder-liuu.github.io/posts/learn-database/</guid>
                 <pubDate>Wed, 05 Jan 2022 23:11:50 &#43;0800</pubDate>
                 
-                    <author>reuixiy@gmail.com (寻路人)</author>
+                    <author>coder-liuu@126.com (寻路人)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
@@ -1120,7 +1125,7 @@ sudo systemctl start mysqld
                 <guid isPermaLink="true">https://coder-liuu.github.io/posts/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/rl-one-star/</guid>
                 <pubDate>Thu, 30 Dec 2021 23:33:19 &#43;0800</pubDate>
                 
-                    <author>reuixiy@gmail.com (寻路人)</author>
+                    <author>coder-liuu@126.com (寻路人)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
@@ -1359,7 +1364,7 @@ GAMMA = 0.999          ## 折扣因子
                 <guid isPermaLink="true">https://coder-liuu.github.io/posts/java/java%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
                 <pubDate>Wed, 20 Oct 2021 23:35:15 &#43;0800</pubDate>
                 
-                    <author>reuixiy@gmail.com (寻路人)</author>
+                    <author>coder-liuu@126.com (寻路人)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
@@ -1564,7 +1569,7 @@ class My_Exception extends Exception
                 <guid isPermaLink="true">https://coder-liuu.github.io/posts/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/video-classify/</guid>
                 <pubDate>Tue, 19 Oct 2021 23:42:38 &#43;0800</pubDate>
                 
-                    <author>reuixiy@gmail.com (寻路人)</author>
+                    <author>coder-liuu@126.com (寻路人)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
@@ -1694,40 +1699,66 @@ class My_Exception extends Exception
                 <guid isPermaLink="true">https://coder-liuu.github.io/posts/%E7%9B%B8%E5%86%8C/album-game/</guid>
                 <pubDate>Tue, 21 Sep 2021 20:45:28 &#43;0800</pubDate>
                 
-                    <author>reuixiy@gmail.com (寻路人)</author>
+                    <author>coder-liuu@126.com (寻路人)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
-                    <description>&lt;h2 id=&#34;失落城堡-联机时的快乐&#34;&gt;失落城堡-联机时的快乐&lt;/h2&gt;
-&lt;div style=&#34;text-align: center;&#34;&gt;
-  &lt;img src=&#34;https://gitee.com/liu__yang/image/raw/master/img/b984cc38368836a7d5d25c91a4a38c42.jpeg&#34; width=&#34;60%&#34;&gt;
+                    <description>&lt;h2 id=&#34;失落城堡&#34;&gt;失落城堡&lt;/h2&gt;
+&lt;p&gt;&lt;div style=&#34;text-align: center;&#34;&gt;
+  &lt;img src=&#34;https://s1.ax1x.com/2022/04/05/qXPMsU.jpg&#34; width=&#34;60%&#34;&gt;
 &lt;/div&gt;
 
-&lt;h2 id=&#34;铁绣战争-无联机不快乐&#34;&gt;铁绣战争-无联机不快乐&lt;/h2&gt;
-&lt;div style=&#34;text-align: center;&#34;&gt;
-  &lt;img src=&#34;https://gitee.com/liu__yang/image/raw/master/img/Screenshot_20210921_153402.jpg&#34; width=&#34;60%&#34;&gt;
+&lt;center-word&gt;
+    &lt;center&gt;
+        失落城堡-联机时的快乐
+    &lt;/center&gt;
+&lt;/center-word&gt;&lt;/p&gt;
+&lt;h2 id=&#34;铁绣战争&#34;&gt;铁绣战争&lt;/h2&gt;
+&lt;p&gt;&lt;div style=&#34;text-align: center;&#34;&gt;
+  &lt;img src=&#34;https://s1.ax1x.com/2022/04/05/qXixjf.jpg&#34; width=&#34;60%&#34;&gt;
 &lt;/div&gt;
 
-&lt;h2 id=&#34;元气骑士-大一寒假玩的不错&#34;&gt;元气骑士-大一寒假玩的，不错&lt;/h2&gt;
-&lt;div style=&#34;text-align: center;&#34;&gt;
-  &lt;img src=&#34;https://gitee.com/liu__yang/image/raw/master/img/ee9880aac82d618a09f3aaef3a819f17.jpeg&#34; width=&#34;60%&#34;&gt;
+&lt;center-word&gt;
+    &lt;center&gt;
+        铁绣战争-无联机不快乐
+    &lt;/center&gt;
+&lt;/center-word&gt;&lt;/p&gt;
+&lt;h2 id=&#34;元气骑士&#34;&gt;元气骑士&lt;/h2&gt;
+&lt;center-word&gt;
+    &lt;center&gt;
+        (假装有图) 元气骑士-大一寒假玩的，不错
+    &lt;/center&gt;
+&lt;/center-word&gt;
+&lt;h2 id=&#34;荒野乱斗&#34;&gt;荒野乱斗&lt;/h2&gt;
+&lt;p&gt;&lt;div style=&#34;text-align: center;&#34;&gt;
+  &lt;img src=&#34;https://s1.ax1x.com/2022/04/05/qXFACn.jpg&#34; width=&#34;60%&#34;&gt;
 &lt;/div&gt;
 
-&lt;h2 id=&#34;荒野乱斗-恩哼容易上瘾我5000个杯了&#34;&gt;荒野乱斗-恩哼，容易上瘾，我5000个杯了&lt;/h2&gt;
-&lt;div style=&#34;text-align: center;&#34;&gt;
-  &lt;img src=&#34;https://gitee.com/liu__yang/image/raw/master/img/50478cbcd4bc62151928d435a0da14a0.jpeg&#34; width=&#34;60%&#34;&gt;
+&lt;center-word&gt;
+    &lt;center&gt;
+        荒野乱斗-恩哼，容易上瘾，我5000个杯了
+    &lt;/center&gt;
+&lt;/center-word&gt;&lt;/p&gt;
+&lt;h2 id=&#34;饥荒&#34;&gt;饥荒&lt;/h2&gt;
+&lt;p&gt;&lt;div style=&#34;text-align: center;&#34;&gt;
+  &lt;img src=&#34;https://s1.ax1x.com/2022/04/05/qXFUbD.jpg&#34; width=&#34;60%&#34;&gt;
 &lt;/div&gt;
 
-&lt;h2 id=&#34;饥荒-百玩不腻&#34;&gt;饥荒-百玩不腻&lt;/h2&gt;
-&lt;div style=&#34;text-align: center;&#34;&gt;
-  &lt;img src=&#34;https://gitee.com/liu__yang/image/raw/master/img/526d6a83ea6ef77a05148e86d9ca4395.jpg&#34; width=&#34;60%&#34;&gt;
+&lt;center-word&gt;
+    &lt;center&gt;
+        饥荒，好玩是好玩就是有点肝
+    &lt;/center&gt;
+&lt;/center-word&gt;&lt;/p&gt;
+&lt;h2 id=&#34;缺氧&#34;&gt;缺氧&lt;/h2&gt;
+&lt;p&gt;&lt;div style=&#34;text-align: center;&#34;&gt;
+  &lt;img src=&#34;https://s1.ax1x.com/2022/04/05/qXi4c6.jpg&#34; width=&#34;60%&#34;&gt;
 &lt;/div&gt;
 
-&lt;h2 id=&#34;缺氧-恐怕我先缺氧了&#34;&gt;缺氧-恐怕我先缺氧了&lt;/h2&gt;
-&lt;div style=&#34;text-align: center;&#34;&gt;
-  &lt;img src=&#34;https://gitee.com/liu__yang/image/raw/master/img/9b77a923ab790debe9feca095b8394b2.jpeg&#34; width=&#34;60%&#34;&gt;
-&lt;/div&gt;
-
+&lt;center-word&gt;
+    &lt;center&gt;
+        缺氧-恐怕我先缺氧了
+    &lt;/center&gt;
+&lt;/center-word&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;今天就先想到了折磨多，以后想到在填。&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -1759,7 +1790,7 @@ class My_Exception extends Exception
                 <guid isPermaLink="true">https://coder-liuu.github.io/posts/%E9%9D%A2%E8%AF%95/cs-os-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9Fand%E8%AE%A1%E7%BB%84%E9%9D%A2%E8%AF%95%E9%A2%98/</guid>
                 <pubDate>Sun, 19 Sep 2021 20:17:51 &#43;0800</pubDate>
                 
-                    <author>reuixiy@gmail.com (寻路人)</author>
+                    <author>coder-liuu@126.com (寻路人)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
@@ -1870,7 +1901,7 @@ class My_Exception extends Exception
                 <guid isPermaLink="true">https://coder-liuu.github.io/posts/%E9%9D%A2%E8%AF%95/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E9%9D%A2%E8%AF%95%E9%A2%98/</guid>
                 <pubDate>Sat, 18 Sep 2021 21:26:42 &#43;0800</pubDate>
                 
-                    <author>reuixiy@gmail.com (寻路人)</author>
+                    <author>coder-liuu@126.com (寻路人)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
@@ -2050,7 +2081,7 @@ socket是基于TCP/IP协议的应用程序之间的通信方式，通信前程�
                 <guid isPermaLink="true">https://coder-liuu.github.io/posts/%E9%9D%A2%E8%AF%95/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%B8%93%E4%B8%9A%E8%AF%BE%E9%9D%A2%E8%AF%95%E9%A2%98/</guid>
                 <pubDate>Fri, 17 Sep 2021 18:55:58 &#43;0800</pubDate>
                 
-                    <author>reuixiy@gmail.com (寻路人)</author>
+                    <author>coder-liuu@126.com (寻路人)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
@@ -2215,7 +2246,7 @@ KMP算法：在匹配失败的情况下，利用之前比较的情况，来使�
                 <guid isPermaLink="true">https://coder-liuu.github.io/posts/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/go-note/</guid>
                 <pubDate>Tue, 17 Aug 2021 23:42:18 &#43;0800</pubDate>
                 
-                    <author>reuixiy@gmail.com (寻路人)</author>
+                    <author>coder-liuu@126.com (寻路人)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
@@ -2407,7 +2438,7 @@ golang第三方包的引用报错: &lt;a href=&#34;https://blog.csdn.net/weixin_
                 <guid isPermaLink="true">https://coder-liuu.github.io/posts/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/review-aprioir/</guid>
                 <pubDate>Tue, 03 Aug 2021 14:24:13 &#43;0800</pubDate>
                 
-                    <author>reuixiy@gmail.com (寻路人)</author>
+                    <author>coder-liuu@126.com (寻路人)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
@@ -3013,7 +3044,7 @@ func main() {
                 <guid isPermaLink="true">https://coder-liuu.github.io/posts/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/ml-interview/</guid>
                 <pubDate>Sun, 01 Aug 2021 11:45:54 &#43;0800</pubDate>
                 
-                    <author>reuixiy@gmail.com (寻路人)</author>
+                    <author>coder-liuu@126.com (寻路人)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
@@ -3254,7 +3285,7 @@ ZooKeeper文件，ROOT表，META表 $=\gt$ 用户数据&lt;/p&gt;
                 <guid isPermaLink="true">https://coder-liuu.github.io/posts/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/ventoy-tuition/</guid>
                 <pubDate>Sat, 31 Jul 2021 16:38:44 &#43;0800</pubDate>
                 
-                    <author>reuixiy@gmail.com (寻路人)</author>
+                    <author>coder-liuu@126.com (寻路人)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
@@ -3325,7 +3356,7 @@ ZooKeeper文件，ROOT表，META表 $=\gt$ 用户数据&lt;/p&gt;
                 <guid isPermaLink="true">https://coder-liuu.github.io/posts/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/health-insure-predict/</guid>
                 <pubDate>Thu, 15 Jul 2021 16:01:25 &#43;0800</pubDate>
                 
-                    <author>reuixiy@gmail.com (寻路人)</author>
+                    <author>coder-liuu@126.com (寻路人)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
@@ -3337,7 +3368,7 @@ ZooKeeper文件，ROOT表，META表 $=\gt$ 用户数据&lt;/p&gt;
 &lt;li&gt;
 &lt;p&gt;数据示例:
 &lt;div style=&#34;text-align: center;&#34;&gt;
-  &lt;img src=&#34;https://gitee.com/liu__yang/image/raw/master/img/%e6%b7%b1%e5%ba%a6%e6%88%aa%e5%9b%be_%e9%80%89%e6%8b%a9%e5%8c%ba%e5%9f%9f_20210715160533.png&#34; width=&#34;100%&#34;&gt;
+  &lt;img src=&#34;https://s1.ax1x.com/2022/04/05/qXVzTO.png&#34; width=&#34;100%&#34;&gt;
 &lt;/div&gt;
 &lt;/p&gt;
 &lt;/li&gt;
@@ -3383,6 +3414,8 @@ ZooKeeper文件，ROOT表，META表 $=\gt$ 用户数据&lt;/p&gt;
   &lt;/h3&gt;
 &lt;/center&gt;
 
+
+
 &lt;div style=&#34;text-align: center;&#34;&gt;
   &lt;img src=&#34;https://gitee.com/liu__yang/image/raw/master/img/2021-7-15-1.png&#34; width=&#34;80%&#34;&gt;
 &lt;/div&gt;
@@ -3413,6 +3446,8 @@ ZooKeeper文件，ROOT表，META表 $=\gt$ 用户数据&lt;/p&gt;
   效果图
   &lt;/h3&gt;
 &lt;/center&gt;
+
+
 
 &lt;div style=&#34;text-align: center;&#34;&gt;
   &lt;img src=&#34;https://gitee.com/liu__yang/image/raw/master/img/2021-7-15-2.png&#34; width=&#34;80%&#34;&gt;
@@ -3507,6 +3542,8 @@ ZooKeeper文件，ROOT表，META表 $=\gt$ 用户数据&lt;/p&gt;
   效果图
   &lt;/h3&gt;
 &lt;/center&gt;
+
+
 
 &lt;div style=&#34;text-align: center;&#34;&gt;
   &lt;img src=&#34;https://gitee.com/liu__yang/image/raw/master/img/2021-7-15-3.png&#34; width=&#34;80%&#34;&gt;
@@ -3708,7 +3745,7 @@ ZooKeeper文件，ROOT表，META表 $=\gt$ 用户数据&lt;/p&gt;
                 <guid isPermaLink="true">https://coder-liuu.github.io/posts/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/noise-mnist/</guid>
                 <pubDate>Sat, 10 Jul 2021 12:00:53 &#43;0800</pubDate>
                 
-                    <author>reuixiy@gmail.com (寻路人)</author>
+                    <author>coder-liuu@126.com (寻路人)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
@@ -3716,16 +3753,6 @@ ZooKeeper文件，ROOT表，META表 $=\gt$ 用户数据&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;问题描述: 给我2000张&lt;strong&gt;带噪音&lt;/strong&gt;的手写数字图片，如下图所示。要求我训练一个模型，使其能在测试集10000张带噪音的手写数字图片，取得较好的效果。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;div style=&#34;text-align: center;&#34;&gt;
-  &lt;img src=&#34;https://gitee.com/liu__yang/image/raw/master/img/%e6%b7%b1%e5%ba%a6%e6%88%aa%e5%9b%be_%e9%80%89%e6%8b%a9%e5%8c%ba%e5%9f%9f_20210710005345.png&#34; width=&#34;30%&#34;&gt;
-&lt;/div&gt;
-
-&lt;center&gt;
-  &lt;h3&gt;
-  噪声图片
-  &lt;/h3&gt;
-&lt;/center&gt;
-&lt;/p&gt;
 &lt;h1 id=&#34;一图片预处理&#34;&gt;一、图片预处理&lt;/h1&gt;
 &lt;p&gt;通过分析可以知道这是&lt;strong&gt;高斯噪音&lt;/strong&gt;，高斯噪音的形成为：&lt;strong&gt;一个正太分布的随机数与原图相加&lt;/strong&gt;，即可使图片拥有高斯噪音。&lt;/p&gt;
 &lt;p&gt;添加高斯噪音的Python代码为：&lt;/p&gt;
@@ -3751,44 +3778,15 @@ ZooKeeper文件，ROOT表，META表 $=\gt$ 用户数据&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;noisy_image&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;添加效果如下所示:&lt;/p&gt;
-&lt;p&gt;&lt;div style=&#34;text-align: center;&#34;&gt;
-  &lt;img src=&#34;https://gitee.com/liu__yang/image/raw/master/img/%e6%b7%b1%e5%ba%a6%e6%88%aa%e5%9b%be_%e9%80%89%e6%8b%a9%e5%8c%ba%e5%9f%9f_20210710121803.png&#34; width=&#34;30%&#34;&gt;
-&lt;/div&gt;
-
-&lt;center&gt;
-  &lt;h3&gt;
-  左边原图，右边加噪音图
-  &lt;/h3&gt;
-&lt;/center&gt;
-&lt;/p&gt;
-&lt;p&gt;消除高斯噪音，我有两种思路。&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;消除高斯噪音，我有两种思路。&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;直接对图片二值化(大于0.4的像素点为1,小于0.4的像素点为0)，下面是效果图。&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;直接对图片二值化(大于0.4的像素点为1,小于0.4的像素点为0)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;使用高斯滤波之后，做一个简单的去背景噪声，使用高斯滤波器核心代码&lt;code&gt;cv2.GaussianBlur(noise,(3,3),0)&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;div style=&#34;text-align: center;&#34;&gt;
-  &lt;img src=&#34;https://gitee.com/liu__yang/image/raw/master/img/%e6%b7%b1%e5%ba%a6%e6%88%aa%e5%9b%be_%e9%80%89%e6%8b%a9%e5%8c%ba%e5%9f%9f_20210710122035.png&#34; width=&#34;30%&#34;&gt;
-&lt;/div&gt;
-
-&lt;center&gt;
-  &lt;h3&gt;
-  左边噪音图，右边二值化
-  &lt;/h3&gt;
-&lt;/center&gt;
-&lt;/p&gt;
-&lt;ol start=&#34;2&#34;&gt;
-&lt;li&gt;使用高斯滤波之后，做一个简单的去背景噪声，使用高斯滤波器核心代码&lt;code&gt;cv2.GaussianBlur(noise,(3,3),0)&lt;/code&gt;，下面是效果。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;div style=&#34;text-align: center;&#34;&gt;
-  &lt;img src=&#34;https://gitee.com/liu__yang/image/raw/master/img/%e6%b7%b1%e5%ba%a6%e6%88%aa%e5%9b%be_%e9%80%89%e6%8b%a9%e5%8c%ba%e5%9f%9f_20210710150102.png&#34; width=&#34;30%&#34;&gt;
-&lt;/div&gt;
-
-&lt;center&gt;
-  &lt;h3&gt;
-  左边噪音图，右边效果图
-  &lt;/h3&gt;
-&lt;/center&gt;
-&lt;/p&gt;
 &lt;h1 id=&#34;二数据增强&#34;&gt;二、数据增强&lt;/h1&gt;
 &lt;p&gt;数据增强有一个非常好使的库，名字为&lt;code&gt;imgaug&lt;/code&gt;，接下来我说一下基本用法吧。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -3861,17 +3859,7 @@ ZooKeeper文件，ROOT表，META表 $=\gt$ 用户数据&lt;/p&gt;
 &lt;li&gt;使用批归一化层和Dropout层，防止模型过拟合的同时，增加了网络性能。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h1 id=&#34;四模型集成&#34;&gt;四、模型集成&lt;/h1&gt;
-&lt;p&gt;老师说：团结就是力量，模型当然也是，一个CNN的力量有限的，&lt;a href=&#34;https://www.kaggle.com/cdeotte/25-million-images-0-99757-mnist&#34;&gt;这篇文章&lt;/a&gt;使用Bagging的训练的15个CNN进行集成，达到了前所未有的信高度，思路如下图所示：&lt;/p&gt;
-&lt;p&gt;&lt;div style=&#34;text-align: center;&#34;&gt;
-  &lt;img src=&#34;https://gitee.com/liu__yang/image/raw/master/img/Bagging.png&#34; width=&#34;30%&#34;&gt;
-&lt;/div&gt;
-
-&lt;center&gt;
-  &lt;h3&gt;
-  CNN集成
-  &lt;/h3&gt;
-&lt;/center&gt;
-&lt;/p&gt;
+&lt;p&gt;老师说：团结就是力量，模型当然也是，一个CNN的力量有限的，&lt;a href=&#34;https://www.kaggle.com/cdeotte/25-million-images-0-99757-mnist&#34;&gt;这篇文章&lt;/a&gt;使用Bagging的训练的15个CNN进行集成，达到了前所未有的信高度&lt;/p&gt;
 &lt;p&gt;对于该问题来说，同样如此，所以我训练了10个CNN进行集成。部分代码如下所示：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -3923,7 +3911,7 @@ ZooKeeper文件，ROOT表，META表 $=\gt$ 用户数据&lt;/p&gt;
                 <guid isPermaLink="true">https://coder-liuu.github.io/posts/%E7%9B%B8%E5%86%8C/album-ccf/</guid>
                 <pubDate>Fri, 02 Jul 2021 21:42:54 &#43;0800</pubDate>
                 
-                    <author>reuixiy@gmail.com (寻路人)</author>
+                    <author>coder-liuu@126.com (寻路人)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
@@ -3933,7 +3921,7 @@ ZooKeeper文件，ROOT表，META表 $=\gt$ 用户数据&lt;/p&gt;
 &lt;p&gt;本文不会谈任何的算法，只谈&lt;code&gt;风景&lt;/code&gt;，因为自己考的实在是太垃圾了(呜呜呜)。&lt;/p&gt;
 &lt;p&gt;前向图片高能预警~&lt;/p&gt;
 &lt;p&gt;&lt;div style=&#34;text-align: center;&#34;&gt;
-  &lt;img src=&#34;https://gitee.com/liu__yang/image/raw/master/img/IMG_20210411_113352.jpg&#34; width=&#34;60%&#34;&gt;
+  &lt;img src=&#34;https://s1.ax1x.com/2022/04/05/qXFTx0.jpg&#34; width=&#34;60%&#34;&gt;
 &lt;/div&gt;
 
 &lt;center&gt;
@@ -3941,9 +3929,11 @@ ZooKeeper文件，ROOT表，META表 $=\gt$ 用户数据&lt;/p&gt;
   网易
   &lt;/h3&gt;
 &lt;/center&gt;
+
+
 &lt;/p&gt;
 &lt;p&gt;&lt;div style=&#34;text-align: center;&#34;&gt;
-  &lt;img src=&#34;https://gitee.com/liu__yang/image/raw/master/img/IMG_20210411_113438.jpg&#34; width=&#34;60%&#34;&gt;
+  &lt;img src=&#34;https://s1.ax1x.com/2022/04/05/qXFqqU.jpg&#34; width=&#34;60%&#34;&gt;
 &lt;/div&gt;
 
 &lt;center&gt;
@@ -3951,9 +3941,11 @@ ZooKeeper文件，ROOT表，META表 $=\gt$ 用户数据&lt;/p&gt;
   考点
   &lt;/h3&gt;
 &lt;/center&gt;
+
+
 &lt;/p&gt;
 &lt;p&gt;&lt;div style=&#34;text-align: center;&#34;&gt;
-  &lt;img src=&#34;https://gitee.com/liu__yang/image/raw/master/img/IMG_20210410_172022_1.jpg&#34; width=&#34;60%&#34;&gt;
+  &lt;img src=&#34;https://s1.ax1x.com/2022/04/05/qXFjIJ.jpg&#34; width=&#34;60%&#34;&gt;
 &lt;/div&gt;
 
 &lt;center&gt;
@@ -3961,9 +3953,11 @@ ZooKeeper文件，ROOT表，META表 $=\gt$ 用户数据&lt;/p&gt;
   清华
   &lt;/h3&gt;
 &lt;/center&gt;
+
+
 &lt;/p&gt;
 &lt;p&gt;&lt;div style=&#34;text-align: center;&#34;&gt;
-  &lt;img src=&#34;https://gitee.com/liu__yang/image/raw/master/img/IMG_20210410_122008_1.jpg&#34; width=&#34;60%&#34;&gt;
+  &lt;img src=&#34;https://s1.ax1x.com/2022/04/05/qXkKQP.jpg&#34; width=&#34;60%&#34;&gt;
 &lt;/div&gt;
 
 &lt;center&gt;
@@ -3971,6 +3965,8 @@ ZooKeeper文件，ROOT表，META表 $=\gt$ 用户数据&lt;/p&gt;
   小路
   &lt;/h3&gt;
 &lt;/center&gt;
+
+
 &lt;/p&gt;
 </description>
                 
@@ -4000,7 +3996,7 @@ ZooKeeper文件，ROOT表，META表 $=\gt$ 用户数据&lt;/p&gt;
                 <guid isPermaLink="true">https://coder-liuu.github.io/posts/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/ml-gnn/</guid>
                 <pubDate>Mon, 07 Jun 2021 15:47:39 &#43;0800</pubDate>
                 
-                    <author>reuixiy@gmail.com (寻路人)</author>
+                    <author>coder-liuu@126.com (寻路人)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
@@ -4092,7 +4088,7 @@ $$ N = a * (宠物的钱) + b * (女主的钱) $$&lt;/p&gt;
                 <guid isPermaLink="true">https://coder-liuu.github.io/posts/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/python-forget-function/</guid>
                 <pubDate>Thu, 27 May 2021 21:11:06 &#43;0800</pubDate>
                 
-                    <author>reuixiy@gmail.com (寻路人)</author>
+                    <author>coder-liuu@126.com (寻路人)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
@@ -4247,7 +4243,7 @@ ssl._create_default_https_context = ssl._create_unverified_context
                 <guid isPermaLink="true">https://coder-liuu.github.io/posts/linux/docker-arch-nvim-process/</guid>
                 <pubDate>Sun, 16 May 2021 17:38:57 &#43;0800</pubDate>
                 
-                    <author>reuixiy@gmail.com (寻路人)</author>
+                    <author>coder-liuu@126.com (寻路人)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
@@ -4356,7 +4352,7 @@ color snazzy
                 <guid isPermaLink="true">https://coder-liuu.github.io/posts/linux/docker-used/</guid>
                 <pubDate>Thu, 29 Apr 2021 13:35:44 &#43;0800</pubDate>
                 
-                    <author>reuixiy@gmail.com (寻路人)</author>
+                    <author>coder-liuu@126.com (寻路人)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
@@ -4526,7 +4522,7 @@ color snazzy
                 <guid isPermaLink="true">https://coder-liuu.github.io/posts/linux/linux-matplotlib/</guid>
                 <pubDate>Thu, 22 Apr 2021 17:59:47 &#43;0800</pubDate>
                 
-                    <author>reuixiy@gmail.com (寻路人)</author>
+                    <author>coder-liuu@126.com (寻路人)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
@@ -4613,7 +4609,7 @@ color snazzy
                 <guid isPermaLink="true">https://coder-liuu.github.io/posts/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/math-linear-algebra/</guid>
                 <pubDate>Fri, 02 Apr 2021 17:50:12 &#43;0800</pubDate>
                 
-                    <author>reuixiy@gmail.com (寻路人)</author>
+                    <author>coder-liuu@126.com (寻路人)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
@@ -4698,7 +4694,7 @@ color snazzy
                 <guid isPermaLink="true">https://coder-liuu.github.io/posts/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/imbalanced-datasets/</guid>
                 <pubDate>Tue, 30 Mar 2021 22:16:40 &#43;0800</pubDate>
                 
-                    <author>reuixiy@gmail.com (寻路人)</author>
+                    <author>coder-liuu@126.com (寻路人)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
@@ -4837,7 +4833,7 @@ data.to_csv(f&amp;#34;{name}.csv&amp;#34;,index=False)
                 <guid isPermaLink="true">https://coder-liuu.github.io/posts/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/ml-logisticregression/</guid>
                 <pubDate>Wed, 24 Mar 2021 19:03:39 &#43;0800</pubDate>
                 
-                    <author>reuixiy@gmail.com (寻路人)</author>
+                    <author>coder-liuu@126.com (寻路人)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
@@ -4863,8 +4859,6 @@ $$&lt;/p&gt;
 prob = \frac{1}{1 + e^{-z}}
 $$&lt;/p&gt;
 &lt;p&gt;如果Sigmoid函数输出的prob值，我们可以进一步确定样本的类别，比如prob&amp;gt;0.5，样本类别为1,prob&amp;lt;=0.5样本类别为0&lt;/p&gt;
-&lt;p&gt;阶跃函数如下图中的红线所示，而Sigmoid如下图中的黑线所示：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://gitee.com/liu__yang/image/raw/master/img/%E6%B7%B1%E5%BA%A6%E6%88%AA%E5%9B%BE_%E9%80%89%E6%8B%A9%E5%8C%BA%E5%9F%9F_20210324230855.png&#34; alt=&#34;sigmoid函数&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;怎么求解&#34;&gt;怎么求解&lt;/h2&gt;
 &lt;p&gt;逻辑回归计算过程很简单就是：将数据带入&lt;code&gt;z = XW + b&lt;/code&gt;中，然后将z带入Sigmoid函数中去，最终求得计算结果。&lt;/p&gt;
 &lt;blockquote&gt;
@@ -4978,7 +4972,7 @@ $$&lt;/p&gt;
                 <guid isPermaLink="true">https://coder-liuu.github.io/posts/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/ml-linearregression/</guid>
                 <pubDate>Fri, 19 Mar 2021 11:07:40 &#43;0800</pubDate>
                 
-                    <author>reuixiy@gmail.com (寻路人)</author>
+                    <author>coder-liuu@126.com (寻路人)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
@@ -5074,12 +5068,12 @@ $$
             </item>
         
             <item>
-                <title>动手机器学习-&gt;实现KMeans算法</title>
+                <title>动手机器学习-实现KMeans算法</title>
                 <link>https://coder-liuu.github.io/posts/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/ml-kmeans/</link>
                 <guid isPermaLink="true">https://coder-liuu.github.io/posts/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/ml-kmeans/</guid>
                 <pubDate>Mon, 15 Mar 2021 12:35:36 &#43;0800</pubDate>
                 
-                    <author>reuixiy@gmail.com (寻路人)</author>
+                    <author>coder-liuu@126.com (寻路人)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
@@ -5104,9 +5098,7 @@ $$
 &lt;p&gt;$$ E = \sum_{i=1}^{k} \sum_{x \in C_i } distant(x - \mu_i) ^ 2 $$&lt;/p&gt;
 &lt;p&gt;其中，$ \mu_i = \frac{1}{C_i} \sum{}{x \in C_i } $，$\mu_i$是簇$C_i$的均值向量。&lt;/p&gt;
 &lt;p&gt;如果直接求最合适的聚类中心，很难，这是一个NP难问题，因此K-means算法采用贪心策略通过迭代来求近似最优解。&lt;/p&gt;
-&lt;p&gt;算法流程如下所示:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://gitee.com/liu__yang/image/raw/master/img/ml-kmeans.png&#34; alt=&#34;伪代码&#34;&gt;&lt;/p&gt;
-&lt;p&gt;我们可以将书中的伪代码，进一步抽象可以分为下面几个步骤&lt;/p&gt;
+&lt;p&gt;我们可以将书中的伪代码，抽象可以分为下面几个步骤&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;计算每个样本与每个聚类中心的距离&lt;/li&gt;
 &lt;li&gt;将样本划分到距离样本最近的聚类簇当中去&lt;/li&gt;
@@ -5324,7 +5316,7 @@ $\mu_2 = {3,4.66} $&lt;/p&gt;
                 <guid isPermaLink="true">https://coder-liuu.github.io/posts/linux/linux-dd/</guid>
                 <pubDate>Thu, 04 Mar 2021 15:17:14 &#43;0800</pubDate>
                 
-                    <author>reuixiy@gmail.com (寻路人)</author>
+                    <author>coder-liuu@126.com (寻路人)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
@@ -5381,7 +5373,7 @@ $\mu_2 = {3,4.66} $&lt;/p&gt;
                 <guid isPermaLink="true">https://coder-liuu.github.io/posts/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/ml-decision-tree/</guid>
                 <pubDate>Sat, 27 Feb 2021 18:51:42 &#43;0800</pubDate>
                 
-                    <author>reuixiy@gmail.com (寻路人)</author>
+                    <author>coder-liuu@126.com (寻路人)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
@@ -5434,7 +5426,7 @@ $$ Ent(D) = -\sum_{i=1}^n P_i log_2P_i $$&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h2 id=&#34;三决策树的生成&#34;&gt;三、决策树的生成&lt;/h2&gt;
 &lt;p&gt;决策树的种类有多种多样，先放一个通用的决策树的为代码,其中红色标注的我们已经学会了&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://gitee.com/liu__yang/image/raw/master/img/ml-1-2.png&#34; alt=&#34;伪代码&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s1.ax1x.com/2022/04/05/qXViLV.png&#34; alt=&#34;伪代码&#34;&gt;&lt;/p&gt;
 &lt;p&gt;我们可以将书中的伪代码，进一步抽象可以分为下面几个步骤&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;如果数据集中样本为同一类别或者没有特征可以继续划分，停止划分为叶结点赋值&lt;/li&gt;
@@ -5493,17 +5485,7 @@ $$ Ent = -(\frac{2}{3} log_2 \frac{2}{3} + \frac{1}{3} log_2 \frac{1}{3}) = 0.91
 &lt;p&gt;使用颜色划分数据集，划分规则是相同颜色的数据为一个数据集。&lt;/p&gt;
 &lt;p&gt;即下标为1,2的是数据集S1,下标为3的是数据集S2&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;步骤4:&lt;/strong&gt; 查看数据集S1,S2是否都是同一类别,答案是,所以停止划分,我们发现数据集S1全部为好瓜所以该节点为绿色,而另一个节点为坏瓜,最终决策树如下图所示:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://gitee.com/liu__yang/image/raw/master/img/ml-1-3.png&#34; alt=&#34;生成的决策树&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;四探索性问题&#34;&gt;四、探索性问题&lt;/h2&gt;
-&lt;p&gt;这即是探索性的问题，也是我自己的代办问题解答，如果有时间，我一定会完善下面的问题。&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;决策树怎么处理连续值？&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;决策树怎么进行剪枝?&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://s1.ax1x.com/2022/04/05/qXVZi4.png&#34; alt=&#34;生成的决策树&#34;&gt;&lt;/p&gt;
 </description>
                 
                 
@@ -5532,7 +5514,7 @@ $$ Ent = -(\frac{2}{3} log_2 \frac{2}{3} + \frac{1}{3} log_2 \frac{1}{3}) = 0.91
                 <guid isPermaLink="true">https://coder-liuu.github.io/posts/acm/acm-base/</guid>
                 <pubDate>Sat, 27 Feb 2021 00:10:20 &#43;0800</pubDate>
                 
-                    <author>reuixiy@gmail.com (寻路人)</author>
+                    <author>coder-liuu@126.com (寻路人)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
@@ -5831,7 +5813,7 @@ $$ Ent = -(\frac{2}{3} log_2 \frac{2}{3} + \frac{1}{3} log_2 \frac{1}{3}) = 0.91
                 <guid isPermaLink="true">https://coder-liuu.github.io/posts/acm/acm-graph-theory/</guid>
                 <pubDate>Fri, 26 Feb 2021 16:45:29 &#43;0800</pubDate>
                 
-                    <author>reuixiy@gmail.com (寻路人)</author>
+                    <author>coder-liuu@126.com (寻路人)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
@@ -6336,7 +6318,7 @@ int main(){
                 <guid isPermaLink="true">https://coder-liuu.github.io/posts/linux/manjaro-some-problem/</guid>
                 <pubDate>Wed, 24 Feb 2021 10:21:18 &#43;0800</pubDate>
                 
-                    <author>reuixiy@gmail.com (寻路人)</author>
+                    <author>coder-liuu@126.com (寻路人)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
@@ -6388,7 +6370,7 @@ Arch安装: &lt;code&gt;sudo pacman -S sox&lt;/code&gt;&lt;/p&gt;
                 <guid isPermaLink="true">https://coder-liuu.github.io/posts/linux/ranger/</guid>
                 <pubDate>Sun, 21 Feb 2021 14:28:45 &#43;0800</pubDate>
                 
-                    <author>reuixiy@gmail.com (寻路人)</author>
+                    <author>coder-liuu@126.com (寻路人)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
@@ -6472,7 +6454,7 @@ set draw_borders true
                 <guid isPermaLink="true">https://coder-liuu.github.io/posts/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/search-ticks/</guid>
                 <pubDate>Sun, 21 Feb 2021 08:44:09 &#43;0800</pubDate>
                 
-                    <author>reuixiy@gmail.com (寻路人)</author>
+                    <author>coder-liuu@126.com (寻路人)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
@@ -6544,7 +6526,7 @@ AND: 包含AND两边的关键词,比如 apple AND watch&lt;/p&gt;
                 <guid isPermaLink="true">https://coder-liuu.github.io/posts/acm/stl/</guid>
                 <pubDate>Sun, 14 Feb 2021 19:06:01 &#43;0800</pubDate>
                 
-                    <author>reuixiy@gmail.com (寻路人)</author>
+                    <author>coder-liuu@126.com (寻路人)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
@@ -6816,7 +6798,7 @@ AND: 包含AND两边的关键词,比如 apple AND watch&lt;/p&gt;
                 <guid isPermaLink="true">https://coder-liuu.github.io/posts/linux/manjaro-softwork/</guid>
                 <pubDate>Sun, 31 Jan 2021 21:07:24 &#43;0800</pubDate>
                 
-                    <author>reuixiy@gmail.com (寻路人)</author>
+                    <author>coder-liuu@126.com (寻路人)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
@@ -6824,34 +6806,27 @@ AND: 包含AND两边的关键词,比如 apple AND watch&lt;/p&gt;
 &lt;h2 id=&#34;google-chrome-浏览器&#34;&gt;google-chrome 浏览器&lt;/h2&gt;
 &lt;p&gt;浏览器是上网的必备，没有浏览器电脑的意义也就少了些许。&lt;/p&gt;
 &lt;p&gt;安装：&lt;code&gt;sudo pacman -S google-chrome&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://gitee.com/liu__yang/image/raw/master/img/%E6%B7%B1%E5%BA%A6%E6%88%AA%E5%9B%BE_Alacritty_20210204130910.png&#34; alt=&#34;google-chrome&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;tim-聊天软件&#34;&gt;Tim 聊天软件&lt;/h2&gt;
 &lt;p&gt;身为国人QQ，乃是必备。
 安装：&lt;code&gt;sudo pacman -S deepin.com.qq.im&lt;/code&gt;&lt;/p&gt;
 &lt;h2 id=&#34;wps-常用办公软件&#34;&gt;Wps 常用办公软件&lt;/h2&gt;
 &lt;p&gt;在线苦逼大学生写论文做PPT需要&lt;/p&gt;
 &lt;p&gt;安装：&lt;code&gt;sudo pacman -S wps-office&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://gitee.com/liu__yang/image/raw/master/img/%E6%B7%B1%E5%BA%A6%E6%88%AA%E5%9B%BE_%E9%80%89%E6%8B%A9%E5%8C%BA%E5%9F%9F_20210204131022.png&#34; alt=&#34;wps&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;nautilus-文件管理器&#34;&gt;nautilus 文件管理器&lt;/h2&gt;
 &lt;p&gt;类似于Windows下的资源管理器，&lt;strong&gt;自带工具，无需安装&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;安装：&lt;code&gt;sudo pacman -S nautilus&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;他的孪生兄弟&lt;code&gt;thunar&lt;/code&gt;与他相似&lt;/p&gt;
 &lt;p&gt;安装：&lt;code&gt;sudo pacman -S thunar&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://gitee.com/liu__yang/image/raw/master/img/%E6%B7%B1%E5%BA%A6%E6%88%AA%E5%9B%BE_%E9%80%89%E6%8B%A9%E5%8C%BA%E5%9F%9F_20210204130724.png&#34; alt=&#34;thunar&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;foxit-pdf阅读器&#34;&gt;foxit PDF阅读器&lt;/h2&gt;
 &lt;p&gt;科研狗或喜欢看电子书必备软件，功能强大&lt;/p&gt;
 &lt;p&gt;安装：&lt;code&gt;sudo pacman -S foxit&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://gitee.com/liu__yang/image/raw/master/img/20210204121509.png&#34; alt=&#34;foxit&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;vscode-代码编辑器&#34;&gt;vscode 代码编辑器&lt;/h2&gt;
 &lt;p&gt;强大且配置简单的无敌编辑器&lt;/p&gt;
 &lt;p&gt;安装：&lt;code&gt;sudo pacman -S code&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://gitee.com/liu__yang/image/raw/master/img/%E6%B7%B1%E5%BA%A6%E6%88%AA%E5%9B%BE_%E9%80%89%E6%8B%A9%E5%8C%BA%E5%9F%9F_20210204131437.png&#34; alt=&#34;vscode&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;picgo-图床软件&#34;&gt;picgo 图床软件&lt;/h2&gt;
 &lt;p&gt;以前使用在线图床过了一年图都消失啊，于是经过一番搜索发现了这个基于&lt;strong&gt;gitee&lt;/strong&gt;的图床
 官网：https://github.com/Molunerfinn/PicGo&lt;/p&gt;
 &lt;p&gt;安装：&lt;code&gt;yay -S picgo-appimage&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;配置方式：TODO&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://gitee.com/liu__yang/image/raw/master/img/%E6%B7%B1%E5%BA%A6%E6%88%AA%E5%9B%BE_%E9%80%89%E6%8B%A9%E5%8C%BA%E5%9F%9F_20210204132536.png&#34; alt=&#34;picgo&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;qv2ray-科学上网软件&#34;&gt;qv2ray 科学上网软件&lt;/h2&gt;
 &lt;p&gt;科学上网你懂得～
 安装：&lt;code&gt;sudo pacman -S qv2ray&lt;/code&gt;
@@ -6859,42 +6834,34 @@ AND: 包含AND两边的关键词,比如 apple AND watch&lt;/p&gt;
 &lt;h2 id=&#34;网易云音乐非官方客户端&#34;&gt;网易云音乐（非官方客户端）&lt;/h2&gt;
 &lt;p&gt;官方的网易云音乐在linux下有一个缺点就是在搜索框中不能输入中文，无奈之下找到了这个替代品&lt;/p&gt;
 &lt;p&gt;安装：&lt;code&gt;sudo pacman -S electron-netease-cloud-music&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://gitee.com/liu__yang/image/raw/master/img/%E6%B7%B1%E5%BA%A6%E6%88%AA%E5%9B%BE_%E9%80%89%E6%8B%A9%E5%8C%BA%E5%9F%9F_20210204133011.png&#34; alt=&#34;electron-netease-cloud-music&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;xmind-思维导图&#34;&gt;xmind 思维导图&lt;/h2&gt;
 &lt;p&gt;工程必备，思维导图，安装的使用需要snap来安装&lt;/p&gt;
 &lt;p&gt;安装：https://snapcraft.io/install/xmind/manjaro&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://gitee.com/liu__yang/image/raw/master/img/%E6%B7%B1%E5%BA%A6%E6%88%AA%E5%9B%BE_wps_20210204133449.png&#34; alt=&#34;xmind&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;filezilila-ftp传输软件&#34;&gt;filezilila FTP传输软件&lt;/h2&gt;
 &lt;p&gt;苦逼大学生使用FTP交作业&lt;/p&gt;
 &lt;p&gt;安装：&lt;code&gt;sudo pacman -S filezilila&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://gitee.com/liu__yang/image/raw/master/img/%E6%B7%B1%E5%BA%A6%E6%88%AA%E5%9B%BE_%E9%80%89%E6%8B%A9%E5%8C%BA%E5%9F%9F_20210204133900.png&#34; alt=&#34;filezilila&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;cpolar内网穿透软件&#34;&gt;cpolar内网穿透软件&lt;/h2&gt;
 &lt;p&gt;想将本地端口映射到域名地址，想在局域网外SSH链接电脑，这个软件就是这个作用&lt;/p&gt;
 &lt;p&gt;官网：&lt;code&gt;https://www.cpolar.com/&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;安装：官网下载&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://gitee.com/liu__yang/image/raw/master/img/%E6%B7%B1%E5%BA%A6%E6%88%AA%E5%9B%BE_%E9%80%89%E6%8B%A9%E5%8C%BA%E5%9F%9F_20210204134337.png&#34; alt=&#34;cpolar&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;navicat-数据库可视化软件&#34;&gt;navicat 数据库可视化软件&lt;/h2&gt;
 &lt;p&gt;以excel方式查看数据库的数据集，老好用了，缺点就是只能免费用15天&lt;/p&gt;
 &lt;p&gt;官网：&lt;code&gt;https://www.navicat.com.cn/&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;安装：官网下载&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://gitee.com/liu__yang/image/raw/master/img/%E6%B7%B1%E5%BA%A6%E6%88%AA%E5%9B%BE_%E9%80%89%E6%8B%A9%E5%8C%BA%E5%9F%9F_20210204134945.png&#34; alt=&#34;navicat&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;dmenu-快速启动软件&#34;&gt;dmenu 快速启动软件&lt;/h2&gt;
 &lt;p&gt;快速启动一个软件&lt;/p&gt;
 &lt;p&gt;安装：&lt;code&gt;sudo pacman -S dmenu&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://gitee.com/liu__yang/image/raw/master/img/%E6%B7%B1%E5%BA%A6%E6%88%AA%E5%9B%BE_%E9%80%89%E6%8B%A9%E5%8C%BA%E5%9F%9F_20210204135230.png&#34; alt=&#34;dmenu&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;wine-模拟window软件&#34;&gt;wine 模拟window软件&lt;/h2&gt;
 &lt;p&gt;安装：&lt;code&gt;sudo pacman -S wine&lt;/code&gt;&lt;/p&gt;
 &lt;h2 id=&#34;fish-下载百度文库软件&#34;&gt;fish 下载百度文库软件&lt;/h2&gt;
 &lt;p&gt;苦逼大学生必备,linux需要用wine才能打开&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://gitee.com/liu__yang/image/raw/master/img/%E6%B7%B1%E5%BA%A6%E6%88%AA%E5%9B%BE_google-chrome_20210204170958.png&#34; alt=&#34;fish&#34;&gt;&lt;br&gt;
-&lt;a href=&#34;http://www.laogoupan.com/b1218&#34;&gt;下载Fish.zip&lt;/a&gt;密码：i1ui&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.laogoupan.com/b1218&#34;&gt;下载Fish.zip&lt;/a&gt;密码：i1ui&lt;/p&gt;
 &lt;h2 id=&#34;tmux-终端复用软件&#34;&gt;tmux 终端复用软件&lt;/h2&gt;
 &lt;p&gt;这个大名鼎鼎的终端复用软件，就不必多说了。&lt;/p&gt;
 &lt;p&gt;安装：&lt;code&gt;sudo pacman -S tmux&lt;/code&gt;&lt;/p&gt;
 &lt;h2 id=&#34;ranger-终端下的文件管理器&#34;&gt;ranger 终端下的文件管理器&lt;/h2&gt;
 &lt;p&gt;终端党必备，终端下的文件管理器&lt;/p&gt;
 &lt;p&gt;安装：&lt;code&gt;sudo pacman -S ranger&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://gitee.com/liu__yang/image/raw/master/img/20210204172714.png&#34; alt=&#34;ranger&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;zsh-好用的shell命令解释器&#34;&gt;zsh 好用的shell命令解释器&lt;/h2&gt;
 &lt;p&gt;bash的进阶，具有自动补全，提示，扩展性更高。&lt;/p&gt;
 &lt;p&gt;安装：&lt;code&gt;sudo pacman -S zsh&lt;/code&gt;&lt;/p&gt;
@@ -6935,7 +6902,7 @@ AND: 包含AND两边的关键词,比如 apple AND watch&lt;/p&gt;
                 <guid isPermaLink="true">https://coder-liuu.github.io/posts/acm/acm-math/</guid>
                 <pubDate>Sat, 30 Jan 2021 00:00:00 &#43;0000</pubDate>
                 
-                    <author>reuixiy@gmail.com (寻路人)</author>
+                    <author>coder-liuu@126.com (寻路人)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
@@ -7268,7 +7235,7 @@ $$ d | n \rightarrow \frac{d}{n} | n $$&lt;/p&gt;
                 <guid isPermaLink="true">https://coder-liuu.github.io/posts/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/python-create-vir/</guid>
                 <pubDate>Thu, 30 Apr 2020 00:00:00 &#43;0000</pubDate>
                 
-                    <author>reuixiy@gmail.com (寻路人)</author>
+                    <author>coder-liuu@126.com (寻路人)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
@@ -7381,7 +7348,7 @@ pipreqs ./
                 <guid isPermaLink="true">https://coder-liuu.github.io/posts/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/git-summary/</guid>
                 <pubDate>Sun, 26 Apr 2020 23:57:02 &#43;0000</pubDate>
                 
-                    <author>reuixiy@gmail.com (寻路人)</author>
+                    <author>coder-liuu@126.com (寻路人)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
