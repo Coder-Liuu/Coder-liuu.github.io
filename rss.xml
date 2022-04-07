@@ -23,10 +23,70 @@
         
             <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
         
-        <lastBuildDate>Wed, 06 Apr 2022 21:37:53 &#43;0800</lastBuildDate>
+        <lastBuildDate>Thu, 07 Apr 2022 13:50:55 &#43;0800</lastBuildDate>
         
             <atom:link rel="self" type="application/rss&#43;xml" href="https://coder-liuu.github.io/rss.xml" />
         
+        
+            <item>
+                <title>手把手安装一个钢铁侠桌面</title>
+                <link>https://coder-liuu.github.io/posts/desktop-man/</link>
+                <guid isPermaLink="true">https://coder-liuu.github.io/posts/desktop-man/</guid>
+                <pubDate>Thu, 07 Apr 2022 13:35:45 &#43;0800</pubDate>
+                
+                    <author>coder-liuu@126.com (寻路人)</author>
+                
+                <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
+                
+                    <description>&lt;p&gt;最近有一个小伙伴说他想要一个炫酷桌面（我瞎编的），所以今天跟大家分享一下钢铁侠桌面的安装教程。&lt;/p&gt;
+&lt;h2 id=&#34;第一步下载必要软件&#34;&gt;第一步：下载必要软件&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;在微软商店下载Lively Wapper，大小为300MB左右&lt;/li&gt;
+&lt;li&gt;钢铁侠壁纸&lt;/li&gt;
+&lt;li&gt;Nexus（Dock栏）&lt;/li&gt;
+&lt;li&gt;我的Nexus配置&lt;/li&gt;
+&lt;li&gt;Rainmeter（桌面控件）&lt;/li&gt;
+&lt;li&gt;Rainmeter 主题&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;1需要在微软商店下载，2-5我全部打包在了我的百度云盘中。&lt;br /&gt;
+百度云盘链接：&lt;a href=&#34;https://pan.baidu.com/s/1XrZh64Nl8PagAA_EXncenw&#34;&gt;https://pan.baidu.com/s/1XrZh64Nl8PagAA_EXncenw&lt;/a&gt; 提取码：hw1q&lt;/p&gt;
+&lt;h2 id=&#34;第二步--桌面整理&#34;&gt;第二步   桌面整理&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;隐藏桌面图标，右击桌面空白地方，点击查看，显示桌面图标。在隐藏后再次点击就会显示桌面图标。&lt;/li&gt;
+&lt;li&gt;加载钢铁侠壁纸，直接把下载的钢铁侠壁纸.zip拖动获取即可。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;第三步---桌面托盘&#34;&gt;第三步   桌面托盘&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;安装Nexus软件，一直下一步就可以了。&lt;/li&gt;
+&lt;li&gt;加载我的Nexus配置，点击Nexus图标，然后选择高级，点击恢复配置。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;第三步---桌面控件&#34;&gt;第三步   桌面控件&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;安装Rainmeter软件，然后把自带的控件全部删除掉。&lt;/li&gt;
+&lt;li&gt;直接双击下载Rainmeter的主题，即可安装成功。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;教程到此结束。&lt;/p&gt;
+</description>
+                
+                
+                
+                
+                
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://coder-liuu.github.io/categories/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/">默认分类</category>
+                                
+                            
+                        
+                    
+                        
+                    
+                
+            </item>
         
             <item>
                 <title>AdaMML配置使用</title>
