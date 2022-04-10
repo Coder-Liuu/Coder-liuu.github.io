@@ -7,7 +7,7 @@
 
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>寻路人</title>
+        <title>寻路</title>
         <link>https://coder-liuu.github.io/</link>
         <description>寻找一条属于自己的路</description>
         <generator>Hugo 0.93.3 https://gohugo.io/</generator>
@@ -23,7 +23,7 @@
         
             <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
         
-        <lastBuildDate>Thu, 07 Apr 2022 13:50:55 &#43;0800</lastBuildDate>
+        <lastBuildDate>Sun, 10 Apr 2022 20:26:53 &#43;0800</lastBuildDate>
         
             <atom:link rel="self" type="application/rss&#43;xml" href="https://coder-liuu.github.io/rss.xml" />
         
@@ -39,7 +39,7 @@
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
                     <description>&lt;p&gt;最近有一个小伙伴说他想要一个炫酷桌面（我瞎编的），所以今天跟大家分享一下钢铁侠桌面的安装教程。&lt;/p&gt;
-&lt;h2 id=&#34;第一步下载必要软件&#34;&gt;第一步：下载必要软件&lt;/h2&gt;
+&lt;h2 id=&#34;第一步--下载必要软件&#34;&gt;第一步   下载必要软件&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;在微软商店下载Lively Wapper，大小为300MB左右&lt;/li&gt;
 &lt;li&gt;钢铁侠壁纸&lt;/li&gt;
@@ -664,188 +664,6 @@ id:  md5(location.pathname),
                                 
                                 
                                     <category domain="https://coder-liuu.github.io/categories/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/">默认分类</category>
-                                
-                            
-                        
-                    
-                        
-                    
-                
-            </item>
-        
-            <item>
-                <title>2021流水账总结</title>
-                <link>https://coder-liuu.github.io/posts/%E7%94%9F%E6%B4%BB%E7%AF%87/2021%E6%B5%81%E6%B0%B4%E8%B4%A6%E6%80%BB%E7%BB%93/</link>
-                <guid isPermaLink="true">https://coder-liuu.github.io/posts/%E7%94%9F%E6%B4%BB%E7%AF%87/2021%E6%B5%81%E6%B0%B4%E8%B4%A6%E6%80%BB%E7%BB%93/</guid>
-                <pubDate>Mon, 07 Feb 2022 23:33:32 &#43;0800</pubDate>
-                
-                    <author>coder-liuu@126.com (寻路人)</author>
-                
-                <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
-                
-                    <description>&lt;p&gt;总结的时间有些晚了，这段时间又重新装了一个Win10，原因就是有许多软件在Manjaro上不方便，“孤魂野鬼又一年啊”！&lt;/p&gt;
-&lt;p&gt;引用“兰铃”的一句话，悲观是我的状态，努力是我的态度：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;1-2月：参加无聊的数学建模美赛（瞎编大赛），以及超级计算机比赛（装软件运行比赛）。哎，若非生活所迫，谁愿参加这些比赛，还好队友比较给力，过程还是比较快乐的。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;3-4月：好像参加了一个CCF程序设计大赛？呜呜呜，没有做大模拟。前1小时搞定了前两题，后面的时间题目都不会做了，其实当时心态也不行了。还是心态更加重要。这也是我第一次去北京，开了开眼界啦。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;5月：准备北邮大智能实习，虽然个人比较垃圾，但是老师看我比较有自信还是给了我实习的机会。实习成功的话可以保研到大智能。最后结果只能说尽力了，实习不仅看代码水平，更重要的是&lt;strong&gt;将自己做的事情表达出来&lt;/strong&gt;。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;6月：准备期末考试，准备参加北邮2组实习，比赛排名第二，结果可能英语、本科不行直接给我刷了。呜呜呜！&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;7月：参加了北邮软工5组牛老师实习，牛老师人非常好，但是经过5月没有表达好的失败，我可能有点说的多了，并且关键可能是不知道自己未来是科研还是工程。希望想读研前好好考虑这个问题。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;8月：参加了北邮智能院，何老师的实习，何老师也非常好！就是吧出结果太慢了，需要到9月多才能出结果。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;9月：参加北科、中矿、中地质、我吸取了5月份大智能的教训，就是一次只参加一个面试的教训，因为这样实在是太浪费时间了。于是我就给北邮老师广发邮件，最终师从X老师门下。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;10月：打游戏了？划水了吧！我竟然没有印象了。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;11月：非常积极的想要跟研究生老师做毕设，老师也同意了于是开启了两周一汇报模式。非常不幸的是本校的X老师找我做项目（打黑工）。非常无奈，最终还是做了。(现在我写这篇博客时我都后悔极了)。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;12月：准备准备6级，但是阅读还是不行，估计又要凉凉啦！&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;一年过去了，又是一年打工人。打工人仍要继续想前走，可能是前方有希望吧，也可能别无选择，加油2023.....&lt;/p&gt;
-</description>
-                
-                
-                
-                
-                
-                    
-                        
-                            
-                                
-                                
-                                
-                                    <category domain="https://coder-liuu.github.io/categories/%E7%94%9F%E6%B4%BB%E7%AF%87/">生活篇</category>
-                                
-                            
-                        
-                    
-                        
-                    
-                
-            </item>
-        
-            <item>
-                <title>新年回家过年技巧总结</title>
-                <link>https://coder-liuu.github.io/posts/%E7%94%9F%E6%B4%BB%E7%AF%87/happy_new_year_2022/</link>
-                <guid isPermaLink="true">https://coder-liuu.github.io/posts/%E7%94%9F%E6%B4%BB%E7%AF%87/happy_new_year_2022/</guid>
-                <pubDate>Fri, 04 Feb 2022 22:34:27 &#43;0800</pubDate>
-                
-                    <author>coder-liuu@126.com (寻路人)</author>
-                
-                <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
-                
-                    <description>&lt;blockquote&gt;
-&lt;p&gt;人生不只有代码，更多的诗和远方（人情世故）&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;凡是都有攻略，过年也不例外，下面说一下我2022年过年的攻略，仅供我2023年进行参考。&lt;/p&gt;
-&lt;p&gt;看了看&lt;a href=&#34;https://mp.weixin.qq.com/s/gMxssoUvN0bZz7yVTy73tA&#34;&gt;超神的总结&lt;/a&gt;真是不禁感概，老师这么忙都能总结的很棒。这里也希望自己今年年底能做一个很好的总结。&lt;/p&gt;
-&lt;div style=&#34;text-align: center;&#34;&gt;
-  &lt;img src=&#34;https://gitee.com/liu__yang/image/raw/master/Screenshot_2022_0204_235925.png&#34; width=&#34;30%&#34;&gt;
-&lt;/div&gt;
-
-&lt;center&gt;
-  &lt;h3&gt;
-  2023加油！
-  &lt;/h3&gt;
-&lt;/center&gt;
-
-
-
-&lt;h2 id=&#34;1-祝福语篇&#34;&gt;1. 祝福语篇&lt;/h2&gt;
-&lt;p&gt;跟同学或者&lt;strong&gt;领导&lt;/strong&gt;发送祝福语最好是大年三十的时间。跟同学可以上午发送。下午用来专门给领导发送。（因为领导上午一般比较忙，下午应该就没什么事情了，尤其是下午4.00）&lt;/p&gt;
-&lt;h3 id=&#34;11-与同学说&#34;&gt;1.1 与同学说&lt;/h3&gt;
-&lt;p&gt;跟同学发送内容总结&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;祝新的一年事事顺利！身体健康！&lt;/li&gt;
-&lt;li&gt;XX新年快乐，福气满满（X年吉祥）！&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;表情包一定要到位。表情包见最后的图。&lt;/p&gt;
-&lt;h3 id=&#34;12-与老师说&#34;&gt;1.2 与老师说&lt;/h3&gt;
-&lt;p&gt;跟老师发送内容总结&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;举例1：&lt;/li&gt;
-&lt;/ol&gt;
-&lt;blockquote&gt;
-&lt;p&gt;尊敬的X老师：&lt;/p&gt;
-&lt;p&gt;  衷心感谢老师您这几年来对我的关照与教诲。遥想年初时，我对科研懵懂。但您的言传身教让我成长，尤其是您多次帮我修改论文，让我领悟了论文撰写的方法。最终我的论文也顺利地发出。值此虎年到来之际，祝陈老师新年快乐，身体健康，阖家幸福，万事如意！&lt;/p&gt;
-&lt;p&gt;学生XX敬上。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;详细教程请看：&lt;a href=&#34;https://www.zhihu.com/people/bi-xiao-tian-99&#34;&gt;毕导知乎&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;13-群聊瞎说&#34;&gt;1.3 群聊瞎说&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;认识多年了，一直想找机会帮大家做点什么，为感谢兄弟们一直以来对我的关心和支持，今天晚上，为大家在中央电视台准备了新年晚会，不要问花了多少钱，那不重要，大家开心就好。&lt;/li&gt;
-&lt;li&gt;我退了很多无关紧要的群，唯独这个群我没有退，因为每到除夕群主就会给大家发红包，温暖了大家的心，我没有在暗示群主发红包，我只是实话实说。谢谢今天群主发的除夕红包，虽然他还没有发，可能是暂时忘记了。不过在这里还是先说声谢谢。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;2-聚会篇&#34;&gt;2. 聚会篇&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;如何委婉推辞聚会？&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;方法1：我过年回老家了，去不了。 你们吃好喝好哈！&lt;/p&gt;
-&lt;p&gt;方法2：我今年过年没有回来。&lt;/p&gt;
-&lt;p&gt;方法3：我还在上班。&lt;/p&gt;
-&lt;ol start=&#34;2&#34;&gt;
-&lt;li&gt;
-&lt;p&gt;如何在聚会中跟来不了的同学说话？&lt;/p&gt;
-&lt;p&gt;XXX，我敬你一杯。&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;3-拜年篇&#34;&gt;3. 拜年篇&lt;/h2&gt;
-&lt;p&gt;开头篇：xxx新年快乐，X年吉祥。&lt;/p&gt;
-&lt;p&gt;中间篇：如何跟亲戚尬聊，可供选择的问题如下：&lt;/p&gt;
-&lt;p&gt;(1) 吃饭了吗？&lt;/p&gt;
-&lt;p&gt;(2) 你们那里冷吗？&lt;/p&gt;
-&lt;p&gt;(3) 如果对方有小孩，可以问对方小孩在上几年级。&lt;/p&gt;
-&lt;p&gt;结语篇：您可要好好保重身体，您先休息把！&lt;/p&gt;
-&lt;h2 id=&#34;4-表情包大法&#34;&gt;4. 表情包大法&lt;/h2&gt;
-&lt;div style=&#34;text-align: center;&#34;&gt;
-  &lt;img src=&#34;https://gitee.com/liu__yang/image/raw/master/happy_new_year.png&#34; width=&#34;50%&#34;&gt;
-&lt;/div&gt;
-
-&lt;div style=&#34;text-align: center;&#34;&gt;
-  &lt;img src=&#34;https://gitee.com/liu__yang/image/raw/master/happy_new_year2.jpeg&#34; width=&#34;50%&#34;&gt;
-&lt;/div&gt;
-
-&lt;div style=&#34;text-align: center;&#34;&gt;
-  &lt;img src=&#34;https://gitee.com/liu__yang/image/raw/master/happy_new_year3.jpeg&#34; width=&#34;50%&#34;&gt;
-&lt;/div&gt;
-
-&lt;div style=&#34;text-align: center;&#34;&gt;
-  &lt;img src=&#34;https://gitee.com/liu__yang/image/raw/master/happy_new_year4.jpeg&#34; width=&#34;50%&#34;&gt;
-&lt;/div&gt;
-
-&lt;div style=&#34;text-align: center;&#34;&gt;
-  &lt;img src=&#34;https://gitee.com/liu__yang/image/raw/master/happy_new_year5.jpeg&#34; width=&#34;50%&#34;&gt;
-&lt;/div&gt;
-
-</description>
-                
-                
-                
-                
-                
-                    
-                        
-                            
-                                
-                                
-                                
-                                    <category domain="https://coder-liuu.github.io/categories/%E7%94%9F%E6%B4%BB%E7%AF%87/">生活篇</category>
                                 
                             
                         
@@ -1744,97 +1562,6 @@ class My_Exception extends Exception
                                 
                                 
                                     <category domain="https://coder-liuu.github.io/categories/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/">默认分类</category>
-                                
-                            
-                        
-                    
-                        
-                    
-                
-            </item>
-        
-            <item>
-                <title>游戏-理想的世界</title>
-                <link>https://coder-liuu.github.io/posts/%E7%9B%B8%E5%86%8C/album-game/</link>
-                <guid isPermaLink="true">https://coder-liuu.github.io/posts/%E7%9B%B8%E5%86%8C/album-game/</guid>
-                <pubDate>Tue, 21 Sep 2021 20:45:28 &#43;0800</pubDate>
-                
-                    <author>coder-liuu@126.com (寻路人)</author>
-                
-                <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
-                
-                    <description>&lt;h2 id=&#34;失落城堡&#34;&gt;失落城堡&lt;/h2&gt;
-&lt;p&gt;&lt;div style=&#34;text-align: center;&#34;&gt;
-  &lt;img src=&#34;https://s1.ax1x.com/2022/04/05/qXPMsU.jpg&#34; width=&#34;60%&#34;&gt;
-&lt;/div&gt;
-
-&lt;center-word&gt;
-    &lt;center&gt;
-        失落城堡-联机时的快乐
-    &lt;/center&gt;
-&lt;/center-word&gt;&lt;/p&gt;
-&lt;h2 id=&#34;铁绣战争&#34;&gt;铁绣战争&lt;/h2&gt;
-&lt;p&gt;&lt;div style=&#34;text-align: center;&#34;&gt;
-  &lt;img src=&#34;https://s1.ax1x.com/2022/04/05/qXixjf.jpg&#34; width=&#34;60%&#34;&gt;
-&lt;/div&gt;
-
-&lt;center-word&gt;
-    &lt;center&gt;
-        铁绣战争-无联机不快乐
-    &lt;/center&gt;
-&lt;/center-word&gt;&lt;/p&gt;
-&lt;h2 id=&#34;元气骑士&#34;&gt;元气骑士&lt;/h2&gt;
-&lt;center-word&gt;
-    &lt;center&gt;
-        (假装有图) 元气骑士-大一寒假玩的，不错
-    &lt;/center&gt;
-&lt;/center-word&gt;
-&lt;h2 id=&#34;荒野乱斗&#34;&gt;荒野乱斗&lt;/h2&gt;
-&lt;p&gt;&lt;div style=&#34;text-align: center;&#34;&gt;
-  &lt;img src=&#34;https://s1.ax1x.com/2022/04/05/qXFACn.jpg&#34; width=&#34;60%&#34;&gt;
-&lt;/div&gt;
-
-&lt;center-word&gt;
-    &lt;center&gt;
-        荒野乱斗-恩哼，容易上瘾，我5000个杯了
-    &lt;/center&gt;
-&lt;/center-word&gt;&lt;/p&gt;
-&lt;h2 id=&#34;饥荒&#34;&gt;饥荒&lt;/h2&gt;
-&lt;p&gt;&lt;div style=&#34;text-align: center;&#34;&gt;
-  &lt;img src=&#34;https://s1.ax1x.com/2022/04/05/qXFUbD.jpg&#34; width=&#34;60%&#34;&gt;
-&lt;/div&gt;
-
-&lt;center-word&gt;
-    &lt;center&gt;
-        饥荒，好玩是好玩就是有点肝
-    &lt;/center&gt;
-&lt;/center-word&gt;&lt;/p&gt;
-&lt;h2 id=&#34;缺氧&#34;&gt;缺氧&lt;/h2&gt;
-&lt;p&gt;&lt;div style=&#34;text-align: center;&#34;&gt;
-  &lt;img src=&#34;https://s1.ax1x.com/2022/04/05/qXi4c6.jpg&#34; width=&#34;60%&#34;&gt;
-&lt;/div&gt;
-
-&lt;center-word&gt;
-    &lt;center&gt;
-        缺氧-恐怕我先缺氧了
-    &lt;/center&gt;
-&lt;/center-word&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;今天就先想到了折磨多，以后想到在填。&lt;/p&gt;
-&lt;/blockquote&gt;
-</description>
-                
-                
-                
-                
-                
-                    
-                        
-                            
-                                
-                                
-                                
-                                    <category domain="https://coder-liuu.github.io/categories/%E7%9B%B8%E5%86%8C/">相册</category>
                                 
                             
                         
@@ -3956,91 +3683,6 @@ ZooKeeper文件，ROOT表，META表 $=\gt$ 用户数据&lt;/p&gt;
                                 
                                 
                                     <category domain="https://coder-liuu.github.io/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/">机器学习</category>
-                                
-                            
-                        
-                    
-                        
-                    
-                
-            </item>
-        
-            <item>
-                <title>北京CCF-CSP考试</title>
-                <link>https://coder-liuu.github.io/posts/%E7%9B%B8%E5%86%8C/album-ccf/</link>
-                <guid isPermaLink="true">https://coder-liuu.github.io/posts/%E7%9B%B8%E5%86%8C/album-ccf/</guid>
-                <pubDate>Fri, 02 Jul 2021 21:42:54 &#43;0800</pubDate>
-                
-                    <author>coder-liuu@126.com (寻路人)</author>
-                
-                <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
-                
-                    <description>&lt;blockquote&gt;
-&lt;p&gt;大三下开学去考试，大三下结束才想起来写博客...(捂脸)&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;本文不会谈任何的算法，只谈&lt;code&gt;风景&lt;/code&gt;，因为自己考的实在是太垃圾了(呜呜呜)。&lt;/p&gt;
-&lt;p&gt;前向图片高能预警~&lt;/p&gt;
-&lt;p&gt;&lt;div style=&#34;text-align: center;&#34;&gt;
-  &lt;img src=&#34;https://s1.ax1x.com/2022/04/05/qXFTx0.jpg&#34; width=&#34;60%&#34;&gt;
-&lt;/div&gt;
-
-&lt;center&gt;
-  &lt;h3&gt;
-  网易
-  &lt;/h3&gt;
-&lt;/center&gt;
-
-
-&lt;/p&gt;
-&lt;p&gt;&lt;div style=&#34;text-align: center;&#34;&gt;
-  &lt;img src=&#34;https://s1.ax1x.com/2022/04/05/qXFqqU.jpg&#34; width=&#34;60%&#34;&gt;
-&lt;/div&gt;
-
-&lt;center&gt;
-  &lt;h3&gt;
-  考点
-  &lt;/h3&gt;
-&lt;/center&gt;
-
-
-&lt;/p&gt;
-&lt;p&gt;&lt;div style=&#34;text-align: center;&#34;&gt;
-  &lt;img src=&#34;https://s1.ax1x.com/2022/04/05/qXFjIJ.jpg&#34; width=&#34;60%&#34;&gt;
-&lt;/div&gt;
-
-&lt;center&gt;
-  &lt;h3&gt;
-  清华
-  &lt;/h3&gt;
-&lt;/center&gt;
-
-
-&lt;/p&gt;
-&lt;p&gt;&lt;div style=&#34;text-align: center;&#34;&gt;
-  &lt;img src=&#34;https://s1.ax1x.com/2022/04/05/qXkKQP.jpg&#34; width=&#34;60%&#34;&gt;
-&lt;/div&gt;
-
-&lt;center&gt;
-  &lt;h3&gt;
-  小路
-  &lt;/h3&gt;
-&lt;/center&gt;
-
-
-&lt;/p&gt;
-</description>
-                
-                
-                
-                
-                
-                    
-                        
-                            
-                                
-                                
-                                
-                                    <category domain="https://coder-liuu.github.io/categories/%E7%9B%B8%E5%86%8C/">相册</category>
                                 
                             
                         
