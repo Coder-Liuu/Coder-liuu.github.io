@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
     <title type="text">寻路</title>
     <subtitle type="html">寻找一条属于自己的路</subtitle>
-    <updated>2022-04-21T16:55:55&#43;08:00</updated>
+    <updated>2022-04-21T17:18:39&#43;08:00</updated>
     <id>https://coder-liuu.github.io/</id>
     <link rel="alternate" type="text/html" href="https://coder-liuu.github.io/" />
     <link rel="self" type="application/atom&#43;xml" href="https://coder-liuu.github.io/atom.xml" />
@@ -18,20 +18,23 @@
     <generator uri="https://gohugo.io/" version="0.93.3">Hugo</generator>
         <entry>
             <title type="text">Vue总结</title>
-            <link rel="alternate" type="text/html" href="https://coder-liuu.github.io/posts/%E5%89%8D%E7%AB%AF/vue%E6%80%BB%E7%BB%93/" />
-            <id>https://coder-liuu.github.io/posts/%E5%89%8D%E7%AB%AF/vue%E6%80%BB%E7%BB%93/</id>
-            <updated>2022-04-21T15:44:18&#43;08:00</updated>
+            <link rel="alternate" type="text/html" href="https://coder-liuu.github.io/posts/%E5%89%8D%E7%AB%AF/vue-summary/" />
+            <id>https://coder-liuu.github.io/posts/%E5%89%8D%E7%AB%AF/vue-summary/</id>
+            <updated>2022-04-21T17:18:08&#43;08:00</updated>
             <published>2022-04-21T15:41:14&#43;08:00</published>
             <author>
                     <name>寻路人</name>
                     <uri>https://coder-liuu.github.io/</uri>
                     <email>coder-liuu@126.com</email>
                     </author>
-            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights><summary type="html">Vue总结</summary>
+            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights><summary type="html">Vue直接导入总结</summary>
             
-                <content type="html">&lt;p&gt;&lt;a name=&#34;kphDi&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;vue直接导入使用&#34;&gt;Vue直接导入使用&lt;/h2&gt;
-&lt;p&gt;&lt;a name=&#34;grBH4&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+                <content type="html">&lt;p&gt;Vue是一个前端框架，我学习Vue的主要目前其实是想使用Element-UI框架。&lt;/p&gt;
+&lt;p&gt;这里推荐两个资源：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Vue在线运行 : &lt;a href=&#34;https://www.runoob.com/try/try.php?filename=vue2-hw&#34;&gt;https://www.runoob.com/try/try.php?filename=vue2-hw&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;黑马程序员课程 : &lt;a href=&#34;https://www.bilibili.com/video/BV12J411m7MG&#34;&gt;https://www.bilibili.com/video/BV12J411m7MG&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h3 id=&#34;第一个vue程序&#34;&gt;第一个Vue程序&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -49,8 +52,8 @@
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-vue&#34; data-lang=&#34;vue&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;div&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;id&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;app&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;{{&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;message&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;}}&lt;/span&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;div&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;id&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;app&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    {{ message }}
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;div&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;script&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;src&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;https://cdn.jsdelivr.net/npm/vue/dist/vue.js&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;script&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;script&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
@@ -65,8 +68,7 @@
 &lt;/div&gt;
 &lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;el : 挂载点&lt;/li&gt;
-&lt;li&gt;data: 数据，里面也可以放数组，对象等
-&lt;a name=&#34;bUJ9W&#34;&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;data: 数据，里面也可以放数组，对象等&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;vue指令&#34;&gt;vue指令&lt;/h3&gt;
 &lt;ul&gt;
@@ -228,8 +230,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;lt;/script&amp;gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;a name=&#34;rfjdR&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;网络应用axios&#34;&gt;网络应用axios&lt;/h3&gt;
+&lt;/div&gt;&lt;h3 id=&#34;网络应用axios&#34;&gt;网络应用axios&lt;/h3&gt;
 &lt;p&gt;注意点&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;axios回调函数中this指向改变了，需要额外的保存一份&lt;/li&gt;
@@ -288,8 +289,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;,
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;a name=&#34;aUL9S&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;关于html标签的使用&#34;&gt;关于HTML标签的使用&lt;/h3&gt;
+&lt;/div&gt;&lt;h3 id=&#34;关于html标签的使用&#34;&gt;关于HTML标签的使用&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
