@@ -2,14 +2,14 @@
 
 
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
-    <title type="text">寻路</title>
-    <subtitle type="html">寻找一条属于自己的路</subtitle>
-    <updated>2022-04-21T17:18:39&#43;08:00</updated>
+    <title type="text">自由如疯</title>
+    <subtitle type="html">纵有疾风起，人生不言弃</subtitle>
+    <updated>2022-05-07T20:25:19&#43;08:00</updated>
     <id>https://coder-liuu.github.io/</id>
     <link rel="alternate" type="text/html" href="https://coder-liuu.github.io/" />
     <link rel="self" type="application/atom&#43;xml" href="https://coder-liuu.github.io/atom.xml" />
     <author>
-            <name>寻路人</name>
+            <name>自由如疯</name>
             <uri>https://coder-liuu.github.io/</uri>
             
                 <email>coder-liuu@126.com</email>
@@ -17,13 +17,252 @@
     <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights>
     <generator uri="https://gohugo.io/" version="0.93.3">Hugo</generator>
         <entry>
+            <title type="text">IDE总结</title>
+            <link rel="alternate" type="text/html" href="https://coder-liuu.github.io/posts/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/ide%E6%80%BB%E7%BB%93/" />
+            <id>https://coder-liuu.github.io/posts/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/ide%E6%80%BB%E7%BB%93/</id>
+            <updated>2022-05-07T10:56:03&#43;08:00</updated>
+            <published>2022-05-05T18:59:10&#43;08:00</published>
+            <author>
+                    <name>自由如疯</name>
+                    <uri>https://coder-liuu.github.io/</uri>
+                    <email>coder-liuu@126.com</email>
+                    </author>
+            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights><summary type="html">IDE总结</summary>
+            
+                <content type="html">&lt;blockquote&gt;
+&lt;p&gt;曾梦想仗剑走天涯，看一看世界的繁华. emmmm现在也想&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;曾经的自己一直vim手撸代码，换回了Windows很不适合。于是查了一些&lt;code&gt;PyCharm&lt;/code&gt;和&lt;code&gt;VsCode&lt;/code&gt;的配置，优化，特此&lt;del&gt;大赦天下&lt;/del&gt;记录一下.&lt;/p&gt;
+&lt;h2 id=&#34;pycharm&#34;&gt;PyCharm&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;作用&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;功能&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;下一行&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;Shift-Enter&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;复制当前行&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;Ctrl-C&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;剪切当前行&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;Ctrl-X&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;删除当前行&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;Ctrl-Y&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;格式化代码&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;Ctrl-Alt-Enter&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;全局查找&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;Ctrl-Shift-F&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;添加标记&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;Ctrl-F12&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;添加标记&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;Ctrl-&amp;lt;标记符号&amp;gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;跳转指定行&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;Ctrl-G&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;查看函数列表&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;Alt + 7&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;vscode&#34;&gt;VsCode&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;取消预览图: &lt;code&gt;左下角 管理 —&amp;gt; 设置 —&amp;gt; 搜素 “editor.minimap.enabled” —&amp;gt; 取消勾选即可&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;格式化代码: 安装&lt;code&gt;beautify&lt;/code&gt;插件，按下F1快捷键，搜索beautify，点击Beautify file即可格式化打开的文件。&lt;/li&gt;
+&lt;li&gt;vscode终端环境变量和系统的不一样：从桌面双击打开一个新的VsCode&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;xshell&#34;&gt;Xshell&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Xshell如何改变字体大小：&lt;a href=&#34;https://jingyan.baidu.com/article/db55b609aac41e4ba30a2f86.html&#34;&gt;点我出发&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;暂时就想到这么多了，未完待续...&lt;/p&gt;
+&lt;h2 id=&#34;参考文献&#34;&gt;参考文献&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.csdn.net/weixin_39566864/article/details/112572508&#34;&gt;PyCharm快捷键&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://jingyan.baidu.com/article/d5c4b52b21f53e9b570dc533.html&#34;&gt;VsCode格式化代码&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+            
+            
+            
+            
+            
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://coder-liuu.github.io/categories/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/" term="默认分类" label="默认分类" />
+                            
+                        
+                    
+                
+                    
+                
+            
+        </entry>
+    
+        <entry>
+            <title type="text">Linux命令总结_V2</title>
+            <link rel="alternate" type="text/html" href="https://coder-liuu.github.io/posts/linux/linux%E5%91%BD%E4%BB%A4%E6%80%BB%E7%BB%93_v2/" />
+            <id>https://coder-liuu.github.io/posts/linux/linux%E5%91%BD%E4%BB%A4%E6%80%BB%E7%BB%93_v2/</id>
+            <updated>2022-05-07T09:50:02&#43;08:00</updated>
+            <published>2022-05-04T11:15:43&#43;08:00</published>
+            <author>
+                    <name>自由如疯</name>
+                    <uri>https://coder-liuu.github.io/</uri>
+                    <email>coder-liuu@126.com</email>
+                    </author>
+            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights><summary type="html">Linux 命令真的是很琐碎(拍桌)，把最近使用的Linux命令记录一下，方便我以后记忆(Fu Zhi)</summary>
+            
+                <content type="html">&lt;p&gt;Linux 命令真的是很琐碎(拍桌)，把最近使用的Linux命令记录一下，方便我以后记忆(Fu Zhi)。&lt;/p&gt;
+&lt;h2 id=&#34;1-nohup&#34;&gt;1. nohup&lt;/h2&gt;
+&lt;p&gt;以前我一直以为Tumx或者Screen是无敌的，但是他们都有一个缺点就是不方便把日志记录下来，因此有了nohup。&lt;/p&gt;
+&lt;p&gt;用途：不挂断的运行命令，即使该终端退出了也没事&lt;/p&gt;
+&lt;p&gt;使用方法:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-s&#34; data-lang=&#34;s&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;nohup&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Command&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;output.log&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;amp;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# nohup 不断运行命令&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Command 运行的命令&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# &amp;gt; output.log 输出重定向到output.log&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# &amp;amp; 后台运行，配合nohup使用&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;如果想查看程序运行的情况，需要使用&lt;code&gt;tail -f&lt;/code&gt;命令&lt;/p&gt;
+&lt;h2 id=&#34;2-kill&#34;&gt;2. Kill&lt;/h2&gt;
+&lt;p&gt;以前的我就会一个&lt;code&gt;kill -9 pid&lt;/code&gt;杀死一个命令，有天我突然想到能否把程序给暂停呢？经过用脚趾头一搜，果不其然有！&lt;/p&gt;
+&lt;p&gt;使用方法&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-s&#34; data-lang=&#34;s&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 将一个程序暂停&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;kill&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;STOP&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;pid&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 将一个暂停的程序恢复&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;kill&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;CONT&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;pid&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;随手一记&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-s&#34; data-lang=&#34;s&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;&amp;amp;&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;# 程序挂后台&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;jobs&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;# 查看后台的程序&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;fg&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;n&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;# 后台程序恢复到前台，n是jobs查看时的程序编号&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;3-lsof&#34;&gt;3. lsof&lt;/h2&gt;
+&lt;p&gt;lsof命令可以查看端口的占用情况，lsof可以记忆成&lt;code&gt;ls+of&lt;/code&gt;的拼写，&lt;/p&gt;
+&lt;p&gt;使用方法&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-s&#34; data-lang=&#34;s&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;lsof&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt;端口号
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;如果有程序说明端口已被占用，后续我们可以杀死他。&lt;/p&gt;
+&lt;h2 id=&#34;4-ls统计文件&#34;&gt;4. ls统计文件&lt;/h2&gt;
+&lt;p&gt;有时候我想递归统计文件个数，这时候强大的python的用武之地。emmmmmm，需要写代码，一点都不方便.....&lt;/p&gt;
+&lt;p&gt;网上一查更简单的方法果然有&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-s&#34; data-lang=&#34;s&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 统计当前目录下文件的个数（不包括目录）&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;ls&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;l&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;|&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;grep&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;^-&amp;#34;&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;|&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;wc&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;l&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 统计当前目录下文件的个数（包括子目录）&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;ls&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;lR&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;|&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;grep&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;^-&amp;#34;&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;|&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;wc&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;l&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 查看某目录下文件夹(目录)的个数（包括子目录）&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;ls&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;lR&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;|&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;grep&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;^d&amp;#34;&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;|&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;wc&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;l&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;解释一下，&lt;code&gt;ls -l&lt;/code&gt;查看目录下文件的详细信息，一行一个文件，&lt;code&gt;-R&lt;/code&gt;表示递归统计&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;grep ^-&lt;/code&gt;表示以&lt;code&gt;-&lt;/code&gt;开头的行。在&lt;code&gt;ls -l&lt;/code&gt;的输出中如果以&lt;code&gt;-&lt;/code&gt;开头表示文件，以&lt;code&gt;^&lt;/code&gt;开头表示目录&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;wc -l&lt;/code&gt;统计输出的行数&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+            
+            
+            
+            
+            
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://coder-liuu.github.io/categories/linux/" term="Linux" label="Linux" />
+                            
+                        
+                    
+                
+                    
+                
+            
+        </entry>
+    
+        <entry>
             <title type="text">Vue总结</title>
             <link rel="alternate" type="text/html" href="https://coder-liuu.github.io/posts/%E5%89%8D%E7%AB%AF/vue-summary/" />
             <id>https://coder-liuu.github.io/posts/%E5%89%8D%E7%AB%AF/vue-summary/</id>
-            <updated>2022-04-21T17:18:08&#43;08:00</updated>
+            <updated>2022-05-07T09:39:53&#43;08:00</updated>
             <published>2022-04-21T15:41:14&#43;08:00</published>
             <author>
-                    <name>寻路人</name>
+                    <name>自由如疯</name>
                     <uri>https://coder-liuu.github.io/</uri>
                     <email>coder-liuu@126.com</email>
                     </author>
@@ -32,6 +271,7 @@
                 <content type="html">&lt;p&gt;Vue是一个前端框架，我学习Vue的主要目前其实是想使用Element-UI框架。&lt;/p&gt;
 &lt;p&gt;这里推荐两个资源：&lt;/p&gt;
 &lt;ul&gt;
+&lt;li&gt;是菜鸟就来菜鸟教程：https://www.runoob.com/vue2/vue-tutorial.html&lt;/li&gt;
 &lt;li&gt;Vue在线运行 : &lt;a href=&#34;https://www.runoob.com/try/try.php?filename=vue2-hw&#34;&gt;https://www.runoob.com/try/try.php?filename=vue2-hw&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;黑马程序员课程 : &lt;a href=&#34;https://www.bilibili.com/video/BV12J411m7MG&#34;&gt;https://www.bilibili.com/video/BV12J411m7MG&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -341,7 +581,7 @@
             <updated>2022-04-21T15:28:55&#43;08:00</updated>
             <published>2022-04-21T15:13:43&#43;08:00</published>
             <author>
-                    <name>寻路人</name>
+                    <name>自由如疯</name>
                     <uri>https://coder-liuu.github.io/</uri>
                     <email>coder-liuu@126.com</email>
                     </author>
@@ -496,10 +736,10 @@
             <title type="text">Boostrap Fileinput插件使用</title>
             <link rel="alternate" type="text/html" href="https://coder-liuu.github.io/posts/%E5%89%8D%E7%AB%AF/boostrap-fileinput/" />
             <id>https://coder-liuu.github.io/posts/%E5%89%8D%E7%AB%AF/boostrap-fileinput/</id>
-            <updated>2022-04-21T15:29:21&#43;08:00</updated>
+            <updated>2022-05-07T09:58:05&#43;08:00</updated>
             <published>2022-04-19T11:39:58&#43;08:00</published>
             <author>
-                    <name>寻路人</name>
+                    <name>自由如疯</name>
                     <uri>https://coder-liuu.github.io/</uri>
                     <email>coder-liuu@126.com</email>
                     </author>
@@ -697,7 +937,12 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;extension&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;pdf&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;doc&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;</content>
+&lt;/div&gt;&lt;h1 id=&#34;其他好用插件&#34;&gt;其他好用插件&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.runoob.com/bootstrap/bootstrap-tab-plugin.html&#34;&gt;Boostrap标签页插件&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;消息提示框插件 toastr.js&lt;a href=&#34;https://www.cnblogs.com/zhengxj1991/p/6695110.html?ivk_sa=1024320u&#34;&gt;教程1&lt;/a&gt;  &lt;a href=&#34;https://www.cnblogs.com/hb-liang/p/12068749.html&#34;&gt;教程2&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</content>
             
             
             
@@ -726,7 +971,7 @@
             <updated>2022-04-21T15:14:35&#43;08:00</updated>
             <published>2022-04-18T21:31:33&#43;08:00</published>
             <author>
-                    <name>寻路人</name>
+                    <name>自由如疯</name>
                     <uri>https://coder-liuu.github.io/</uri>
                     <email>coder-liuu@126.com</email>
                     </author>
@@ -916,12 +1161,12 @@
     
         <entry>
             <title type="text">手把手安装一个钢铁侠桌面</title>
-            <link rel="alternate" type="text/html" href="https://coder-liuu.github.io/posts/desktop-man/" />
-            <id>https://coder-liuu.github.io/posts/desktop-man/</id>
-            <updated>2022-04-07T14:01:23&#43;08:00</updated>
+            <link rel="alternate" type="text/html" href="https://coder-liuu.github.io/posts/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/desktop-man/" />
+            <id>https://coder-liuu.github.io/posts/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/desktop-man/</id>
+            <updated>2022-05-07T09:46:42&#43;08:00</updated>
             <published>2022-04-07T13:35:45&#43;08:00</published>
             <author>
-                    <name>寻路人</name>
+                    <name>自由如疯</name>
                     <uri>https://coder-liuu.github.io/</uri>
                     <email>coder-liuu@126.com</email>
                     </author>
@@ -954,7 +1199,7 @@
 &lt;li&gt;安装Rainmeter软件，然后把自带的控件全部删除掉。&lt;/li&gt;
 &lt;li&gt;直接双击下载Rainmeter的主题，即可安装成功。&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;教程到此结束。&lt;/p&gt;
+&lt;p&gt;教程到此结束，Bye,Bye.&lt;/p&gt;
 </content>
             
             
@@ -979,12 +1224,12 @@
     
         <entry>
             <title type="text">AdaMML配置使用</title>
-            <link rel="alternate" type="text/html" href="https://coder-liuu.github.io/posts/adamml/" />
-            <id>https://coder-liuu.github.io/posts/adamml/</id>
+            <link rel="alternate" type="text/html" href="https://coder-liuu.github.io/posts/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/adamml/" />
+            <id>https://coder-liuu.github.io/posts/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/adamml/</id>
             <updated>2022-03-18T17:42:04&#43;08:00</updated>
             <published>2022-03-18T17:32:57&#43;08:00</published>
             <author>
-                    <name>寻路人</name>
+                    <name>自由如疯</name>
                     <uri>https://coder-liuu.github.io/</uri>
                     <email>coder-liuu@126.com</email>
                     </author>
@@ -1503,7 +1748,7 @@ correct_k = correct[:k].contiguous().view(-1).float().sum(0, keepdim=True)
             <updated>2022-03-18T17:31:55&#43;08:00</updated>
             <published>2022-03-10T00:11:30&#43;08:00</published>
             <author>
-                    <name>寻路人</name>
+                    <name>自由如疯</name>
                     <uri>https://coder-liuu.github.io/</uri>
                     <email>coder-liuu@126.com</email>
                     </author>
@@ -1575,7 +1820,7 @@ id:  md5(location.pathname),
             <updated>2022-03-19T17:38:23&#43;08:00</updated>
             <published>2022-01-17T22:55:08&#43;08:00</published>
             <author>
-                    <name>寻路人</name>
+                    <name>自由如疯</name>
                     <uri>https://coder-liuu.github.io/</uri>
                     <email>coder-liuu@126.com</email>
                     </author>
@@ -1702,12 +1947,12 @@ cat &amp;lt;管道名字&amp;gt;
     
         <entry>
             <title type="text">数据库方面的笔记</title>
-            <link rel="alternate" type="text/html" href="https://coder-liuu.github.io/posts/learn-database/" />
-            <id>https://coder-liuu.github.io/posts/learn-database/</id>
-            <updated>2022-03-11T10:14:06&#43;08:00</updated>
+            <link rel="alternate" type="text/html" href="https://coder-liuu.github.io/posts/%E5%90%8E%E7%AB%AF/learn-database/" />
+            <id>https://coder-liuu.github.io/posts/%E5%90%8E%E7%AB%AF/learn-database/</id>
+            <updated>2022-05-07T09:53:55&#43;08:00</updated>
             <published>2022-01-05T23:11:50&#43;08:00</published>
             <author>
-                    <name>寻路人</name>
+                    <name>自由如疯</name>
                     <uri>https://coder-liuu.github.io/</uri>
                     <email>coder-liuu@126.com</email>
                     </author>
@@ -1888,7 +2133,7 @@ sudo systemctl start mysqld
                             
                             
                             
-                                <category scheme="https://coder-liuu.github.io/categories/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/" term="默认分类" label="默认分类" />
+                                <category scheme="https://coder-liuu.github.io/categories/%E5%90%8E%E7%AB%AF/" term="后端" label="后端" />
                             
                         
                     
@@ -1900,12 +2145,12 @@ sudo systemctl start mysqld
     
         <entry>
             <title type="text">DQN调参笔记_从学习到崩溃</title>
-            <link rel="alternate" type="text/html" href="https://coder-liuu.github.io/posts/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/rl-one-star/" />
-            <id>https://coder-liuu.github.io/posts/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/rl-one-star/</id>
-            <updated>2022-03-11T10:17:02&#43;08:00</updated>
+            <link rel="alternate" type="text/html" href="https://coder-liuu.github.io/posts/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/rl-one-star/" />
+            <id>https://coder-liuu.github.io/posts/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/rl-one-star/</id>
+            <updated>2022-05-07T09:53:01&#43;08:00</updated>
             <published>2021-12-30T23:33:19&#43;08:00</published>
             <author>
-                    <name>寻路人</name>
+                    <name>自由如疯</name>
                     <uri>https://coder-liuu.github.io/</uri>
                     <email>coder-liuu@126.com</email>
                     </author>
@@ -2130,7 +2375,7 @@ GAMMA = 0.999          ## 折扣因子
                             
                             
                             
-                                <category scheme="https://coder-liuu.github.io/categories/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/" term="默认分类" label="默认分类" />
+                                <category scheme="https://coder-liuu.github.io/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" term="机器学习" label="机器学习" />
                             
                         
                     
@@ -2142,12 +2387,12 @@ GAMMA = 0.999          ## 折扣因子
     
         <entry>
             <title type="text">Java基础学习笔记</title>
-            <link rel="alternate" type="text/html" href="https://coder-liuu.github.io/posts/java/java%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" />
-            <id>https://coder-liuu.github.io/posts/java/java%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</id>
-            <updated>2022-03-11T10:17:38&#43;08:00</updated>
+            <link rel="alternate" type="text/html" href="https://coder-liuu.github.io/posts/%E5%90%8E%E7%AB%AF/java%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" />
+            <id>https://coder-liuu.github.io/posts/%E5%90%8E%E7%AB%AF/java%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</id>
+            <updated>2022-05-07T09:53:13&#43;08:00</updated>
             <published>2021-10-20T23:35:15&#43;08:00</published>
             <author>
-                    <name>寻路人</name>
+                    <name>自由如疯</name>
                     <uri>https://coder-liuu.github.io/</uri>
                     <email>coder-liuu@126.com</email>
                     </author>
@@ -2338,7 +2583,7 @@ class My_Exception extends Exception
                             
                             
                             
-                                <category scheme="https://coder-liuu.github.io/categories/java/" term="Java" label="Java" />
+                                <category scheme="https://coder-liuu.github.io/categories/%E5%90%8E%E7%AB%AF/" term="后端" label="后端" />
                             
                         
                     
@@ -2355,7 +2600,7 @@ class My_Exception extends Exception
             <updated>2022-03-11T10:18:55&#43;08:00</updated>
             <published>2021-10-19T23:42:38&#43;08:00</published>
             <author>
-                    <name>寻路人</name>
+                    <name>自由如疯</name>
                     <uri>https://coder-liuu.github.io/</uri>
                     <email>coder-liuu@126.com</email>
                     </author>
@@ -2488,7 +2733,7 @@ class My_Exception extends Exception
             <updated>2022-03-11T10:20:13&#43;08:00</updated>
             <published>2021-09-19T20:17:51&#43;08:00</published>
             <author>
-                    <name>寻路人</name>
+                    <name>自由如疯</name>
                     <uri>https://coder-liuu.github.io/</uri>
                     <email>coder-liuu@126.com</email>
                     </author>
@@ -2599,10 +2844,10 @@ class My_Exception extends Exception
             <title type="text">计算机网络面试题</title>
             <link rel="alternate" type="text/html" href="https://coder-liuu.github.io/posts/%E9%9D%A2%E8%AF%95/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E9%9D%A2%E8%AF%95%E9%A2%98/" />
             <id>https://coder-liuu.github.io/posts/%E9%9D%A2%E8%AF%95/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E9%9D%A2%E8%AF%95%E9%A2%98/</id>
-            <updated>2021-09-21T22:19:27&#43;08:00</updated>
+            <updated>2022-05-07T09:48:43&#43;08:00</updated>
             <published>2021-09-18T21:26:42&#43;08:00</published>
             <author>
-                    <name>寻路人</name>
+                    <name>自由如疯</name>
                     <uri>https://coder-liuu.github.io/</uri>
                     <email>coder-liuu@126.com</email>
                     </author>
@@ -2768,7 +3013,7 @@ socket是基于TCP/IP协议的应用程序之间的通信方式，通信前程�
                             
                             
                             
-                                <category scheme="https://coder-liuu.github.io/categories/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/" term="默认分类" label="默认分类" />
+                                <category scheme="https://coder-liuu.github.io/categories/%E9%9D%A2%E8%AF%95%E9%A2%98/" term="面试题" label="面试题" />
                             
                         
                     
@@ -2785,7 +3030,7 @@ socket是基于TCP/IP协议的应用程序之间的通信方式，通信前程�
             <updated>2021-09-21T22:00:35&#43;08:00</updated>
             <published>2021-09-17T18:55:58&#43;08:00</published>
             <author>
-                    <name>寻路人</name>
+                    <name>自由如疯</name>
                     <uri>https://coder-liuu.github.io/</uri>
                     <email>coder-liuu@126.com</email>
                     </author>
@@ -2948,12 +3193,12 @@ KMP算法：在匹配失败的情况下，利用之前比较的情况，来使�
     
         <entry>
             <title type="text">Go语言学习笔记</title>
-            <link rel="alternate" type="text/html" href="https://coder-liuu.github.io/posts/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/go-note/" />
-            <id>https://coder-liuu.github.io/posts/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/go-note/</id>
-            <updated>2022-03-11T10:20:55&#43;08:00</updated>
+            <link rel="alternate" type="text/html" href="https://coder-liuu.github.io/posts/%E5%90%8E%E7%AB%AF/go-note/" />
+            <id>https://coder-liuu.github.io/posts/%E5%90%8E%E7%AB%AF/go-note/</id>
+            <updated>2022-05-07T09:53:38&#43;08:00</updated>
             <published>2021-08-17T23:42:18&#43;08:00</published>
             <author>
-                    <name>寻路人</name>
+                    <name>自由如疯</name>
                     <uri>https://coder-liuu.github.io/</uri>
                     <email>coder-liuu@126.com</email>
                     </author>
@@ -2979,7 +3224,7 @@ const (
 )
 &lt;/code&gt;&lt;/pre&gt;&lt;style type=&#34;text/css&#34;&gt;.notice{padding:18px;line-height:24px;margin-bottom:24px;border-radius:4px;color:#444;background:#e7f2fa}.notice p:last-child{margin-bottom:0}.notice-title{margin:-18px -18px 12px;padding:4px 18px;border-radius:4px 4px 0 0;font-weight:700;color:#fff;background:#6ab0de}.notice.warning .notice-title{background:rgba(217,83,79,.9)}.notice.warning{background:#fae2e2}.notice.info .notice-title{background:#f0b37e}.notice.info{background:#fff2db}.notice.note .notice-title{background:#6ab0de}.notice.note{background:#e7f2fA}.notice.tip .notice-title{background:rgba(92,184,92,.8)}.notice.tip{background:#e6f9e6}.icon-notice{display:inline-flex;align-self:center;margin-right:8px}.icon-notice img,.icon-notice svg{height:1em;width:1em;fill:currentColor}.icon-notice img,.icon-notice.baseline svg{top:0.125em;position:relative}&lt;/style&gt;
 &lt;svg width=&#34;0&#34; height=&#34;0&#34; display=&#34;none&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;symbol id=&#34;tip-notice&#34; viewBox=&#34;0 0 512 512&#34; preserveAspectRatio=&#34;xMidYMid meet&#34;&gt;&lt;path d=&#34;M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z&#34;/&gt;&lt;/symbol&gt;&lt;symbol id=&#34;note-notice&#34; viewBox=&#34;0 0 512 512&#34; preserveAspectRatio=&#34;xMidYMid meet&#34;&gt;&lt;path d=&#34;M504 256c0 136.997-111.043 248-248 248S8 392.997 8 256C8 119.083 119.043 8 256 8s248 111.083 248 248zm-248 50c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z&#34;/&gt;&lt;/symbol&gt;&lt;symbol id=&#34;warning-notice&#34; viewBox=&#34;0 0 576 512&#34; preserveAspectRatio=&#34;xMidYMid meet&#34;&gt;&lt;path d=&#34;M569.517 440.013C587.975 472.007 564.806 512 527.94 512H48.054c-36.937 0-59.999-40.055-41.577-71.987L246.423 23.985c18.467-32.009 64.72-31.951 83.154 0l239.94 416.028zM288 354c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z&#34;/&gt;&lt;/symbol&gt;&lt;symbol id=&#34;info-notice&#34; viewBox=&#34;0 0 512 512&#34; preserveAspectRatio=&#34;xMidYMid meet&#34;&gt;&lt;path d=&#34;M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z&#34;/&gt;&lt;/symbol&gt;&lt;/svg&gt;&lt;div class=&#34;notice warning&#34; &gt;
-&lt;p class=&#34;first notice-title&#34;&gt;&lt;span class=&#34;icon-notice baseline&#34;&gt;&lt;svg&gt;&lt;use href=&#34;https://coder-liuu.github.io/posts/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/go-note/#warning-notice&#34;&gt;&lt;/use&gt;&lt;/svg&gt;&lt;/span&gt;Warning&lt;/p&gt;&lt;p&gt;如果定义变量不使用会编译器会拒绝编译&lt;/p&gt;&lt;/div&gt;
+&lt;p class=&#34;first notice-title&#34;&gt;&lt;span class=&#34;icon-notice baseline&#34;&gt;&lt;svg&gt;&lt;use href=&#34;https://coder-liuu.github.io/posts/%E5%90%8E%E7%AB%AF/go-note/#warning-notice&#34;&gt;&lt;/use&gt;&lt;/svg&gt;&lt;/span&gt;Warning&lt;/p&gt;&lt;p&gt;如果定义变量不使用会编译器会拒绝编译&lt;/p&gt;&lt;/div&gt;
 
 &lt;h3 id=&#34;2-导入和输出&#34;&gt;2. 导入和输出&lt;/h3&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;import &amp;#34;fmt&amp;#34;
@@ -3131,7 +3376,7 @@ golang第三方包的引用报错: &lt;a href=&#34;https://blog.csdn.net/weixin_
                             
                             
                             
-                                <category scheme="https://coder-liuu.github.io/categories/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/" term="默认分类" label="默认分类" />
+                                <category scheme="https://coder-liuu.github.io/categories/%E5%90%8E%E7%AB%AF/" term="后端" label="后端" />
                             
                         
                     
@@ -3145,10 +3390,10 @@ golang第三方包的引用报错: &lt;a href=&#34;https://blog.csdn.net/weixin_
             <title type="text">回顾Aprioir算法</title>
             <link rel="alternate" type="text/html" href="https://coder-liuu.github.io/posts/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/review-aprioir/" />
             <id>https://coder-liuu.github.io/posts/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/review-aprioir/</id>
-            <updated>2022-03-11T10:21:17&#43;08:00</updated>
+            <updated>2022-05-07T09:51:18&#43;08:00</updated>
             <published>2021-08-03T14:24:13&#43;08:00</published>
             <author>
-                    <name>寻路人</name>
+                    <name>自由如疯</name>
                     <uri>https://coder-liuu.github.io/</uri>
                     <email>coder-liuu@126.com</email>
                     </author>
@@ -3740,7 +3985,7 @@ func main() {
                             
                             
                             
-                                <category scheme="https://coder-liuu.github.io/categories/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/" term="默认分类" label="默认分类" />
+                                <category scheme="https://coder-liuu.github.io/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" term="机器学习" label="机器学习" />
                             
                         
                     
@@ -3757,7 +4002,7 @@ func main() {
             <updated>2022-03-11T10:03:43&#43;08:00</updated>
             <published>2021-08-01T11:45:54&#43;08:00</published>
             <author>
-                    <name>寻路人</name>
+                    <name>自由如疯</name>
                     <uri>https://coder-liuu.github.io/</uri>
                     <email>coder-liuu@126.com</email>
                     </author>
@@ -4001,7 +4246,7 @@ ZooKeeper文件，ROOT表，META表 $=\gt$ 用户数据&lt;/p&gt;
             <updated>2022-03-11T10:21:53&#43;08:00</updated>
             <published>2021-07-31T16:38:44&#43;08:00</published>
             <author>
-                    <name>寻路人</name>
+                    <name>自由如疯</name>
                     <uri>https://coder-liuu.github.io/</uri>
                     <email>coder-liuu@126.com</email>
                     </author>
@@ -4075,7 +4320,7 @@ ZooKeeper文件，ROOT表，META表 $=\gt$ 用户数据&lt;/p&gt;
             <updated>2022-04-06T21:35:51&#43;08:00</updated>
             <published>2021-07-15T16:01:25&#43;08:00</published>
             <author>
-                    <name>寻路人</name>
+                    <name>自由如疯</name>
                     <uri>https://coder-liuu.github.io/</uri>
                     <email>coder-liuu@126.com</email>
                     </author>
@@ -4467,7 +4712,7 @@ ZooKeeper文件，ROOT表，META表 $=\gt$ 用户数据&lt;/p&gt;
             <updated>2022-04-05T21:37:58&#43;08:00</updated>
             <published>2021-07-10T12:00:53&#43;08:00</published>
             <author>
-                    <name>寻路人</name>
+                    <name>自由如疯</name>
                     <uri>https://coder-liuu.github.io/</uri>
                     <email>coder-liuu@126.com</email>
                     </author>
@@ -4636,7 +4881,7 @@ ZooKeeper文件，ROOT表，META表 $=\gt$ 用户数据&lt;/p&gt;
             <updated>2022-03-11T11:40:00&#43;08:00</updated>
             <published>2021-06-07T15:47:39&#43;08:00</published>
             <author>
-                    <name>寻路人</name>
+                    <name>自由如疯</name>
                     <uri>https://coder-liuu.github.io/</uri>
                     <email>coder-liuu@126.com</email>
                     </author>
@@ -4731,7 +4976,7 @@ $$ N = a * (宠物的钱) + b * (女主的钱) $$&lt;/p&gt;
             <updated>2022-03-11T11:13:36&#43;08:00</updated>
             <published>2021-05-27T21:11:06&#43;08:00</published>
             <author>
-                    <name>寻路人</name>
+                    <name>自由如疯</name>
                     <uri>https://coder-liuu.github.io/</uri>
                     <email>coder-liuu@126.com</email>
                     </author>
@@ -4889,7 +5134,7 @@ ssl._create_default_https_context = ssl._create_unverified_context
             <updated>2022-03-11T10:24:08&#43;08:00</updated>
             <published>2021-05-16T17:38:57&#43;08:00</published>
             <author>
-                    <name>寻路人</name>
+                    <name>自由如疯</name>
                     <uri>https://coder-liuu.github.io/</uri>
                     <email>coder-liuu@126.com</email>
                     </author>
@@ -5001,7 +5246,7 @@ color snazzy
             <updated>2022-03-16T14:38:39&#43;08:00</updated>
             <published>2021-04-29T13:35:44&#43;08:00</published>
             <author>
-                    <name>寻路人</name>
+                    <name>自由如疯</name>
                     <uri>https://coder-liuu.github.io/</uri>
                     <email>coder-liuu@126.com</email>
                     </author>
@@ -5174,7 +5419,7 @@ color snazzy
             <updated>2022-03-11T10:24:25&#43;08:00</updated>
             <published>2021-04-22T17:59:47&#43;08:00</published>
             <author>
-                    <name>寻路人</name>
+                    <name>自由如疯</name>
                     <uri>https://coder-liuu.github.io/</uri>
                     <email>coder-liuu@126.com</email>
                     </author>
@@ -5264,7 +5509,7 @@ color snazzy
             <updated>2022-03-11T10:24:47&#43;08:00</updated>
             <published>2021-04-02T17:50:12&#43;08:00</published>
             <author>
-                    <name>寻路人</name>
+                    <name>自由如疯</name>
                     <uri>https://coder-liuu.github.io/</uri>
                     <email>coder-liuu@126.com</email>
                     </author>
@@ -5352,7 +5597,7 @@ color snazzy
             <updated>2022-03-11T10:25:12&#43;08:00</updated>
             <published>2021-03-30T22:16:40&#43;08:00</published>
             <author>
-                    <name>寻路人</name>
+                    <name>自由如疯</name>
                     <uri>https://coder-liuu.github.io/</uri>
                     <email>coder-liuu@126.com</email>
                     </author>
@@ -5494,7 +5739,7 @@ data.to_csv(f&amp;#34;{name}.csv&amp;#34;,index=False)
             <updated>2022-04-05T21:29:09&#43;08:00</updated>
             <published>2021-03-24T19:03:39&#43;08:00</published>
             <author>
-                    <name>寻路人</name>
+                    <name>自由如疯</name>
                     <uri>https://coder-liuu.github.io/</uri>
                     <email>coder-liuu@126.com</email>
                     </author>
@@ -5636,7 +5881,7 @@ $$&lt;/p&gt;
             <updated>2022-03-11T10:25:38&#43;08:00</updated>
             <published>2021-03-19T11:07:40&#43;08:00</published>
             <author>
-                    <name>寻路人</name>
+                    <name>自由如疯</name>
                     <uri>https://coder-liuu.github.io/</uri>
                     <email>coder-liuu@126.com</email>
                     </author>
@@ -5740,7 +5985,7 @@ $$
             <updated>2022-04-05T21:32:08&#43;08:00</updated>
             <published>2021-03-15T12:35:36&#43;08:00</published>
             <author>
-                    <name>寻路人</name>
+                    <name>自由如疯</name>
                     <uri>https://coder-liuu.github.io/</uri>
                     <email>coder-liuu@126.com</email>
                     </author>
@@ -5986,7 +6231,7 @@ $\mu_2 = {3,4.66} $&lt;/p&gt;
             <updated>2022-03-11T10:26:44&#43;08:00</updated>
             <published>2021-03-04T15:17:14&#43;08:00</published>
             <author>
-                    <name>寻路人</name>
+                    <name>自由如疯</name>
                     <uri>https://coder-liuu.github.io/</uri>
                     <email>coder-liuu@126.com</email>
                     </author>
@@ -6046,7 +6291,7 @@ $\mu_2 = {3,4.66} $&lt;/p&gt;
             <updated>2022-04-05T21:33:58&#43;08:00</updated>
             <published>2021-02-27T18:51:42&#43;08:00</published>
             <author>
-                    <name>寻路人</name>
+                    <name>自由如疯</name>
                     <uri>https://coder-liuu.github.io/</uri>
                     <email>coder-liuu@126.com</email>
                     </author>
@@ -6190,7 +6435,7 @@ $$ Ent = -(\frac{2}{3} log_2 \frac{2}{3} + \frac{1}{3} log_2 \frac{1}{3}) = 0.91
             <updated>2022-03-11T11:46:53&#43;08:00</updated>
             <published>2021-02-27T00:10:20&#43;08:00</published>
             <author>
-                    <name>寻路人</name>
+                    <name>自由如疯</name>
                     <uri>https://coder-liuu.github.io/</uri>
                     <email>coder-liuu@126.com</email>
                     </author>
@@ -6492,7 +6737,7 @@ $$ Ent = -(\frac{2}{3} log_2 \frac{2}{3} + \frac{1}{3} log_2 \frac{1}{3}) = 0.91
             <updated>2022-03-11T11:46:51&#43;08:00</updated>
             <published>2021-02-26T16:45:29&#43;08:00</published>
             <author>
-                    <name>寻路人</name>
+                    <name>自由如疯</name>
                     <uri>https://coder-liuu.github.io/</uri>
                     <email>coder-liuu@126.com</email>
                     </author>
@@ -7000,7 +7245,7 @@ int main(){
             <updated>2022-03-11T10:27:36&#43;08:00</updated>
             <published>2021-02-24T10:21:18&#43;08:00</published>
             <author>
-                    <name>寻路人</name>
+                    <name>自由如疯</name>
                     <uri>https://coder-liuu.github.io/</uri>
                     <email>coder-liuu@126.com</email>
                     </author>
@@ -7055,7 +7300,7 @@ Arch安装: &lt;code&gt;sudo pacman -S sox&lt;/code&gt;&lt;/p&gt;
             <updated>2022-03-11T10:28:14&#43;08:00</updated>
             <published>2021-02-21T14:28:45&#43;08:00</published>
             <author>
-                    <name>寻路人</name>
+                    <name>自由如疯</name>
                     <uri>https://coder-liuu.github.io/</uri>
                     <email>coder-liuu@126.com</email>
                     </author>
@@ -7142,7 +7387,7 @@ set draw_borders true
             <updated>2022-03-11T11:01:49&#43;08:00</updated>
             <published>2021-02-21T08:44:09&#43;08:00</published>
             <author>
-                    <name>寻路人</name>
+                    <name>自由如疯</name>
                     <uri>https://coder-liuu.github.io/</uri>
                     <email>coder-liuu@126.com</email>
                     </author>
@@ -7217,7 +7462,7 @@ AND: 包含AND两边的关键词,比如 apple AND watch&lt;/p&gt;
             <updated>2022-03-11T11:46:57&#43;08:00</updated>
             <published>2021-02-14T19:06:01&#43;08:00</published>
             <author>
-                    <name>寻路人</name>
+                    <name>自由如疯</name>
                     <uri>https://coder-liuu.github.io/</uri>
                     <email>coder-liuu@126.com</email>
                     </author>
@@ -7492,7 +7737,7 @@ AND: 包含AND两边的关键词,比如 apple AND watch&lt;/p&gt;
             <updated>2022-04-05T21:35:22&#43;08:00</updated>
             <published>2021-01-31T21:07:24&#43;08:00</published>
             <author>
-                    <name>寻路人</name>
+                    <name>自由如疯</name>
                     <uri>https://coder-liuu.github.io/</uri>
                     <email>coder-liuu@126.com</email>
                     </author>
@@ -7599,7 +7844,7 @@ AND: 包含AND两边的关键词,比如 apple AND watch&lt;/p&gt;
             <updated>2022-03-11T11:46:56&#43;08:00</updated>
             <published>2021-01-30T00:00:00&#43;00:00</published>
             <author>
-                    <name>寻路人</name>
+                    <name>自由如疯</name>
                     <uri>https://coder-liuu.github.io/</uri>
                     <email>coder-liuu@126.com</email>
                     </author>
@@ -7935,7 +8180,7 @@ $$ d | n \rightarrow \frac{d}{n} | n $$&lt;/p&gt;
             <updated>2022-03-11T10:23:53&#43;08:00</updated>
             <published>2020-04-30T00:00:00&#43;00:00</published>
             <author>
-                    <name>寻路人</name>
+                    <name>自由如疯</name>
                     <uri>https://coder-liuu.github.io/</uri>
                     <email>coder-liuu@126.com</email>
                     </author>
@@ -8046,12 +8291,12 @@ pipreqs ./
     
         <entry>
             <title type="text">Git命令总结</title>
-            <link rel="alternate" type="text/html" href="https://coder-liuu.github.io/posts/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/git-summary/" />
-            <id>https://coder-liuu.github.io/posts/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/git-summary/</id>
-            <updated>2022-03-11T10:30:01&#43;08:00</updated>
+            <link rel="alternate" type="text/html" href="https://coder-liuu.github.io/posts/linux/git-summary/" />
+            <id>https://coder-liuu.github.io/posts/linux/git-summary/</id>
+            <updated>2022-05-07T09:49:27&#43;08:00</updated>
             <published>2020-04-26T23:57:02&#43;00:00</published>
             <author>
-                    <name>寻路人</name>
+                    <name>自由如疯</name>
                     <uri>https://coder-liuu.github.io/</uri>
                     <email>coder-liuu@126.com</email>
                     </author>
@@ -8087,7 +8332,7 @@ pipreqs ./
 &lt;/ul&gt;
 &lt;style type=&#34;text/css&#34;&gt;.notice{padding:18px;line-height:24px;margin-bottom:24px;border-radius:4px;color:#444;background:#e7f2fa}.notice p:last-child{margin-bottom:0}.notice-title{margin:-18px -18px 12px;padding:4px 18px;border-radius:4px 4px 0 0;font-weight:700;color:#fff;background:#6ab0de}.notice.warning .notice-title{background:rgba(217,83,79,.9)}.notice.warning{background:#fae2e2}.notice.info .notice-title{background:#f0b37e}.notice.info{background:#fff2db}.notice.note .notice-title{background:#6ab0de}.notice.note{background:#e7f2fA}.notice.tip .notice-title{background:rgba(92,184,92,.8)}.notice.tip{background:#e6f9e6}.icon-notice{display:inline-flex;align-self:center;margin-right:8px}.icon-notice img,.icon-notice svg{height:1em;width:1em;fill:currentColor}.icon-notice img,.icon-notice.baseline svg{top:0.125em;position:relative}&lt;/style&gt;
 &lt;svg width=&#34;0&#34; height=&#34;0&#34; display=&#34;none&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;symbol id=&#34;tip-notice&#34; viewBox=&#34;0 0 512 512&#34; preserveAspectRatio=&#34;xMidYMid meet&#34;&gt;&lt;path d=&#34;M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z&#34;/&gt;&lt;/symbol&gt;&lt;symbol id=&#34;note-notice&#34; viewBox=&#34;0 0 512 512&#34; preserveAspectRatio=&#34;xMidYMid meet&#34;&gt;&lt;path d=&#34;M504 256c0 136.997-111.043 248-248 248S8 392.997 8 256C8 119.083 119.043 8 256 8s248 111.083 248 248zm-248 50c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z&#34;/&gt;&lt;/symbol&gt;&lt;symbol id=&#34;warning-notice&#34; viewBox=&#34;0 0 576 512&#34; preserveAspectRatio=&#34;xMidYMid meet&#34;&gt;&lt;path d=&#34;M569.517 440.013C587.975 472.007 564.806 512 527.94 512H48.054c-36.937 0-59.999-40.055-41.577-71.987L246.423 23.985c18.467-32.009 64.72-31.951 83.154 0l239.94 416.028zM288 354c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z&#34;/&gt;&lt;/symbol&gt;&lt;symbol id=&#34;info-notice&#34; viewBox=&#34;0 0 512 512&#34; preserveAspectRatio=&#34;xMidYMid meet&#34;&gt;&lt;path d=&#34;M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z&#34;/&gt;&lt;/symbol&gt;&lt;/svg&gt;&lt;div class=&#34;notice tip&#34; &gt;
-&lt;p class=&#34;first notice-title&#34;&gt;&lt;span class=&#34;icon-notice baseline&#34;&gt;&lt;svg&gt;&lt;use href=&#34;https://coder-liuu.github.io/posts/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/git-summary/#tip-notice&#34;&gt;&lt;/use&gt;&lt;/svg&gt;&lt;/span&gt;Tip&lt;/p&gt;&lt;p&gt;git commit --amend   可以将这次提交追加到上一次提交中去，减少不必要的提交&lt;/p&gt;&lt;/div&gt;
+&lt;p class=&#34;first notice-title&#34;&gt;&lt;span class=&#34;icon-notice baseline&#34;&gt;&lt;svg&gt;&lt;use href=&#34;https://coder-liuu.github.io/posts/linux/git-summary/#tip-notice&#34;&gt;&lt;/use&gt;&lt;/svg&gt;&lt;/span&gt;Tip&lt;/p&gt;&lt;p&gt;git commit --amend   可以将这次提交追加到上一次提交中去，减少不必要的提交&lt;/p&gt;&lt;/div&gt;
 
 &lt;ul&gt;
 &lt;li&gt;
@@ -8231,7 +8476,7 @@ github项目地址是https://github.com/Dreamer-liuyang/simple-clustering-system
                             
                             
                             
-                                <category scheme="https://coder-liuu.github.io/categories/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/" term="默认分类" label="默认分类" />
+                                <category scheme="https://coder-liuu.github.io/categories/linux/" term="Linux" label="Linux" />
                             
                         
                     
