@@ -7,7 +7,7 @@
 
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>自由如疯</title>
+        <title>自由小兵儿</title>
         <link>https://coder-liuu.github.io/</link>
         <description>纵有疾风起，人生不言弃</description>
         <generator>Hugo 0.93.3 https://gohugo.io/</generator>
@@ -15,15 +15,15 @@
             <language>zh-CN</language>
         
         
-            <managingEditor>coder-liuu@126.com (自由如疯)</managingEditor>
+            <managingEditor>coder-liuu@126.com (自由小兵儿)</managingEditor>
         
         
-            <webMaster>coder-liuu@126.com (自由如疯)</webMaster>
+            <webMaster>coder-liuu@126.com (自由小兵儿)</webMaster>
         
         
             <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
         
-        <lastBuildDate>Mon, 13 Jun 2022 20:59:10 &#43;0800</lastBuildDate>
+        <lastBuildDate>Sat, 02 Jul 2022 15:29:37 &#43;0800</lastBuildDate>
         
             <atom:link rel="self" type="application/rss&#43;xml" href="https://coder-liuu.github.io/rss.xml" />
         
@@ -34,7 +34,7 @@
                 <guid isPermaLink="true">https://coder-liuu.github.io/posts/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/image-data/</guid>
                 <pubDate>Mon, 16 May 2022 11:09:03 &#43;0800</pubDate>
                 
-                    <author>coder-liuu@126.com (自由如疯)</author>
+                    <author>coder-liuu@126.com (自由小兵儿)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
@@ -85,7 +85,7 @@
                 <guid isPermaLink="true">https://coder-liuu.github.io/posts/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/ide%E6%80%BB%E7%BB%93/</guid>
                 <pubDate>Thu, 05 May 2022 18:59:10 &#43;0800</pubDate>
                 
-                    <author>coder-liuu@126.com (自由如疯)</author>
+                    <author>coder-liuu@126.com (自由小兵儿)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
@@ -188,7 +188,7 @@
                 <guid isPermaLink="true">https://coder-liuu.github.io/posts/linux/linux%E5%91%BD%E4%BB%A4%E6%80%BB%E7%BB%93_v2/</guid>
                 <pubDate>Wed, 04 May 2022 11:15:43 &#43;0800</pubDate>
                 
-                    <author>coder-liuu@126.com (自由如疯)</author>
+                    <author>coder-liuu@126.com (自由小兵儿)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
@@ -318,7 +318,7 @@
                 <guid isPermaLink="true">https://coder-liuu.github.io/posts/%E5%89%8D%E7%AB%AF/vue-summary/</guid>
                 <pubDate>Thu, 21 Apr 2022 15:41:14 &#43;0800</pubDate>
                 
-                    <author>coder-liuu@126.com (自由如疯)</author>
+                    <author>coder-liuu@126.com (自由小兵儿)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
@@ -634,7 +634,7 @@
                 <guid isPermaLink="true">https://coder-liuu.github.io/posts/%E5%89%8D%E7%AB%AF/no-cil-element-ui/</guid>
                 <pubDate>Thu, 21 Apr 2022 15:13:43 &#43;0800</pubDate>
                 
-                    <author>coder-liuu@126.com (自由如疯)</author>
+                    <author>coder-liuu@126.com (自由小兵儿)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
@@ -789,7 +789,7 @@
                 <guid isPermaLink="true">https://coder-liuu.github.io/posts/%E5%89%8D%E7%AB%AF/boostrap-fileinput/</guid>
                 <pubDate>Tue, 19 Apr 2022 11:39:58 &#43;0800</pubDate>
                 
-                    <author>coder-liuu@126.com (自由如疯)</author>
+                    <author>coder-liuu@126.com (自由小兵儿)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
@@ -1018,7 +1018,7 @@
                 <guid isPermaLink="true">https://coder-liuu.github.io/posts/%E5%89%8D%E7%AB%AF/jquery/</guid>
                 <pubDate>Mon, 18 Apr 2022 21:31:33 &#43;0800</pubDate>
                 
-                    <author>coder-liuu@126.com (自由如疯)</author>
+                    <author>coder-liuu@126.com (自由小兵儿)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
@@ -1258,7 +1258,7 @@
                 <guid isPermaLink="true">https://coder-liuu.github.io/posts/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/desktop-man/</guid>
                 <pubDate>Thu, 07 Apr 2022 13:35:45 &#43;0800</pubDate>
                 
-                    <author>coder-liuu@126.com (自由如疯)</author>
+                    <author>coder-liuu@126.com (自由小兵儿)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
@@ -1318,7 +1318,7 @@
                 <guid isPermaLink="true">https://coder-liuu.github.io/posts/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/adamml/</guid>
                 <pubDate>Fri, 18 Mar 2022 17:32:57 &#43;0800</pubDate>
                 
-                    <author>coder-liuu@126.com (自由如疯)</author>
+                    <author>coder-liuu@126.com (自由小兵儿)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
@@ -1834,7 +1834,7 @@ correct_k = correct[:k].contiguous().view(-1).float().sum(0, keepdim=True)
                 <guid isPermaLink="true">https://coder-liuu.github.io/posts/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/hello-meme/</guid>
                 <pubDate>Thu, 10 Mar 2022 00:11:30 &#43;0800</pubDate>
                 
-                    <author>coder-liuu@126.com (自由如疯)</author>
+                    <author>coder-liuu@126.com (自由小兵儿)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
@@ -1903,7 +1903,7 @@ id:  md5(location.pathname),
                 <guid isPermaLink="true">https://coder-liuu.github.io/posts/linux/linux-command/</guid>
                 <pubDate>Mon, 17 Jan 2022 22:55:08 &#43;0800</pubDate>
                 
-                    <author>coder-liuu@126.com (自由如疯)</author>
+                    <author>coder-liuu@126.com (自由小兵儿)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
@@ -2032,7 +2032,7 @@ cat &amp;lt;管道名字&amp;gt;
                 <guid isPermaLink="true">https://coder-liuu.github.io/posts/%E5%90%8E%E7%AB%AF/learn-database/</guid>
                 <pubDate>Wed, 05 Jan 2022 23:11:50 &#43;0800</pubDate>
                 
-                    <author>coder-liuu@126.com (自由如疯)</author>
+                    <author>coder-liuu@126.com (自由小兵儿)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
@@ -2227,7 +2227,7 @@ sudo systemctl start mysqld
                 <guid isPermaLink="true">https://coder-liuu.github.io/posts/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/rl-one-star/</guid>
                 <pubDate>Thu, 30 Dec 2021 23:33:19 &#43;0800</pubDate>
                 
-                    <author>coder-liuu@126.com (自由如疯)</author>
+                    <author>coder-liuu@126.com (自由小兵儿)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
@@ -2466,7 +2466,7 @@ GAMMA = 0.999          ## 折扣因子
                 <guid isPermaLink="true">https://coder-liuu.github.io/posts/%E5%90%8E%E7%AB%AF/java%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
                 <pubDate>Wed, 20 Oct 2021 23:35:15 &#43;0800</pubDate>
                 
-                    <author>coder-liuu@126.com (自由如疯)</author>
+                    <author>coder-liuu@126.com (自由小兵儿)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
@@ -2671,7 +2671,7 @@ class My_Exception extends Exception
                 <guid isPermaLink="true">https://coder-liuu.github.io/posts/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/video-classify/</guid>
                 <pubDate>Tue, 19 Oct 2021 23:42:38 &#43;0800</pubDate>
                 
-                    <author>coder-liuu@126.com (自由如疯)</author>
+                    <author>coder-liuu@126.com (自由小兵儿)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
@@ -2801,7 +2801,7 @@ class My_Exception extends Exception
                 <guid isPermaLink="true">https://coder-liuu.github.io/posts/%E9%9D%A2%E8%AF%95/cs-os-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9Fand%E8%AE%A1%E7%BB%84%E9%9D%A2%E8%AF%95%E9%A2%98/</guid>
                 <pubDate>Sun, 19 Sep 2021 20:17:51 &#43;0800</pubDate>
                 
-                    <author>coder-liuu@126.com (自由如疯)</author>
+                    <author>coder-liuu@126.com (自由小兵儿)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
@@ -2912,7 +2912,7 @@ class My_Exception extends Exception
                 <guid isPermaLink="true">https://coder-liuu.github.io/posts/%E9%9D%A2%E8%AF%95/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E9%9D%A2%E8%AF%95%E9%A2%98/</guid>
                 <pubDate>Sat, 18 Sep 2021 21:26:42 &#43;0800</pubDate>
                 
-                    <author>coder-liuu@126.com (自由如疯)</author>
+                    <author>coder-liuu@126.com (自由小兵儿)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
@@ -3092,7 +3092,7 @@ socket是基于TCP/IP协议的应用程序之间的通信方式，通信前程�
                 <guid isPermaLink="true">https://coder-liuu.github.io/posts/%E9%9D%A2%E8%AF%95/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%B8%93%E4%B8%9A%E8%AF%BE%E9%9D%A2%E8%AF%95%E9%A2%98/</guid>
                 <pubDate>Fri, 17 Sep 2021 18:55:58 &#43;0800</pubDate>
                 
-                    <author>coder-liuu@126.com (自由如疯)</author>
+                    <author>coder-liuu@126.com (自由小兵儿)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
@@ -3257,7 +3257,7 @@ KMP算法：在匹配失败的情况下，利用之前比较的情况，来使�
                 <guid isPermaLink="true">https://coder-liuu.github.io/posts/%E5%90%8E%E7%AB%AF/go-note/</guid>
                 <pubDate>Tue, 17 Aug 2021 23:42:18 &#43;0800</pubDate>
                 
-                    <author>coder-liuu@126.com (自由如疯)</author>
+                    <author>coder-liuu@126.com (自由小兵儿)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
@@ -3643,7 +3643,7 @@ KMP算法：在匹配失败的情况下，利用之前比较的情况，来使�
                 <guid isPermaLink="true">https://coder-liuu.github.io/posts/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/review-aprioir/</guid>
                 <pubDate>Tue, 03 Aug 2021 14:24:13 &#43;0800</pubDate>
                 
-                    <author>coder-liuu@126.com (自由如疯)</author>
+                    <author>coder-liuu@126.com (自由小兵儿)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
@@ -4249,7 +4249,7 @@ func main() {
                 <guid isPermaLink="true">https://coder-liuu.github.io/posts/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/ml-interview/</guid>
                 <pubDate>Sun, 01 Aug 2021 11:45:54 &#43;0800</pubDate>
                 
-                    <author>coder-liuu@126.com (自由如疯)</author>
+                    <author>coder-liuu@126.com (自由小兵儿)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
@@ -4490,7 +4490,7 @@ ZooKeeper文件，ROOT表，META表 $=\gt$ 用户数据&lt;/p&gt;
                 <guid isPermaLink="true">https://coder-liuu.github.io/posts/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/ventoy-tuition/</guid>
                 <pubDate>Sat, 31 Jul 2021 16:38:44 &#43;0800</pubDate>
                 
-                    <author>coder-liuu@126.com (自由如疯)</author>
+                    <author>coder-liuu@126.com (自由小兵儿)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
@@ -4561,7 +4561,7 @@ ZooKeeper文件，ROOT表，META表 $=\gt$ 用户数据&lt;/p&gt;
                 <guid isPermaLink="true">https://coder-liuu.github.io/posts/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/health-insure-predict/</guid>
                 <pubDate>Thu, 15 Jul 2021 16:01:25 &#43;0800</pubDate>
                 
-                    <author>coder-liuu@126.com (自由如疯)</author>
+                    <author>coder-liuu@126.com (自由小兵儿)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
@@ -4950,7 +4950,7 @@ ZooKeeper文件，ROOT表，META表 $=\gt$ 用户数据&lt;/p&gt;
                 <guid isPermaLink="true">https://coder-liuu.github.io/posts/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/noise-mnist/</guid>
                 <pubDate>Sat, 10 Jul 2021 12:00:53 &#43;0800</pubDate>
                 
-                    <author>coder-liuu@126.com (自由如疯)</author>
+                    <author>coder-liuu@126.com (自由小兵儿)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
@@ -5116,7 +5116,7 @@ ZooKeeper文件，ROOT表，META表 $=\gt$ 用户数据&lt;/p&gt;
                 <guid isPermaLink="true">https://coder-liuu.github.io/posts/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/ml-gnn/</guid>
                 <pubDate>Mon, 07 Jun 2021 15:47:39 &#43;0800</pubDate>
                 
-                    <author>coder-liuu@126.com (自由如疯)</author>
+                    <author>coder-liuu@126.com (自由小兵儿)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
@@ -5208,7 +5208,7 @@ $$ N = a * (宠物的钱) + b * (女主的钱) $$&lt;/p&gt;
                 <guid isPermaLink="true">https://coder-liuu.github.io/posts/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/python-forget-function/</guid>
                 <pubDate>Thu, 27 May 2021 21:11:06 &#43;0800</pubDate>
                 
-                    <author>coder-liuu@126.com (自由如疯)</author>
+                    <author>coder-liuu@126.com (自由小兵儿)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
@@ -5363,7 +5363,7 @@ ssl._create_default_https_context = ssl._create_unverified_context
                 <guid isPermaLink="true">https://coder-liuu.github.io/posts/linux/docker-arch-nvim-process/</guid>
                 <pubDate>Sun, 16 May 2021 17:38:57 &#43;0800</pubDate>
                 
-                    <author>coder-liuu@126.com (自由如疯)</author>
+                    <author>coder-liuu@126.com (自由小兵儿)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
@@ -5472,7 +5472,7 @@ color snazzy
                 <guid isPermaLink="true">https://coder-liuu.github.io/posts/linux/docker-used/</guid>
                 <pubDate>Thu, 29 Apr 2021 13:35:44 &#43;0800</pubDate>
                 
-                    <author>coder-liuu@126.com (自由如疯)</author>
+                    <author>coder-liuu@126.com (自由小兵儿)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
@@ -5642,7 +5642,7 @@ color snazzy
                 <guid isPermaLink="true">https://coder-liuu.github.io/posts/linux/linux-matplotlib/</guid>
                 <pubDate>Thu, 22 Apr 2021 17:59:47 &#43;0800</pubDate>
                 
-                    <author>coder-liuu@126.com (自由如疯)</author>
+                    <author>coder-liuu@126.com (自由小兵儿)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
@@ -5729,7 +5729,7 @@ color snazzy
                 <guid isPermaLink="true">https://coder-liuu.github.io/posts/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/math-linear-algebra/</guid>
                 <pubDate>Fri, 02 Apr 2021 17:50:12 &#43;0800</pubDate>
                 
-                    <author>coder-liuu@126.com (自由如疯)</author>
+                    <author>coder-liuu@126.com (自由小兵儿)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
@@ -5814,7 +5814,7 @@ color snazzy
                 <guid isPermaLink="true">https://coder-liuu.github.io/posts/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/imbalanced-datasets/</guid>
                 <pubDate>Tue, 30 Mar 2021 22:16:40 &#43;0800</pubDate>
                 
-                    <author>coder-liuu@126.com (自由如疯)</author>
+                    <author>coder-liuu@126.com (自由小兵儿)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
@@ -5953,7 +5953,7 @@ data.to_csv(f&amp;#34;{name}.csv&amp;#34;,index=False)
                 <guid isPermaLink="true">https://coder-liuu.github.io/posts/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/ml-logisticregression/</guid>
                 <pubDate>Wed, 24 Mar 2021 19:03:39 &#43;0800</pubDate>
                 
-                    <author>coder-liuu@126.com (自由如疯)</author>
+                    <author>coder-liuu@126.com (自由小兵儿)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
@@ -6092,7 +6092,7 @@ $$&lt;/p&gt;
                 <guid isPermaLink="true">https://coder-liuu.github.io/posts/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/ml-linearregression/</guid>
                 <pubDate>Fri, 19 Mar 2021 11:07:40 &#43;0800</pubDate>
                 
-                    <author>coder-liuu@126.com (自由如疯)</author>
+                    <author>coder-liuu@126.com (自由小兵儿)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
@@ -6193,7 +6193,7 @@ $$
                 <guid isPermaLink="true">https://coder-liuu.github.io/posts/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/ml-kmeans/</guid>
                 <pubDate>Mon, 15 Mar 2021 12:35:36 &#43;0800</pubDate>
                 
-                    <author>coder-liuu@126.com (自由如疯)</author>
+                    <author>coder-liuu@126.com (自由小兵儿)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
@@ -6436,7 +6436,7 @@ $\mu_2 = {3,4.66} $&lt;/p&gt;
                 <guid isPermaLink="true">https://coder-liuu.github.io/posts/linux/linux-dd/</guid>
                 <pubDate>Thu, 04 Mar 2021 15:17:14 &#43;0800</pubDate>
                 
-                    <author>coder-liuu@126.com (自由如疯)</author>
+                    <author>coder-liuu@126.com (自由小兵儿)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
@@ -6493,7 +6493,7 @@ $\mu_2 = {3,4.66} $&lt;/p&gt;
                 <guid isPermaLink="true">https://coder-liuu.github.io/posts/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/ml-decision-tree/</guid>
                 <pubDate>Sat, 27 Feb 2021 18:51:42 &#43;0800</pubDate>
                 
-                    <author>coder-liuu@126.com (自由如疯)</author>
+                    <author>coder-liuu@126.com (自由小兵儿)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
@@ -6634,7 +6634,7 @@ $$ Ent = -(\frac{2}{3} log_2 \frac{2}{3} + \frac{1}{3} log_2 \frac{1}{3}) = 0.91
                 <guid isPermaLink="true">https://coder-liuu.github.io/posts/acm/acm-base/</guid>
                 <pubDate>Sat, 27 Feb 2021 00:10:20 &#43;0800</pubDate>
                 
-                    <author>coder-liuu@126.com (自由如疯)</author>
+                    <author>coder-liuu@126.com (自由小兵儿)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
@@ -6933,7 +6933,7 @@ $$ Ent = -(\frac{2}{3} log_2 \frac{2}{3} + \frac{1}{3} log_2 \frac{1}{3}) = 0.91
                 <guid isPermaLink="true">https://coder-liuu.github.io/posts/acm/acm-graph-theory/</guid>
                 <pubDate>Fri, 26 Feb 2021 16:45:29 &#43;0800</pubDate>
                 
-                    <author>coder-liuu@126.com (自由如疯)</author>
+                    <author>coder-liuu@126.com (自由小兵儿)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
@@ -7438,7 +7438,7 @@ int main(){
                 <guid isPermaLink="true">https://coder-liuu.github.io/posts/linux/manjaro-some-problem/</guid>
                 <pubDate>Wed, 24 Feb 2021 10:21:18 &#43;0800</pubDate>
                 
-                    <author>coder-liuu@126.com (自由如疯)</author>
+                    <author>coder-liuu@126.com (自由小兵儿)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
@@ -7490,7 +7490,7 @@ Arch安装: &lt;code&gt;sudo pacman -S sox&lt;/code&gt;&lt;/p&gt;
                 <guid isPermaLink="true">https://coder-liuu.github.io/posts/linux/ranger/</guid>
                 <pubDate>Sun, 21 Feb 2021 14:28:45 &#43;0800</pubDate>
                 
-                    <author>coder-liuu@126.com (自由如疯)</author>
+                    <author>coder-liuu@126.com (自由小兵儿)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
@@ -7574,7 +7574,7 @@ set draw_borders true
                 <guid isPermaLink="true">https://coder-liuu.github.io/posts/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/search-ticks/</guid>
                 <pubDate>Sun, 21 Feb 2021 08:44:09 &#43;0800</pubDate>
                 
-                    <author>coder-liuu@126.com (自由如疯)</author>
+                    <author>coder-liuu@126.com (自由小兵儿)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
@@ -7646,7 +7646,7 @@ AND: 包含AND两边的关键词,比如 apple AND watch&lt;/p&gt;
                 <guid isPermaLink="true">https://coder-liuu.github.io/posts/acm/stl/</guid>
                 <pubDate>Sun, 14 Feb 2021 19:06:01 &#43;0800</pubDate>
                 
-                    <author>coder-liuu@126.com (自由如疯)</author>
+                    <author>coder-liuu@126.com (自由小兵儿)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
@@ -7918,7 +7918,7 @@ AND: 包含AND两边的关键词,比如 apple AND watch&lt;/p&gt;
                 <guid isPermaLink="true">https://coder-liuu.github.io/posts/linux/manjaro-softwork/</guid>
                 <pubDate>Sun, 31 Jan 2021 21:07:24 &#43;0800</pubDate>
                 
-                    <author>coder-liuu@126.com (自由如疯)</author>
+                    <author>coder-liuu@126.com (自由小兵儿)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
@@ -8022,7 +8022,7 @@ AND: 包含AND两边的关键词,比如 apple AND watch&lt;/p&gt;
                 <guid isPermaLink="true">https://coder-liuu.github.io/posts/acm/acm-math/</guid>
                 <pubDate>Sat, 30 Jan 2021 00:00:00 &#43;0000</pubDate>
                 
-                    <author>coder-liuu@126.com (自由如疯)</author>
+                    <author>coder-liuu@126.com (自由小兵儿)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
@@ -8355,7 +8355,7 @@ $$ d | n \rightarrow \frac{d}{n} | n $$&lt;/p&gt;
                 <guid isPermaLink="true">https://coder-liuu.github.io/posts/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/python-create-vir/</guid>
                 <pubDate>Thu, 30 Apr 2020 00:00:00 &#43;0000</pubDate>
                 
-                    <author>coder-liuu@126.com (自由如疯)</author>
+                    <author>coder-liuu@126.com (自由小兵儿)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
@@ -8468,7 +8468,7 @@ pipreqs ./
                 <guid isPermaLink="true">https://coder-liuu.github.io/posts/linux/git-summary/</guid>
                 <pubDate>Sun, 26 Apr 2020 23:57:02 &#43;0000</pubDate>
                 
-                    <author>coder-liuu@126.com (自由如疯)</author>
+                    <author>coder-liuu@126.com (自由小兵儿)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
