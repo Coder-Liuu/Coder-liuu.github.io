@@ -23,10 +23,138 @@
         
             <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
         
-        <lastBuildDate>Sat, 02 Jul 2022 15:29:37 &#43;0800</lastBuildDate>
+        <lastBuildDate>Mon, 04 Jul 2022 13:35:39 &#43;0800</lastBuildDate>
         
             <atom:link rel="self" type="application/rss&#43;xml" href="https://coder-liuu.github.io/rss.xml" />
         
+        
+            <item>
+                <title>视频分类综述（一）</title>
+                <link>https://coder-liuu.github.io/posts/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/video-classify-1/</link>
+                <guid isPermaLink="true">https://coder-liuu.github.io/posts/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/video-classify-1/</guid>
+                <pubDate>Mon, 04 Jul 2022 07:32:29 &#43;0800</pubDate>
+                
+                    <author>coder-liuu@126.com (自由小兵儿)</author>
+                
+                <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
+                
+                    <description>&lt;p&gt;视频分类是一个难点，本文将介绍从论文的背景问题、核心思想、具体方案三个角度，阅读下面四篇文章。下面四篇文章主要考虑借助强化学习的方法，解决视频分类。&lt;/p&gt;
+&lt;h3 id=&#34;1-watching-a-small-portion-could-be-as-good-as-watching-all-towards-efficient-video-classification2018-ijcai&#34;&gt;1. Watching a small portion could be as good as watching all Towards efficient video classification(2018 IJCAI)&lt;/h3&gt;
+&lt;h4 id=&#34;11-背景问题&#34;&gt;1.1 背景问题&lt;/h4&gt;
+&lt;p&gt;视频是由一系列的帧构成，一般方法都是对全部视频帧使用CNN来提取特征，然后使用LSTM进行时间上的建模，最终输出视频的类别。但是提取全部视频帧的特征效率底下。基于此有人提出等间隔采样算法，&lt;strong&gt;但算法效率仍然较差。&lt;/strong&gt;&lt;/p&gt;
+&lt;h4 id=&#34;12-核心思想&#34;&gt;1.2 核心思想&lt;/h4&gt;
+&lt;p&gt;核心思想主要有下面两点：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://img-blog.csdnimg.cn/fc1b6408da4f46ab99d597bde055a0b4.png#pic_center&#34; alt=&#34;图片1&#34;&gt;
+1 视频的信息分布不是均匀的，比如当我们看电视时，我们不喜欢看片头和片尾，我们往往会进行快进。所以AI可以详细查看关键内容，跳过冗余内容，达到&lt;strong&gt;根据视频内容进行自适应采样&lt;/strong&gt;&lt;br&gt;
+2 不同视频分类难易程度不同，比如我们一看到南瓜头，就由很大把握断定视频是关于万圣节的。所以AI可以&lt;strong&gt;根据视频内容进行自适应停止并做出最终决策&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;将上述思想对应到强化学习关键要素：&lt;br&gt;
+(1) 环境：一系列的视频帧，&lt;br&gt;
+(2) 状态：当前的视频帧&lt;br&gt;
+(3) 动作：{视频快进N秒，做出决策}&lt;br&gt;
+(4) 奖励：分类的正确率减去AI观看的视频帧数量&lt;/p&gt;
+&lt;p&gt;技术难点：怎么快进呢？怎么让AI进行自适应停止呢？&lt;/p&gt;
+&lt;h4 id=&#34;13-具体方案&#34;&gt;1.3 具体方案&lt;/h4&gt;
+&lt;p&gt;模型整体主要由5个子网络构成：&lt;br&gt;
+(1)核心网络：存储着历史视频的信息，并在观看完当前视频帧之后得到状态ht。方便后续网络做出决策。&lt;br&gt;
+(2)快进网络：输入状态ht，输出快进的程度{−2s, −1s, +1s, +2s, +4s, +8s, +16s}&lt;br&gt;
+(3)自适应停止网络：输入状态ht，输出是否继续观看{continue, stop}。&lt;br&gt;
+(4)分类网络：如果不观看视频，则输入状态ht，将视频进行分类。&lt;br&gt;
+(5)基线网络：输入状态ht，输出是否鼓励/不鼓励当前行动（进行探索其他行动）。&lt;br&gt;
+(6)回报函数：当没有进行分类时，Rt=0；当分类时，Rt=。p时预测类别，g是实际类别。是看过的帧数，鼓励Agent看更少的帧数。&lt;br&gt;
+&lt;img src=&#34;https://img-blog.csdnimg.cn/d5507ef3d4df4500ac087cf011c0fed4.png#pic_center&#34; alt=&#34;图片2&#34;&gt;&lt;/p&gt;
+&lt;p&gt;首先使用预训练网络CNN提取当前帧的特征，将[历史特征，当前帧特征]输入到核心网络RNN，得到状态ht。状态ht输入自适应停止网络决策（是否停止观看）。如果停止观看则输入到分类网络进行分类，否则输入到快进网络进行下一帧的学习。&lt;br&gt;
+关于快进网络，自适应停止网络的优化方法，采用策略梯度(Policy Gradient)的方法优化。&lt;/p&gt;
+&lt;h3 id=&#34;2-adaframe-adaptive-frame-selection-for-fast-video-recognition2019-cvpr&#34;&gt;2. AdaFrame: Adaptive Frame Selection for Fast Video Recognition(2019 CVPR)&lt;/h3&gt;
+&lt;h4 id=&#34;21背景问题&#34;&gt;2.1背景问题&lt;/h4&gt;
+&lt;p&gt;在上一篇论文《Watching a small portion could be as good as watching all Towards efficient video classification》中，快进网络快进/回退长度有限，&lt;strong&gt;导致AI灵活性不高。&lt;/strong&gt;&lt;/p&gt;
+&lt;h4 id=&#34;22-核心思想&#34;&gt;2.2 核心思想&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&#34;https://img-blog.csdnimg.cn/b95e224a69f64bc7b142026d3682834c.png#pic_center&#34; alt=&#34;图片3&#34;&gt;&lt;/p&gt;
+&lt;p&gt;核心思想为：&lt;strong&gt;AI可以自由观看视频&lt;/strong&gt;，并且只需要几个关键帧就可以判断视频的种类。&lt;br&gt;
+技术难点：怎么知道AI下一帧应该看哪里呢？&lt;/p&gt;
+&lt;h4 id=&#34;23-具体方案&#34;&gt;2.3 具体方案&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&#34;https://img-blog.csdnimg.cn/af346a8d912a4086b368cc12519708b5.png#pic_center&#34; alt=&#34;图片4&#34;&gt;&lt;/p&gt;
+&lt;p&gt;(1)对整个视频进行等间隔采样，使用轻量CNN进行特征提取，制作一个记忆库，记忆库存储了整个视频的上下文信息&lt;br&gt;
+(2)接下来AI将当前视频帧特征输入到记忆库中，获得当前视频帧的隐藏状态。&lt;br&gt;
+(3)将当前视频帧特征和隐藏状态输入到LSTM中，得到最终特征。最终特征输入到快进网络可以得到下一步的位置；最终特征输入到价值网络中可以得到当未来的回报。当未来回报很小时，AI便可以做出决策。&lt;/p&gt;
+&lt;h3 id=&#34;3-multi-agent-reinforcement-learning-based-frame-sampling-for-effective-untrimmed-video-recognition2019-iccv&#34;&gt;3. Multi-Agent Reinforcement Learning Based Frame Sampling for Effective Untrimmed Video Recognition(2019 ICCV)&lt;/h3&gt;
+&lt;h4 id=&#34;31-背景问题&#34;&gt;3.1 背景问题&lt;/h4&gt;
+&lt;p&gt;之前两篇论文都是使用强化学习，进行视频的自适应采样。&lt;strong&gt;但是一个智能体的力量是有限的。&lt;/strong&gt;&lt;/p&gt;
+&lt;h4 id=&#34;32-核心思想&#34;&gt;3.2 核心思想&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&#34;https://img-blog.csdnimg.cn/7a8e0677af0d41a6b39f432c8faf44d8.png#pic_center&#34; alt=&#34;图片5&#34;&gt;&lt;/p&gt;
+&lt;p&gt;核心思想：&lt;strong&gt;使用多个智能体同时对视频采样&lt;/strong&gt;，同时智能体之间进行协作，加快视频采样速度。&lt;br&gt;
+技术难点：多个智能体怎么进行协作呢？&lt;/p&gt;
+&lt;h4 id=&#34;33-具体方案&#34;&gt;3.3 具体方案&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&#34;https://img-blog.csdnimg.cn/69c64031f27e4339a12788c97c0fcd4e.png#pic_center&#34; alt=&#34;图片6&#34;&gt;&lt;/p&gt;
+&lt;p&gt;(1)开始在视频中等间隔的放置AI，使用CNN提取每个AI所在图片的特征&lt;br&gt;
+(2)对于每个AI来说，将当前图片特征和其附近AI图片特征输入到自己的GRU网络中，得到自己的状态H&lt;br&gt;
+(3)每个AI将自己的状态输入到策略网络中去，得到下一步的动作{回退，快进，停止}&lt;br&gt;
+(4)当所有AI停止之后，使用所有AI的图片特征输入分类网络进行预测&lt;br&gt;
+特殊说明：多个智能体的观察网络和策略网络参数共享&lt;/p&gt;
+&lt;h3 id=&#34;4-dynamic-sampling-networks-for-efficient-actionrecognition-in-videos-2020-tip&#34;&gt;4. Dynamic Sampling Networks for Efficient ActionRecognition in Videos (2020 TIP)&lt;/h3&gt;
+&lt;h4 id=&#34;41-背景问题&#34;&gt;4.1 背景问题&lt;/h4&gt;
+&lt;p&gt;视频分类计算量巨大。如何能对视频更有效率的进行采样呢？&lt;strong&gt;强化学习的延迟奖励问题也使得模型训练难度加大&lt;/strong&gt;&lt;/p&gt;
+&lt;h4 id=&#34;42-核心思想&#34;&gt;4.2 核心思想&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&#34;https://img-blog.csdnimg.cn/5a9a2bf97358470a8e4821f2832ee9eb.png#pic_center&#34; alt=&#34;图片7&#34;&gt;&lt;/p&gt;
+&lt;p&gt;核心思想：将视频分成等长度的M节，对每一节使用强化学习进行采样，&lt;strong&gt;将问题转换为单步马尔科夫过程&lt;/strong&gt;，解决强化学习延迟奖励的问题，提高学习效率。
+技术难点：如何将问题转换成单步马尔科夫过程?&lt;/p&gt;
+&lt;h4 id=&#34;43-具体方案&#34;&gt;4.3 具体方案&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&#34;https://img-blog.csdnimg.cn/4c9af57885d54067aadb26736d126ed4.png#pic_center&#34; alt=&#34;图片8&#34;&gt;&lt;/p&gt;
+&lt;p&gt;(1)对于每一节，将N个视频帧输入到观察网络中来提取特征&lt;br&gt;
+(2)策略网络直接输出一个长度为N的决策向量{放弃，保留，放弃，保留}&lt;br&gt;
+(3)将所有保留的视频帧放入3D CNN进行判断视频种类&lt;/p&gt;
+</description>
+                
+                
+                
+                
+                
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://coder-liuu.github.io/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/">机器学习</category>
+                                
+                            
+                        
+                    
+                        
+                    
+                
+            </item>
+        
+            <item>
+                <title>Go语言小项目 LazyNote</title>
+                <link>https://coder-liuu.github.io/posts/go%E8%AF%AD%E8%A8%80%E5%B0%8F%E9%A1%B9%E7%9B%AE-lazynote/</link>
+                <guid isPermaLink="true">https://coder-liuu.github.io/posts/go%E8%AF%AD%E8%A8%80%E5%B0%8F%E9%A1%B9%E7%9B%AE-lazynote/</guid>
+                <pubDate>Sat, 02 Jul 2022 15:33:05 &#43;0800</pubDate>
+                
+                    <author>coder-liuu@126.com (自由小兵儿)</author>
+                
+                <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
+                
+                    <description></description>
+                
+                
+                
+                
+                
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://coder-liuu.github.io/categories/%E5%90%8E%E7%AB%AF/">后端</category>
+                                
+                            
+                        
+                    
+                        
+                    
+                
+            </item>
         
             <item>
                 <title>从图片读取数据</title>
