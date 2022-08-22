@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
     <title type="text">自由小兵儿</title>
     <subtitle type="html">纵有疾风起，人生不言弃</subtitle>
-    <updated>2022-07-11T01:07:47&#43;08:00</updated>
+    <updated>2022-08-23T00:44:56&#43;08:00</updated>
     <id>https://coder-liuu.github.io/</id>
     <link rel="alternate" type="text/html" href="https://coder-liuu.github.io/" />
     <link rel="self" type="application/atom&#43;xml" href="https://coder-liuu.github.io/atom.xml" />
@@ -15,7 +15,7 @@
                 <email>coder-liuu@126.com</email>
             </author>
     <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights>
-    <generator uri="https://gohugo.io/" version="0.93.3">Hugo</generator>
+    <generator uri="https://gohugo.io/" version="0.101.0">Hugo</generator>
         <entry>
             <title type="text">快速绘制漂亮折线图</title>
             <link rel="alternate" type="text/html" href="https://coder-liuu.github.io/posts/draw-line-chart/" />
@@ -3599,9 +3599,9 @@ KMP算法：在匹配失败的情况下，利用之前比较的情况，来使�
     
         <entry>
             <title type="text">Go语言学习笔记</title>
-            <link rel="alternate" type="text/html" href="https://coder-liuu.github.io/posts/%E5%90%8E%E7%AB%AF/go-note/" />
-            <id>https://coder-liuu.github.io/posts/%E5%90%8E%E7%AB%AF/go-note/</id>
-            <updated>2022-05-09T16:04:29&#43;08:00</updated>
+            <link rel="alternate" type="text/html" href="https://coder-liuu.github.io/posts/%E5%90%8E%E7%AB%AF/go-note1/" />
+            <id>https://coder-liuu.github.io/posts/%E5%90%8E%E7%AB%AF/go-note1/</id>
+            <updated>2022-07-11T01:31:34&#43;08:00</updated>
             <published>2021-08-17T23:42:18&#43;08:00</published>
             <author>
                     <name>自由小兵儿</name>
@@ -3646,7 +3646,7 @@ KMP算法：在匹配失败的情况下，利用之前比较的情况，来使�
 &lt;/div&gt;
 &lt;/div&gt;&lt;style type=&#34;text/css&#34;&gt;.notice{padding:18px;line-height:24px;margin-bottom:24px;border-radius:4px;color:#444;background:#e7f2fa}.notice p:last-child{margin-bottom:0}.notice-title{margin:-18px -18px 12px;padding:4px 18px;border-radius:4px 4px 0 0;font-weight:700;color:#fff;background:#6ab0de}.notice.warning .notice-title{background:rgba(217,83,79,.9)}.notice.warning{background:#fae2e2}.notice.info .notice-title{background:#f0b37e}.notice.info{background:#fff2db}.notice.note .notice-title{background:#6ab0de}.notice.note{background:#e7f2fA}.notice.tip .notice-title{background:rgba(92,184,92,.8)}.notice.tip{background:#e6f9e6}.icon-notice{display:inline-flex;align-self:center;margin-right:8px}.icon-notice img,.icon-notice svg{height:1em;width:1em;fill:currentColor}.icon-notice img,.icon-notice.baseline svg{top:0.125em;position:relative}&lt;/style&gt;
 &lt;svg width=&#34;0&#34; height=&#34;0&#34; display=&#34;none&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;symbol id=&#34;tip-notice&#34; viewBox=&#34;0 0 512 512&#34; preserveAspectRatio=&#34;xMidYMid meet&#34;&gt;&lt;path d=&#34;M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z&#34;/&gt;&lt;/symbol&gt;&lt;symbol id=&#34;note-notice&#34; viewBox=&#34;0 0 512 512&#34; preserveAspectRatio=&#34;xMidYMid meet&#34;&gt;&lt;path d=&#34;M504 256c0 136.997-111.043 248-248 248S8 392.997 8 256C8 119.083 119.043 8 256 8s248 111.083 248 248zm-248 50c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z&#34;/&gt;&lt;/symbol&gt;&lt;symbol id=&#34;warning-notice&#34; viewBox=&#34;0 0 576 512&#34; preserveAspectRatio=&#34;xMidYMid meet&#34;&gt;&lt;path d=&#34;M569.517 440.013C587.975 472.007 564.806 512 527.94 512H48.054c-36.937 0-59.999-40.055-41.577-71.987L246.423 23.985c18.467-32.009 64.72-31.951 83.154 0l239.94 416.028zM288 354c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z&#34;/&gt;&lt;/symbol&gt;&lt;symbol id=&#34;info-notice&#34; viewBox=&#34;0 0 512 512&#34; preserveAspectRatio=&#34;xMidYMid meet&#34;&gt;&lt;path d=&#34;M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z&#34;/&gt;&lt;/symbol&gt;&lt;/svg&gt;&lt;div class=&#34;notice warning&#34; &gt;
-&lt;p class=&#34;first notice-title&#34;&gt;&lt;span class=&#34;icon-notice baseline&#34;&gt;&lt;svg&gt;&lt;use href=&#34;https://coder-liuu.github.io/posts/%E5%90%8E%E7%AB%AF/go-note/#warning-notice&#34;&gt;&lt;/use&gt;&lt;/svg&gt;&lt;/span&gt;Warning&lt;/p&gt;&lt;p&gt;如果定义变量不使用会编译器会拒绝编译&lt;/p&gt;&lt;/div&gt;
+&lt;p class=&#34;first notice-title&#34;&gt;&lt;span class=&#34;icon-notice baseline&#34;&gt;&lt;svg&gt;&lt;use href=&#34;https://coder-liuu.github.io/posts/%E5%90%8E%E7%AB%AF/go-note1/#warning-notice&#34;&gt;&lt;/use&gt;&lt;/svg&gt;&lt;/span&gt;Warning&lt;/p&gt;&lt;p&gt;如果定义变量不使用会编译器会拒绝编译&lt;/p&gt;&lt;/div&gt;
 
 &lt;h3 id=&#34;2-导入和输出&#34;&gt;2. 导入和输出&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -3955,14 +3955,29 @@ KMP算法：在匹配失败的情况下，利用之前比较的情况，来使�
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;go&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;get&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;github&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;com&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;gin&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;gonic&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;gin&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;相关学习视频&#34;&gt;相关学习视频&lt;/h2&gt;
+&lt;/div&gt;&lt;h2 id=&#34;q--a&#34;&gt;Q &amp;amp; A&lt;/h2&gt;
+&lt;h3 id=&#34;1-go-githubcomxxxx-get-xxxxxx-dial-tcp-3464417443-io-timeout问题&#34;&gt;1. go: github.com/XXXX: Get &amp;quot;XXXXXX&amp;quot;: dial tcp 34.64.4.17:443: i/o timeout问题&lt;/h3&gt;
+&lt;p&gt;回答：更换一个镜像源即可，可以执行&lt;code&gt;go env -w GOPROXY=https://goproxy.cn&lt;/code&gt;命令&lt;/p&gt;
+&lt;h3 id=&#34;2-go-get-无法下载-golangorgx-下的包怎么办&#34;&gt;2. go get 无法下载 golang.org/x 下的包怎么办?&lt;/h3&gt;
+&lt;p&gt;回答：只能手动下载啦，步骤如下&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;在gopath下的src目录下新建目录golang.org/x&lt;/li&gt;
+&lt;li&gt;在src/golang.org/x目录下打开cmd&lt;/li&gt;
+&lt;li&gt;执行命令git clone &lt;a href=&#34;https://github.com/golang/xxx.git&#34;&gt;https://github.com/golang/xxx.git&lt;/a&gt;, xxx是你要下载的包名。比如要下载golang.org/x/text包，那么就执行git clone &lt;a href=&#34;https://github.com/golang/text.git&#34;&gt;https://github.com/golang/text.git&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;3-windows环境golang程序开发-报错exec-gcc-executable-file-not-found-in-path&#34;&gt;3. Windows环境golang程序开发 报错exec: gcc: executable file not found in %PATH%&lt;/h3&gt;
+&lt;p&gt;回答：出现了这个问题说明，我们缺少了GCC编译器，需要重新下载，然后加入环境变量即可，我最开始参考的&lt;a href=&#34;https://blog.csdn.net/Lyon_Nee/article/details/106840502&#34;&gt;这个文档&lt;/a&gt;，但是建议选择比较高一点的版本，我开始安装的版本比较低，又报了这个错误&lt;code&gt;unrecognized option &#39;--high-entropy-va&#39;&lt;/code&gt;后来安装了MingW8.1，成功解决问题。&lt;/p&gt;
+&lt;h2 id=&#34;相关学习视频&#34;&gt;相关学习视频&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&#34;https://www.bilibili.com/video/BV1AJ411D7j3?from=search&amp;amp;seid=14292886815488532559&#34;&gt;Thecw第一集&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://www.bilibili.com/video/BV1AJ411D7j3?from=search&amp;amp;seid=14292886815488532559&#34;&gt;Thecw第二集&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://www.bilibili.com/video/BV1gf4y1r79E?from=search&amp;amp;seid=14050895751450762866&#34;&gt;8小时讲解&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;常见问题&#34;&gt;常见问题&lt;/h2&gt;
+&lt;h2 id=&#34;参考文献&#34;&gt;参考文献&lt;/h2&gt;
 &lt;ol&gt;
-&lt;li&gt;go get拉取太慢: &lt;a href=&#34;https://www.choudalao.com/article/182&#34;&gt;https://www.choudalao.com/article/182&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;golang第三方包的引用报错: &lt;a href=&#34;https://blog.csdn.net/weixin_44952092/article/details/115764848&#34;&gt;https://blog.csdn.net/weixin_44952092/article/details/115764848&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.choudalao.com/article/182&#34;&gt;go get拉取太慢&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.csdn.net/weixin_44952092/article/details/115764848&#34;&gt;golang第三方包的引用报错&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[无法下载 golang.org/x的包]https://blog.csdn.net/puss0/article/details/89890573&lt;/li&gt;
 &lt;/ol&gt;
 </content>
             
