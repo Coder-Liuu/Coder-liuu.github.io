@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
     <title type="text">自由小兵儿</title>
     <subtitle type="html">纵有疾风起，人生不言弃</subtitle>
-    <updated>2022-10-07T11:30:29&#43;08:00</updated>
+    <updated>2022-10-07T11:36:56&#43;08:00</updated>
     <id>https://coder-liuu.github.io/</id>
     <link rel="alternate" type="text/html" href="https://coder-liuu.github.io/" />
     <link rel="self" type="application/atom&#43;xml" href="https://coder-liuu.github.io/atom.xml" />
@@ -18,9 +18,9 @@
     <generator uri="https://gohugo.io/" version="0.101.0">Hugo</generator>
         <entry>
             <title type="text">一键配置好Linux系统</title>
-            <link rel="alternate" type="text/html" href="https://coder-liuu.github.io/posts/%E4%B8%80%E9%94%AE%E9%85%8D%E7%BD%AE%E5%A5%BDlinux%E7%B3%BB%E7%BB%9F/" />
-            <id>https://coder-liuu.github.io/posts/%E4%B8%80%E9%94%AE%E9%85%8D%E7%BD%AE%E5%A5%BDlinux%E7%B3%BB%E7%BB%9F/</id>
-            <updated>2022-10-07T11:09:50&#43;08:00</updated>
+            <link rel="alternate" type="text/html" href="https://coder-liuu.github.io/posts/quickly-configure-linux/" />
+            <id>https://coder-liuu.github.io/posts/quickly-configure-linux/</id>
+            <updated>2022-10-07T11:31:52&#43;08:00</updated>
             <published>2022-10-07T11:07:08&#43;08:00</published>
             <author>
                     <name>自由小兵儿</name>
@@ -137,7 +137,7 @@
                             
                             
                             
-                                <category scheme="https://coder-liuu.github.io/categories/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/" term="默认分类" label="默认分类" />
+                                <category scheme="https://coder-liuu.github.io/categories/linux/" term="Linux" label="Linux" />
                             
                         
                     
